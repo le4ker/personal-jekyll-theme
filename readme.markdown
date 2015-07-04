@@ -25,7 +25,7 @@
   * Navigation bar pages
   * Size of the latest's post preview
   * Timeline events
-  * Discuss comments
+  * Disqus comments
 
 ![Index page](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/index.jpg)
 
