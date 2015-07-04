@@ -1,0 +1,16 @@
+<!-- Contact Section -->
+<section id="{{ page.title }}" class="container content-section text-center">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+
+          {{ page.content | markdownify }}
+
+          {% if page.email %}
+            <p><a href="mailto:{{ page.email }}">{{ page.email }}</a></p>
+          {% endif %}
+
+          {% include social-buttons.html %}
+
+        </div>
+    </div>
+</section>
