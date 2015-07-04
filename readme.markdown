@@ -6,14 +6,15 @@
 
 * Fork of [Timeline](https://github.com/kirbyt/timeline-jekyll-theme).
   * Modern and minimal design.
-  * Responsive templates for post, page, and post index `_layouts`. Looks great on mobile, tablet, and desktop devices.
+  * Responsive templates for home page, blog archive and posts. Looks great on mobile, tablet, and desktop devices.
   * Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.  
   * Sweet animations
+  * Google analytics
 * Blogging functionality
 * (Optional) Disqus comments
 * Control of your website and blog through the site's config file
 
-![Index page](screenshots/index.jpg)
+![Index page](https://www.dropbox.com/s/gnnpm2n5s6grwpl/index.jpg?dl=0)
 
 ## Getting Started
 
