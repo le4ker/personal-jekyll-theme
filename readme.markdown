@@ -23,7 +23,7 @@
   * Background Image
   * Your picture
   * Navigation bar pages
-  * Size of the latest's post preview
+  * Preview size of the latest post
   * Timeline events
   * Disqus comments
 
