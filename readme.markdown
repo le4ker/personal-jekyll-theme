@@ -16,6 +16,14 @@
 
 ![Index page](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/index.jpg)
 
+![Blog](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/blog.jpg)
+
+![Career](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/career.jpg)
+
+![Archive](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/archive.jpg)
+
+![Post](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/post.jpg)
+
 ## Getting Started
 
 To learn how to use this theme check out [Setup Guide](http://panossakkos.github.io) for more information.
