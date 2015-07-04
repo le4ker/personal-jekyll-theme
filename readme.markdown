@@ -18,6 +18,14 @@
   * Archive page
   * Disqus comments
 * Control of your website and blog through the site's config file
+  * Favicon
+  * Black favicon
+  * Background Image
+  * Your picture
+  * Navigation bar pages
+  * Size of the latest's post preview
+  * Timeline events
+  * Discuss comments
 
 ![Index page](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/index.jpg)
 
