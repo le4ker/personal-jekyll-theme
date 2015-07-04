@@ -14,7 +14,7 @@
 * (Optional) Disqus comments
 * Control of your website and blog through the site's config file
 
-![Index page](https://www.dropbox.com/s/gnnpm2n5s6grwpl/index.jpg?dl=0)
+![Index page](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/index.jpg)
 
 ## Getting Started
 
