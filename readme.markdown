@@ -11,6 +11,7 @@
     * Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.  
   * Timeline
     * Tell your story so far with a sleek timeline of dates, pictures and descriptions
+  * White on black text, making the reading experience tireless
   * Google analytics  
 * Blogging functionality
   * Preview of the latest post in the home page
