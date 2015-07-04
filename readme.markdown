@@ -5,11 +5,13 @@
 ## What value does { Personal } add
 
 * Fork of [Timeline](https://github.com/kirbyt/timeline-jekyll-theme).
-  * Responsive templates for home page, blog archive and posts. Looks great on mobile, tablet, and desktop devices.
   * Modern and minimal design.
-  * Sweet animations
-  * Google analytics
-  * Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.  
+    * Responsive templates for home page, blog archive and posts. Looks great on mobile, tablet, and desktop devices.
+    * Sweet animations
+    * Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.  
+  * Timeline
+    * Tell your story so far with a sleek timeline of dates, pictures and descriptions
+  * Google analytics  
 * Blogging functionality
   * Preview of the latest post in the home page
   * Archive page
