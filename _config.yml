@@ -67,5 +67,7 @@ social:
   - title: "soundcloud"
     url: "https://soundcloud.com/psakkos/"
 
+404-img: "/img/labtocat.png"
+    
 # Exclusion list from the generated _site
 exclude: ["Rakefile", "LICENSE", "readme.markdown", "vendor"]
