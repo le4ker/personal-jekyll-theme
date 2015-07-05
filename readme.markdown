@@ -4,11 +4,11 @@
 
 ## What value does { Personal } add
 
-* Fork of [Timeline](https://github.com/kirbyt/timeline-jekyll-theme).
-  * Modern and minimal design.
-    * Responsive templates for home page, blog archive and posts. Looks great on mobile, tablet, and desktop devices.
+* Fork of [Timeline](https://github.com/kirbyt/timeline-jekyll-theme)
+  * Modern and minimal design
+    * Responsive templates for home page, blog archive and posts. Looks great on mobile, tablet, and desktop devices
     * Sweet animations
-    * Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.  
+    * Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers
   * Timeline
     * Tell your story so far with a sleek timeline of dates, pictures and descriptions
   * White on black text, making the reading experience tireless
@@ -22,7 +22,6 @@
   * Black favicon
   * Background Image
   * Your picture
-  * Navigation bar pages
   * Preview size of the latest post
   * Timeline events
   * Disqus comments
