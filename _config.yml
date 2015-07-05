@@ -28,7 +28,7 @@ me-img: "/img/me.jpg"
 # Blog variables
 
 post-preview-words: 128
-
+  
 # Career variables
 
 events:
@@ -37,7 +37,7 @@ events:
     description: "Software Engineer @ Microsoft Development Center Norway, working @ the <a href=\"http://dev.office.com/officegraph\" target=\"_blank\"> Office Graph</a>"
   - image: "/img/career/uoa.jpg"
     date: "October 2012 - August 2014"
-    description: "Master studies @ <a href=\"http://www.di.uoa.gr/eng\" target=\"_blank\">Department of Informatics and Telecommunications</a> on Software Engineering + <a href=\"https://scholar.google.com/citations?user=UtV6LFYAAAAJ&amp;hl=en&amp;oi=ao\" target=\"_blank\">Machine Learning researcher</a> @ <a href=\"http://kddlab.di.uoa.gr\" target=\"_blank\">KDD</a> lab"
+    description: "Master studies @ <a href=\"http://www.di.uoa.gr/eng\" target=\"_blank\">Department of Informatics and Telecommunications</a> on Software Engineering + <a href=\"http://scholar.google.com/citations?user=UtV6LFYAAAAJ&amp;hl=en&amp;oi=ao\" target=\"_blank\">Machine Learning researcher</a> @ <a href=\"http://kddlab.di.uoa.gr\" target=\"_blank\">KDD</a> lab"
   - image: "/img/career/cern.jpg"
     date: "October 2011 - September 2012"
     description: "Security researcher @ <a href=\"http://www.cern.ch\" target=\"_blank\">CERN</a>, developed linux kernel extensions to prevent cyber attacks"
@@ -61,11 +61,11 @@ social:
   - title: "github"
     url: "https://github.com/PanosSakkos"
   - title: "linkedin"
-    url: "https://no.linkedin.com/in/PanosSakkos"
+    url: "http://no.linkedin.com/in/PanosSakkos"
   - title: "youtube"
-    url: "https://youtube.com/c/PanosSakkos"
+    url: "http://youtube.com/c/PanosSakkos"
   - title: "soundcloud"
     url: "https://soundcloud.com/psakkos/"
 
 # Exclusion list from the generated _site
-exclude: ["Rakefile", "LICENSE", "readme.markdown"]
+exclude: ["Rakefile", "LICENSE", "readme.markdown", "vendor"]
