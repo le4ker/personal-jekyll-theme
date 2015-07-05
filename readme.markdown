@@ -37,6 +37,14 @@
 
 ![Post](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/post.jpg)
 
-## Getting Started
+## Customizing your website from the config
 
-To learn how to use this theme check out [Setup Guide](http://panossakkos.github.io) for more information.
+Even if you have no experience with Jekyll you can personalize your website from the config file (_config.yaml). This section describes the variables and how they change the content of your website.
+
+## Posting a new post
+
+Jekyll is waiting for new posts to show up as a file under _/posts with a file name "YYYY-MM-DD-title.markup". 
+
+## Steps forward
+* Support discovery with support of tags
+* 404 page
