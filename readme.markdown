@@ -144,6 +144,10 @@ social:
 ````
 There are many more social networks supported like facebook, flickr, dribbble, pinterest, instagram, tumblr etc.
 
+### 404 Image
+404-img: "/img/labtocat.png"
+Set the value to the image file that you want to display in the 404 page
+
 ## Posting a new post
 
 Jekyll is expecting new posts to show up as a file under _/posts with a file name "YYYY-MM-DD-title.markup". Also your file's content should start like this:
