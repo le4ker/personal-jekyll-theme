@@ -27,6 +27,7 @@
   * Preview size of the latest post
   * Timeline events
   * Disqus comments
+* Cool (anti-procrastinating) 404 page
 
 # Screenshots
 ## Index page
@@ -39,6 +40,8 @@
 ![Archive](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/archive.jpg)
 ## Post page
 ![Post](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/post.jpg)
+## 404
+![404](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/404.jpg)
 
 ## Customizing your website from the config
 
@@ -155,4 +158,3 @@ After this header you can start writing your post using Markdown.
 
 ## Steps forward
 * Support discovery with support of tags
-* Add 404 page

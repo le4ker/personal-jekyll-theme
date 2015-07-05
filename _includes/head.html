@@ -6,7 +6,9 @@
     <meta name="author" content="{{ site.author }}" />
     <meta name="keywords" content="{{ site.keywords }}" />
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-
+    {% if page.url == "/404.html" %}
+      <meta http-equiv="refresh" content="20; url=/">
+    {% endif %}
     <title>{{ site.title }} {% if page.title %} | {{ page.title }}{% endif %}</title>
 
     <!-- Bootstrap Core CSS -->
