@@ -41,9 +41,24 @@
 
 Even if you have no experience with Jekyll you can personalize your website from the config file (_config.yml). This section describes the variables and how they change the content of your website.
 
+### Favicon
+
+````
+favicon: "/img/favicon.ico"
+````
+
+Points to the website's favicon. You can either change the path to the desired favicon or replace the actual file.
+
+### Black Favicon
+
+````
+black-favicon: "/img/black-lab-glass.ico"
+````
+Before the title of website a black and white version of the favicon appears. This value is the path to this image file.
+
 ## Posting a new post
 
-Jekyll is waiting for new posts to show up as a file under _/posts with a file name "YYYY-MM-DD-title.markup". Also your file's content should start like this
+Jekyll is waiting for new posts to show up as a file under _/posts with a file name "YYYY-MM-DD-title.markup". Also your file's content should start like this:
 
 ```
 ---
@@ -53,7 +68,8 @@ category: <Post's category>
 ---
 ```
 
-And after this header you can write your post using Markdown.
+After this header you can start writing your post using Markdown.
+
 ## Steps forward
 * Support discovery with support of tags
 * 404 page
