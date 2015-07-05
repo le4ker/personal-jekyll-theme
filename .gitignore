@@ -1,2 +1,13 @@
-_site/
-.sass-cache/
+# -*- mode: gitignore; -*-
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+_site/*
+_deploy/*
+Rakefile

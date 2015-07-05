@@ -1,0 +1,17 @@
+<!-- Blog Section -->
+<section id="{{ page.title }}" class="container content-section text-center">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+
+        {{ page.content | markdownify }}
+
+        {% assign post = site.posts.first %}
+	<h4><strong>{{ post.date | date_to_string }}</strong> <small>. {{ post.category }} .</small> <a href="{{ post.url }}"> <strong>{{ post.title }} </a> </strong> <small><a href="{{ site.url }}{{ post.url }}#disqus_thread">Comments</a></small></h4>
+	
+  {{ post.content | truncatewords: site.post-preview-words | markdownify }}
+
+  <a href="/blog.html"><h4>Read more</h4></a>
+
+      </div>
+    </div>
+</section>

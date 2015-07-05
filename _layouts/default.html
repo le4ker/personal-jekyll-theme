@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+  {% include head.html %}
+
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+  {% include navigation.html %}
+
+  {% include header.html %}
+
+  {% for page in site.pages %}
+  
+    {% if page.section-type == "about" %}
+
+      {% include about.html %}
+
+    {% elsif page.section-type == "blog" %}
+
+      {% include blog.html %}
+
+    {% elsif page.section-type == "career" %}
+
+      {% include career.html %}
+
+    {% elsif page.section-type == "contact" %}
+
+      {% include contact.html %}
+
+    {% endif %}
+
+  {% endfor %}
+
+  {% include footer.html %}
+
+  {% include js.html %}
+
+</body>
+</html>
