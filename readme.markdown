@@ -39,12 +39,21 @@
 
 ## Customizing your website from the config
 
-Even if you have no experience with Jekyll you can personalize your website from the config file (_config.yaml). This section describes the variables and how they change the content of your website.
+Even if you have no experience with Jekyll you can personalize your website from the config file (_config.yml). This section describes the variables and how they change the content of your website.
 
 ## Posting a new post
 
-Jekyll is waiting for new posts to show up as a file under _/posts with a file name "YYYY-MM-DD-title.markup". 
+Jekyll is waiting for new posts to show up as a file under _/posts with a file name "YYYY-MM-DD-title.markup". Also your file's content should start like this
 
+```
+---
+layout: post
+title: <Post's title>
+category: <Post's category>
+---
+```
+
+And after this header you can write your post using Markdown.
 ## Steps forward
 * Support discovery with support of tags
 * 404 page
