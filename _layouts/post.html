@@ -15,7 +15,9 @@
 	<h4><strong>{{ page.date | date_to_string }}</strong><small> . {{ page.category }} . <a href="{{ site.url }}{{ page.url }}#disqus_thread">Comments</a></small></h4>
 
 	{{ page.content | markdownify }}
-	
+
+	{% include share.html %}
+
         {% include comments.html %}
 
       </div>

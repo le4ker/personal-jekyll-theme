@@ -18,6 +18,7 @@
 * Blogging functionality
   * Preview of the latest post in the home page
   * Archive page
+  * Facebook, Twitter and Reddit share buttons
   * Disqus comments
 * Control of your website and blog through the site's config file
   * Favicon
@@ -97,6 +98,25 @@ me-img: "/img/me.jpg"
 This variable dicates how many words do you want to display as preview in the Blog section of the home page.
 ````
 post-preview-words: 128
+````
+
+### Share buttons
+Set to False to remove the respective button
+
+#### Facebook
+````
+fb-share: True
+````
+
+#### Twitter share button
+Set to False to not include the button
+````
+twitter-share: True
+````
+
+#### Reddit share button
+````
+reddit-share: True
 ````
 
 ### Timeline Events

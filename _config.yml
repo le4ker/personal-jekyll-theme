@@ -28,7 +28,11 @@ me-img: "/img/me.jpg"
 # Blog variables
 
 post-preview-words: 128
-  
+
+fb-share: True
+twitter-share: True
+reddit-share: True
+
 # Career variables
 
 events:
@@ -51,7 +55,7 @@ events:
     date: "October 2007 - September 2011"
     description: "Bachelor studies @ <a href=\"http://www.di.uoa.gr/eng\" target=\"_blank\">Department of Informatics and Telecommunications</a> on Computer Science and Telecomunications"
 
-# Firt image of the Career timeline
+# First image of the Career timeline
 career-img: "/img/career/default.jpg"
 
 # Social networks variables (many more available: facebook, flickr, dribbble, pinterest, instagram, tumblr etc.)
