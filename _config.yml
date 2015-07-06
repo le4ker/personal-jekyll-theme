@@ -65,13 +65,13 @@ social:
   - title: "github"
     url: "https://github.com/PanosSakkos"
   - title: "linkedin"
-    url: "http://no.linkedin.com/in/PanosSakkos"
+    url: "https://no.linkedin.com/in/PanosSakkos"
   - title: "youtube"
-    url: "http://youtube.com/c/PanosSakkos"
+    url: "https://youtube.com/c/PanosSakkos"
   - title: "soundcloud"
     url: "https://soundcloud.com/psakkos/"
 
 404-img: "/img/labtocat.png"
-    
+
 # Exclusion list from the generated _site
 exclude: ["Rakefile", "LICENSE", "readme.markdown", "vendor"]
