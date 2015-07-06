@@ -109,7 +109,6 @@ fb-share: True
 ````
 
 #### Twitter share button
-Set to False to not include the button
 ````
 twitter-share: True
 ````
