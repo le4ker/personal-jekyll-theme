@@ -26,6 +26,7 @@
   * Background Image
   * Your picture
   * Preview size of the latest post
+  * Share buttons
   * Timeline events
   * Disqus comments
 * Cool (anti-procrastinating) 404 page
