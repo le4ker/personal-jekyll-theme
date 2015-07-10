@@ -12,11 +12,17 @@
       <div class="col-lg-8 col-lg-offset-2">
 
         <h1><strong>{{ page.title }}</strong></h1>
-	<h4><strong>{{ page.date | date_to_string }}</strong><small> . {{ page.category }} . <a href="{{ site.url }}{{ page.url }}#disqus_thread">Comments</a></small></h4>
+      	<h4><strong>{{ page.date | date_to_string }}</strong>
+          <small> . {{ page.category }} . <a href="{{ page.url }}#disqus_thread">Comments</a><p/>
+          {% for tag in page.tags %}
+            <a href="/tags/{{tag}}.html">#{{ tag }}</a>
+          {% endfor %}
+          </small>
+        </h4>
 
-	{{ page.content | markdownify }}
+      	{{ page.content | markdownify }}
 
-	{% include share.html %}
+      	{% include share.html %}
 
         {% include comments.html %}
 
@@ -31,10 +37,10 @@
       </div>
     </div>
   </section>
-  
+
   {% include footer.html %}
 
   {% include js.html %}
-    
+
   </body>
 </html>

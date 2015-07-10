@@ -8,7 +8,7 @@
         {% assign post = site.posts.first %}
         <h4><strong>{{ post.date | date_to_string }}</strong><small>. {{ post.category }} .</small> <a href="{{ post.url }}">
           <strong>{{ post.title }} </a> </strong>
-          <small><a href="{{ site.url }}{{ post.url }}#disqus_thread">Comments</a></small>
+          <small><a href="{{ post.url }}#disqus_thread">Comments</a></small>
         </h4>
 
         {{ post.content | truncatewords: site.post-preview-words | markdownify }}
