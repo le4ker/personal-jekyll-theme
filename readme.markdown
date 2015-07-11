@@ -30,6 +30,7 @@
   * Timeline events
   * Disqus comments
 * Cool (anti-procrastinating) 404 page
+* RSS feed
 
 # Screenshots
 ## Index page
