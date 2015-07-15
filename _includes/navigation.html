@@ -5,7 +5,7 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                 <i class="fa fa-bars"></i>
             </button>
-            {% if page.name == "index.html" %}
+            {% if page.section-type == "index" %}
               <a class="navbar-brand page-scroll" href="#page-top">
             {% else %}
               <a class="navbar-brand page-scroll" href="/index.html#page-top">
@@ -20,32 +20,37 @@
                 <li class="hidden">
                     <a href="#page-top"></a>
                 </li>
-                {% for p in site.pages_list %}
-                  {% if page.name == "index.html" %}
-                    <!-- Go to section for each page in index -->
+                {% if page.section-type == "index" %}
+
+                  <!-- Scroll to section for each page in index -->
+                  {% for p in site.pages_list %}
                     <li>
                       <a class="page-scroll" href="#{{ p[1] }}"> {{ p[0] }} </a>
                     </li>
-                  {% else %}
-                    {% if page.name == 'blog.html' and p[0] == "Blog" %}
+                  {% endfor %}
+
+                {% else %}
+                  <!-- Blog, Post, Tag pages-->
+                  {% for p in site.pages_list %}
+                    {% if page.section-type == "blog" and p[0] == "Blog" %}
                       <!-- Blog button in blog.html doesn't refresh the page -->
                       <li>
                         <a class="page-scroll" href="#blog"> {{ p[0] }} </a>
                       </li>
                     {% elsif p[0] == "Blog" %}
                       <li>
-                        <a class="page-scroll" href="/blog.html"> {{ p[0] }} </a>
+                        <a class="page-scroll" href="/blog/index.html"> {{ p[0] }} </a>
                       </li>
                     {% else %}
                       <li>
                         <a class="page-scroll" href="/index.html#{{ p[1] }}"> {{ p[0] }} </a>
                       </li>
                     {% endif %}
-                  {% endif %}
-                {% endfor %}
+                  {% endfor %}
+
+                {% endif %}
+
             </ul>
         </div>
-        <!-- /.navbar-collapse -->
     </div>
-    <!-- /.container -->
 </nav>
