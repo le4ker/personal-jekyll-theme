@@ -26,6 +26,9 @@ background-img: "/img/intro-bg.jpg"
 me-img: "/img/me.jpg"
 
 # Blog variables
+paginate: 15
+
+paginate_path: "blog/page:num"
 
 post-preview-words: 128
 
@@ -65,9 +68,9 @@ social:
   - title: "github"
     url: "https://github.com/PanosSakkos"
   - title: "linkedin"
-    url: "https://no.linkedin.com/in/PanosSakkos"
+    url: "http://no.linkedin.com/in/PanosSakkos"
   - title: "youtube"
-    url: "https://youtube.com/c/PanosSakkos"
+    url: "http://youtube.com/c/PanosSakkos"
   - title: "soundcloud"
     url: "https://soundcloud.com/psakkos/"
 

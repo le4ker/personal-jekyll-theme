@@ -10,14 +10,14 @@
   {% include header.html %}
 
   {% for page in site.pages %}
-  
+
     {% if page.section-type == "about" %}
 
       {% include about.html %}
 
-    {% elsif page.section-type == "blog" %}
+    {% elsif page.section-type == "latest-post" %}
 
-      {% include blog.html %}
+      {% include latest-post.html %}
 
     {% elsif page.section-type == "career" %}
 

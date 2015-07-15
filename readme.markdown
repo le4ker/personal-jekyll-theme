@@ -18,6 +18,8 @@
 * Blogging functionality
   * Preview of the latest post in the home page
   * Archive page
+  * Pagination
+  * #tags
   * Facebook, Twitter and Reddit share buttons
   * Disqus comments
 * Control of your website and blog through the site's config file
@@ -48,7 +50,7 @@
 
 ## Customizing your website from the config
 
-Even if you have no experience with Jekyll you can personalize your website from the config file (_config.yml). This section describes the available variables and how they change the content of your website.
+Even if you have no experience with Jekyll you can personalize your website from the config file (\_config.yml). This section describes the available variables and how they change the content of your website.
 
 ### Favicon
 ````
@@ -121,7 +123,7 @@ reddit-share: True
 ````
 
 ### Timeline Events
-The Timeline is displayed in the Career section of the homepage. Each event consists of a date (when did the event started and ended), an image and a description.	
+The Timeline is displayed in the Career section of the homepage. Each event consists of a date (when did the event started and ended), an image and a description.
 ````
 events:
   - image: "/img/career/microsoft.jpg"
