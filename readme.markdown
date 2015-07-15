@@ -45,6 +45,8 @@
 ![Archive](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/archive.jpg)
 ## Post page
 ![Post](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/post.jpg)
+## \#Tags
+![Post](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/tags.jpg)
 ## 404
 ![404](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/404.jpg)
 
