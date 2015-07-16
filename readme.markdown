@@ -185,8 +185,5 @@ category: <Post's category>
 ```
 After this header you can start writing your post using Markdown.
 
-## Steps forward
-* Support discovery with hashtags
-
 ## Wiki
 Don't forget to list your { Personal } blog in the [wiki](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/Blogs-using-%7B-Personal-%7D)
