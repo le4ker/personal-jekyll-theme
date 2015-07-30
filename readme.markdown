@@ -170,7 +170,9 @@ social:
 There are many more social networks supported like facebook, flickr, dribbble, pinterest, instagram, tumblr etc.
 
 ### 404 Image
+```
 404-img: "/img/labtocat.png"
+```
 Set the value to the image file that you want to display in the 404 page
 
 ## Posting a new post
