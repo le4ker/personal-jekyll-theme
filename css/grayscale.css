@@ -48,15 +48,9 @@ p {
     }
 }
 
-ol,
-ul {
-  text-align: center;
-  margin: 0 0 35px;
-  font-size: 20px;
-  line-height: 1.5;
-  list-style-position: inside;
-}
+nop {
 
+}
 
 a {
     color: #fed136;
@@ -76,6 +70,15 @@ a:focus {
 .light {
     font-weight: 400;
 }
+
+.personal-list {
+  text-align: center;
+  margin: 0 0 35px;
+  font-size: 20px;
+  line-height: 1.5;
+  list-style-position: inside;
+}
+
 
 .navbar-custom {
     margin-bottom: 0;
