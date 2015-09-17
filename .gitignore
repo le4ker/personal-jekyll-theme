@@ -9,6 +9,7 @@ tramp
 .\#*
 
 _site/
+.sass-cache/
 *.swp
 pkg/
 test/
