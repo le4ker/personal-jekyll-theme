@@ -19,6 +19,10 @@ pages_list:
   Career: 'career'
   Contact: 'contact'
 
+# Enable minification SASS
+sass:
+  style: compressed
+
 background-img: "/img/intro-bg.jpg"
 
 # About variables
