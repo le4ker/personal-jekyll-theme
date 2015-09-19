@@ -1,6 +1,7 @@
 # Site settings
 
 url: "http://panossakkos.github.io"
+lang: en
 title: "{ Panos Sakkos }"
 description: "Blog and website of Panos Sakkos, blogging mainly for tech. Opinions expressed are mine."
 keywords: "panos, sakkos, panos sakkos, technology, computer science, Pwn Mail, WriteRight, UoA, di, CERN, MDCN, Microsoft"
