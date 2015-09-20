@@ -54,6 +54,12 @@
 
 Even if you have no experience with Jekyll you can personalize your website from the config file (\_config.yml). This section describes the available variables and how they change the content of your website.
 
+### Lang header
+````
+lang: "en"
+````
+Specified the language of site in <html> tag.
+
 ### Favicon
 ````
 favicon: "/img/favicon.ico"
