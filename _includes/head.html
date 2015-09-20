@@ -12,14 +12,22 @@
     <title>{{ site.title }} {% if page.title %} | {{ page.title }}{% endif %}</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    {% if site.cdn-resources %}
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    {% else %}
+      <link href="/css/bootstrap.min.css" rel="stylesheet">
+    {% endif %}
 
     <!-- Custom CSS -->
     <link href="/css/grayscale.css" rel="stylesheet">
     <link href="/css/timeline.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    {% if site.cdn-resources %}
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    {% else %}
+      <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    {% endif %}
     <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
@@ -29,7 +37,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    {{% if site.favicon %}}
+    {% if site.favicon %}
       <link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon }}">
-    {{% endif %}}
+    {% endif %}
 </head>

@@ -1,13 +1,26 @@
 <!-- jQuery -->
-<script src="/js/jquery.js"></script>
+{% if site.cdn-resources %}
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+{% else %}
+  <script src="/js/jquery.js"></script>
+{% endif %}
 
 <!-- Bootstrap Core JavaScript -->
-<script src="/js/bootstrap.min.js"></script>
+{% if site.cdn-resources %}
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+{% else %}
+  <script src="/js/bootstrap.min.js"></script>
+{% endif %}
 
 <!-- Plugin JavaScript -->
-<script src="/js/jquery.easing.min.js"></script>
+{% if site.cdn-resources %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+{% else %}
+  <script src="/js/jquery.easing.min.js"></script>
+{% endif %}
 
 <!-- Custom Theme JavaScript -->
+
 <script src="/js/grayscale.js"></script>
 
 {% if site.google-tracking-id %}
