@@ -24,7 +24,7 @@
                           <h4>{{ event.date }}</h4>
                       </div>
                       <div class="timeline-body">
-                          <p class="text-muted">{{ event.description | markdownify }}</p>
+                          {{ event.description | markdownify }}
                       </div>
                   </div>
               </li>

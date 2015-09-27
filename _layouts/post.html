@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
 
   {% include head.html %}
 
@@ -13,7 +13,7 @@
 
         <h1><strong>{{ page.title }}</strong></h1>
       	<h4><strong>{{ page.date | date_to_string }}</strong>
-          <small> . {{ page.category }} . <a href="{{ page.url }}#disqus_thread">Comments</a><p/>
+          <small> . {{ page.category }} . <a href="{{ page.url }}#disqus_thread">Comments</a>
           {% for tag in page.tags %}
             <a href="/tags/{{ tag }}.html">#{{ tag }}</a>
           {% endfor %}
