@@ -54,7 +54,15 @@
 
 Even if you have no experience with Jekyll you can personalize your website from the config file (\_config.yml). This section describes the available variables and how they change the content of your website.
 
-### Lang header
+### Author
+
+Set it to the author in order to be placed as copyright in the footer.
+
+### url
+
+The website's URL, required for several components (i.e Google tracking) to function as expected.
+
+### Language header
 ````
 lang: "en"
 ````
