@@ -9,7 +9,7 @@ keywords: "smith, jones, personal, jekyll, theme"
 favicon: "img/favicon.ico"
 black-favicon: "img/black-lab-glass.ico"
 google-tracking-id: "<YOUR GOOGLE TRACKING ID>"
-disqus-shortname: "<YOUR DISQUS USERNAME>"
+disqus-shortname: "<YOUR DISQUS USERNAME>"test
 
 # Navigation bar links
 # Blog link in the blog and post pages will point to the blog.html#blog
