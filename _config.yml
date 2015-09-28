@@ -69,7 +69,7 @@ social:
   - title: "rss"
     url: "/feed.xml"
 
-404-img: "/img/labtocat.png"
+404-img: "img/labtocat.png"
 
 # Exclusion list from the generated _site
 exclude: ["Rakefile", "LICENSE", "readme.markdown", "vendor"]
