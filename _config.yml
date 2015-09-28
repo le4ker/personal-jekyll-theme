@@ -6,8 +6,8 @@ lang: "en"
 title: "{ John Smith }"
 description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
 keywords: "smith, jones, personal, jekyll, theme"
-favicon: "/img/favicon.ico"
-black-favicon: "/img/black-lab-glass.ico"
+favicon: "img/favicon.ico"
+black-favicon: "img/black-lab-glass.ico"
 google-tracking-id: "<YOUR GOOGLE TRACKING ID>"
 disqus-shortname: "<YOUR DISQUS USERNAME>"
 
@@ -25,7 +25,7 @@ pages_list:
 sass:
   style: compressed
 
-background-img: "/img/intro-bg.jpg"
+background-img: "img/intro-bg.jpg"
 
 # About variables
 
