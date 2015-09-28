@@ -25,7 +25,7 @@ pages_list:
 sass:
   style: compressed
 
-background-img: "img/github-open-source.jpg"
+background-img: "../img/intro-bg.jpg"
 
 # About variables
 
