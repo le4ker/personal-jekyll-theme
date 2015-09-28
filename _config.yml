@@ -25,7 +25,7 @@ pages_list:
 sass:
   style: compressed
 
-background-img: "../img/intro-bg.jpg"
+background-img: "http://panossakkos.github.io/personal-jekyll-theme/img/intro-bg.jpg"
 
 # About variables
 
