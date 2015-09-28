@@ -183,6 +183,7 @@ Jekyll is expecting new posts to show up as a file under _/posts with a file nam
 layout: post
 title: <Post's title>
 category: <Post's category>
+tags: [ 'tag' ]
 ---
 ```
 After this header you can start writing your post using Markdown.
