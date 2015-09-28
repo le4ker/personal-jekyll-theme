@@ -6,8 +6,8 @@ lang: "en"
 title: "{ John Smith }"
 description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
 keywords: "smith, jones, personal, jekyll, theme"
-favicon: "img/favicon.ico"
-black-favicon: "img/black-lab-glass.ico"
+favicon: "/img/favicon.ico"
+black-favicon: "/img/black-lab-glass.ico"
 google-tracking-id: "<YOUR GOOGLE TRACKING ID>"
 disqus-shortname: "<YOUR DISQUS USERNAME>"
 
@@ -29,7 +29,7 @@ background-img: "../img/intro-bg.jpg"
 
 # About variables
 
-me-img: "img/jetpacktocat.png"
+me-img: "/img/jetpacktocat.png"
 
 # Blog variables
 
@@ -46,15 +46,15 @@ reddit-share: True
 # Career variables
 
 events:
-  - image: "img/career/spidertocat.png"
+  - image: "/img/career/spidertocat.png"
     date: "September 2013 - Today"
     description: "Saving the neighborhood!"
-  - image: "img/career/baracktocat.jpg"
+  - image: "/img/career/baracktocat.jpg"
     date: "September 2007 - August 2013"
     description: "Started coding"
 
 # First image of the Career timeline
-career-img: "img/career/default.png"
+career-img: "/img/career/default.png"
 
 # Social networks variables (many more available: facebook, flickr, dribbble, pinterest, instagram, tumblr etc.)
 # Add a url pointing to your profile for earch social network.
@@ -69,7 +69,7 @@ social:
   - title: "rss"
     url: "/feed.xml"
 
-404-img: "img/labtocat.png"
+404-img: "/img/labtocat.png"
 
 # Exclusion list from the generated _site
 exclude: ["Rakefile", "LICENSE", "readme.markdown", "vendor"]
