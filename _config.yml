@@ -1,7 +1,7 @@
 # Site settings
 
 author: "John Smith"
-url: "http://personal-jekyll-theme.github.io"
+url: "http://panossakkos.github.io/personal-jekyll-theme/"
 lang: "en"
 title: "{ John Smith }"
 description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
@@ -29,7 +29,7 @@ background-img: "/img/intro-bg.jpg"
 
 # About variables
 
-me-img: "/img/jetpacktocat.png"
+me-img: "img/jetpacktocat.png"
 
 # Blog variables
 
