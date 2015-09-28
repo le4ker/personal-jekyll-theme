@@ -2,7 +2,9 @@
 
 # { Personal } Jekyll Theme
 
-{ Personal } is a free responsive Jekyll theme about you. It's your personal blog and your point of reference website. You can watch it in action [here](http://panossakkos.github.io).
+{ Personal } is a free responsive Jekyll theme about you.
+It's your personal blog and your point of reference website.
+You can watch it in action [here](http://panossakkos.github.io).
 
 ## What value does { Personal } add
 
@@ -23,14 +25,6 @@
   * Facebook, Twitter and Reddit share buttons
   * Disqus comments
 * Control of your website and blog through the site's config file
-  * Favicon
-  * Black favicon
-  * Background Image
-  * Your picture
-  * Preview size of the latest post
-  * Share buttons
-  * Timeline events
-  * Disqus comments
 * Cool (anti-procrastinating) 404 page
 * RSS feed
 
