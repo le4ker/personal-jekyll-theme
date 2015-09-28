@@ -58,7 +58,7 @@ Even if you have no experience with Jekyll you can personalize your website from
 
 Set it to the author in order to be placed as copyright in the footer.
 
-### url
+### Website's URL
 
 The website's URL, required for several components (i.e Google tracking) to function as expected.
 
