@@ -1,8 +1,6 @@
 ---
 ---
 
-/* YAML block in order to get processed by Jekyll */
-
 @import "variables";
 @import "mixins";
 
@@ -354,7 +352,7 @@ ul.social-buttons li a {
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
-    
+
     &:hover,
     &:focus,
     &:active {
