@@ -3,11 +3,12 @@ rvm:
 - 2.1
 
 install: gem install jekyll html-proofer
-script: jekyll build
+script: sass & jekyll build
 
 branches:
   only:
   - master
+  - gh-pages
 
 env:
   global:
