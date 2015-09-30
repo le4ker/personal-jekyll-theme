@@ -29,14 +29,30 @@ You can watch it in action [here](http://panossakkos.github.io/personal-jekyll-t
 * Protection from Email harvesting
 * RSS feed
 
-## Documentation
+## Screenshots
+### Intro page
+![Index page](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/index.jpg)
+### Latest post preview
+![Blog](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/blog.jpg)
+### Life Events
+![Career](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/career.jpg)
+### Blog Archive
+![Archive](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/archive.jpg)
+### Post page
+![Post](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/post.jpg)
+### \#Tags
+![Post](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/tags.jpg)
+### 404
+![404](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/404.jpg)
+
+### Documentation
 
 The theme contains documentation in the form of blog posts.
 Check it live [here](http://panossakkos.github.io/personal-jekyll-theme/)
 
-## How to run
+### How to run
 
 jekyll serve --watch --baseurl ""
 
-## Wiki
+### Wiki
 Don't forget to list your { Personal } blog in the [wiki](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/Blogs-using-%7B-Personal-%7D)
