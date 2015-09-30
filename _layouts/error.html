@@ -13,19 +13,19 @@
 
         <h1><strong>{{ page.title }}</strong></h1>
 
-	{{ page.content | markdownify }}
+        {{ page.content | markdownify }}
 
-	<img class="img-responsive center-block" src="{{ site.404-img }}" alt="">
+        <img class="img-responsive center-block" src="{{site.baseurl}}{{ site.404-img }}" alt="">
 
-	{% include social-buttons.html %}
+        {% include social-buttons.html %}
 
       </div>
     </div>
   </section>
-  
+
   {% include footer.html %}
 
   {% include js.html %}
-    
+
   </body>
 </html>

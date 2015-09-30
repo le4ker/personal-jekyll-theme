@@ -1,0 +1,30 @@
+---
+layout: post
+section-type: post
+title: Modifying the Intro
+category: tech
+tags: [ 'tutorial' ]
+---
+
+The intro part of the index page is consisted of three elements:
+
+<ol class="personal-list">
+<li>A black favicon</li>
+  <li>Text</li>
+  <li>Background image</li>
+  <li>Your images</li>
+</ol>
+
+You can modify its text from the index.html file.
+In order to set the background and your image, modify the following variables in _config:
+
+<pre style="text-align: left">
+black-favicon: "/img/black-lab-glass.ico"
+background-img: "../img/intro-bg.jpg"
+me-img: "/img/jetpacktocat.png"
+</pre>
+
+The black favicon is an image on the left of the navigation bar.
+Preferably it should be a black and white version of your favicon.
+
+All set!

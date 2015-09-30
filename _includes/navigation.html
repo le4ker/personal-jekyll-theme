@@ -8,9 +8,9 @@
             {% if page.section-type == "index" %}
               <a class="navbar-brand page-scroll" href="#page-top">
             {% else %}
-              <a class="navbar-brand page-scroll" href="/index.html#page-top">
+              <a class="navbar-brand page-scroll" href="{{site.baseurl}}/index.html#page-top">
             {% endif %}
-            <div>{% if site.black-favicon %}<img src="{{ site.black-favicon }}" alt="">  {% endif %}{{ site.title }}</div>
+            <div>{% if site.black-favicon %}<img src="{{site.baseurl}}{{ site.black-favicon }}" alt="">  {% endif %}{{ site.title }}</div>
           </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -39,11 +39,11 @@
                       </li>
                     {% elsif p[0] == "Blog" %}
                       <li>
-                        <a class="page-scroll" href="/blog/index.html"> {{ p[0] }} </a>
+                        <a class="page-scroll" href="{{site.baseurl}}/blog/index.html"> {{ p[0] }} </a>
                       </li>
                     {% else %}
                       <li>
-                        <a class="page-scroll" href="/index.html#{{ p[1] }}"> {{ p[0] }} </a>
+                        <a class="page-scroll" href="{{site.baseurl}}/index.html#{{ p[1] }}"> {{ p[0] }} </a>
                       </li>
                     {% endif %}
                   {% endfor %}

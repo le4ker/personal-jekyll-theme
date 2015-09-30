@@ -8,13 +8,13 @@
         {% assign post = site.posts.first %}
         <h4> <strong> {{ post.date | date_to_string }} </strong>
           <small>. {{ post.category }} .</small>
-          <strong> <a href="{{ post.url }}">{{ post.title }} </a> </strong>
-          <small> <a href="{{ post.url }}#disqus_thread">Comments</a></small>
+          <strong> <a href="{{site.baseurl}}{{ post.url }}">{{post.title}} </a> </strong>
+          <small> <a href="{{site.baseurl}}{{post.url}}#disqus_thread">Comments</a></small>
         </h4>
 
         {{ post.content | truncatewords: site.post-preview-words | strip_html | markdownify }}
 
-        <a href="/blog/index.html"><h4><strong>View more posts</strong></h4></a>
+        <a href="{{site.baseurl}}/blog/index.html"><h4><strong>View more posts</strong></h4></a>
 
       </div>
     </div>

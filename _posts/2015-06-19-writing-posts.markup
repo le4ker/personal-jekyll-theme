@@ -1,0 +1,29 @@
+---
+layout: post
+section-type: post
+title: Writing posts
+category: tech
+tags: [ 'tutorial' ]
+---
+Every file with the format <i>YYYY-MM-DD-<post name>.markup</i> will be processed as a
+post, with publication date <i>YYYY-MM-DD</i>.
+
+Make sure that its content starts with:
+
+<pre style="text-align: left">
+---
+layout: post
+section-type: post
+title: Setting up the Blog
+category: tech
+tags: [ 'tutorial' ]
+---
+</pre>
+
+The *layout* and *section-type* are used by the theme.
+
+Note: *{ Personal }* generates a static page, just like all jekyll themes.
+So we have to create the tag pages before building and publishing the site.
+For now, this has to be done manually, which practically means that you have to add a file under the tags directory, to represent the tag, similar to the existing tutorial.html file. I plan to write a script that will parse the posts, detect the tags and then auto-generate the tag pages.
+
+Note: If you want to use a list in your posts, consider assigning the class *personal-list*, in order to make the list items render in the center.
