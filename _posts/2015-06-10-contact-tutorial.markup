@@ -8,8 +8,10 @@ tags: [ 'tutorial' ]
 
 The contact part of the index page is consisted of two elements:
 
-  1. Text
-  2. Your email address
+<ol class="personal-list">
+  <li>Text</li>
+  <li>Your email address</li>
+</ol>
 
 You can modify its text from the contact.html file.
 Then in the _config.yml set the email variable to your email.
