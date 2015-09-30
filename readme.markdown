@@ -32,7 +32,7 @@ You can watch it in action [here](http://panossakkos.github.io/personal-jekyll-t
 ## Documentation
 
 The theme contains documentation in the form of blog posts.
-Check it live [here](panossakkos.github.io/personal-jekyll-theme/)
+Check it live [here](http://panossakkos.github.io/personal-jekyll-theme/)
 
 ## How to run
 
