@@ -31,7 +31,9 @@ You can watch it in action [here](http://panossakkos.github.io/personal-jekyll-t
 
 ## Screenshots
 ### Intro page
-![Index page](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/index.jpg)
+![Intro](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/index.jpg)
+###About
+![About](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/about.jpg)
 ### Latest post preview
 ![Blog](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/blog.jpg)
 ### Life Events
@@ -41,7 +43,7 @@ You can watch it in action [here](http://panossakkos.github.io/personal-jekyll-t
 ### Post page
 ![Post](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/post.jpg)
 ### \#Tags
-![Post](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/tags.jpg)
+![Tags](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/tags.jpg)
 ### 404
 ![404](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/404.jpg)
 
