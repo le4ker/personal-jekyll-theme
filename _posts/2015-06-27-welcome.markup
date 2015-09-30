@@ -6,7 +6,7 @@ category: tech
 tags: [ 'tutorial' ]
 ---
 
-Click the view more posts <a href="/blog/index.html">url</a> bellow, to see the currently available post-tutorials to help you get your { Personal } website up and running quicker!
+Click the view more posts url bellow, to see the currently available post-tutorials to help you get your { Personal } website up and running quicker!
 
 Note that every time you update the site configuration (_config.yml), you will need to *jekyll serve* the site with *--watch* flag, or cancel the serving (*Ctr + C*) and *jekyll serve* again.
 
