@@ -1,4 +1,4 @@
-![Build Status](https://travis-ci.org/PanosSakkos/panossakkos.github.io.svg?branch=master)
+![Build Status](https://travis-ci.org/PanosSakkos/personal-jekyll-theme.svg)
 
 # { Personal } Jekyll Theme
 
