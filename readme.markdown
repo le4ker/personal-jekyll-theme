@@ -57,4 +57,4 @@ Check it live [here](http://panossakkos.github.io/personal-jekyll-theme/)!
 jekyll serve --watch --baseurl ""
 
 ### Wiki
-Don't forget to list your { Personal } blog in the [wiki](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/Blogs-using-%7B-Personal-%7D)
+Don't forget to list your { Personal } blog in the [wiki](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/Blogs-using-%7B-Personal-%7D) 😉
