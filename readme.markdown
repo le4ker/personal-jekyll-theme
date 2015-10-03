@@ -17,7 +17,7 @@ You can watch it in action [here](http://panossakkos.github.io/personal-jekyll-t
     * Tell your story so far with a sleek timeline of dates, pictures and descriptions
   * White on black text, making the reading experience tireless
   * Google analytics  
-* Customization and control of your website nad blog through the site config
+* Customization and control of your website and blog through the site config
 * Blogging functionality
   * Preview of the latest post in the home page
   * Archive page
