@@ -4,7 +4,7 @@
 
 { Personal } is a free responsive Jekyll theme about you.
 It's your personal blog and your point of reference website.
-You can watch it in action [here](http://panossakkos.github.io/personal-jekyll-theme/).
+You can watch it in action [here](http://panossakkos.github.io/personal-jekyll-theme/)!
 
 ## What value does { Personal } add
 
@@ -17,17 +17,17 @@ You can watch it in action [here](http://panossakkos.github.io/personal-jekyll-t
     * Tell your story so far with a sleek timeline of dates, pictures and descriptions
   * White on black text, making the reading experience tireless
   * Google analytics  
+* Customization and control of your website nad blog through the site config
 * Blogging functionality
   * Preview of the latest post in the home page
   * Archive page
   * Pagination
   * #tags
-  * Facebook, Twitter and Reddit share buttons
   * Disqus comments
-* Control of your website and blog through the site's config file
-* Cool (anti-procrastinating) 404 page
+  * Facebook, Twitter and Reddit share buttons
+  * RSS feed
 * Protection from Email harvesting
-* RSS feed
+* Cool (anti-procrastinating) 404 page
 
 ## Screenshots
 ### Intro page
