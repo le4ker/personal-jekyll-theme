@@ -10,10 +10,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
 <!-- Custom Theme JavaScript -->
-
 <script src="/js/grayscale.js"></script>
 
 {% if site.google-tracking-id %}
+
+  <!-- Google Tracking Id Start -->
+
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -22,13 +24,18 @@
     ga('create', '{{ site.google-tracking-id }}', 'auto');
     ga('send', 'pageview');
   </script>
+
+  <!-- Google Tracking Id End -->
+
 {% endif %}
 
 
 {% if site.disqus-shortname %}
+
   <!-- Disqus -->
 
   {% if page.section-type == "post" %}
+
     <script type="text/javascript">
     var disqus_shortname = '{{ site.disqus-shortname }}';
     (function() {
@@ -37,10 +44,12 @@
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
     </script>
+
   {% endif %}
 
   {% if page.section-type == "post" or page.section-type == "blog" or page.section-type == "index" or page.section-type == "tag" %}
-    <!-- Comments counter -->
+
+    <!-- Comments counter Start -->
 
     <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -54,13 +63,16 @@
     (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
     </script>
+
+    <!-- Comments counter End -->
+
   {% endif %}
 
 {% endif %}
 
 {% if page.section-type == "post" %}
 
-  <!-- Share buttons -->
+  <!-- Share buttons Start -->
 
   {% if site.twitter-share %}
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
@@ -76,6 +88,8 @@
     fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
   {% endif %}
+
+  <!-- Share buttons End -->
 
 {% endif %}
 
