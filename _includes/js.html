@@ -22,17 +22,20 @@
   </script>
 {% endif %}
 
-<!-- Disqus -->
 
 {% if site.disqus-shortname %}
-  <script type="text/javascript">
-  var disqus_shortname = '{{ site.disqus-shortname }}';
-  (function() {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
-  </script>
+  <!-- Disqus -->
+
+  {% if page.section-type == "post" %}
+    <script type="text/javascript">
+    var disqus_shortname = '{{ site.disqus-shortname }}';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+  {% endif %}
 
   {% if page.section-type == "post" or page.section-type == "blog" or page.section-type == "index" or page.section-type == "tag" %}
     <!-- Comments counter -->
