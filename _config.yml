@@ -63,12 +63,14 @@ email: "your@email.here"
 ##################
 
 social:
-  - title: "github"
-    url: "https://github.com/"
-  - title: "linkedin"
-    url: "http://no.linkedin.com/"
+  - title: "facebook"
+    url: "http://facebook.com/"
+  - title: "twitter"
+    url: "http://twitter.com/"
   - title: "youtube"
     url: "http://youtube.com/"
+  - title: "github"
+    url: "https://github.com/"
   - title: "rss"
     url: "/feed.xml"
 
