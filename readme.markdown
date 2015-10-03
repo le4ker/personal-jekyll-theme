@@ -8,7 +8,7 @@ You can watch it in action [here](http://panossakkos.github.io/personal-jekyll-t
 
 ## What value does { Personal } add
 
-* Fork of [Timeline](https://github.com/kirbyt/timeline-jekyll-theme)
+* Fork of [Timeline](https://github.com/kirbyt/timeline-jekyll-theme) (mashup of [Grayscale by Start Bootstrap](https://github.com/IronSummitMedia/startbootstrap-grayscale) and [Agency Jekyll Theme](https://github.com/y7kim/agency-jekyll-theme))
   * Modern and minimal design
     * Responsive templates for home page, blog archive and posts. Looks great on mobile, tablet, and desktop devices
     * Sweet animations
