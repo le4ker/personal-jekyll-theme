@@ -23,7 +23,7 @@ tags: [ 'tutorial' ]
 The *layout* and *section-type* are used by the theme.
 
 <small>
-Note: *{ Personal }* generates a static page, just like all jekyll themes.
+Note: *{ Personal }* generates a static page, just like all Jekyll themes.
 So we have to create the tag pages before building and publishing the site.
 For now, this has to be done manually, which practically means that you have to add a file under the tags directory, to represent the tag, similar to the existing tutorial.html file. I plan to write a script that will parse the posts, detect the tags and then auto-generate the tag pages.
 Tracked by <a href="https://github.com/PanosSakkos/personal-jekyll-theme/issues/2" target="_blank">issue #2</a>
