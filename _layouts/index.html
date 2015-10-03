@@ -1,3 +1,5 @@
+<!-- Index Layout Start -->
+
 <!DOCTYPE html>
 <html lang="{{ site.lang }}">
 
@@ -5,35 +7,37 @@
 
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-  {% include navigation.html %}
+    {% include navigation.html %}
 
-  {% include header.html %}
+    {% include header.html %}
 
-  {% for page in site.pages %}
+    {% for page in site.pages %}
 
-    {% if page.section-type == "about" %}
+      {% if page.section-type == "about" %}
 
-      {% include about.html %}
+        {% include about.html %}
 
-    {% elsif page.section-type == "latest-post" %}
+      {% elsif page.section-type == "latest-post" %}
 
-      {% include latest-post.html %}
+        {% include latest-post.html %}
 
-    {% elsif page.section-type == "career" %}
+      {% elsif page.section-type == "career" %}
 
-      {% include career.html %}
+        {% include career.html %}
 
-    {% elsif page.section-type == "contact" %}
+      {% elsif page.section-type == "contact" %}
 
-      {% include contact.html %}
+        {% include contact.html %}
 
-    {% endif %}
+      {% endif %}
 
-  {% endfor %}
+    {% endfor %}
 
-  {% include footer.html %}
+    {% include footer.html %}
 
-  {% include js.html %}
+    {% include js.html %}
 
-</body>
+  </body>
 </html>
+
+<!-- Index Layout End -->
