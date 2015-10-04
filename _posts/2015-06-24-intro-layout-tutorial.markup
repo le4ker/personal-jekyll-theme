@@ -12,7 +12,7 @@ The intro part of the index page is consisted of three elements:
 <li>A black favicon</li>
   <li>Text</li>
   <li>Background image</li>
-  <li>Your images</li>
+  <li>Your image</li>
 </ol>
 
 You can modify its text from the index.html file.
