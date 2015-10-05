@@ -93,51 +93,54 @@
 
 {% endif %}
 
-<!-- Dynamic Typing Start -->
 {% if site.dynamic-typing %}
-<script type="text/javascript" src="/js/typed.js"></script>
-<script type="text/javascript">
 
-var myQuotes =  new Array();
-{% for line in site.lines %}
-      myQuotes.push("{{ line.text }}");
- {% endfor %}
+  <!-- Dynamic Typing Start -->
 
-function shuffle(array) {
-  var currentIndex = array.length, temporaryValue, randomIndex ;
+  <script type="text/javascript" src="{{site.baseurl}}/js/typed.js"></script>
+  <script type="text/javascript">
 
-  // While there remain elements to shuffle...
-  while (0 !== currentIndex) {
+  var myQuotes =  new Array();
+  {% for line in site.lines %}
+    myQuotes.push("{{ line.text }}");
+  {% endfor %}
 
-    // Pick a remaining element...
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
+  function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex ;
 
-    // And swap it with the current element.
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+
+      // And swap it with the current element.
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+
+    return array;
   }
 
-  return array;
-}
-
-{% if site.shuffle %}
+  {% if site.shuffle %}
     shuffle(myQuotes)
-{% endif %}
+  {% endif %}
 
-  $(".intro-text").typed({
-                strings: myQuotes,
-                typeSpeed: {{ site.type-speed }},
-                backDelay: {{ site.delete-delay }},
-                startDelay: {{ site.start-delay }},
-                loop: {{ site..loop }},
-                loopCount: {{ site.loop-count }},
-                cursorChar: "|"
-              });
-</script>
-{% endif %}
+    $(".intro-text").typed({
+                  strings: myQuotes,
+                  typeSpeed: {{ site.type-speed }},
+                  backDelay: {{ site.delete-delay }},
+                  startDelay: {{ site.start-delay }},
+                  loop: {{ site..loop }},
+                  loopCount: {{ site.loop-count }},
+                  cursorChar: "|"
+                });
+  </script>
 
-<!-- Dynamic Typing End  -->
+  <!-- Dynamic Typing End  -->
+  
+{% endif %}
 
 <!-- Javascript End -->
