@@ -8,6 +8,7 @@ script: jekyll build
 branches:
   only:
   - master
+  - gh-pages
 
 env:
   global:
