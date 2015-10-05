@@ -37,7 +37,7 @@ start-delay: 200	# Default 200
 delete-delay: 5000	# Default 5000
 lines:			# You can add HTML Tags in the Text
   - text: "The lower you fall, the higher you'll fly."
-  - text: "May the wind under your wings bear you where the sun sails and the moon walks."
+  - text: "Where’s your will to be weird?"
 
 ########
 # Blog #
