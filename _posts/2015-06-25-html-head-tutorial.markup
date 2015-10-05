@@ -42,3 +42,5 @@ And when you serve the website locally, don't forget to set the baseurl to an em
 <pre style="text-align: left">
 jekyll serve --baseurl ""
 </pre>
+
+<small>Many thanks to <a href="https://github.com/prashantsolanki3" target="_blank">@prashantsolanki3</a> for the language support!</small>
