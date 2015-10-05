@@ -93,7 +93,7 @@
 
 {% endif %}
 
-{% if site.dynamic-typing %}
+{% if site.dynamic-typing and page.section-type == "index"%}
 
   <!-- Dynamic Typing Start -->
 
@@ -140,7 +140,7 @@
   </script>
 
   <!-- Dynamic Typing End  -->
-  
+
 {% endif %}
 
 <!-- Javascript End -->
