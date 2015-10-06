@@ -3,7 +3,7 @@ rvm:
 - 2.1
 
 install: gem install jekyll html-proofer
-script: jekyll build
+script: jekyll serve --baseurl "" --detach && htmlproof ./_site --disable-external --empty-alt-ignore
 
 branches:
   only:
