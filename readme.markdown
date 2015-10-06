@@ -6,6 +6,10 @@
 It's your personal blog and your point of reference website.
 You can watch it in action [here](http://panossakkos.github.io/personal-jekyll-theme/)!
 
+##How to get latest { Personal } bug fixes and features into your { Personal } website
+
+[RTFM](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/How-to-integrate-latest-bug-fixes-and-features-into-your-past-fork)!
+
 ## What value does { Personal } add
 
 * Fork of [Timeline](https://github.com/kirbyt/timeline-jekyll-theme) (mashup of [Grayscale by Start Bootstrap](https://github.com/IronSummitMedia/startbootstrap-grayscale) and [Agency Jekyll Theme](https://github.com/y7kim/agency-jekyll-theme))
