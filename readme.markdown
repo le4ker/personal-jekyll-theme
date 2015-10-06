@@ -6,9 +6,8 @@
 It's your personal blog and your point of reference website.
 You can watch it in action [here](http://panossakkos.github.io/personal-jekyll-theme/)!
 
-##How to get latest { Personal } bug fixes and features into your { Personal } website
-
-[RTFM](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/How-to-integrate-latest-bug-fixes-and-features-into-your-past-fork)!
+Want to get latest { Personal } bug fixes and features into your { Personal } website?
+Check [this](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/How-to-integrate-latest-bug-fixes-and-features-into-your-past-fork) out!
 
 ## What value does { Personal } add
 
