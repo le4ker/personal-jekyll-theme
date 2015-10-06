@@ -31,6 +31,7 @@ Check [this](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/How-to-in
   * RSS feed
 * Protection from Email harvesting
 * Cool (anti-procrastinating) 404 page
+* Travis CI integration with htmlproofer
 
 ## Screenshots
 ### Intro page
