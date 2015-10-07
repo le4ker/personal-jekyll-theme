@@ -8,8 +8,8 @@ tags: [ 'tutorial' ]
 
 The intro part of the index page is consisted of three elements:
 
-<ol class="personal-list">
-<li>A black favicon</li>
+<ol>
+  <li>A black favicon</li>
   <li>Text</li>
   <li>Background image</li>
   <li>Your image</li>

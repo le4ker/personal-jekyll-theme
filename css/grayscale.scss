@@ -66,7 +66,8 @@ a {
     font-weight: 400;
 }
 
-.personal-list {
+.ul,
+ol {
   text-align: center;
   margin: 0 0 35px;
   font-size: 20px;
@@ -289,28 +290,6 @@ a {
     #map {
         height: 400px;
         margin-top: 250px;
-    }
-}
-
-.btn {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 400;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
-
-.btn-default {
-    border: 1px solid $primary;
-    color: $primary;
-    background-color: transparent;
-    &:hover,
-    &:focus {
-        border: 1px solid $primary;
-        outline: none;
-        color: $dark;
-        background-color: $primary;
     }
 }
 

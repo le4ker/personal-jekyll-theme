@@ -28,7 +28,3 @@ So we have to create the tag pages before building and publishing the site.
 For now, this has to be done manually, which practically means that you have to add a file under the tags directory, to represent the tag, similar to the existing tutorial.html file. I plan to write a script that will parse the posts, detect the tags and then auto-generate the tag pages.
 Tracked by <a href="https://github.com/PanosSakkos/personal-jekyll-theme/issues/2" target="_blank">issue #2</a>
 </small>
-
-<small>
-Note: If you want to use a list in your posts, consider assigning the class *personal-list*, in order to make the list items render in the center. Tracked by <a href="https://github.com/PanosSakkos/personal-jekyll-theme/issues/14" target="_blank">issue #14</a>
-</small>

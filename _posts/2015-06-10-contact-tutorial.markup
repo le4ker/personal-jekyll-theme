@@ -8,7 +8,7 @@ tags: [ 'tutorial' ]
 
 The contact part of the index page is consisted of two elements:
 
-<ol class="personal-list">
+<ol>
   <li>Text</li>
   <li>Your email address</li>
 </ol>
