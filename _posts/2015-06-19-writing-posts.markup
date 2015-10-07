@@ -5,7 +5,7 @@ title: Writing posts
 category: tech
 tags: [ 'tutorial' ]
 ---
-Every file with the format <i>YYYY-MM-DD-<post name>.markup</i> will be processed as a
+Every file with the format <i>YYYY-MM-DD-post-title.markup</i> will be processed as a
 post, with publication date <i>YYYY-MM-DD</i>.
 
 Make sure that its content starts with:
@@ -14,9 +14,9 @@ Make sure that its content starts with:
 ---
 layout: post
 section-type: post
-title: Setting up the Blog
-category: tech
-tags: [ 'tutorial' ]
+title: My post's title
+category: Tutorials
+tags: [ 'tag1', 'tag2' ]
 ---
 </pre>
 
