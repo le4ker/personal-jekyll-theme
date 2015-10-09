@@ -5,11 +5,6 @@ rvm:
 install: gem install jekyll html-proofer
 script: jekyll serve --baseurl "" --detach && htmlproof ./_site --disable-external --empty-alt-ignore
 
-branches:
-  only:
-  - master
-  - gh-pages
-
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
