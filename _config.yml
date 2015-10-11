@@ -92,7 +92,7 @@ social:
   - title: "youtube"
     url: "http://youtube.com/"
   - title: "github"
-    url: "https://github.com/"
+    url: "https://github.com/PanosSakkos/personal-jekyll-theme"
   - title: "rss"
     url: "/feed.xml"
 
