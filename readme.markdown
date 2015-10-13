@@ -33,7 +33,7 @@ Check [this](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/How-to-in
 * Cool (anti-procrastinating) 404 page
 * Travis CI integration with htmlproofer
 
-### { Personal } à la JekyllNow
+## { Personal } à la JekyllNow
 
 Want to get { Personal } without messing with jekyll installations and terminal commands?
 
@@ -42,7 +42,7 @@ Want to get { Personal } without messing with jekyll installations and terminal 
   3. Visit http://yourgithubusername.github.io
   4. Start modifying the _config.yml and editing your blog's posts from Github's online editor or a third party online editor (i.e. [Prose](http://prose.io/))
 
-### Documentation
+## Documentation
 
 The theme contains documentation in the form of blog posts.
 Check it live [here](http://panossakkos.github.io/personal-jekyll-theme/blog/index.html)!
@@ -65,9 +65,13 @@ Check it live [here](http://panossakkos.github.io/personal-jekyll-theme/blog/ind
 ### 404
 ![404](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/404.jpg)
 
-### How to run locally
+## How to run locally
 
 jekyll serve --watch --baseurl ""
 
-### Wiki
+## Wiki
 Don't forget to list your { Personal } blog in the [wiki](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/Blogs-using-%7B-Personal-%7D) 😉
+
+## Supporting the repo
+
+In case you want to support the development, feel free to send a few bits here 1WT5h5JNmRDnyLAzqbreh358EcYeCy5hd
