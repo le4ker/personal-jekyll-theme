@@ -4,7 +4,7 @@
 
 { Personal } is a free responsive Jekyll theme about you.
 It's your personal blog and your point of reference website.
-You can watch it in action [here](http://panossakkos.github.io/personal-jekyll-theme/)!
+You can watch it in action [here](https://panossakkos.github.io/personal-jekyll-theme/)!
 
 Have you published your own website by forking { Personal } and now you want to get the latest bug fixes and features from this repo into your website? Then check [this](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/How-to-integrate-latest-bug-fixes-and-features-into-your-past-fork) out!
 
@@ -36,15 +36,15 @@ Have you published your own website by forking { Personal } and now you want to 
 
 Want to get { Personal } without messing with jekyll installations and terminal commands?
 
-  1. Fork the personal-jekyll-theme repository 
+  1. Fork the personal-jekyll-theme repository
   2. Rename the forked repository to yourgithubusername.github.io
-  3. Visit http://yourgithubusername.github.io
-  4. Start modifying the _config.yml and editing your blog's posts from Github's online editor or a third party online editor (i.e. [Prose](http://prose.io/))
+  3. Visit https://yourgithubusername.github.io
+  4. Start modifying the _config.yml and editing your blog's posts from Github's online editor or a third party online editor (i.e. [Prose](https://prose.io/))
 
 ## Documentation
 
 The theme contains documentation in the form of blog posts.
-Check it live [here](http://panossakkos.github.io/personal-jekyll-theme/blog/index.html)!
+Check it live [here](https://panossakkos.github.io/personal-jekyll-theme/blog/index.html)!
 
 ## Screenshots
 ### Intro page
