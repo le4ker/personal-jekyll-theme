@@ -12,6 +12,10 @@ baseurl: /personal-jekyll-theme
 
 google-tracking-id: "<YOUR GOOGLE TRACKING ID>"
 
+# Forces https everywhere in your website, except when you serve it locally
+
+force-https: True
+
 #############
 # HTML Head #
 #############
