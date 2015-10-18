@@ -5,17 +5,30 @@ title: Writing posts
 category: tech
 tags: [ 'tutorial' ]
 ---
+
+Run the /scripts/newpost script with the file name of the post as an argument:
+
+<pre style="text-align: left">
+cd <your { personal } repo>
+./scripts/newpost hello-world
+</pre>
+
+A a new post template with name YYYY-MM-DD-hello-world.markup will be created under ./_posts, with the current date.
+
+In the created post, just replace the Title, Category and tags and you can
+start writing your post in markdown right bellow the end of the post header.
+
 Every file with the format <i>YYYY-MM-DD-post-title.markup</i> will be processed as a
 post, with publication date <i>YYYY-MM-DD</i>.
 
-Make sure that its content starts with:
+The content starts with:
 
 <pre style="text-align: left">
 ---
 layout: post
 section-type: post
-title: My post's title
-category: Tutorials
+title: Title
+category: Category
 tags: [ 'tag1', 'tag2' ]
 ---
 </pre>
