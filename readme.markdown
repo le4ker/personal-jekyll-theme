@@ -28,9 +28,10 @@ Have you published your own website by forking { Personal } and now you want to 
   * Disqus comments
   * Facebook, Twitter and Reddit share buttons
   * RSS feed
-* Protection from Email harvesting
-* Cool (anti-procrastinating) 404 page
 * Travis CI integration with htmlproofer
+* Protection from Email harvesting
+* Forcing of https protocol
+* Cool (anti-procrastinating) 404 page
 
 ## { Personal } à la JekyllNow
 
