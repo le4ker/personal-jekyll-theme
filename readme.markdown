@@ -28,7 +28,7 @@ Have you published your own website by forking { Personal } and now you want to 
   * Disqus comments
   * Facebook, Twitter and Reddit share buttons
   * RSS feed
-* Travis CI integration with htmlproofer
+* Travis CI integration with [html-proofer](https://github.com/gjtorikian/html-proofer)
 * Protection from Email harvesting
 * Forcing of https protocol
 * Cool (anti-procrastinating) 404 page
