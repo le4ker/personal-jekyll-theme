@@ -67,7 +67,9 @@ Check it live [here](https://panossakkos.github.io/personal-jekyll-theme/blog/in
 
 ## How to run locally
 
-jekyll serve --watch --baseurl ""
+````
+./scripts/serve
+````
 
 ## Wiki
 Don't forget to list your { Personal } blog in the [wiki](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/Blogs-using-%7B-Personal-%7D) 😉
