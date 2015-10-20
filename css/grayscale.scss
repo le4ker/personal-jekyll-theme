@@ -66,7 +66,7 @@ a {
     font-weight: 400;
 }
 
-.ul,
+ul,
 ol {
   text-align: center;
   margin: 0 0 35px;
@@ -99,11 +99,14 @@ ol {
     a {
         color: $light;
     }
+    ul {
+      font-size: 14px;
+    }
     .nav {
         li {
             &.active {
             outline: nonte;
-			background-color: rgba($light, 0.3);
+            background-color: rgba($light, 0.3);
         }
             a {
                 -webkit-transition: background .3s ease-in-out;
@@ -270,12 +273,6 @@ ol {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-}
-
-#map {
-    width: 100%;
-    height: 200px;
-    margin-top: 100px;
 }
 
 @media(min-width:767px) {
