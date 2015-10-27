@@ -8,7 +8,7 @@ url: "https://bitebit.github.io"
 # and NOT your user repository (https://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
 
-baseurl: '/bitebit.github.com'
+baseurl: '/'
 
 google-tracking-id: "<YOUR GOOGLE TRACKING ID>"
 
