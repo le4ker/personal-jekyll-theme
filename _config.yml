@@ -1,14 +1,15 @@
 
 # Site settings
+gems: [jekyll-paginate]
 
-url: "https://panossakkos.github.io"
+url: "https://njaremko.github.io"
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (https://yourusername.github.io/repository-name)
 # and NOT your user repository (https://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
 
-baseurl: /personal-jekyll-theme
+baseurl: ""
 
 google-tracking-id: "<YOUR GOOGLE TRACKING ID>"
 
@@ -20,12 +21,12 @@ force-https: True
 # HTML Head #
 #############
 
-author: "John Smith"
+author: "Nathan Jaremko"
 lang: "en"
-title: "{ John Smith }"
+title: "{ Nathan Jaremko }"
 favicon: "/img/favicon.ico"
-description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
-keywords: "smith, jones, personal, jekyll, theme"
+description: "The blog and website of Nathan Jaremko."
+keywords: "nathan, jaremko, personal, github, developer, engineer, software"
 
 ################
 # Intro layout #
@@ -61,7 +62,7 @@ paginate: 5
 fb-share: True
 twitter-share: True
 reddit-share: True
-disqus-shortname: "panossakkos"
+disqus-shortname: "njaremko"
 
 ###############
 # Life Events #
