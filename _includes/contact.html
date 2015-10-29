@@ -28,6 +28,10 @@
             {% endif %}
           {% endif %}
 
+          {% if site.qq %}
+            <p><a href="mailto:{{ site.qq }}">{{ site.qq }}</a></p>
+          {% endif %}
+
           {% include social-buttons.html %}
 
         </div>
