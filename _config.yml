@@ -11,7 +11,7 @@ url: "https://njaremko.github.io"
 
 baseurl: ""
 
-google-tracking-id: "<YOUR GOOGLE TRACKING ID>"
+google-tracking-id: "UA-69345024-1"
 
 # Forces https everywhere in your website, except when you serve it locally
 
