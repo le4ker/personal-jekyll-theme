@@ -44,12 +44,14 @@ dynamic-typing: True
 shuffle: True	# Shuffle the lines.
 loop: True
 loop-count:	False # Set False for infinite loop, or set any number for finite loop.
-type-speed:	10		# Default 10
+type-speed:	1		# Default 10
 start-delay: 200	# Default 200
 delete-delay: 5000	# Default 5000
 lines:			# You can add HTML Tags in the Text
-  - text: "The lower you fall, the higher you'll fly."
-  - text: "Where’s your will to be weird?"
+  - text: "Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live. - Martin Golding"
+  - text: "Measuring programming progress by lines of code is like measuring aircraft building progress by weight. - Bill Gates"
+  - text: "If debugging is the process of removing software bugs, then programming must be the process of putting them in. - Edsger Dijkstra"
+  - text: "Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program. - Linus Torvalds"
 
 ########
 # Blog #
