@@ -92,12 +92,10 @@ email: "njaremko@gmail.com"
 ##################
 
 social:
-  - title: "facebook"
-    url: "https://facebook.com/thedadymac"
   - title: "twitter"
     url: "https://twitter.com/njaremko"
-  - title: "youtube"
-    url: "https://youtube.com/"
+  - title: "linkedin"
+    url: "https://ca.linkedin.com/in/njaremko"
   - title: "github"
     url: "https://github.com/njaremko"
   - title: "rss"
