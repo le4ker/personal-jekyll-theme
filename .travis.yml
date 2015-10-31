@@ -2,7 +2,7 @@ language: ruby
 rvm:
 - 2.1
 
-install: gem install jekyll html-proofer
+install: gem install jekyll jekyll-paginate html-proofer
 script: jekyll serve --baseurl "" --detach && htmlproof ./_site --disable-external --empty-alt-ignore
 
 env:
