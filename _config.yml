@@ -10,7 +10,7 @@ url: "https://panossakkos.github.io"
 
 baseurl: /personal-jekyll-theme
 
-google-tracking-id: "<YOUR GOOGLE TRACKING ID>"
+google-tracking-id: "UA-35880426-4"
 
 # Forces https everywhere in your website, except when you serve it locally
 
