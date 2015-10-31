@@ -360,6 +360,10 @@ footer {
     background: rgba($light, 0.2);
 }
 
+img {
+	max-width: 100%;
+}
+
 img::selection {
     background: transparent;
 }
