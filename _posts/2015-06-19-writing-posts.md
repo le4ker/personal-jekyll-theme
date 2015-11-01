@@ -13,12 +13,12 @@ cd <your { personal } repo>
 ./scripts/newpost hello-world
 </pre>
 
-A a new post template with name YYYY-MM-DD-hello-world.markup will be created under ./_posts, with the current date.
+A a new post template with name YYYY-MM-DD-hello-world.md will be created under ./_posts, with the current date.
 
 In the created post, just replace the Title, Category and tags and you can
 start writing your post in markdown right bellow the end of the post header.
 
-Every file with the format <i>YYYY-MM-DD-post-title.markup</i> will be processed as a
+Every file with the format <i>YYYY-MM-DD-post-title.md</i> will be processed as a
 post, with publication date <i>YYYY-MM-DD</i>.
 
 The content starts with:
