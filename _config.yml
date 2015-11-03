@@ -1,6 +1,4 @@
-
 # Site settings
-gems: [jekyll-paginate]
 
 url: "https://njaremko.github.io"
 
@@ -138,3 +136,5 @@ sass:
 
 # Exclusion list from the generated _site
 exclude: ["Rakefile", "LICENSE", "readme.md", "vendor"]
+
+gems: [jekyll-paginate]
