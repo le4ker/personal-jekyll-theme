@@ -56,6 +56,7 @@ lines:			# You can add HTML Tags in the Text
   - text: "$ sudo make a_sandwich"
   - text: "Garbage to ten decimal places is still garbage."
   - text: "If you don't want to be replaced by a computer, don't act like one."
+  - text: "Documentation is like sex: when it is good, it is very, very good; and when it is bad, it is better than nothing."
   - text: "Beware of bugs in the above code; I have only proved it correct, not tried it. - Donald E. Knuth."
 
 ########
