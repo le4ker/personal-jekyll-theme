@@ -3,20 +3,18 @@
 
 <div class="pagination">
 
-  {% if paginator.previous_page and paginator.next_page%}
-    <h4>
-        <a href="{{site.baseurl}}{{ paginator.previous_page_path }}" class="previous">Newer Posts</a>  <a href="{{site.baseurl}}{{ paginator.next_page_path }}" class="next">Older Posts</a>
-    </h4>
-  {% endif %}
-
+  <h4>
+ 
   {% if paginator.previous_page %}
-    <h4><a href="{{site.baseurl}}{{ paginator.previous_page_path }}" class="previous">Newer Posts</a></h4>
+    <a href="{{site.baseurl}}{{ paginator.previous_page_path }}" class="previous">Newer Posts</a>
   {% endif %}
 
   {% if paginator.next_page %}
-    <h4><a href="{{site.baseurl}}{{ paginator.next_page_path }}" class="next">Older Posts</a></h4>
+    <a href="{{site.baseurl}}{{ paginator.next_page_path }}" class="next">Older Posts</a>
   {% endif %}
-
+  
+  </h4>
+  
 </div>
 
 <!-- Pagination Links End -->
