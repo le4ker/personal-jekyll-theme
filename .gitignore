@@ -16,5 +16,4 @@ test/
 _deploy/*
 Rakefile
 .jekyll-metadata
-_posts/2015-06-05-404-page.md
 *.md
