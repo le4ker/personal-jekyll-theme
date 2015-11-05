@@ -15,12 +15,6 @@
   </div>
   {% endif %}
 
-  {% if site.google-plus-share %}
-    <div style="float:left; padding: 0 5px; vertical-align:top">
-    <div class="g-plus" data-action="share" data-href="{{site.url}}{{ site.baseurl}}{{page.url}}" data-annotation="bubble"></div>
-  </div>
-  {% endif %}
-
   {% if site.reddit-share %}
     <div style="float:left; padding: 0 5px; vertical-align:top">
       <script type="text/javascript">reddit_newwindow='1'</script>
@@ -28,6 +22,20 @@
       <script type="text/javascript">reddit_url='{{site.url}}{{site.baseurl}}{{page.url}}'</script>
       <script type="text/javascript" src="//www.redditstatic.com/button/button1.js"></script>
     </div>
+  {% endif %}
+
+  {% if site.google-plus-share %}
+  <div style="float:left; padding: 0 5px; vertical-align:top">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <div class="g-plus" data-action="share" data-href="{{site.url}}{{ site.baseurl}}{{page.url}}" data-annotation="bubble"></div>
+  </div>
+  {% endif %}
+
+  {% if site.linkedin-share %}
+  <div style="float:left; padding: 0 5px; vertical-align:top">
+    <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+    <script type="IN/Share" data-url="{{site.url}}{{ site.baseurl}}{{page.url}}" data-counter="right"></script>
+  </div>
   {% endif %}
 
 </div>
