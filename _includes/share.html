@@ -15,6 +15,12 @@
   </div>
   {% endif %}
 
+  {% if site.google-plus-share %}
+    <div style="float:left; padding: 0 5px; vertical-align:top">
+    <div class="g-plus" data-action="share" data-href="{{site.url}}{{ site.baseurl}}{{page.url}}" data-annotation="bubble"></div>
+  </div>
+  {% endif %}
+
   {% if site.reddit-share %}
     <div style="float:left; padding: 0 5px; vertical-align:top">
       <script type="text/javascript">reddit_newwindow='1'</script>
