@@ -15,3 +15,4 @@ pkg/
 test/
 _deploy/*
 Rakefile
+.jekyll-metadata

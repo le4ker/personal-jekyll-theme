@@ -1,0 +1,24 @@
+---
+layout: post
+section-type: post
+title: Modifying the social buttons
+category: tech
+tags: [ 'tutorial' ]
+---
+
+Social buttons (rendered in the footer) are great for having a small hub with all your social footprint.
+In order to change them, go to _config.yml and edit the social list:
+
+<pre style="text-align: left">
+social:
+  - title: "github"
+    url: "https://github.com/"
+  - title: "linkedin"
+    url: "http://no.linkedin.com/"
+  - title: "youtube"
+    url: "http://youtube.com/"
+  - title: "rss"
+    url: "/feed.xml"
+</pre>
+
+There are plenty of social networks, just try them out and see its rendering in the browser 😉

@@ -1,15 +1,16 @@
+
 # Site settings
 
-url: "https://njaremko.github.io"
+url: "https://panossakkos.github.io"
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (https://yourusername.github.io/repository-name)
 # and NOT your user repository (https://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
 
-baseurl: ""
+baseurl: /personal-jekyll-theme
 
-google-tracking-id: "UA-69345024-1"
+google-tracking-id: "UA-35880426-4"
 
 # Forces https everywhere in your website, except when you serve it locally
 
@@ -19,12 +20,12 @@ force-https: True
 # HTML Head #
 #############
 
-author: "Nathan Jaremko"
+author: "John Smith"
 lang: "en"
-title: "{ Nathan Jaremko }"
+title: "{ John Smith }"
 favicon: "/img/favicon.ico"
-description: "The blog and website of Nathan Jaremko. I'm a software engineering co-op student at the University of Toronto. Here you'll find the projects I'm working on, jobs I've done, and some info about me."
-keywords: "nathan, jaremko, personal, github, developer, engineer, software"
+description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
+keywords: "smith, jones, personal, jekyll, theme"
 
 ################
 # Intro layout #
@@ -32,7 +33,7 @@ keywords: "nathan, jaremko, personal, github, developer, engineer, software"
 
 black-favicon: "/img/black-lab-glass.ico"
 background-img: "../img/intro-bg.jpg"
-me-img: "/img/me.png"
+me-img: "/img/jetpacktocat.png"
 
 ##############################
 # Dynamic Text on the header #
@@ -42,19 +43,12 @@ dynamic-typing: True
 shuffle: True	# Shuffle the lines.
 loop: True
 loop-count:	False # Set False for infinite loop, or set any number for finite loop.
-type-speed:	1		# Default 10
+type-speed:	10		# Default 10
 start-delay: 200	# Default 200
 delete-delay: 5000	# Default 5000
 lines:			# You can add HTML Tags in the Text
-  - text: "Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live. - Martin Golding"
-  - text: "Measuring programming progress by lines of code is like measuring aircraft building progress by weight. - Bill Gates"
-  - text: "If debugging is the process of removing software bugs, then programming must be the process of putting them in. - Edsger Dijkstra"
-  - text: "Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program. - Linus Torvalds"
-  - text: "To iterate is human, to recurse divine. - L. Peter Deutsch"
-  - text: "$ sudo make a_sandwich"
-  - text: "Garbage to ten decimal places is still garbage."
-  - text: "If you don't want to be replaced by a computer, don't act like one."
-  - text: "Beware of bugs in the above code; I have only proved it correct, not tried it. - Donald E. Knuth."
+  - text: "The lower you fall, the higher you'll fly."
+  - text: "Where’s your will to be weird?"
 
 ########
 # Blog #
@@ -67,19 +61,19 @@ paginate: 5
 fb-share: True
 twitter-share: True
 reddit-share: True
-disqus-shortname: "njaremko"
+disqus-shortname: "panossakkos"
 
 ###############
 # Life Events #
 ###############
 
 events:
-  - image: "/img/career/pcc.png"
-    date: "September 2015 - Today"
-    description: "Quality Analyst @ PointClickCare"
+  - image: "/img/career/spidertocat.png"
+    date: "September 2013 - Today"
+    description: "Saving the neighborhood!"
   - image: "/img/career/baracktocat.jpg"
-    date: "June 2013 - August 2013"
-    description: "Game Development Intern @ Sault Ste. Marie Innovation Centre"
+    date: "September 2007 - August 2013"
+    description: "Started coding"
 
 # First image of the Career timeline
 career-img: "/img/career/default.png"
@@ -88,21 +82,21 @@ career-img: "/img/career/default.png"
 # Contact layout #
 ##################
 
-email: "njaremko@gmail.com"
+email: "your@email.here"
 
 ##################
 # Social Buttons #
 ##################
 
 social:
+  - title: "facebook"
+    url: "https://facebook.com/"
   - title: "twitter"
-    url: "https://twitter.com/njaremko"
-  - title: "linkedin"
-    url: "https://ca.linkedin.com/in/njaremko"
-  - title: "stack-overflow"
-    url: "https://stackoverflow.com/users/4547413/nathan-jaremko"
+    url: "https://twitter.com/"
+  - title: "youtube"
+    url: "https://youtube.com/"
   - title: "github"
-    url: "https://github.com/njaremko"
+    url: "https://github.com/PanosSakkos/personal-jekyll-theme"
   - title: "rss"
     url: "/feed.xml"
 
@@ -134,6 +128,6 @@ sass:
   style: compressed
 
 # Exclusion list from the generated _site
-exclude: ["Rakefile", "LICENSE", "readme.md", "vendor"]
+exclude: ["Rakefile", "LICENSE", "readme.markdown", "vendor"]
 
 gems: [jekyll-paginate]
