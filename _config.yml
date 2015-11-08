@@ -12,6 +12,9 @@ baseurl:
 
 google-tracking-id: "UA-69365319-1"
 
+markdown: redcarpet
+highlighter: true
+
 # Forces https everywhere in your website, except when you serve it locally
 
 force-https: True
@@ -119,10 +122,10 @@ social:
 # In the default page it will point to the preview of the last post
 
 pages_list:
-  About: 'about'
-  Blog: 'blog'
+  About: 'About'
+  Blog: 'Blog'
   # Career: 'career'
-  Contact: 'contact'
+  Contact: 'Contact'
 
 # Pagination path
 paginate_path: "blog/page:num"
