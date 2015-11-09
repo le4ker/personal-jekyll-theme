@@ -24,6 +24,18 @@
     </div>
   {% endif %}
 
+  {% if site.linkedin-share %}
+  <div style="float:left; padding: 0 5px; vertical-align:top; background-color: #0077B5; border-radius:3px">
+    <a style="color: #fff; vertical-align:middle; align: middle;" href="https://www.linkedin.com/cws/share?url={{site.url}}{{site.baseurl}}{{page.url}}&amp;title={{site.title}} | {{page.title}}&amp;lang=en_US" target="_blank"><i class="fa fa-linkedin"></i> | Share</a>
+  </div>
+  {% endif %}
+
+  {% if site.google-plus-share %}
+  <div style="float:left; padding: 0 5px; vertical-align:top">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <div class="g-plus" data-action="share" data-href="{{site.url}}{{ site.baseurl}}{{page.url}}" data-annotation="bubble"></div>
+  </div>
+  {% endif %}  
 </div>
 
 <!-- Share Buttons End -->
