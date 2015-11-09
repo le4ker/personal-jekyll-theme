@@ -26,7 +26,7 @@ Have you published your own website by forking { Personal } and now you want to 
   * Pagination
   * #tags
   * Disqus comments
-  * Facebook, Twitter and Reddit share buttons
+  * Facebook, Twitter, Reddit, Linked In and Google Plus share buttons
   * RSS feed
 * Travis CI integration with [html-proofer](https://github.com/gjtorikian/html-proofer)
 * Protection from Email harvesting
