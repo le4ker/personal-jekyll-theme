@@ -47,3 +47,16 @@ In order to generate the tag pages, simply run the *generate-tags* script from t
 The script will parse all your posts, and generate the tag pages for the newly added tags.
 
 If you are not using Github Pages, you can automate the execution of this script during build time.
+
+*{ Personal }* now supports [Twemoji](http://twitter.github.io/twemoji/) using [Twemoji Awesome](http://ellekasai.github.io/twemoji-awesome/). Just like **Font Awesome**, you can use **Twemoji Awesome** using the `<i>` tag. It follows the naming convenstion of [Emoji Cheat Sheet](http://www.emoji-cheat-sheet.com/).
+
+<p style="text-align: left">e.g. (Replace underscores with hyphens for Twemoji Awesome)</p>
+
+|      |       |      |      |       |      |
+|------|-------|------|------|-------|------|
+| `<i class="twa twa-smile"></i>` | &nbsp; gives | &nbsp;<i class="twa twa-smile"></i> | `<i class="twa twa-lg twa-moneybag"></i>` | &nbsp; gives | &nbsp;<i class="twa twa-lg twa-moneybag"></i> |
+|------|-------|------|------|-------|------|
+| `<i class="twa twa-2x twa-sunny"></i>` | &nbsp; gives | &nbsp;<i class="twa twa-2x twa-sunny"></i> | `<i class="twa twa-clock6"></i>` | &nbsp; gives | &nbsp;<i class="twa twa-clock6"></i> |
+|------|-------|------|------|-------|------|
+
+<br>
