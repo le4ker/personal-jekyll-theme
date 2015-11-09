@@ -21,14 +21,7 @@ social:
     url: "/feed.xml"
 </pre>
 
-The titles of the social link are used to find the icon in font awesome css. 
-To look for an icon, search for one at the [Font Awesome icon gallery](https://fortawesome.github.io/Font-Awesome/icons/) and put the icon name (without fa-) in the title.
+The titles of the social link are used to find the icon in Font Awesome.
 
-If you want to add the Twitter icon in the social buttons, the following code snippet will help.
+To look for an icon, search for one at the [Font Awesome icon gallery](https://fortawesome.github.io/Font-Awesome/icons/) and put the icon name (without fa-) as title.
 
-<pre style="text-align: left">
-  - title: "twitter"
-    url: "https://twitter.com/"
-</pre>
-
-There are plenty of social networks, just try them out and see its rendering in the browser 😉
