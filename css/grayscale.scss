@@ -81,7 +81,9 @@ a {
     }
     a {
         color: $light;
-        text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+        @if $header-text-shadow{
+            text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+        }
     }
     .nav {
         li {
@@ -148,7 +150,9 @@ a {
         }
         .intro-text {
             font-size: 18px;
-            text-shadow: 1px 0 1px #000;
+            @if $header-text-shadow {
+                text-shadow: 1px 0 1px #000;
+            }
         }
     }
     @media(min-width:768px) {
