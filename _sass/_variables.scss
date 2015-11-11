@@ -5,3 +5,11 @@ $dark: #000;
 $light: #fff;
 
 $header-text-shadow: true;
+$header-background-color: $dark;
+$intro-text-color: $light;
+$navbar-color: #fff;
+$navbar-lg-collapse-background-color: $header-background-color;
+$navbar-lg-background: transparent;
+$navbar-sm-background-color: $navbar-lg-collapse-background-color;
+
+$social-buttons-color: $primary;

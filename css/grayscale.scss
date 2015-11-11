@@ -58,29 +58,30 @@ a {
     border-bottom: 1px solid rgba($light, 0.3);
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: $dark;
+    background-color: $navbar-sm-background-color;
 
     /* Fix height limit and scroll for small screen and many items menu */
     max-height: 100%;
     overflow-y: auto;
+
+    .navbar-toggle {
+        padding: 4px 6px;
+        font-size: 16px;
+        color: $navbar-color;
+        &:focus,
+        &:active {
+            outline: none;
+        }
+    }
 
     .navbar-brand {
         font-weight: 700;
         &:focus {
             outline: none;
         }
-        .navbar-toggle {
-            padding: 4px 6px;
-            font-size: 16px;
-            color: $light;
-            &:focus,
-            &:active {
-                outline: none;
-            }
-        }
     }
     a {
-        color: $light;
+        color: $navbar-color;
         @if $header-text-shadow{
             text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
         }
@@ -107,7 +108,7 @@ a {
                 a {
                     background-color: rgba($light, 0.3);
                     &:hover {
-                        color: $light;
+                        color: $navbar-color;
                     }
                 }
             }
@@ -117,13 +118,13 @@ a {
         padding: 20px 0;
         border-bottom: none;
         letter-spacing: 1px;
-        background: transparent;
+        background: $navbar-lg-background;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
         &.top-nav-collapse {
             padding: 0;
-            background: $dark;
+            background: $navbar-lg-collapse-background-color;
             border-bottom: 1px solid rgba($light, 0.3);
         }
     }
@@ -135,9 +136,11 @@ a {
     height: auto;
     padding: 100px 0;
     text-align: center;
-    color: $light;
+    color: $intro-text-color;
+    {% if site.background-img %}
     background: url({{ site.background-img }}) no-repeat bottom center scroll;
-    background-color: $dark;
+    {% endif %}
+    background-color: $header-background-color;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -246,6 +249,7 @@ ul.social-buttons li a {
   line-height: 40px;
   outline: 0;
   background-color: #222;
+  color: $social-buttons-color;
 
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
@@ -255,7 +259,7 @@ ul.social-buttons li a {
   &:focus,
   &:active {
       color: #222;
-      background-color: darken($primary, 10%);
+      background-color: darken($social-buttons-color, 10%);
   }
 }
 
