@@ -1,4 +1,5 @@
 ![Build Status](https://travis-ci.org/PanosSakkos/personal-jekyll-theme.svg?branch=master)
+[![Join the chat at https://gitter.im/PanosSakkos/personal-jekyll-theme](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/PanosSakkos/personal-jekyll-theme?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 # { Personal } Jekyll Theme
 
@@ -26,7 +27,7 @@ Have you published your own website by forking { Personal } and now you want to 
   * Pagination
   * #tags
   * Disqus comments
-  * Facebook, Twitter and Reddit share buttons
+  * Facebook, Twitter, Reddit, Linked In and Google Plus share buttons
   * RSS feed
 * Travis CI integration with [html-proofer](https://github.com/gjtorikian/html-proofer)
 * Protection from Email harvesting
@@ -76,4 +77,6 @@ Don't forget to list your { Personal } blog in the [wiki](https://github.com/Pan
 
 ## Supporting the repo
 
-In case you want to support the development, feel free to send a few bits here 1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi
+Proposals, pull requests and issues are more than welcome, let's make the web a bit more beautiful and secure :wink:
+
+In case you want to say thank you by donating Bitcoins 1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi

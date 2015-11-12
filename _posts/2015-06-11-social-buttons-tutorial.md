@@ -21,4 +21,7 @@ social:
     url: "/feed.xml"
 </pre>
 
-There are plenty of social networks, just try them out and see its rendering in the browser 😉
+The titles of the social link are used to find the icon in Font Awesome.
+
+To look for an icon, search for one at the [Font Awesome icon gallery](https://fortawesome.github.io/Font-Awesome/icons/) and put the icon name (without fa-) as title.
+
