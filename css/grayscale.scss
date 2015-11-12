@@ -282,6 +282,13 @@ footer {
     background: rgba($light, 0.2);
 }
 
+/* Added in { Personal } for responsive images in posts and section contents */
+.content-section img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 img::selection {
     background: transparent;
 }
