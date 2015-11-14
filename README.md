@@ -55,8 +55,8 @@ Check it live [here](https://panossakkos.github.io/personal-jekyll-theme/blog/in
 ![About](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/about.jpg)
 ### Latest post preview
 ![Blog](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/blog.jpg)
-### Life Events
-![Career](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/career.jpg)
+### Timeline
+![Timeline](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/timeline.jpg)
 ### Blog Archive
 ![Archive](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/archive.jpg)
 ### Post page
