@@ -214,6 +214,12 @@ a {
 
 .content-section {
     padding-top: 100px;
+    /* Added in { Personal } for responsive images in posts and section contents */
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 @media(min-width:767px) {
@@ -263,13 +269,6 @@ footer {
     text-shadow: none;
     background: #fcfcfc;
     background: rgba($light, 0.2);
-}
-
-/* Added in { Personal } for responsive images in posts and section contents */
-.content-section img {
-    display: block;
-    max-width: 100%;
-    height: auto;
 }
 
 img::selection {
