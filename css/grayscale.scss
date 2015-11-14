@@ -220,6 +220,15 @@ a {
         max-width: 100%;
         height: auto;
     }
+    /* Added in { Personal } */
+    ul,
+    ol {
+        text-align: center;
+        margin: 0 0 35px;
+        font-size: 20px;
+        line-height: 1.5;
+        list-style-position: inside;
+    }
 }
 
 @media(min-width:767px) {
