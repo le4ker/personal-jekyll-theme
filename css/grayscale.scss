@@ -159,7 +159,7 @@ a {
         }
         .intro-text {
             font-size: 18px;
-            @if $header-text-shadow {
+            @if $navbar-text-shadow {
                 text-shadow: 1px 0 1px #000;
             }
         }
