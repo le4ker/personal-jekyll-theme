@@ -24,7 +24,7 @@ Have you published your own website by forking { Personal } and now you want to 
 * Blogging functionality
   * Preview of the latest post in the home page
   * Archive page
-  * Pagination
+  * Gesture navigation in archive and post pages by swiping
   * #tags
   * Disqus comments
   * Facebook, Twitter, Reddit, Linked In and Google Plus share buttons

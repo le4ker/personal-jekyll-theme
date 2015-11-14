@@ -151,4 +151,48 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
 {% endif %}
 
+{% if page.section-type == "post" %}
+
+  <!-- Post Gesture Navigation Start -->
+
+  <script type="text/javascript" src="{{site.baseurl}}/js/hammer.min.js"></script>
+
+  <script>
+    var post = document.getElementById('post');
+
+    new Hammer(post).on('swipeleft', function(event) {
+      window.location.replace("{{site.baseurl}}{{page.previous.url}}");
+    });
+
+    new Hammer(post).on('swiperight', function(event) {
+      window.location.replace("{{site.baseurl}}{{page.next.url}}");
+    });
+  </script>
+
+  <!-- Post Gesture Navigation Start -->
+
+{% endif %}
+
+{% if page.section-type == "blog" %}
+
+  <!-- Blog Gesture Navigation Start -->
+
+  <script type="text/javascript" src="{{site.baseurl}}/js/hammer.min.js"></script>
+
+  <script>
+    var page = document.getElementById('page');
+
+    new Hammer(page).on('swipeleft', function(event) {
+      window.location.replace("{{site.baseurl}}{{paginator.next_page_path}}");
+    });
+
+    new Hammer(page).on('swiperight', function(event) {
+      window.location.replace("{{site.baseurl}}{{paginator.previous_page_path}}");
+    });
+  </script>
+
+  <!-- Blog Gesture Navigation Start -->
+
+{% endif %}
+
 <!-- Javascript End -->
