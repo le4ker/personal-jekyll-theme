@@ -6,32 +6,18 @@
 
   {% include head.html %}
 
-  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top"  data-offset="51">
 
     {% include navigation.html %}
 
     {% include header.html %}
 
-    {% for page in site.pages %}
-
-      {% if page.section-type == "about" %}
-
-        {% include about.html %}
-
-      {% elsif page.section-type == "latest-post" %}
-
-        {% include latest-post.html %}
-
-      {% elsif page.section-type == "career" %}
-
-        {% include career.html %}
-
-      {% elsif page.section-type == "contact" %}
-
-        {% include contact.html %}
-
-      {% endif %}
-
+    {% for p in site.pages_list %}
+      {% for page in site.pages %}
+        {% if p[1] == page.section-type%}
+          {% include {{ page.path }} %}
+        {% endif %}
+      {% endfor %}
     {% endfor %}
 
     {% include footer.html %}

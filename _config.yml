@@ -118,7 +118,7 @@ social:
 
 pages_list:
   About: 'about'
-  Blog: 'blog'
+  Blog: 'latest-post'
   Career: 'career'
   Contact: 'contact'
 
@@ -130,6 +130,6 @@ sass:
   style: compressed
 
 # Exclusion list from the generated _site
-exclude: ["Rakefile", "LICENSE", "readme.markdown", "vendor"]
+exclude: ["LICENSE", "README", "CONTRIBUTORS", "scripts"]
 
 gems: [jekyll-paginate]
