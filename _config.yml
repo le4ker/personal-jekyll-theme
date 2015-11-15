@@ -32,8 +32,36 @@ keywords: "smith, jones, personal, jekyll, theme"
 ################
 
 black-favicon: "/img/black-lab-glass.ico"
-background-img: "../img/intro-bg.jpg"
 me-img: "/img/jetpacktocat.png"
+
+#######################
+# Intro Background Settings #
+#######################
+
+background-type: "3d-lines"		# It can be image, 3d-lines, color-gradient.
+
+# These configurations are common for both color-gradient and 3d-lines.
+background-color-shuffle: True	# Keep shuffle True to get different background everytime.
+background-colors:	# You must add atleast 4 colors.
+    - color: "145C9E" # Color Hex Codes.
+    - color: "CBB9A8"
+    - color: "92AA83"
+    - color: "3CFF3C"
+    - color: "2DAFE6"
+    - color: "88AB75"
+    - color: "2D93AD"
+    - color: "7C7D84"
+
+background-color-trasition-speed: 0.003 	#Deafault 0.003
+background-color-update-interval: 5 		#Default 5
+
+# 3d-lines configuration
+background-lines-color: "FFFFFF" # Line Color. Default : FFFFFF
+background-particles: 150  # No of particles joining the lines. Default- 150. 
+
+# static background image
+background-img: "../img/intro-bg.jpg"
+
 
 ##############################
 # Dynamic Text on the header #

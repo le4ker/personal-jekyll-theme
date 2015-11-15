@@ -156,7 +156,9 @@ ol {
     padding: 100px 0;
     text-align: center;
     color: $light;
+    {% if site.background-type == "image" %}
     background: url( {{ site.background-img }} ) no-repeat bottom center scroll;
+    {% endif %}
     background-color: $dark;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -397,3 +399,13 @@ body {
     50% { opacity:0; }
     100% { opacity:1; }
 }
+
+#canvas{
+    position:absolute;
+    z-index: 1;
+}
+.container{
+    position: relative;
+    z-index: 5;
+}
+
