@@ -27,7 +27,7 @@ Have you published your own website by forking { Personal } and now you want to 
   * Gesture navigation in archive and post pages by swiping
   * #tags
   * Disqus comments
-  * Facebook, Twitter, Reddit, Linked In and Google Plus, Pinterest and VKontakte share buttons
+  * Facebook, Twitter, Reddit, LinkedIn, Google+, Pinterest, VKontakte share buttons
   * RSS feed
 * Travis CI integration with [html-proofer](https://github.com/gjtorikian/html-proofer)
 * Protection from Email harvesting
