@@ -143,7 +143,7 @@ a {
     padding: 100px 0;
     text-align: center;
     color: $intro-text-color;
-    {% if site.background-img %}
+    {% if site.background-img and site.background-type == "image" %}
     background: url({{ site.background-img }}) no-repeat bottom center scroll;
     {% endif %}
     background-color: $header-background-color;
@@ -314,3 +314,18 @@ body {
     100% { opacity:1; }
 }
 /* END Added in { Personal } for Typed Cursor in Header */
+
+{% if site.background-type == "3d-lines" or site.background-type == "color-gradient" %}
+/* Added in { Personal } for gradient background in header */
+#canvas{
+    position:absolute;
+    z-index: 0;
+    width: 100%;
+    height: auto;
+}
+.container{
+    position: relative;
+    z-index: 5;
+}
+/* End Added in { Personal } for gradient background in header */
+{% endif %}

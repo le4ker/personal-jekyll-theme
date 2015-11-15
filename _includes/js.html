@@ -101,17 +101,9 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
 {% endif %}
 
-{% if site.dynamic-typing and page.section-type == "index"%}
+{% if site.background-color-shuffle or site.shuffle and page.section-type == "index" %}
 
-  <!-- Dynamic Typing Start -->
-
-  <script type="text/javascript" src="{{site.baseurl}}/js/typed.js"></script>
-  <script type="text/javascript">
-
-  var myQuotes =  new Array();
-  {% for line in site.lines %}
-    myQuotes.push("{{ line.text }}");
-  {% endfor %}
+<script type="text/javascript">
 
   function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex ;
@@ -131,9 +123,24 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
     return array;
   }
+</script>
+
+{% endif %}
+
+{% if site.dynamic-typing and page.section-type == "index"%}
+
+  <!-- Dynamic Typing Start -->
+
+  <script type="text/javascript" src="{{site.baseurl}}/js/typed.js"></script>
+  <script type="text/javascript">
+
+  var myQuotes =  new Array();
+  {% for line in site.lines %}
+    myQuotes.push("{{ line.text }}");
+  {% endfor %}
 
   {% if site.shuffle %}
-    shuffle(myQuotes)
+    shuffle(myQuotes);
   {% endif %}
 
     $(".intro-text").typed({
@@ -148,6 +155,104 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
   </script>
 
   <!-- Dynamic Typing End  -->
+
+{% endif %}
+
+{% if site.background-type == "3d-lines" and page.section-type == "index"%}
+
+<!-- Main library -->
+<script src="js/three.min.js"></script>
+<!-- Helpers -->
+<script src="js/projector.js"></script>
+<script src="js/canvas-renderer.js"></script>
+<!-- Visualitzation adjustments -->
+<script src="js/3d-lines-animation.js"></script>
+
+{% endif %}
+
+
+{% if site.background-type == "3d-lines" or site.background-type == "color-gradient" and page.section-type == "index"%}
+
+<script type="text/javascript">
+  $( document ).ready(function() {
+
+function hexToR(h) {return parseInt((cutHex(h)).substring(0,2),16)}
+function hexToG(h) {return parseInt((cutHex(h)).substring(2,4),16)}
+function hexToB(h) {return parseInt((cutHex(h)).substring(4,6),16)}
+function cutHex(h) {return (h.charAt(0)=="#") ? h.substring(1,7):h}
+function hexToRGB (h) {
+  var single = new Array();
+    single.push(hexToR(h));
+    single.push(hexToG(h));
+    single.push(hexToB(h));
+    return single;
+}
+
+var colors = new Array();
+{% for c in site.background-colors %}
+    colors.push(hexToRGB("{{ c.color }}"));
+{% endfor %}
+
+{% if site.background-color-shuffle %}
+    shuffle(colors);
+  {% endif %}
+
+
+var step = 0;
+
+//color table indices for:
+// current color left
+// next color left
+// current color right
+// next color right
+var colorIndices = [0,1,2,3];
+
+//transition speed
+var gradientSpeed = {{ site.background-color-trasition-speed }};
+
+function updateGradient()
+{
+
+  if ( $===undefined ) return;
+
+var c0_0 = colors[colorIndices[0]];
+var c0_1 = colors[colorIndices[1]];
+var c1_0 = colors[colorIndices[2]];
+var c1_1 = colors[colorIndices[3]];
+
+var istep = 1 - step;
+var r1 = Math.round(istep * c0_0[0] + step * c0_1[0]);
+var g1 = Math.round(istep * c0_0[1] + step * c0_1[1]);
+var b1 = Math.round(istep * c0_0[2] + step * c0_1[2]);
+var color1 = "rgb("+r1+","+g1+","+b1+")";
+
+var r2 = Math.round(istep * c1_0[0] + step * c1_1[0]);
+var g2 = Math.round(istep * c1_0[1] + step * c1_1[1]);
+var b2 = Math.round(istep * c1_0[2] + step * c1_1[2]);
+var color2 = "rgb("+r2+","+g2+","+b2+")";
+
+ $('#gradient').css({
+   background: "-webkit-gradient(linear, left top, right top, from("+color1+"), to("+color2+"))"}).css({
+    background: "-moz-linear-gradient(left, "+color1+" 0%, "+color2+" 100%)"});
+
+  step += gradientSpeed;
+  if ( step >= 1 )
+  {
+    step %= 1;
+    colorIndices[0] = colorIndices[1];
+    colorIndices[2] = colorIndices[3];
+
+    //pick two new target color indices
+    //do not pick the same as the current one
+    colorIndices[1] = ( colorIndices[1] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
+    colorIndices[3] = ( colorIndices[3] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
+
+  }
+}
+
+setInterval(updateGradient,{{ site.background-color-update-interval }});
+});
+</script>
 
 {% endif %}
 
