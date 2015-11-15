@@ -24,10 +24,10 @@ Have you published your own website by forking { Personal } and now you want to 
 * Blogging functionality
   * Preview of the latest post in the home page
   * Archive page
-  * Pagination
+  * Gesture navigation in archive and post pages by swiping
   * #tags
   * Disqus comments
-  * Facebook, Twitter, Reddit, Linked In and Google Plus share buttons
+  * Facebook, Twitter, Reddit, LinkedIn, Google+, Pinterest, VKontakte share buttons
   * RSS feed
 * Travis CI integration with [html-proofer](https://github.com/gjtorikian/html-proofer)
 * Protection from Email harvesting
@@ -55,8 +55,8 @@ Check it live [here](https://panossakkos.github.io/personal-jekyll-theme/blog/in
 ![About](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/about.jpg)
 ### Latest post preview
 ![Blog](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/blog.jpg)
-### Life Events
-![Career](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/career.jpg)
+### Timeline
+![Timeline](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/timeline.jpg)
 ### Blog Archive
 ![Archive](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/archive.jpg)
 ### Post page
