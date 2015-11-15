@@ -32,6 +32,18 @@ twitter-share: True
 reddit-share: True
 </pre>
 
+Facebook, Twitter, Reddit, LinkedIn, Google+, Pinterest, VKontakte share buttons are available which can be enabled or disabled by setting the following:
+
+<pre style="text-align: left">
+fb-share: True
+twitter-share: True
+reddit-share: True
+google-plus-share: True
+linkedin-share: True
+pinterest-share: True
+vkontakte-share: True
+</pre>
+
 And you can enable <a href="http://www.disqus.com" target="_blank">Disqus</a> comments
 by just setting your Disqus username here:
 
