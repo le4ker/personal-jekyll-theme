@@ -10,11 +10,23 @@ url: "https://panossakkos.github.io"
 
 baseurl: /personal-jekyll-theme
 
+# Google tracking id to track your visitors
+
 google-tracking-id: "UA-35880426-4"
 
 # Forces https everywhere in your website, except when you serve it locally
+# If you are not hosted on Github Pages, and your host doesn't support https
+# then you should disable it
 
 force-https: True
+
+# Sections shown in the index page
+
+pages_list:
+  About: 'about'
+  Blog: 'latest-post'
+  Timeline: 'timeline'
+  Contact: 'contact'
 
 #############
 # HTML Head #
@@ -57,7 +69,7 @@ background-color-update-interval: 5 		#Default 5
 
 # 3d-lines configuration
 background-lines-color: "FFFFFF" # Line Color. Default : FFFFFF
-background-particles: 150  # No of particles joining the lines. Default- 150. 
+background-particles: 150  # No of particles joining the lines. Default- 150.
 
 # static background image
 background-img: "../img/intro-bg.jpg"
@@ -140,24 +152,17 @@ social:
 
 # Tread carefully if you want to change the variables below this point!
 
-# Navigation bar links
-# Blog link in the blog and post pages will point to the blog.html#blog
-# In the default page it will point to the preview of the last post
+# Exclusion list from the generated _site
 
-pages_list:
-  About: 'about'
-  Blog: 'blog'
-  Career: 'career'
-  Contact: 'contact'
+exclude: ["LICENSE", "README", "CONTRIBUTORS", "scripts"]
 
 # Pagination path
-paginate_path: "blog/page:num"
+
+paginate_path: "blog/page:num/"
 
 # Enable minification SASS
+
 sass:
   style: compressed
-
-# Exclusion list from the generated _site
-exclude: ["Rakefile", "LICENSE", "readme.markdown", "vendor"]
 
 gems: [jekyll-paginate]

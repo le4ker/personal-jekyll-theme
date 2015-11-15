@@ -13,42 +13,31 @@
               <a class="navbar-brand page-scroll" href="{{site.baseurl}}/index.html#page-top">
             {% endif %}
             <div>{% if site.black-favicon %}<img src="{{site.baseurl}}{{ site.black-favicon }}" alt="">  {% endif %}{{ site.title }}</div>
-          </a>
+            </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
             <ul class="nav navbar-nav">
-                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                <li class="hidden">
-                    <a href="#page-top"></a>
-                </li>
-
                 {% if page.section-type == "index" %}
 
                   <!-- Scroll to section for each page in index -->
                   {% for p in site.pages_list %}
                     <li>
-                      <a class="page-scroll" href="#{{ p[1] }}"> {{ p[0] }} </a>
+                      <a class="page-scroll" href="#{{ p[1] }}"> {{ p[0] }}</a>
                     </li>
                   {% endfor %}
 
                 {% else %}
                   <!-- Blog, Post, Tag pages-->
                   {% for p in site.pages_list %}
-                    {% if page.section-type == "blog" and p[0] == "Blog" %}
-                      <!-- Blog button in blog.html doesn't refresh the page -->
-                      <li>
-                        <a class="page-scroll" href="#blog"> {{ p[0] }} </a>
-                      </li>
-                    {% elsif p[0] == "Blog" %}
-                      <li>
-                        <a class="page-scroll" href="{{site.baseurl}}/blog/index.html"> {{ p[0] }} </a>
-                      </li>
+                    <li>
+                    {% comment %} If are blog, redirect to index.html of Blog {% endcomment %}
+                    {% if p[1] == "latest-post" %}
+                        <a class="page-scroll" href="{{site.baseurl}}/blog/index.html"> {{ p[0] }}</a>
                     {% else %}
-                      <li>
-                        <a class="page-scroll" href="{{site.baseurl}}/index.html#{{ p[1] }}"> {{ p[0] }} </a>
-                      </li>
+                        <a class="page-scroll" href="{{site.baseurl}}/index.html#{{ p[1] }}"> {{ p[0] }}</a>
                     {% endif %}
+                    </li>
                   {% endfor %}
                 {% endif %}
             </ul>

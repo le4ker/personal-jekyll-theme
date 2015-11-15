@@ -1,7 +1,11 @@
 
 <!-- Intro Start -->
+{% if site.background-type == "3d-lines" or site.background-type == "color-gradient" %}
 <div id="canvas"></div>
 <header class="intro" id="gradient">
+{% else %}
+<header class="intro">
+{% endif %}
     <div class="intro-body">
         <div class="container">
             <div class="row">
