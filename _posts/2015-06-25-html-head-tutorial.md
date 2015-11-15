@@ -6,7 +6,7 @@ category: tech
 tags: [ 'tutorial' ]
 ---
 
-In the _config.yml, find and set the variables of the Head section:
+In the \_config.yml, find and set the variables of the Head section:
 
 <pre style="text-align: left">
 #############
@@ -37,10 +37,10 @@ If you don't want Google tracking, set it to an empty string, or simply remove t
 
 If you are using *{ Personal }* as a Github repository theme, set the repository name as the site.baseurl, in the site configuration file.
 This step is essential, since its related to file paths!
-And when you serve the website locally, don't forget to set the baseurl to an empty string, like this:
+In order to serve the website locally just run:
 
 <pre style="text-align: left">
-jekyll serve --baseurl ""
+./scripts/serve
 </pre>
 
-<small>Many thanks to <a href="https://github.com/prashantsolanki3" target="_blank">@prashantsolanki3</a> for the language support!</small>
+<small>Many thanks to <a href="https://github.com/joariasl" target="blank">@joariasl</a> for the language support! </small>

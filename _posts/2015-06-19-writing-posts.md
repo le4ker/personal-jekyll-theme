@@ -9,11 +9,11 @@ tags: [ 'tutorial' ]
 Run the ./scripts/newpost script with the file name of the post as an argument:
 
 <pre style="text-align: left">
-cd <your { personal } repo>
+cd <your { Personal } repo>
 ./scripts/newpost hello-world
 </pre>
 
-A a new post template with name YYYY-MM-DD-hello-world.md will be created under ./_posts, with the current date.
+A a new post template with name YYYY-MM-DD-hello-world.md will be created under ./\_posts, with the current date.
 
 In the created post, just replace the Title, Category and tags and you can
 start writing your post in markdown right bellow the end of the post header.

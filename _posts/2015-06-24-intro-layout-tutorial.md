@@ -6,7 +6,7 @@ category: tech
 tags: [ 'tutorial' ]
 ---
 
-The intro part of the index page is consisted of three elements:
+The intro part of the index page is consisted of four elements:
 
 <ol>
   <li>A black favicon</li>
@@ -38,9 +38,9 @@ lines:			# You can add HTML Tags in the Text
   - text: "Where’s your will to be weird?"
 </pre>
 
-<small>Many thanks to <a href="https://github.com/prashantsolanki3" target="_blank">@prashantsolanki3</a> for this feature!</small>
+<small>Many thanks to <a href="https://github.com/prashantsolanki3" target="blank">@prashantsolanki3</a> for this feature!</small>
 
-In order to set the background and your image, modify the following variables in _config:
+In order to set the background and your image, modify the following variables in \_config:
 
 <pre style="text-align: left">
 black-favicon: "/img/black-lab-glass.ico"

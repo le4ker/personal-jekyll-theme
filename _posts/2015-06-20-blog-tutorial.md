@@ -11,7 +11,7 @@ A website is truly personal if it's your blog as well, this place of the interne
 First of all, you get a preview of the latest post in the index, in order to attract the visitor to visit your blog. The size of this preview is defined by:
 
 <pre style="text-align: left">
-post-preview-words: 128
+post-preview-words: 96
 </pre>
 
 Feel free to experiment with different sizes, and pick the best for you.
@@ -22,14 +22,6 @@ order. You can define the number of posts that are displayed per page by changin
 
 <pre style="text-align: left">
 paginate: 5
-</pre>
-
-You can select the social network share buttons that you want under each post from:
-
-<pre style="text-align: left">
-fb-share: True
-twitter-share: True
-reddit-share: True
 </pre>
 
 Facebook, Twitter, Reddit, LinkedIn, Google+, Pinterest, VKontakte share buttons are available which can be enabled or disabled by setting the following:
@@ -44,8 +36,7 @@ pinterest-share: True
 vkontakte-share: True
 </pre>
 
-And you can enable <a href="http://www.disqus.com" target="_blank">Disqus</a> comments
-by just setting your Disqus username here:
+And you can enable <a href="http://www.disqus.com" target="blank">Disqus</a> comments by just setting your Disqus username here:
 
 <pre style="text-align: left">
 disqus-shortname: "<YOUR DISQUS USERNAME>"
