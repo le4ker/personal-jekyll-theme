@@ -6,6 +6,8 @@ category: tech
 tags: [ 'tutorial' ]
 ---
 
+### Creating a new post
+
 Run the ./scripts/newpost script with the file name of the post as an argument:
 
 <pre style="text-align: left">
@@ -34,6 +36,12 @@ tags: [ 'tag1', 'tag2' ]
 </pre>
 
 The *layout* and *section-type* are used by the theme.
+
+### Post navigation
+
+You can navigate between the posts by swiping left/right in the post pages!
+
+### Hashtags
 
 Note: *{ Personal }* generates a static page, just like all Jekyll themes.
 As a result we have to create the tag pages before building and publishing the site.
