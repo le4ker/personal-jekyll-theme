@@ -159,7 +159,7 @@ a {
         }
         .intro-text {
             font-size: 18px;
-            @if $header-text-shadow {
+            @if $navbar-text-shadow {
                 text-shadow: 1px 0 1px #000;
             }
         }
@@ -213,7 +213,12 @@ a {
 }
 
 .content-section {
+    margin-top: 100px;
     padding-top: 100px;
+    @media(min-width:767px) {
+        margin-top: 125px;
+        padding-top: 125px;
+    }
     /* Added in { Personal } for responsive images in posts and section contents */
     img {
         display: block;
@@ -228,12 +233,6 @@ a {
         font-size: 20px;
         line-height: 1.5;
         list-style-position: inside;
-    }
-}
-
-@media(min-width:767px) {
-    .content-section {
-        padding-top: 250px;
     }
 }
 

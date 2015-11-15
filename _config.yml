@@ -130,7 +130,7 @@ exclude: ["LICENSE", "README", "CONTRIBUTORS", "scripts"]
 
 # Pagination path
 
-paginate_path: "blog/page:num"
+paginate_path: "blog/page:num/"
 
 # Enable minification SASS
 
