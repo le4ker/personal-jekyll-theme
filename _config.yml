@@ -75,6 +75,8 @@ twitter-share: True
 reddit-share: True
 google-plus-share: True
 linkedin-share: True
+pinterest-share: True
+vkontakte-share: True
 disqus-shortname: "panossakkos"
 
 ###############
