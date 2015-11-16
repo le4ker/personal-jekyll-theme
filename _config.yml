@@ -39,54 +39,48 @@ favicon: "/img/favicon.ico"
 description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
 keywords: "smith, jones, personal, jekyll, theme"
 
-################
-# Intro layout #
-################
+##########
+# Header #
+##########
 
 black-favicon: "/img/black-lab-glass.ico"
 me-img: "/img/jetpacktocat.png"
 
-#######################
-# Intro Background Settings #
-#######################
+background-type: "3d-lines"		# It can be either image, 3d-lines or color-gradient.
 
-background-type: "3d-lines"		# It can be image, 3d-lines, color-gradient.
+# The following configurations are common for both color-gradient and 3d-lines.
 
-# These configurations are common for both color-gradient and 3d-lines.
 background-color-shuffle: True	# Keep shuffle True to get different background everytime.
-background-colors:	# You must add atleast 4 colors.
-    - color: "145C9E" # Color Hex Codes.
-    - color: "CBB9A8"
-    - color: "92AA83"
-    - color: "3CFF3C"
-    - color: "2DAFE6"
-    - color: "88AB75"
-    - color: "2D93AD"
-    - color: "7C7D84"
+background-colors:	# You must add at least 4 colors.
+  - color: "4dd0e1" # Color Hex Codes.
+  - color: "00bcd4"
+  - color: "0097a7"
+  - color: "006064"
 
-background-color-trasition-speed: 0.003 	#Deafault 0.003
-background-color-update-interval: 5 		#Default 5
+background-color-trasition-speed: 0.001
+background-color-update-interval: 1
 
 # 3d-lines configuration
-background-lines-color: "FFFFFF" # Line Color. Default : FFFFFF
-background-particles: 150  # No of particles joining the lines. Default- 150.
+
+background-lines-color: "b2ebf2"
+background-particles: 100
 
 # static background image
+
 background-img: "../img/intro-bg.jpg"
 
-
 ##############################
-# Dynamic Text on the header #
+# Dynamic Text on the Header #
 ##############################
 
 dynamic-typing: True
-shuffle: True	# Shuffle the lines.
+shuffle: True # Shuffle the lines.
 loop: True
-loop-count:	False # Set False for infinite loop, or set any number for finite loop.
-type-speed:	10		# Default 10
-start-delay: 200	# Default 200
-delete-delay: 5000	# Default 5000
-lines:			# You can add HTML Tags in the Text
+loop-count: False # Set False for infinite loop, or set any number for finite loop.
+type-speed: 4
+start-delay: 2000
+delete-delay: 50000
+lines: # You can add HTML tags in the Text
   - text: "The lower you fall, the higher you'll fly."
   - text: "Where’s your will to be weird?"
 
@@ -107,9 +101,9 @@ pinterest-share: True
 vkontakte-share: True
 disqus-shortname: "panossakkos"
 
-###############
-# Life Events #
-###############
+############
+# Timeline #
+############
 
 events:
   - image: "/img/career/spidertocat.png"
@@ -120,11 +114,12 @@ events:
     description: "Started coding"
 
 # First image of the Career timeline
+
 career-img: "/img/career/default.png"
 
-##################
-# Contact layout #
-##################
+###########
+# Contact #
+###########
 
 email: "your@email.here"
 
