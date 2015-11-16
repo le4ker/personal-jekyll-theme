@@ -28,7 +28,9 @@ var mouseX = 0, mouseY = 0,
                 container = document.getElementById("canvas");
 
 
-                camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000 );
+                //camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000 );
+                /* Changed for { Personal } header Width and height */
+                camera = new THREE.PerspectiveCamera( 75, document.getElementById("gradient").offsetWidth / document.getElementById("gradient").offsetHeight, 1, 10000 );
                 camera.position.z = 100;
 
                 scene = new THREE.Scene();
@@ -36,10 +38,12 @@ var mouseX = 0, mouseY = 0,
                 renderer = new THREE.CanvasRenderer({ alpha: true });
                 renderer.setPixelRatio( window.devicePixelRatio );
                 renderer.setClearColor( 0x000000, 0 );   // canvas background color
-                renderer.setSize( window.innerWidth, window.innerHeight );
+                //renderer.setSize( window.innerWidth, window.innerHeight );
+                /* Changed for { Personal } header Width and height */
+                renderer.setSize( document.getElementById("gradient").offsetWidth, document.getElementById("gradient").offsetHeight );
                 container.appendChild( renderer.domElement );
 
-               
+
 
                 var PI2 = Math.PI * 2;
                 var material = new THREE.SpriteCanvasMaterial( {

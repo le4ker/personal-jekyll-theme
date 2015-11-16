@@ -36,6 +36,35 @@
     <div class="g-plus" data-action="share" data-href="{{site.url}}{{ site.baseurl}}{{page.url}}" data-annotation="bubble"></div>
   </div>
   {% endif %}  
+
+
+  {% if site.vkontakte-share %}
+  <div style="float:left; padding: 0 5px; vertical-align:top; background-color: #0077B5; border-radius:3px">
+  <style type="text/css">
+    vk {color: #fff;}
+  </style>
+    <script type="text/javascript" src="http://vk.com/js/api/share.js?9"; charset="windows-1251"></script>
+    <script type="text/javascript">
+        document.write(VK.Share.button(
+        {
+            url: '{{site.url}}{{ site.baseurl}}{{page.url}}',
+            title: '{{site.title}} | {{page.title}}',
+            description: '{{page.description}}',
+        },
+        {
+            type: 'custom',
+            text: '<vk><i class="fa fa-vk"></i> Share</vk>'
+        }
+        ));
+    </script>
+  </div>
+  {% endif %}  
 </div>
 
+  {% if site.pinterest-share %}
+  <div style="float:left; padding: 0 5px; vertical-align:top">
+    <script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
+    <a data-pin-do="buttonPin" href="https://www.pinterest.com/pin/create/button/" data-pin-config="beside" data-pin-description="{{page.description}}" data-pin-url="{{site.url}}{{ site.baseurl}}{{page.url}}"></a>
+  </div>
+  {% endif %}
 <!-- Share Buttons End -->
