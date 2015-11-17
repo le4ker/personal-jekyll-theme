@@ -43,4 +43,4 @@ In order to serve the website locally just run:
 ./scripts/serve
 </pre>
 
-<small>Many thanks to <a href="https://github.com/joariasl" target="blank">@joariasl</a> for the language support! </small>
+<small>Many thanks to <a href="https://github.com/joariasl" target="\_blank">@joariasl</a> for the language support! </small>
