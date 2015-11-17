@@ -8,9 +8,9 @@
                 <i class="fa fa-bars"></i>
             </button>
             {% if page.section-type == "index" %}
-              <a class="navbar-brand page-scroll" href="#page-top">
+              <a class="navbar-brand page-scroll" data-toggle="collapse" data-target=".navbar-main-collapse" href="#page-top">
             {% else %}
-              <a class="navbar-brand page-scroll" href="{{site.baseurl}}/index.html#page-top">
+              <a class="navbar-brand page-scroll" data-toggle="collapse" data-target=".navbar-main-collapse" href="{{site.baseurl}}/index.html#page-top">
             {% endif %}
             <div>{% if site.black-favicon %}<img src="{{site.baseurl}}{{ site.black-favicon }}" alt="">  {% endif %}{{ site.title }}</div>
             </a>
