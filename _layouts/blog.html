@@ -16,10 +16,12 @@
 
         {{ page.content | markdownify }}
 
-        {% for post in paginator.posts %}
-          <h4 align="left"><strong>{{ post.date | date_to_string }}</strong> <small>. {{ post.category }} .</small> <br class="visible-xs-block visible-sm-block"><a href="{{site.baseurl}}{{post.url}}"> <strong>{{ post.title }}</strong> </a> <br class="visible-xs-block visible-sm-block"><small><a href="{{site.baseurl}}{{post.url}}#disqus_thread">Comments</a></small></h4>
-        {% endfor %}
-
+        <div class="col-lg-10 col-lg-offset-2">
+          {% for post in paginator.posts %}
+            <h4 align="left"><strong>{{ post.date | date_to_string }}</strong> <small>. {{ post.category }} .</small> <br class="visible-xs-block visible-sm-block"><a href="{{site.baseurl}}{{post.url}}"> <strong>{{ post.title }}</strong> </a> <br class="visible-xs-block visible-sm-block"><small><a href="{{site.baseurl}}{{post.url}}#disqus_thread">Comments</a></small></h4>
+          {% endfor %}
+        </div>
+        
         {% include pagination.html %}
 
         </div>
