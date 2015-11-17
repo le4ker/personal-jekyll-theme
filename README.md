@@ -72,7 +72,7 @@ The theme contains documentation in the form of [blog posts](https://panossakkos
 
 ## Wiki
 
-Don't forget to list your { Personal } blog in the [wiki](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/Blogs-using-%7B-Personal-%7D) 😉
+Don't forget to list your { Personal } blog in the [Blogs using { Personal }](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/Blogs-using-%7B-Personal-%7D) wiki page in order to drive some traffic to your website 😉
 
 ## Integrating bug fixes and features into your old fork
 
