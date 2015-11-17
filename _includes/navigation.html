@@ -2,47 +2,50 @@
 <!-- Navigation Start -->
 
 <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                <i class="fa fa-bars"></i>
-            </button>
-            {% if page.section-type == "index" %}
-              <a class="navbar-brand page-scroll" href="#page-top">
-            {% else %}
-              <a class="navbar-brand page-scroll" href="{{site.baseurl}}/index.html#page-top">
-            {% endif %}
-            <div>{% if site.black-favicon %}<img src="{{site.baseurl}}{{ site.black-favicon }}" alt="">  {% endif %}{{ site.title }}</div>
-            </a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-            <ul class="nav navbar-nav">
-                {% if page.section-type == "index" %}
-
-                  <!-- Scroll to section for each page in index -->
-                  {% for p in site.pages_list %}
-                    <li>
-                      <a class="page-scroll" href="#{{ p[1] }}"> {{ p[0] }}</a>
-                    </li>
-                  {% endfor %}
-
-                {% else %}
-                  <!-- Blog, Post, Tag pages-->
-                  {% for p in site.pages_list %}
-                    <li>
-                    {% comment %} If are blog, redirect to index.html of Blog {% endcomment %}
-                    {% if p[1] == "latest-post" %}
-                        <a class="page-scroll" href="{{site.baseurl}}/blog/index.html"> {{ p[0] }}</a>
-                    {% else %}
-                        <a class="page-scroll" href="{{site.baseurl}}/index.html#{{ p[1] }}"> {{ p[0] }}</a>
-                    {% endif %}
-                    </li>
-                  {% endfor %}
-                {% endif %}
-            </ul>
-        </div>
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+        <i class="fa fa-bars"></i>
+      </button>
+      {% if page.section-type == "index" %}
+        <a class="navbar-brand page-scroll" href="#page-top">
+      {% else %}
+        <a class="navbar-brand" href="{{site.baseurl}}/index.html">
+      {% endif %}
+          <div>
+            {% if site.black-favicon %}<img src="{{site.baseurl}}{{ site.black-favicon }}" alt="">{% endif %}
+            {{ site.title }}
+          </div>
+        </a>
     </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+      <ul class="nav navbar-nav">
+        {% if page.section-type == "index" %}
+
+          <!-- Scroll to section for each page in index -->
+          {% for p in site.pages_list %}
+            <li>
+              <a class="page-scroll" href="#{{ p[1] }}"> {{ p[0] }}</a>
+            </li>
+          {% endfor %}
+
+        {% else %}
+          <!-- Blog, Post, Tag pages-->
+          {% for p in site.pages_list %}
+            <li>
+            {% comment %} If are blog, redirect to index.html of Blog {% endcomment %}
+            {% if p[1] == "latest-post" %}
+                <a class="page-scroll" href="{{site.baseurl}}/blog/index.html"> {{ p[0] }}</a>
+            {% else %}
+                <a class="page-scroll" href="{{site.baseurl}}/index.html#{{ p[1] }}"> {{ p[0] }}</a>
+            {% endif %}
+            </li>
+          {% endfor %}
+        {% endif %}
+      </ul>
+    </div>
+  </div>
 </nav>
 
 <!-- Navigation End -->

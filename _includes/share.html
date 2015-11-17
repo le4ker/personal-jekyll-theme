@@ -12,7 +12,7 @@
   {% if site.twitter-share %}
     <div style="float:left; padding: 0 5px; vertical-align:top">
       <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{site.url}}{{ site.baseurl}}{{page.url}}" data-text="{{page.title}} {% for tag in page.tags%}#{{ tag }} {% endfor %}"></a>
-  </div>
+    </div>
   {% endif %}
 
   {% if site.reddit-share %}
@@ -25,46 +25,47 @@
   {% endif %}
 
   {% if site.linkedin-share %}
-  <div style="float:left; padding: 0 5px; vertical-align:top; background-color: #0077B5; border-radius:3px">
-    <a style="color: #fff; vertical-align:middle; align: middle;" href="https://www.linkedin.com/cws/share?url={{site.url}}{{site.baseurl}}{{page.url}}&amp;title={{site.title}} | {{page.title}}&amp;lang=en_US" target="_blank"><i class="fa fa-linkedin"></i> | Share</a>
-  </div>
+    <div style="float:left; padding: 0 5px; vertical-align:top; background-color: #0077B5; border-radius:3px">
+      <a style="color: #fff; vertical-align:middle; align: middle;" href="https://www.linkedin.com/cws/share?url={{site.url}}{{site.baseurl}}{{page.url}}&amp;title={{site.title}} | {{page.title}}&amp;lang=en_US" target="_blank"><i class="fa fa-linkedin"></i> | Share</a>
+    </div>
   {% endif %}
 
   {% if site.google-plus-share %}
-  <div style="float:left; padding: 0 5px; vertical-align:top">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <div class="g-plus" data-action="share" data-href="{{site.url}}{{ site.baseurl}}{{page.url}}" data-annotation="bubble"></div>
-  </div>
-  {% endif %}  
-
+    <div style="float:left; padding: 0 5px; vertical-align:top">
+      <script src="https://apis.google.com/js/platform.js" async defer></script>
+      <div class="g-plus" data-action="share" data-href="{{site.url}}{{ site.baseurl}}{{page.url}}" data-annotation="bubble"></div>
+    </div>
+  {% endif %}
 
   {% if site.vkontakte-share %}
-  <div style="float:left; padding: 0 5px; vertical-align:top; background-color: #0077B5; border-radius:3px">
-  <style type="text/css">
-    vk {color: #fff;}
-  </style>
-    <script type="text/javascript" src="http://vk.com/js/api/share.js?9"; charset="windows-1251"></script>
-    <script type="text/javascript">
-        document.write(VK.Share.button(
-        {
-            url: '{{site.url}}{{ site.baseurl}}{{page.url}}',
-            title: '{{site.title}} | {{page.title}}',
-            description: '{{page.description}}',
-        },
-        {
-            type: 'custom',
-            text: '<vk><i class="fa fa-vk"></i> Share</vk>'
-        }
-        ));
-    </script>
-  </div>
-  {% endif %}  
-</div>
+    <div style="float:left; padding: 0 5px; vertical-align:top; background-color: #0077B5; border-radius:3px">
+    <style type="text/css">
+      vk {color: #fff;}
+    </style>
+      <script type="text/javascript" src="http://vk.com/js/api/share.js?9"; charset="windows-1251"></script>
+      <script type="text/javascript">
+          document.write(VK.Share.button(
+          {
+              url: '{{site.url}}{{ site.baseurl}}{{page.url}}',
+              title: '{{site.title}} | {{page.title}}',
+              description: '{{page.description}}',
+          },
+          {
+              type: 'custom',
+              text: '<vk><i class="fa fa-vk"></i> Share</vk>'
+          }
+          ));
+      </script>
+    </div>
+  {% endif %}
 
   {% if site.pinterest-share %}
-  <div style="float:left; padding: 0 5px; vertical-align:top">
-    <script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
-    <a data-pin-do="buttonPin" href="https://www.pinterest.com/pin/create/button/" data-pin-config="beside" data-pin-description="{{page.description}}" data-pin-url="{{site.url}}{{ site.baseurl}}{{page.url}}"></a>
-  </div>
+    <div style="float:left; padding: 0 5px; vertical-align:top">
+      <script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
+      <a data-pin-do="buttonPin" href="https://www.pinterest.com/pin/create/button/" data-pin-config="beside" data-pin-description="{{page.description}}" data-pin-url="{{site.url}}{{ site.baseurl}}{{page.url}}"></a>
+    </div>
   {% endif %}
+
+</div>
+
 <!-- Share Buttons End -->
