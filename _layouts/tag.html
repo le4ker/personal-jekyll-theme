@@ -15,28 +15,22 @@
         <div class="col-lg-10 col-lg-offset-1">
 
           <div id="archives">
-            <div>
-              {% assign tag = page.title %}
+          <div>
 
-              <h3 id="#{{ tag }}">#{{ tag }}</h3>
+          {% assign tag = page.title %}
 
-              {% for post in site.posts %}
-                {% if post.tags contains tag %}
-                  <h4 align="left"><strong>{{ post.date | date_to_string }}</strong> <small>. {{ post.category }} .</small> <a href="{{site.baseurl}}{{ post.url }}"> <strong>{{ post.title }} </a> </strong> <small><a href="{{site.baseurl}}{{post.url}}#disqus_thread">Comments</a></small></h4>
-                {% endif %}
-              {% endfor %}
+          <h3 id="#{{ tag }}">#{{ tag }}</h3>
 
-            </div>
+          <div class="col-lg-10 col-lg-offset-2">
+            {% for post in site.posts %}
+              {% if post.tags contains tag %}
+                <h4 align="left"><strong>{{ post.date | date_to_string }}</strong> <small>. {{ post.category }} .</small> <a href="{{site.baseurl}}{{ post.url }}"> <strong>{{ post.title }} </a> </strong> <small><a href="{{site.baseurl}}{{post.url}}#disqus_thread">Comments</a></small></h4>
+              {% endif %}
+            {% endfor %}
           </div>
 
-        </div>
-      </div>
-    </section>
-
-    <section class="container content-section text-center">
-      <div class="row">
-        <div class="col-lg-10 col-lg-offset-1">
           {% include social-buttons.html %}
+
         </div>
       </div>
     </section>
