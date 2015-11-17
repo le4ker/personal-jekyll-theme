@@ -7,8 +7,6 @@
 It's your personal blog and your point of reference website.
 You can watch it in action [here](https://panossakkos.github.io/personal-jekyll-theme/)!
 
-Have you published your own website by forking { Personal } and now you want to get the latest bug fixes and features from this repo into your website? Then check [this](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/How-to-integrate-latest-bug-fixes-and-features-into-your-past-fork) out!
-
 ## What value does { Personal } add
 
 * Fork of [Timeline](https://github.com/kirbyt/timeline-jekyll-theme) (mashup of [Grayscale by Start Bootstrap](https://github.com/IronSummitMedia/startbootstrap-grayscale) and [Agency Jekyll Theme](https://github.com/y7kim/agency-jekyll-theme))
@@ -20,14 +18,14 @@ Have you published your own website by forking { Personal } and now you want to 
     * Tell your story so far with a sleek timeline of dates, pictures and descriptions
   * White on black text, making the reading experience tireless
   * Google analytics  
-* Customization and control of your website and blog through the site config
+* Customization and full control of your website and blog through the site config
 * Blogging functionality
   * Preview of the latest post in the home page
   * Archive page
   * Gesture navigation in archive and post pages by swiping
   * #tags
   * Disqus comments
-  * Facebook, Twitter, Reddit, LinkedIn, Google+, Pinterest, VKontakte share buttons
+  * Facebook, Twitter, Reddit, LinkedIn, Google+, Pinterest and VKontakte share buttons
   * RSS feed
 * Travis CI integration with [html-proofer](https://github.com/gjtorikian/html-proofer)
 * Protection from Email harvesting
@@ -41,7 +39,7 @@ Want to get { Personal } without messing with jekyll installations and terminal 
   1. Fork the personal-jekyll-theme repository
   2. Rename the forked repository to yourgithubusername.github.io
   3. Visit https://yourgithubusername.github.io
-  4. Start modifying the _config.yml and editing your blog's posts from Github's online editor or a third party online editor (i.e. [Prose](https://prose.io/))
+  4. Start modifying the \_config.yml and editing your blog's posts from Github's online editor or a third party online editor (i.e. [Prose](https://prose.io/))
 
 ## Documentation
 
@@ -49,7 +47,7 @@ The theme contains documentation in the form of blog posts.
 Check it live [here](https://panossakkos.github.io/personal-jekyll-theme/blog/index.html)!
 
 ## Screenshots
-### Intro page
+### Header
 ![Intro](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/index.jpg)
 ###About
 ![About](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/about.jpg)
@@ -73,10 +71,15 @@ Check it live [here](https://panossakkos.github.io/personal-jekyll-theme/blog/in
 ````
 
 ## Wiki
+
 Don't forget to list your { Personal } blog in the [wiki](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/Blogs-using-%7B-Personal-%7D) 😉
+
+## Integrating bug fixes and features into your old fork
+
+Have you published your own website by forking { Personal } and now you want to get the latest bug fixes and features from this repo into your website? Then check [this](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/How-to-integrate-latest-bug-fixes-and-features-into-your-past-fork) out.
 
 ## Supporting the repo
 
 Proposals, pull requests and issues are more than welcome, let's make the web a bit more beautiful and secure :wink:
 
-In case you want to say thank you by donating Bitcoins 1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi
+In case you want to say thank you by donating Bitcoins to all the contributors, [this](https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi) is our address.
