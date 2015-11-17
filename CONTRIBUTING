@@ -3,5 +3,5 @@ Open an Issue in order to file a bug or [suggest](https://github.com/PanosSakkos
 If you want to close the issue:
 
 1. Fork the repository and work on the fix or the feature. Don't forget to add you name in the CONTRIBUTORS file, no matter how small is your fix, even if it's a typo :wink:
-2. Open a Pull Request mentioning "Fixed #(issue number)" in order to auto-resolve the issue after merging the Pull Request
+2. Open a Pull Request with commits mentioning which issue are they fixing by adding in their description "Fixes #IssueNumber", in order to auto-resolve the issues after the Pull Request is merged into the master branch
 3. Consider joining our [Gitter](https://gitter.im/PanosSakkos/personal-jekyll-theme) channel in order to make our communication easier
