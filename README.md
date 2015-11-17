@@ -44,8 +44,7 @@ Want to get { Personal } without messing with jekyll installations and terminal 
 
 ## Documentation
 
-The theme contains documentation in the form of blog posts.
-Check it live [here](https://panossakkos.github.io/personal-jekyll-theme/blog/index.html)!
+The theme contains documentation in the form of [blog posts](https://panossakkos.github.io/personal-jekyll-theme/blog/index.html).
 
 ## Screenshots
 ### Header
