@@ -5,6 +5,7 @@
 
 { Personal } is a free responsive Jekyll theme about you.
 It's your personal blog and your point of reference website.
+
 You can watch it in action [here](https://panossakkos.github.io/personal-jekyll-theme/)!
 
 ## What value does { Personal } add
