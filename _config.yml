@@ -15,6 +15,8 @@ google-tracking-id: "UA-69365319-1"
 markdown: redcarpet
 highlighter: true
 
+gems: [jekyll-paginate]
+
 # Forces https everywhere in your website, except when you serve it locally
 
 force-https: True
