@@ -12,12 +12,23 @@
 
     <section id="{{ page.title }}" class="container content-section">
       <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
+        <div class="col-lg-9 col-lg-offset-1">
 
         {{ page.content | markdownify }}
 
         {% for post in paginator.posts %}
-          <h4 align="left"><strong>{{ post.date | date_to_string }}</strong> <small>. {{ post.category }} .</small> <a href="{{site.baseurl}}{{post.url}}"> <strong>{{ post.title }} </strong> </a> <small><a href="{{site.baseurl}}{{post.url}}#disqus_thread">Comments</a></small></h4>
+          <h4 align="left">
+            <div class="row col-md-5">
+              <strong class='col-md-6'>{{ post.date | date_to_string }}</strong>
+              <small class='col-md-6'>{{ post.category }}</small>
+            </div>
+            <a href="{{site.baseurl}}{{post.url}}" class="col-md-5">
+              <strong>{{ post.title }} </strong>
+            </a>
+            <small class='col-md-2'>
+              <a href="{{site.baseurl}}{{post.url}}#disqus_thread">Comments</a>
+            </small>
+          </h4>
         {% endfor %}
 
         {% include pagination.html %}
