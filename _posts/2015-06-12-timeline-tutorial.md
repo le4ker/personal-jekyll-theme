@@ -1,14 +1,14 @@
 ---
 layout: post
 section-type: post
-title: Adding a life event
+title: Adding a life event in the Timeline
 category: tech
 tags: [ 'tutorial' ]
 ---
-One of the cool features of { Personal } is that enables you to tell your life's story in
+One of the coolest features of { Personal } is that enables you to tell your life's story in
 the form of a timeline of photos, dates and text descriptions. Let's see how it works.
 
-Open the _config.yml and find the events list definition, it should look like this:
+Open the \_config.yml and find the events list definition, it should look like this:
 
 <pre style="text-align: left">
 events:
