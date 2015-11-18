@@ -14,7 +14,7 @@
 
     {% for p in site.pages_list %}
       {% for page in site.pages %}
-        {% if p[1] == page.section-type%}
+        {% if p[1] == page.section-type %}
           {% include {{ page.path }} %}
         {% endif %}
       {% endfor %}

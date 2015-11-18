@@ -24,7 +24,7 @@
           <div class="col-lg-10 col-lg-offset-2">
             {% for post in site.posts %}
               {% if post.tags contains tag %}
-                <h4 align="left"><strong>{{ post.date | date_to_string }}</strong> <small>. {{ post.category }} .</small> <a href="{{site.baseurl}}{{ post.url }}"> <strong>{{ post.title }} </a> </strong> <small><a href="{{site.baseurl}}{{post.url}}#disqus_thread">Comments</a></small></h4>
+                <h4 align="left"><strong>{{ post.date | date_to_string }}</strong> <small>. {{ post.category }} .</small> <a href="{{site.baseurl}}{{post.url}}"> <strong>{{ post.title }} </a> </strong> <small><a href="{{site.baseurl}}{{post.url}}#disqus_thread">Comments</a></small></h4>
               {% endif %}
             {% endfor %}
           </div>

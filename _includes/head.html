@@ -6,21 +6,20 @@
     <script>
     // Don't force http when serving the website locally
     if (!(window.location.host.startsWith("127.0.0.1")) && (window.location.protocol != "https:"))
-        window.location.protocol = "https";
+      window.location.protocol = "https";
     </script>
   {% endif %}
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{{ site.description }}">
-  <meta name="author" content="{{ site.author }}">
-  <meta name="keywords" content="{{ site.keywords }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">
-  {% assign fourofour = "/404.html"%}
-  {% if page.url == {{fourofour}} | prepend: {{site.baseurl}} %}
+  <meta name="description" content="{{site.description}}">
+  <meta name="author" content="{{site.author}}">
+  <meta name="keywords" content="{{site.keyword}}">
+  <link rel="canonical" href="{{page.url | replace:'index.html','' | prepend: site.baseurl}}">
+  {% if page.url == "/404.html" | prepend: {{site.baseurl}} %}
     <meta http-equiv="refresh" content="20; url={{site.baseurl}}/">
   {% endif %}
-  <title>{{ site.title }} {% if page.title %} | {{ page.title }}{% endif %}</title>
+  <title>{{site.title}} {% if page.title %} | {{page.title}}{% endif %}</title>
 
   <!-- Bootstrap Core CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -43,7 +42,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
   {% if site.favicon %}
-    <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}{{ site.favicon }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}{{site.favicon}}">
   {% endif %}
 </head>
 

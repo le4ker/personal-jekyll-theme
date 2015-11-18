@@ -26,19 +26,22 @@
           <!-- Scroll to section for each page in index -->
           {% for p in site.pages_list %}
             <li>
-              <a class="page-scroll" href="#{{ p[1] }}"> {{ p[0] }}</a>
+              <a class="page-scroll" href="#{{ p[1] }}"> {{p[0]}} </a>
             </li>
           {% endfor %}
 
         {% else %}
-          <!-- Blog, Post, Tag pages-->
+          <!-- Blog, Post, Tag and Error pages -->
           {% for p in site.pages_list %}
             <li>
-            {% comment %} If are blog, redirect to index.html of Blog {% endcomment %}
             {% if p[1] == "latest-post" %}
-                <a class="page-scroll" href="{{site.baseurl}}/blog/index.html"> {{ p[0] }}</a>
+              {% if page.url == "/blog/" | prepend: {{site.baseurl}} %}
+                <a class="page-scroll" href="#page"> {{p[0]}} </a>
+              {% else %}
+                <a href="{{site.baseurl}}/blog/"> {{p[0]}} </a>
+              {% endif %}
             {% else %}
-                <a class="page-scroll" href="{{site.baseurl}}/index.html#{{ p[1] }}"> {{ p[0] }}</a>
+                <a href="{{site.baseurl}}/#{{ p[1] }}"> {{p[0]}} </a>
             {% endif %}
             </li>
           {% endfor %}
