@@ -30,6 +30,13 @@
     </div>
   {% endif %}
 
+  {% if site.pinterest-share %}
+    <div style="float:left; padding: 0 5px; vertical-align:top">
+      <script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
+      <a data-pin-do="buttonPin" href="https://www.pinterest.com/pin/create/button/" data-pin-config="beside" data-pin-description="{{page.description}}" data-pin-url="{{site.url}}{{ site.baseurl}}{{page.url}}"></a>
+    </div>
+  {% endif %}
+
   {% if site.google-plus-share %}
     <div style="float:left; padding: 0 5px; vertical-align:top">
       <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -56,13 +63,6 @@
           }
           ));
       </script>
-    </div>
-  {% endif %}
-
-  {% if site.pinterest-share %}
-    <div style="float:left; padding: 0 5px; vertical-align:top">
-      <script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
-      <a data-pin-do="buttonPin" href="https://www.pinterest.com/pin/create/button/" data-pin-config="beside" data-pin-description="{{page.description}}" data-pin-url="{{site.url}}{{ site.baseurl}}{{page.url}}"></a>
     </div>
   {% endif %}
 
