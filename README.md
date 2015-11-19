@@ -28,10 +28,11 @@ You can watch it in action [here](https://panossakkos.github.io/personal-jekyll-
   * Disqus comments
   * Facebook, Twitter, Reddit, LinkedIn, Google+, Pinterest and VKontakte share buttons
   * RSS feed
-* Travis CI integration with [html-proofer](https://github.com/gjtorikian/html-proofer)
-* Protection from Email harvesting
-* Forcing of https protocol
 * Cool (anti-procrastinating) 404 page
+* [Android Web App mode](https://developer.chrome.com/multidevice/android/installtohomescreen)
+* Forcing of https protocol
+* Protection from Email harvesting
+* Travis CI integration with [html-proofer](https://github.com/gjtorikian/html-proofer)
 
 ## { Personal } à la JekyllNow
 
@@ -63,6 +64,8 @@ The theme contains documentation in the form of [blog posts](https://panossakkos
 ![Tags](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/tags.jpg)
 ### 404
 ![404](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/404.jpg)
+### Web App mode
+![Pinned](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/pinned.jpg)
 
 ## How to run locally
 
