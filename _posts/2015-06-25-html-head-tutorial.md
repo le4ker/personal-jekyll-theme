@@ -8,7 +8,7 @@ tags: [ 'tutorial' ]
 
 In the \_config.yml, find and set the variables of the Head section:
 
-{% highlight yaml linenos %}
+<pre style="text-align: left">
 #############
 # HTML Head #
 #############
@@ -19,16 +19,16 @@ title: "{ John Smith }"
 favicon: "/img/favicon.ico"
 description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
 keywords: "smith, jones, personal, Jekyll, theme"
-{% endhighlight %}
+</pre>
 
 The values that you set, will be placed in the head section of every generated HTML page.
 
 Don't forget to set the configurations for your site's url and Google tracking id:
 
-{% highlight yaml linenos %}
+<pre style="text-align: left">
 url: "http://panossakkos.github.io/personal-jekyll-theme/"
 google-tracking-id: ""
-{% endhighlight %}
+</pre>
 
 The url is essential to be set, because it's used in many places across the theme.
 
@@ -39,8 +39,8 @@ If you are using *{ Personal }* as a Github repository theme, set the repository
 This step is essential, since its related to file paths!
 In order to serve the website locally just run:
 
-{% highlight bash linenos %}
+<pre style="text-align: left">
 ./scripts/serve
-{% endhighlight %}
+</pre>
 
 <small>Many thanks to <a href="https://github.com/joariasl" target="\_blank">@joariasl</a> for the language support! </small>

@@ -10,7 +10,7 @@ You can make your website behave like a native web app in
 devices by setting the web-app-mode variable to True and providing links for the
 icons for each resolution:
 
-{% highlight yaml linenos %}
+<pre style="text-align: left">
 web-app-mode: True
 
 # Icons for Chrome Web App mode https://developer.chrome.com/multidevice/android/installtohomescreen
@@ -20,7 +20,7 @@ icon-72p: "/img/web-app/icon-72p.png"
 icon-96p: "/img/web-app/icon-96p.png"
 icon-144p: "/img/web-app/icon-144p.png"
 icon-192p: "/img/web-app/icon-192p.png"
-{% endhighlight %}
+</pre>
 
 This is how the website will look when added to the homescreen:
 

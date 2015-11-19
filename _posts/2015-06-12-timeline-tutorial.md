@@ -10,7 +10,7 @@ the form of a timeline of photos, dates and text descriptions. Let's see how it 
 
 Open the \_config.yml and find the events list definition, it should look like this:
 
-{% highlight yaml linenos %}
+<pre style="text-align: left">
 events:
   - image: "/img/career/spidertocat.png"
     date: "September 2013 - Today"
@@ -18,7 +18,7 @@ events:
   - image: "/img/career/baracktocat.jpg"
     date: "September 2007 - August 2013"
     description: "Started coding"
-{% endhighlight %}
+</pre>
 
 For each event of your life, add a tuple of image, date and description to the events, and the timeline will be automatically generated!
 
