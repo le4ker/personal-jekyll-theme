@@ -55,17 +55,3 @@ In order to generate the tag pages, simply run the *generate-tags* script from t
 The script will parse all your posts, and generate the tag pages for the newly added tags.
 
 If you are not using Github Pages, you can automate the execution of this script during build time.
-
-### Syntax highlighting
-
-If you want to include a code snippet in your post, simply use the following syntax:
-
-{% highlight c linenos %}
-#include<stdio.h>
-
-int main()
-{
-  printf("Hello, world of syntax highlighting!");
-  return 0;
-}
-{% endhighlight %}
