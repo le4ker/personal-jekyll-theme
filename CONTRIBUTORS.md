@@ -7,3 +7,4 @@ In alphabetical order:
   5. Nathan Jaremkio <njaremko@gmail.com>
   6. Panos Sakkos <panos.sakkos@protonmail.com>
   7. Prashant Solanki <prs.solanki@live.com>
+  8. Fatima Villanueva (Kaira) <fzf.villanueva@gmail.com>
