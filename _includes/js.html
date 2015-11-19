@@ -22,11 +22,20 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
 {% if page.section-type == "index" %}
 
-  <!-- Collapse navbar when navvar-brand is clicked -->
+  <!-- Collapse navbar when navbar-brand is clicked -->
 
   <script>
   $(function(){$(".navbar-brand").click(function(){$(".collapse.in")&&$(".collapse.in").animate({height:"1px"},500,function(){$(".collapse.in").removeClass("in")})})});
   </script>
+
+{% endif %}
+
+{% if site.syntax-highlight and page.section-type == "post" %}
+
+  <!-- Syntax highlight in post pages-->
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 
 {% endif %}
 

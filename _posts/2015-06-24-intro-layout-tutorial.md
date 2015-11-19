@@ -21,32 +21,32 @@ If you want to disable the dynamic typing, set the site.dynamic-typing to false 
 
 You can add your desired dynamically typed text in the lines list:
 
-<pre style="text-align: left">
+<pre><code data-trim class="yaml">
 ##############################
 # Dynamic Text on the header #
 ##############################
 
 dynamic-typing: True
-shuffle: True	# Shuffle the lines.
+shuffle: True # Shuffle the lines.
 loop: True
-loop-count:	False # Set False for infinite loop, or set any number for finite loop.
-type-speed:	10		# Default 10
-start-delay: 200	# Default 200
-delete-delay: 5000	# Default 5000
-lines:			# You can add HTML Tags in the Text
+loop-count: False # Set False for infinite loop, or set any number for finite loop.
+type-speed: 10 # Default 10
+start-delay: 200 # Default 200
+delete-delay: 5000 # Default 5000
+lines: # You can add HTML Tags in the Text
   - text: "The lower you fall, the higher you'll fly."
   - text: "Where’s your will to be weird?"
-</pre>
+</code></pre>
 
 <small>Many thanks to <a href="https://github.com/prashantsolanki3" target="blank">@prashantsolanki3</a> for this feature!</small>
 
 In order to set the background and your image, modify the following variables in \_config:
 
-<pre style="text-align: left">
+<pre><code data-trim class="yaml">
 black-favicon: "/img/black-lab-glass.ico"
 background-img: "../img/intro-bg.jpg"
 me-img: "/img/jetpacktocat.png"
-</pre>
+</code></pre>
 
 The black favicon is an image on the left of the navigation bar.
 Preferably it should be a black and white version of your favicon.

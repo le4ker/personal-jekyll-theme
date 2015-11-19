@@ -20,6 +20,8 @@ google-tracking-id: "UA-35880426-4"
 
 force-https: True
 
+syntax-highlight: True
+
 # Sections shown in the index page
 
 pages_list:

@@ -9,7 +9,7 @@ tags: [ 'tutorial' ]
 Social buttons (rendered in the footer) are great for having a small hub with all your social footprint.
 In order to change them, jump to \_config.yml and edit the social list:
 
-<pre style="text-align: left">
+<pre><code data-trim class="yaml">
 social:
   - title: "github"
     url: "https://github.com/"
@@ -19,7 +19,7 @@ social:
     url: "http://youtube.com/"
   - title: "rss"
     url: "/feed.xml"
-</pre>
+</code></pre>
 
 The titles of the social link are used to find the icon in Font Awesome.
 
