@@ -10,10 +10,10 @@ tags: [ 'tutorial' ]
 
 Run the ./scripts/newpost script with the file name of the post as an argument:
 
-<pre style="text-align: left">
+{% highlight bash linenos %}
 cd <your { Personal } repo>
 ./scripts/newpost hello-world
-</pre>
+{% endhighlight %}
 
 A a new post template with name YYYY-MM-DD-hello-world.md will be created under ./\_posts, with the current date.
 
@@ -25,7 +25,7 @@ post, with publication date <i>YYYY-MM-DD</i>.
 
 The content starts with:
 
-<pre style="text-align: left">
+{% highlight yaml linenos %}
 ---
 layout: post
 section-type: post
@@ -33,7 +33,7 @@ title: Title
 category: Category
 tags: [ 'tag1', 'tag2' ]
 ---
-</pre>
+{% endhighlight %}
 
 The *layout* and *section-type* are used by the theme.
 
@@ -48,9 +48,9 @@ As a result we have to create the tag pages before building and publishing the s
 
 In order to generate the tag pages, simply run the *generate-tags* script from the repo's root directory:
 
-<pre style="text-align: left">
+{% highlight bash linenos %}
 ./scripts/generate-tags
-</pre>
+{% endhighlight %}
 
 The script will parse all your posts, and generate the tag pages for the newly added tags.
 
