@@ -30,6 +30,7 @@ You can watch it in action [here](https://panossakkos.github.io/personal-jekyll-
   * RSS feed
 * Cool (anti-procrastinating) 404 page
 * [Android Web App mode](https://developer.chrome.com/multidevice/android/installtohomescreen)
+* Syntax highlighting
 * Forcing of https protocol
 * Protection from Email harvesting
 * Travis CI integration with [html-proofer](https://github.com/gjtorikian/html-proofer)

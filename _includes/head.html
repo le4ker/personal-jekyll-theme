@@ -16,9 +16,6 @@
   <meta name="author" content="{{site.author}}">
   <meta name="keywords" content="{{site.keyword}}">
   <link rel="canonical" href="{{page.url | replace:'index.html','' | prepend: site.baseurl}}">
-  {% if page.url == "/404.html" | prepend: {{site.baseurl}} %}
-    <meta http-equiv="refresh" content="20; url={{site.baseurl}}/">
-  {% endif %}
   <title>{{site.title}} {% if page.title %} | {{page.title}}{% endif %}</title>
 
   <!-- Bootstrap Core CSS -->
@@ -44,8 +41,25 @@
   {% if site.favicon %}
     <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}{{site.favicon}}">
   {% endif %}
+
+  {% if page.url == "/404.html" | prepend: {{site.baseurl}} %}
+    <meta http-equiv="refresh" content="20; url={{site.baseurl}}/">
+  {% endif %}
+
   {% if site.web-app-mode %}
+
+    <!-- Android Web App mode -->
+
     <link rel="manifest" href="{{site.baseurl}}/manifest.json">
+
+  {% endif %}
+
+  {% if page.section-type == "post" %}
+
+    <!-- Code highlighting in Post pages -->
+
+    <link href="{{site.baseurl}}/css/syntax.css" rel="stylesheet">
+
   {% endif %}
 </head>
 
