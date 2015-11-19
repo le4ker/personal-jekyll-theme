@@ -64,6 +64,8 @@ The theme contains documentation in the form of [blog posts](https://panossakkos
 ![Tags](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/tags.jpg)
 ### 404
 ![404](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/404.jpg)
+### Mobile rendering
+![Web App](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/web-app.jpg)
 ### Web App mode
 ![Pinned](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/pinned.jpg)
 
