@@ -61,8 +61,6 @@ If you are not using Github Pages, you can automate the execution of this script
 If you want to include a code snippet in your post, simply use the following syntax:
 
 <pre><code data-trim class="c">
-#include<stdio.h>
-
 int main()
 {
   printf("Hello, world of syntax highlighting!");
