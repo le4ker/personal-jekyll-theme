@@ -23,6 +23,7 @@ You can watch it in action [here](https://panossakkos.github.io/personal-jekyll-
 * Blogging functionality
   * Preview of the latest post in the home page
   * Archive page
+  * Syntax highlighting
   * Emojis
   * Gesture navigation in archive and post pages by swiping
   * #tags
@@ -30,8 +31,7 @@ You can watch it in action [here](https://panossakkos.github.io/personal-jekyll-
   * Facebook, Twitter, Reddit, LinkedIn, Google+, Pinterest and VKontakte share buttons
   * RSS feed
 * Cool (anti-procrastinating) 404 page
-* [Android Web App mode](https://developer.chrome.com/multidevice/android/installtohomescreen)
-* Syntax highlighting
+* [Android] Web App mode(https://developer.chrome.com/multidevice/android/installtohomescreen)
 * Forcing of https protocol
 * Protection from Email harvesting
 * Travis CI integration with [html-proofer](https://github.com/gjtorikian/html-proofer)
