@@ -59,6 +59,12 @@ a {
     }
 }
 
+div {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+}
+
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba($light, 0.3);
