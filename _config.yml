@@ -32,7 +32,8 @@ pages_list:
 
 web-app-mode: True
 
-# Icons for Chrome Web App mode https://developer.chrome.com/multidevice/android/installtohomescreen
+# Icons for Web App mode 
+
 icon-36p: "/img/web-app/icon-36p.png"
 icon-48p: "/img/web-app/icon-48p.png"
 icon-72p: "/img/web-app/icon-72p.png"

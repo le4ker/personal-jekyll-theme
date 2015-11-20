@@ -1,0 +1,18 @@
+
+{% if site.web-app-mode %}
+
+  <!-- iOS Web App mode -->
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="apple-touch-icon" sizes="36x36" href="{{site.baseurl}}{{site.icon-36p}}">
+  <link rel="apple-touch-icon" sizes="48x48" href="{{site.baseurl}}{{site.icon-48p}}">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{site.baseurl}}{{site.icon-72p}}">
+  <link rel="apple-touch-icon" sizes="96x96" href="{{site.baseurl}}{{site.icon-96p}}">
+  <link rel="apple-touch-icon" sizes="144x144" href="{{site.baseurl}}{{site.icon-144p}}">
+  <link rel="apple-touch-icon" sizes="192x192" href="{{site.baseurl}}{{site.icon-192p}}">
+
+  <!-- Android Web App mode -->
+
+  <link rel="manifest" href="{{site.baseurl}}/manifest.json">
+
+{% endif %}

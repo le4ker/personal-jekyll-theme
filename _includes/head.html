@@ -2,13 +2,7 @@
 <!-- HEAD Start -->
 
 <head>
-  {% if site.force-https %}
-    <script>
-    // Don't force http when serving the website locally
-    if (!(window.location.host.startsWith("127.0.0.1")) && (window.location.protocol != "https:"))
-      window.location.protocol = "https";
-    </script>
-  {% endif %}
+  {% include force-https.html %}
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,21 +40,9 @@
     <meta http-equiv="refresh" content="20; url={{site.baseurl}}/">
   {% endif %}
 
-  {% if site.web-app-mode %}
+  {% include web-app.html %}
 
-    <!-- Android Web App mode -->
-
-    <link rel="manifest" href="{{site.baseurl}}/manifest.json">
-
-  {% endif %}
-
-  {% if site.syntax-highlight and page.section-type == "post"%}
-
-    <!-- Syntax highlight in post pages -->
-
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css">
-
-  {% endif %}
+  {% include syntax-highlight.html %}
 
 </head>
 
