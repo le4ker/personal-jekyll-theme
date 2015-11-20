@@ -23,6 +23,7 @@ You can watch it in action [here](https://panossakkos.github.io/personal-jekyll-
 * Blogging functionality
   * Preview of the latest post in the home page
   * Archive page
+  * Emojis
   * Gesture navigation in archive and post pages by swiping
   * #tags
   * Disqus comments

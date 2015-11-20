@@ -71,3 +71,9 @@ int main()
 </code></pre>
 
 <small>If you don't need syntax highlight in your website you can disable it by setting the syntax-highlight variable to False</small>
+
+### Emoji support
+
+You can add emojis to your posts by simply typing their [emoji code](http://www.emoji-cheat-sheet.com/)
+
+:wink:

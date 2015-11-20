@@ -317,3 +317,9 @@ body {
 /* END Added in { Personal } for Typed Cursor in Header */
 
 code { text-align: left; }
+
+img.emoji {
+  // Override any img styles to ensure Emojis are displayed inline
+  margin: 0px !important;
+  display: inline !important;
+}

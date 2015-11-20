@@ -151,4 +151,6 @@ paginate_path: "blog/page:num/"
 sass:
   style: compressed
 
-gems: [jekyll-paginate]
+gems:
+  - jekyll-paginate
+  - jemoji
