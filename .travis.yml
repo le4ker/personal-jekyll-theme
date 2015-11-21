@@ -3,7 +3,7 @@ rvm:
 - 2.1
 
 install: gem install jekyll jekyll-paginate jemoji html-proofer
-script: jekyll serve --baseurl "" --detach && htmlproof ./_site --disable-external --empty-alt-ignore
+script: JEKYLL_ENV=production jekyll serve --baseurl "" --detach && htmlproof ./_site --disable-external --empty-alt-ignore
 
 env:
   global:
