@@ -7,13 +7,12 @@ require 'fileutils'
 personal = ARGV[0]
 
 repoDirectories = [ '_includes', '_layouts', '_sass', 'blog', 'css', 'js' ]
-repoFiles = [ 'feed.xml' ]
+repoFiles = [ 'feed.xml', 'manifest.json' ]
 
 # Delete local resources of { Personal }
 repoDirectories.each{ |directory| FileUtils.rm_rf(directory) }
 repoFiles.each{ |file| FileUtils.rm(file) }
 puts '[+] Deleted local { Personal } resources'
-
 
 # Create the { Personal } directories again
 repoDirectories.each{ |directory| FileUtils.mkdir(directory) }
