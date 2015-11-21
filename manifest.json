@@ -41,6 +41,6 @@
       "density": 4.0
     }
   ],
-  "start_url": "{{site.baseurl}}",
+  "start_url": "{{site.url}}{{site.baseurl}}",
   "display": "standalone"
 }
