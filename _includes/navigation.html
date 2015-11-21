@@ -35,7 +35,7 @@
           {% for p in site.pages_list %}
             <li>
             {% if p[1] == "latest-post" %}
-              {% if page.url == "/blog/" | prepend: {{site.baseurl}} %}
+              {% if page.url == "/blog/index.html" | prepend: {{site.baseurl}} %}
                 <a class="page-scroll" href="#page"> {{p[0]}} </a>
               {% else %}
                 <a href="{{site.baseurl}}/blog/"> {{p[0]}} </a>
@@ -50,5 +50,20 @@
     </div>
   </div>
 </nav>
+
+{% if page.section-type == "blog" or page.section-type == "post" %}
+<div id="swipe-instruction" class="modal fade">
+  <div class="modal-content container content-section text-center">
+    <div class="row">
+      <div>
+        <h2>Hey!</h2>
+        <i id="hand-swipe" class="fa fa-hand-o-up"></i>
+        <p><strong>Did you know that you can navigate the archive pages by swiping left and right?<br>Check it out!</strong></p>
+        <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
 
 <!-- Navigation End -->

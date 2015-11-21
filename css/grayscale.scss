@@ -59,12 +59,6 @@ a {
     }
 }
 
-div {
-  -webkit-user-select: text;
-  -moz-user-select: text;
-  -ms-user-select: text;
-}
-
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba($light, 0.3);
@@ -241,6 +235,22 @@ div {
         line-height: 1.5;
         list-style-position: inside;
     }
+    p {
+      -webkit-user-select: text;
+      -moz-user-select: text;
+      -ms-user-select: text;
+    }
+    pre {
+      padding: 0;
+      > code {
+        text-align: left;
+      }
+    }
+    img.emoji {
+      /* Override any img styles to ensure Emojis are displayed inline */
+      margin: 0px !important;
+      display: inline !important;
+    }
 }
 
 /* Added in { Personal } */
@@ -322,10 +332,40 @@ body {
 }
 /* END Added in { Personal } for Typed Cursor in Header */
 
-code { text-align: left; }
-
-img.emoji {
-  // Override any img styles to ensure Emojis are displayed inline
-  margin: 0px !important;
-  display: inline !important;
+/* Animation for hand-swipe */
+@-webkit-keyframes swipe {
+    from {
+        left: 5%;
+    }
+    to {
+        left: -5%;
+    }
 }
+
+@-moz-keyframes swipe {
+    from {
+        left: 5%;
+    }
+    to {
+        left: -5%;
+    }
+}
+/* END Animation for hand-swipe */
+
+/* Style for swipe instruction section */
+#swipe-instruction {
+    .modal-content {
+        background-color: rgba(20, 20, 20, 0.6);
+        padding: 10px;
+        @media(min-width:768px) {
+          padding: 100px 0;
+        }
+        #hand-swipe {
+            font-size: 80px;
+            display: block;
+            position: relative;
+            animation: swipe ease-in-out 1s alternate infinite;
+        }
+    }
+}
+/* END Style for swipe instruction section */
