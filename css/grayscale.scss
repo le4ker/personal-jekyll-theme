@@ -240,7 +240,12 @@ a {
       -moz-user-select: text;
       -ms-user-select: text;
     }
-    pre > code { text-align: left; }
+    pre {
+      padding: 0;
+      > code {
+        text-align: left;
+      }
+    }
     img.emoji {
       /* Override any img styles to ensure Emojis are displayed inline */
       margin: 0px !important;
