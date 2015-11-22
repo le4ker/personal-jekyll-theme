@@ -59,12 +59,6 @@ a {
     }
 }
 
-div {
-  -webkit-user-select: text;
-  -moz-user-select: text;
-  -ms-user-select: text;
-}
-
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba($light, 0.3);
@@ -241,6 +235,22 @@ div {
         line-height: 1.5;
         list-style-position: inside;
     }
+    p {
+      -webkit-user-select: text;
+      -moz-user-select: text;
+      -ms-user-select: text;
+    }
+    pre {
+      padding: 0;
+      > code {
+        text-align: left;
+      }
+    }
+    img.emoji {
+      /* Override any img styles to ensure Emojis are displayed inline */
+      margin: 0px !important;
+      display: inline !important;
+    }
 }
 
 /* Added in { Personal } */
@@ -321,11 +331,3 @@ body {
     100% { opacity:1; }
 }
 /* END Added in { Personal } for Typed Cursor in Header */
-
-code { text-align: left; }
-
-img.emoji {
-  // Override any img styles to ensure Emojis are displayed inline
-  margin: 0px !important;
-  display: inline !important;
-}
