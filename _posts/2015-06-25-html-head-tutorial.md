@@ -40,7 +40,7 @@ This step is essential, since its related to file paths!
 In order to serve the website locally just run:
 
 <pre><code data-trim class="bash">
-./scripts/serve
+./scripts/serve-production
 </code></pre>
 
 <small>Many thanks to <a href="https://github.com/joariasl" target="\_blank">@joariasl</a> for the language support! </small>

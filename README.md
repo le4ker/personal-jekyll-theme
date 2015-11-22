@@ -78,7 +78,7 @@ The theme contains documentation in the form of [blog posts](https://panossakkos
 ## How to run locally
 
 ````
-./scripts/serve
+./scripts/serve-production
 ````
 
 ## Wiki

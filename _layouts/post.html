@@ -28,8 +28,10 @@
           {{ page.content | markdownify }}
 
           {% include share.html %}
-
-          {% include comments.html %}
+          
+          {% if jekyll.environment == "production" %}
+            {% include comments.html %}
+          {% endif %}
 
           {% include social-buttons.html %}
 
