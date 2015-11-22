@@ -1,0 +1,15 @@
+
+<!-- Post List Start -->
+
+<h4 align="left">
+  <strong>{{ post.date | date_to_string }}</strong>
+  <small>. {{ post.category }} .</small>
+  <br class="visible-xs-block">
+  <a href="{{site.baseurl}}{{post.url}}">
+    <strong>{{ post.title }}</strong>
+  </a>
+  <br class="visible-xs-block">
+  <small><a href="{{site.baseurl}}{{post.url}}#disqus_thread">Comments</a></small>
+</h4>
+
+<!-- Post List End -->
