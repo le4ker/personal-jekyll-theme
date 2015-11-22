@@ -30,6 +30,7 @@ You can watch it in action [here](https://panossakkos.github.io/personal-jekyll-
   * Disqus comments
   * Facebook, Twitter, Reddit, LinkedIn, Google+, Pinterest and VKontakte share buttons
   * RSS feed
+  * Sitemap
 * Cool (anti-procrastinating) 404 page
 * iOS and Android Web App mode
 * Forcing of https protocol
