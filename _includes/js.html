@@ -214,4 +214,19 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
 {% endif %}
 
+{% if page.section-type == "blog" or page.section-type == "post" %}
+<script>
+  $(document).ready(function(){
+    if(!localStorage.getItem('swipeshowed')){
+      $("#swipe-instruction").fadeIn();
+      localStorage.setItem('swipeshowed', true);
+    }
+
+    $("#swipe-instruction .close-swipe-instruction").click(function(){
+        $("#swipe-instruction").fadeOut();
+    });
+  });
+</script>
+{% endif %}
+
 <!-- Javascript End -->
