@@ -13,7 +13,9 @@
         <a class="navbar-brand" href="{{site.baseurl}}/">
       {% endif %}
           <div>
-            {% if site.black-favicon %}<img src="{{site.baseurl}}{{ site.black-favicon }}" alt="">{% endif %}
+            {% if site.black-favicon %}
+              <img src="{{site.baseurl}}{{ site.black-favicon }}" alt="">
+            {% endif %}
             {{ site.title }}
           </div>
         </a>
@@ -50,19 +52,5 @@
     </div>
   </div>
 </nav>
-
-{% if page.section-type == "blog" or page.section-type == "post" %}
-<div id="swipe-instruction" class="modal fade">
-  <div class="modal-content container content-section text-center">
-    <div class="row">
-      <div>
-        <i id="hand-swipe" class="fa fa-hand-o-up"></i>
-        <p><strong>Hey!<br/>Did you know that you can navigate the archive pages by swiping left and right?<br>Check it out!</strong></p>
-        <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
-      </div>
-    </div>
-  </div>
-</div>
-{% endif %}
 
 <!-- Navigation End -->

@@ -1,12 +1,16 @@
 
 # Site settings
 
+# NB! Set your site's url, otherwise stuff will break :)
+
 url: "https://panossakkos.github.io"
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (https://yourusername.github.io/repository-name)
 # and NOT your user repository (https://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
+#
+# NB! Without this *nothing* will work, because it's used in every path :)
 
 baseurl: /personal-jekyll-theme
 
@@ -53,7 +57,7 @@ description: "Blog and website of John Smith, blogging mainly for tech. Opinions
 keywords: "smith, jones, personal, jekyll, theme"
 
 ################
-# Intro layout #
+# Header layout #
 ################
 
 black-favicon: "/img/black-lab-glass.ico"
@@ -61,17 +65,17 @@ background-img: "../img/intro-bg.jpg"
 me-img: "/img/jetpacktocat.png"
 
 ##############################
-# Dynamic Text on the header #
+# Dynamic Text on the Header #
 ##############################
 
 dynamic-typing: True
-shuffle: True	# Shuffle the lines.
+shuffle: True # Shuffle the lines.
 loop: True
-loop-count:	False # Set False for infinite loop, or set any number for finite loop.
-type-speed:	10		# Default 10
-start-delay: 200	# Default 200
-delete-delay: 5000	# Default 5000
-lines:			# You can add HTML Tags in the Text
+loop-count: False # Set False for infinite loop, or set any number for finite loop.
+type-speed: 10
+start-delay: 200
+delete-delay: 5000
+lines: # You can add HTML Tags in the Text
   - text: "The lower you fall, the higher you'll fly."
   - text: "Where’s your will to be weird?"
 
@@ -105,6 +109,7 @@ events:
     description: "Started coding"
 
 # First image of the Timeline
+
 timeline-img: "/img/timeline/default.png"
 
 ##################
@@ -137,7 +142,7 @@ social:
 
 ################################################################################
 
-# Tread carefully if you want to change the variables below this point!
+# NB! Tread carefully if you want to change the variables below this point!
 
 # Exclusion list from the generated _site
 
