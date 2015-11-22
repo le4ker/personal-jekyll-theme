@@ -253,6 +253,29 @@ a {
     }
 }
 
+.btn {
+    border-radius: 0;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-default {
+    border: 1px solid $primary;
+    color: $primary;
+    background-color: transparent;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 1px solid $primary;
+    outline: 0;
+    color: #000;
+    background-color: $primary;
+}
+
 /* Added in { Personal } */
 ul.social-buttons li a {
     display: block;
@@ -331,3 +354,59 @@ body {
     100% { opacity:1; }
 }
 /* END Added in { Personal } for Typed Cursor in Header */
+
+/* Animation for hand-swipe */
+@-webkit-keyframes swipe {
+    from {
+        left: 5%;
+    }
+     to {
+         left: -5%;
+     }
+ }
+
+ @-moz-keyframes swipe {
+     from {
+         left: 5%;
+     }
+     to {
+         left: -5%;
+     }
+ }
+ /* END Animation for hand-swipe */
+
+ /* Style for swipe instruction section */
+ #swipe-instruction {
+     display: none;
+     position: absolute;
+     background-color: rgba(0, 0, 0, 0.5);
+     width: 100%;
+     height: 100%;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     > div {
+         background-color: rgba(20, 20, 20, 0.6);
+         padding: 10px;
+         @media(min-width:768px) {
+           padding: 20px 0;
+         }
+         #hand-swipe {
+            @media(min-width:992px) {
+              font-size: 100px;
+            }
+            font-size: 80px;
+             display: block;
+             position: relative;
+             animation: swipe ease-in-out 1s alternate infinite;
+         }
+     }
+ }
+
+.ok-btn {
+  background-color: $dark;
+  color: $primary;
+}
+
+ /* END Style for swipe instruction section */

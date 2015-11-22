@@ -214,4 +214,44 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
 {% endif %}
 
+{% if page.section-type == "blog" %}
+
+  <!-- Swipe Instructions for Blog Start -->
+
+  <script>
+    $(document).ready(function(){
+      if(!localStorage.getItem('blog-swipeshowed')){
+        $("#swipe-instruction").fadeIn();
+        $("#swipe-instruction .close-swipe-instruction").click(function(){
+          $("#swipe-instruction").fadeOut();
+        });
+        localStorage.setItem('blog-swipeshowed', true);
+      }
+    });
+  </script>
+
+  <!-- Swipe Instructions for Blog End -->
+
+{% endif %}
+
+{% if page.section-type == "post" %}
+
+  <!-- Swipe Instructions for Post Start -->
+
+  <script>
+    $(document).ready(function(){
+      if(!localStorage.getItem('post-swipeshowed')){
+        $("#swipe-instruction").fadeIn();
+        $("#swipe-instruction .close-swipe-instruction").click(function(){
+          $("#swipe-instruction").fadeOut();
+        });
+        localStorage.setItem('post-swipeshowed', true);
+      }
+    });
+  </script>
+
+  <!-- Swipe Instructions for Post End -->
+
+{% endif %}
+
 <!-- Javascript End -->
