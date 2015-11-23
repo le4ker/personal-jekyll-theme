@@ -19,9 +19,9 @@ events:
     date: "September 2007 - August 2013"
     description: "Started coding"
 
-    # First image of the Timeline
+# First image of the Timeline
 
-    timeline-img: "/img/timeline/default.png"
+timeline-img: "/img/timeline/default.png"
 </code></pre>
 
 For each event of your life, add a tuple of image, date and description to the events,
