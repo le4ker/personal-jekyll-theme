@@ -233,7 +233,7 @@ a {
         max-width: 100%;
         height: auto;
         margin: 0 auto;
-        border:1px solid $light;
+        border: 1px solid $light;
     }
     /* Added in { Personal } */
     ul,
@@ -254,6 +254,7 @@ a {
       /* Override any img styles to ensure Emojis are displayed inline */
       margin: 0px !important;
       display: inline !important;
+      border: 1px solid $dark !important;
     }
 }
 
