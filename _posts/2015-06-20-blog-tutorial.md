@@ -10,7 +10,8 @@ A website is truly personal if it's your blog as well, this place of the interne
 
 ### Latest post preview in Index page
 
-First of all, you get a preview of the latest post in the index, in order to attract the visitor to visit your blog. The size of this preview is defined by:
+First of all, you get a preview of the latest post in the index, in order to attract the visitor to visit your blog.
+The size of this preview is defined by:
 
 <pre><code data-trim class="yaml">
 post-preview-words: 96

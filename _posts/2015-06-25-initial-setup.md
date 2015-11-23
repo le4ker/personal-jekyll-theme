@@ -10,7 +10,7 @@ All features of { Personal } are controlled by setting values to variables that 
 \_config.yml file. Let's start with the initial variables that you have to set before
 serving your { Personal } website for the first time.
 
-## Essential variables
+### Essential variables
 
 <pre><code data-trim class="yaml">
 # NB! Set your site's url, otherwise stuff will break :)
@@ -35,7 +35,7 @@ The url and baseurl variables are essential to be set, because they are used *ev
 The Google tracking code will be placed in every generated page.
 If you don't want Google tracking, set it to an empty string.
 
-## HTTPS
+### HTTPS
 
 By default { Personal } will enforce https by javascript redirection.
 HTTPS is important because it encrypts the data sent between the client and the server.
@@ -53,7 +53,7 @@ variable to False:
 force-https: True
 </code></pre>
 
-## HTML Head
+### HTML Head
 
 <pre><code data-trim class="yaml">
 #############
@@ -70,7 +70,7 @@ keywords: "smith, jones, personal, jekyll, theme"
 
 The values that you set, will be placed in the head section of every generated HTML page.
 
-## Serving { Personal }
+### Serving { Personal }
 
 Install the required dependencies:
 

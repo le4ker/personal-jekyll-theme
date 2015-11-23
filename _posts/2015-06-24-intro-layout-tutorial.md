@@ -15,7 +15,7 @@ The intro part of the index page (Header) is consisted of four elements:
   <li>Your image</li>
 </ol>
 
-## Black favicon
+### Black favicon
 
 The black favicon is an image on the left of the navigation bar.
 Preferably it should be a black and white version of your favicon.
@@ -24,7 +24,7 @@ Preferably it should be a black and white version of your favicon.
 black-favicon: "/img/black-lab-glass.ico"
 </code></pre>
 
-## Background image
+### Background image
 
 In order to set the background, set the path to following variable:
 
@@ -34,7 +34,7 @@ background-img: "../img/intro-bg.jpg"
 
 <small>NB! Keep the .. in the beginning of the background image path</small>
 
-## Welcome text
+### Welcome text
 
 The welcome text is controlled by the following (self-explanatory) variables:
 
@@ -55,7 +55,7 @@ lines: # You can add HTML Tags in the Text
   - text: "Where’s your will to be weird?"
 </code></pre>
 
-## Your image
+### Your image
 
 You can set your image from the following variable:
 
