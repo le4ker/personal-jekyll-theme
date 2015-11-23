@@ -31,9 +31,9 @@ baseurl: /personal-jekyll-theme
 google-tracking-id: "UA-35880426-4"
 </code></pre>
 
-The url and baseurl variables are essential to be set, because they are used *everywhere* where an anchor is defined!
+The url and baseurl variables are essential, because they are used *everywhere* where an anchor is defined!
 The Google tracking code will be placed in every generated page.
-If you don't want Google tracking, set it to an empty string.
+If you don't want Google analytics tracking your website's traffic, set the google-tracking-id to an empty string.
 
 ### HTTPS
 
@@ -56,16 +56,13 @@ force-https: True
 ### HTML Head
 
 <pre><code data-trim class="yaml">
-#############
-# HTML Head #
-#############
-
-author: "John Smith"
 lang: "en"
+author: "John Smith"
 title: "{ John Smith }"
-favicon: "/img/favicon.ico"
 description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
 keywords: "smith, jones, personal, jekyll, theme"
+favicon: "/img/favicon.ico"
+404-img: "/img/labtocat.png"
 </code></pre>
 
 The values that you set, will be placed in the head section of every generated HTML page.

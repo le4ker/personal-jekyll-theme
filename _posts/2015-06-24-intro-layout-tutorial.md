@@ -39,10 +39,6 @@ background-img: "../img/intro-bg.jpg"
 The welcome text is controlled by the following (self-explanatory) variables:
 
 <pre><code data-trim class="yaml">
-##############################
-# Dynamic Text on the header #
-##############################
-
 dynamic-typing: True
 shuffle: True # Shuffle the lines.
 loop: True
@@ -55,6 +51,8 @@ lines: # You can add HTML Tags in the Text
   - text: "Where’s your will to be weird?"
 </code></pre>
 
+<small>Many thanks to <a href="https://github.com/prashantsolanki3" target="blank">@prashantsolanki3</a> for the dynamic typing feature!</small>
+
 ### Your image
 
 You can set your image from the following variable:
@@ -62,7 +60,5 @@ You can set your image from the following variable:
 <pre><code data-trim class="yaml">
 me-img: "/img/jetpacktocat.png"
 </code></pre>
-
-<small>Many thanks to <a href="https://github.com/prashantsolanki3" target="blank">@prashantsolanki3</a> for this feature!</small>
 
 All set!
