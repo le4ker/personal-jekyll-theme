@@ -30,11 +30,11 @@ You can watch it in action [here](https://panossakkos.github.io/personal-jekyll-
   * Disqus comments
   * Facebook, Twitter, Reddit, LinkedIn, Google+, Pinterest and VKontakte share buttons
   * RSS feed
-  * Sitemap
 * Cool (anti-procrastinating) 404 page
 * iOS and Android Web App mode
 * Forcing of https protocol
 * Protection from Email harvesting
+* Sitemap
 * Travis CI integration with [html-proofer](https://github.com/gjtorikian/html-proofer)
 
 ## { Personal } à la JekyllNow
@@ -76,6 +76,14 @@ The theme contains documentation in the form of [blog posts](https://panossakkos
 ![Android](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/pinned.jpg)
 
 ## How to run locally
+
+First you need to install the dependencies:
+
+````
+gem install jekyll jekyll-paginate jemoji html-proofer
+````
+
+After installing the dependencies, you can build and serve your website by simply running:
 
 ````
 ./scripts/serve-production
