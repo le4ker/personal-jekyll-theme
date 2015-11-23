@@ -83,8 +83,6 @@ post-preview-words: 96
 
 paginate: 5
 
-syntax-highlight: True
-
 email-share: True
 fb-share: True
 twitter-share: True
@@ -97,9 +95,11 @@ vkontakte-share: True
 
 disqus-shortname: "panossakkos"
 
-###############
-# Life Events #
-###############
+syntax-highlight: True
+
+############
+# Timeline #
+############
 
 events:
   - image: "/img/timeline/spidertocat.png"

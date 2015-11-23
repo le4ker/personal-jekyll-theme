@@ -6,7 +6,8 @@ category: tech
 tags: [ 'tutorial' ]
 ---
 
-A website is truly personal if it's your blog as well, this place of the internet where you can place your thoughts about anything!
+A website is truly personal if it hosts your blog as well, this place of the internet
+where you can place your thoughts about anything!
 
 ### Latest post preview in Index page
 
@@ -17,7 +18,7 @@ The size of this preview is defined by:
 post-preview-words: 96
 </code></pre>
 
-Feel free to experiment with different sizes, and pick the best for you.
+Feel free to experiment with different sizes, and pick the best for you :smile:
 
 ### Archive
 
@@ -52,3 +53,11 @@ And you can enable <a href="http://www.disqus.com" target="\_blank">Disqus</a> c
 <pre><code data-trim class="yaml">
 disqus-shortname: "Your Disqus username"
 </code></pre>
+
+### RSS feed
+
+The RSS feed is automatically generated and placed in /feed.xml.
+
+### Sitemap
+
+The Sitemap is automatically generated and placed in /sitemap.xml

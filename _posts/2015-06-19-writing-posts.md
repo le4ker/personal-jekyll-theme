@@ -37,10 +37,6 @@ tags: [ 'tag1', 'tag2' ]
 
 The *layout* and *section-type* are used by the theme.
 
-### Post navigation
-
-You can navigate between the posts by swiping left/right in the post pages!
-
 ### Hashtags
 
 Note: *{ Personal }* generates a static page, just like all Jekyll themes.
@@ -58,7 +54,9 @@ If you are not using Github Pages, you can automate the execution of this script
 
 ### Syntax highlighting
 
-If you want to include a code snippet in your post, simply use the following syntax:
+If you want to demonstrate source code in your posts, syntax highlighting is provided.
+If you want to see how to render your code with the highlight, simply check the source
+code of this tutorial post :smile:
 
 <pre><code data-trim class="c">
 int main()
