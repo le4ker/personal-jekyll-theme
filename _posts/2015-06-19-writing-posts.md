@@ -70,6 +70,4 @@ int main()
 
 ### Emoji support
 
-You can add emojis to your posts by simply typing their [emoji code](http://www.emoji-cheat-sheet.com/)
-
-:wink:
+You can add emojis to your posts by simply typing their [emoji code](http://www.emoji-cheat-sheet.com/) :wink:

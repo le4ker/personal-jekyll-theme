@@ -81,7 +81,7 @@ Serve the jekyll website:
 ./scripts/serve-production
 </code></pre>
 
-And that's it!
+That's it!
 
 You are ready to start hacking around your { Personal } website!
 

@@ -8,7 +8,6 @@ tags: [ 'tutorial' ]
 
 Social buttons (rendered above the footer) are great for having a small hub with all your social footprint.
 
-
 You can edit them with the following variables:
 
 <pre><code data-trim class="yaml">
