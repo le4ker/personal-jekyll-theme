@@ -23,7 +23,7 @@ icon-192p: "/img/web-app/icon-192p.png"
 
 <small>If you want to disable this feature, simply set the web-app-mode variable to False</small>
 
-This is how the website will look when added to the homescreen:
+This is how your website will look when added to the homescreen:
 
 ![iOS](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/ios.jpg)
 

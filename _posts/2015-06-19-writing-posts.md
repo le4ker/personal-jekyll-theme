@@ -41,7 +41,6 @@ The *layout* and *section-type* variables are used by the theme and you shouldn'
 
 Jekyll generates a static pages.
 As a result we have to create the tag pages before building and publishing the site.
-
 In order to generate the tag pages, simply run the *generate-tags* script from the repo's root directory:
 
 <pre><code data-trim class="bash">
@@ -50,7 +49,7 @@ In order to generate the tag pages, simply run the *generate-tags* script from t
 
 The script will parse all your posts, and generate the tag pages for the newly added tags.
 
-If you are not using GitHub Pages, you can automate the execution of this script during build time.
+<small>If you are not using GitHub Pages, you can automate the execution of this script during build time.</small>
 
 ### Syntax highlighting
 

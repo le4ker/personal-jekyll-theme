@@ -82,6 +82,6 @@ Serve the jekyll website:
 
 That's it!
 
-You are ready to start hacking around your { Personal } website!
+Visit [http://127.0.0.1:4000](http://127.0.0.1:4000) and you are ready to start hacking around your { Personal } website!
 
 <small>Many thanks to <a href="https://github.com/joariasl" target="\_blank">@joariasl</a> for the language support! </small>

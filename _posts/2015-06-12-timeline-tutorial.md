@@ -8,7 +8,7 @@ tags: [ 'tutorial' ]
 One of the coolest features of { Personal } is that enables you to tell your life's story in
 the form of a timeline of photos, dates and text descriptions.
 
-Let's see how it works. Timeline is controlled by the following variables:
+The Timeline is controlled by the following variables:
 
 <pre><code data-trim class="yaml">
 events:
@@ -27,7 +27,6 @@ timeline-img: "/img/timeline/default.png"
 For each event of your life, add a tuple of image, date and description to the events,
 and the timeline will be automatically generated!
 
-The timeline-img path variable is
-the image that you want to show up in the beginning of your Timeline, be creative!
+The timeline-img path variable is the image that you want to show up in the beginning of your Timeline, be creative!
 
-<small>Square images are most suited 😉</small>
+<small>Square images are recommended 😉</small>
