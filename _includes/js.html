@@ -158,6 +158,12 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
 {% endif %}
 
+<script>
+function addTohistory() {
+  history.pushState({}, '{{page.title}}', '{{site.url}}{{site.baseurl}}{{page.url}}');
+}
+</script>
+
 {% if page.section-type == "post" %}
 
   <!-- Post Gesture Navigation Start -->
@@ -168,6 +174,7 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
     var post = document.getElementById('post');
 
     new Hammer(post).on('swipeleft', function(event) {
+      addTohistory();
       {% if site.baseurl == "" and page.previous == nil %}
         document.location.replace("/");
       {% else %}
@@ -176,6 +183,7 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
     });
 
     new Hammer(post).on('swiperight', function(event) {
+      addTohistory();
       {% if site.baseurl == "" and page.next == nil %}
         document.location.replace("/");
       {% else %}
@@ -198,6 +206,7 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
     var page = document.getElementById('page');
 
     new Hammer(page).on('swipeleft', function(event) {
+      addTohistory();
       {% if site.baseurl == "" and paginator.next_page_path == nil %}
         document.location.replace("/");
       {% else %}
@@ -205,6 +214,7 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
       {% endif %}
     });
     new Hammer(page).on('swiperight', function(event) {
+      addTohistory();
       {% if site.baseurl == "" and paginator.previous_page_path == nil %}
         document.location.replace("/");
       {% else %}
