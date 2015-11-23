@@ -60,17 +60,9 @@ lines: # You can add HTML Tags in the Text
 
 me-img: "/img/jetpacktocat.png"
 
-syntax-highlight: True
-
-# Sections shown in the index page
-
-pages_list:
-  About: 'about'
-  Blog: 'latest-post'
-  Timeline: 'timeline'
-  Contact: 'contact'
-
-# Web app mode
+################
+# Web app mode #
+################
 
 web-app-mode: True
 
@@ -90,6 +82,8 @@ icon-192p: "/img/web-app/icon-192p.png"
 post-preview-words: 96
 
 paginate: 5
+
+syntax-highlight: True
 
 email-share: True
 fb-share: True
@@ -149,6 +143,14 @@ social:
 ################################################################################
 
 # NB! Tread carefully if you want to change the variables below this point!
+
+# Sections shown in the index page
+
+pages_list:
+  About: 'about'
+  Blog: 'latest-post'
+  Timeline: 'timeline'
+  Contact: 'contact'
 
 # Exclusion list from the generated _site
 
