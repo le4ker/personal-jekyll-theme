@@ -6,7 +6,7 @@ category: tech
 tags: [ 'tutorial' ]
 ---
 
-All features of { Personal } are controlled by setting values to variables that exist in the
+All features of { Personal } are controlled by setting values to variables that are defined in the
 \_config.yml file. Let's start with the initial variables that you have to set before
 serving your { Personal } website for the first time.
 
@@ -25,15 +25,9 @@ url: "https://panossakkos.github.io"
 # NB! Without this *nothing* will work, because it's used in every path :)
 
 baseurl: /personal-jekyll-theme
-
-# Google tracking id to track your visitors
-
-google-tracking-id: "UA-35880426-4"
 </code></pre>
 
 The url and baseurl variables are essential, because they are used *everywhere* where an anchor is defined!
-The Google tracking code will be placed in every generated page.
-If you don't want Google analytics tracking your website's traffic, set the google-tracking-id to an empty string.
 
 ### HTTPS
 
@@ -46,10 +40,6 @@ you don't want to issue one, then you can disable this feature by setting the fo
 variable to False:
 
 <pre><code data-trim class="yaml">
-# Forces https everywhere in your website, except when you serve it locally
-# If you are not hosted on Github Pages, and your host doesn't support https
-# then you should disable it
-
 force-https: True
 </code></pre>
 
@@ -66,6 +56,15 @@ favicon: "/img/favicon.ico"
 </code></pre>
 
 The values that you set, will be placed in the head section of every generated HTML page.
+
+### Google Analytics
+
+The Google tracking code will be placed in every generated page.
+If you don't want Google analytics tracking your website's traffic, set the google-tracking-id to an empty string.
+
+<pre><code data-trim class="yaml">
+google-tracking-id: "UA-35880426-4"
+</code></pre>
 
 ### Serving { Personal }
 

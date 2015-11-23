@@ -3,8 +3,7 @@
 
 # { Personal } Jekyll Theme
 
-{ Personal } is a free responsive Jekyll theme about you.
-It's your personal blog and your point of reference website.
+{ Personal } is a free responsive Jekyll theme, about you.
 
 You can watch it in action [here](https://panossakkos.github.io/personal-jekyll-theme/)!
 
@@ -28,12 +27,12 @@ You can watch it in action [here](https://panossakkos.github.io/personal-jekyll-
   * Gesture navigation in archive and post pages by swiping
   * #tags
   * Disqus comments
-  * Facebook, Twitter, Reddit, LinkedIn, Google+, Pinterest and VKontakte share buttons
+  * Bootstrap share buttons
   * RSS feed
-* Cool (anti-procrastinating) 404 page
+* Anti-procrastinating 404 page
 * iOS and Android Web App mode
 * Forcing of https protocol
-* Protection from Email harvesting
+* Protection from email harvesting
 * Sitemap
 * Travis CI integration with [html-proofer](https://github.com/gjtorikian/html-proofer)
 
@@ -83,7 +82,7 @@ First you need to install the dependencies:
 gem install jekyll jekyll-paginate jemoji html-proofer
 ````
 
-After installing the dependencies, you can build and serve your website by simply running:
+Then, you can build and serve your website by simply running:
 
 ````
 ./scripts/serve-production
@@ -95,7 +94,8 @@ Don't forget to list your { Personal } blog in the [Blogs using { Personal }](ht
 
 ## Integrating bug fixes and features into your old fork
 
-Have you published your own website by forking { Personal } and now you want to get the latest bug fixes and features from this repo into your website? Then check [this](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/How-to-integrate-latest-bug-fixes-and-features-into-your-past-fork) out.
+Have you published your own website by forking { Personal } and now you want to get the latest bug fixes and features from this repo into your website?
+Then check [this](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/How-to-integrate-latest-bug-fixes-and-features-into-your-past-fork) out.
 
 ## Supporting the repo
 
