@@ -28,12 +28,13 @@ force-https: True
 # HTML Head #
 #############
 
-author: "John Smith"
 lang: "en"
+author: "John Smith"
 title: "{ John Smith }"
-favicon: "/img/favicon.ico"
 description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
 keywords: "smith, jones, personal, jekyll, theme"
+favicon: "/img/favicon.ico"
+404-img: "/img/labtocat.png"
 
 ################
 # Header layout #
