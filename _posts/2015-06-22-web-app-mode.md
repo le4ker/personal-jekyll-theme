@@ -6,12 +6,15 @@ category: tech
 tags: [ 'tutorial']
 ---
 You can make your website behave like a native web app in iOS and Android devices
-by setting the web-app-mode variable to True and providing links for the icons for each resolution:
+by providing links for the icons for each resolution:
 
 <pre><code data-trim class="yaml">
+# Web app mode
+
 web-app-mode: True
 
 # Icons for Web App mode
+
 icon-36p: "/img/web-app/icon-36p.png"
 icon-48p: "/img/web-app/icon-48p.png"
 icon-72p: "/img/web-app/icon-72p.png"
@@ -19,6 +22,8 @@ icon-96p: "/img/web-app/icon-96p.png"
 icon-144p: "/img/web-app/icon-144p.png"
 icon-192p: "/img/web-app/icon-192p.png"
 </code></pre>
+
+<small>If you want to disable this feature, simply set the web-app-mode variable to false</small>
 
 This is how the website will look when added to the homescreen:
 

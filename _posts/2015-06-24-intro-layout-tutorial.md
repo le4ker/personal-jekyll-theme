@@ -6,20 +6,37 @@ category: tech
 tags: [ 'tutorial' ]
 ---
 
-The intro part of the index page is consisted of four elements:
+The intro part of the index page (Header) is consisted of four elements:
 
 <ol>
   <li>A black favicon</li>
-  <li>Text</li>
   <li>Background image</li>
+  <li>Welcome text</li>
   <li>Your image</li>
 </ol>
 
-Your text can be either dynamically typed when the visitor is viewing your index page, or it can be fixed.
+## Black favicon
 
-If you want to disable the dynamic typing, set the site.dynamic-typing to false and type your intro text in the index.html file.
+The black favicon is an image on the left of the navigation bar.
+Preferably it should be a black and white version of your favicon.
 
-You can add your desired dynamically typed text in the lines list:
+<pre><code data-trim class="yaml">
+black-favicon: "/img/black-lab-glass.ico"
+</code></pre>
+
+## Background image
+
+In order to set the background, set the path to following variable:
+
+<pre><code data-trim class="yaml">
+background-img: "../img/intro-bg.jpg"
+</code></pre>
+
+<small>NB! Keep the .. in the beginning of the background image path</small>
+
+## Welcome text
+
+The welcome text is controlled by the following (self-explanatory) variables:
 
 <pre><code data-trim class="yaml">
 ##############################
@@ -38,17 +55,14 @@ lines: # You can add HTML Tags in the Text
   - text: "Where’s your will to be weird?"
 </code></pre>
 
-<small>Many thanks to <a href="https://github.com/prashantsolanki3" target="blank">@prashantsolanki3</a> for this feature!</small>
+## Your image
 
-In order to set the background and your image, modify the following variables in \_config:
+You can set your image from the following variable:
 
 <pre><code data-trim class="yaml">
-black-favicon: "/img/black-lab-glass.ico"
-background-img: "../img/intro-bg.jpg"
 me-img: "/img/jetpacktocat.png"
 </code></pre>
 
-The black favicon is an image on the left of the navigation bar.
-Preferably it should be a black and white version of your favicon.
+<small>Many thanks to <a href="https://github.com/prashantsolanki3" target="blank">@prashantsolanki3</a> for this feature!</small>
 
 All set!

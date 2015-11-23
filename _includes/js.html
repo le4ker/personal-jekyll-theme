@@ -160,7 +160,9 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
 <script>
 function addTohistory() {
-  history.pushState({}, '{{page.title}}', '{{site.url}}{{site.baseurl}}{{page.url}}');
+  if (!window.location.host.startsWith("127.0.0.1")) {
+    history.pushState({}, '{{page.title}}', '{{site.url}}{{site.baseurl}}{{page.url}}');
+  }
 }
 </script>
 

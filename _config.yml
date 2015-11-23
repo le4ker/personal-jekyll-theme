@@ -24,27 +24,6 @@ google-tracking-id: "UA-35880426-4"
 
 force-https: True
 
-syntax-highlight: True
-
-# Sections shown in the index page
-
-pages_list:
-  About: 'about'
-  Blog: 'latest-post'
-  Timeline: 'timeline'
-  Contact: 'contact'
-
-web-app-mode: True
-
-# Icons for Web App mode
-
-icon-36p: "/img/web-app/icon-36p.png"
-icon-48p: "/img/web-app/icon-48p.png"
-icon-72p: "/img/web-app/icon-72p.png"
-icon-96p: "/img/web-app/icon-96p.png"
-icon-144p: "/img/web-app/icon-144p.png"
-icon-192p: "/img/web-app/icon-192p.png"
-
 #############
 # HTML Head #
 #############
@@ -61,8 +40,8 @@ keywords: "smith, jones, personal, jekyll, theme"
 ################
 
 black-favicon: "/img/black-lab-glass.ico"
+
 background-img: "../img/intro-bg.jpg"
-me-img: "/img/jetpacktocat.png"
 
 ##############################
 # Dynamic Text on the Header #
@@ -78,6 +57,31 @@ delete-delay: 5000
 lines: # You can add HTML Tags in the Text
   - text: "The lower you fall, the higher you'll fly."
   - text: "Where’s your will to be weird?"
+
+me-img: "/img/jetpacktocat.png"
+
+syntax-highlight: True
+
+# Sections shown in the index page
+
+pages_list:
+  About: 'about'
+  Blog: 'latest-post'
+  Timeline: 'timeline'
+  Contact: 'contact'
+
+# Web app mode
+
+web-app-mode: True
+
+# Icons for Web App mode
+
+icon-36p: "/img/web-app/icon-36p.png"
+icon-48p: "/img/web-app/icon-48p.png"
+icon-72p: "/img/web-app/icon-72p.png"
+icon-96p: "/img/web-app/icon-96p.png"
+icon-144p: "/img/web-app/icon-144p.png"
+icon-192p: "/img/web-app/icon-192p.png"
 
 ########
 # Blog #
