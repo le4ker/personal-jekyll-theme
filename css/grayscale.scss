@@ -47,6 +47,14 @@ p {
     }
 }
 
+div {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  -o-user-select: text;
+  user-select: text;
+}
+
 a {
     color: $primary;
     -webkit-transition: all .2s ease-in-out;
@@ -234,11 +242,6 @@ a {
         font-size: 18px;
         line-height: 1.5;
         list-style-position: inside;
-    }
-    p {
-      -webkit-user-select: text;
-      -moz-user-select: text;
-      -ms-user-select: text;
     }
     pre {
       padding: 0;
