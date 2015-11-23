@@ -29,18 +29,18 @@ order. You can define the number of posts that are displayed per page by changin
 paginate: 5
 </code></pre>
 
-Note that you can navigate the pages of the Archive by swiping left/right!
-
 ### Share buttons
 
-Facebook, Twitter, Reddit, LinkedIn, Google+, Pinterest, VKontakte share buttons are available which can be enabled or disabled by setting the following:
+Many share buttons are available and can be enabled or disabled by setting the following:
 
 <pre><code data-trim class="yaml">
+email-share: True
 fb-share: True
 twitter-share: True
 reddit-share: True
 google-plus-share: True
 linkedin-share: True
+tumblr-share: True
 pinterest-share: True
 vkontakte-share: True
 </code></pre>
@@ -50,5 +50,5 @@ vkontakte-share: True
 And you can enable <a href="http://www.disqus.com" target="\_blank">Disqus</a> comments by just setting your Disqus username here:
 
 <pre><code data-trim class="yaml">
-disqus-shortname: "YOUR DISQUS USERNAME"
+disqus-shortname: "Your Disqus username"
 </code></pre>
