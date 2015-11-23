@@ -52,7 +52,7 @@ The theme contains documentation in the form of [blog posts](https://panossakkos
 ## Screenshots
 ### Header
 ![Intro](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/index.jpg)
-###About
+### About
 ![About](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/about.jpg)
 ### Latest post preview
 ![Blog](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/blog.jpg)
@@ -60,6 +60,8 @@ The theme contains documentation in the form of [blog posts](https://panossakkos
 ![Timeline](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/timeline.jpg)
 ### Blog Archive
 ![Archive](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/archive.jpg)
+### Gesture navigation instructions
+![Instuctions](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/swipe.jpg)
 ### Post page
 ![Post](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/post.jpg)
 ### \#Tags
