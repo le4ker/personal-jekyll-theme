@@ -10,6 +10,8 @@ All features of { Personal } are controlled by setting values to variables that 
 \_config.yml file. Let's start with the initial variables that you have to set before
 serving your { Personal } website for the first time.
 
+## Essential variables
+
 <pre><code data-trim class="yaml">
 # NB! Set your site's url, otherwise stuff will break :)
 
@@ -33,6 +35,26 @@ The url and baseurl variables are essential to be set, because they are used *ev
 The Google tracking code will be placed in every generated page.
 If you don't want Google tracking, set it to an empty string.
 
+## HTTPS
+
+By default { Personal } will enforce https by javascript redirection.
+HTTPS is important because it encrypts the data sent between the client and the server.
+If you are hosting on GitHub Pages then it will just work, because your website
+will be piggybacking GitHub's certificate.
+If you are hosting your website in a server that doesn't have a certificate and
+you don't want to issue one, then you can disable this feature by setting the following
+variable to False:
+
+<pre><code data-trim class="yaml">
+# Forces https everywhere in your website, except when you serve it locally
+# If you are not hosted on Github Pages, and your host doesn't support https
+# then you should disable it
+
+force-https: True
+</code></pre>
+
+## HTML Head
+
 <pre><code data-trim class="yaml">
 #############
 # HTML Head #
@@ -47,6 +69,8 @@ keywords: "smith, jones, personal, jekyll, theme"
 </code></pre>
 
 The values that you set, will be placed in the head section of every generated HTML page.
+
+## Serving { Personal }
 
 Install the required dependencies:
 
