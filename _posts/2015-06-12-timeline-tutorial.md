@@ -6,23 +6,25 @@ category: tech
 tags: [ 'tutorial' ]
 ---
 One of the coolest features of { Personal } is that enables you to tell your life's story in
-the form of a timeline of photos, dates and text descriptions. Let's see how it works.
-
-Open the \_config.yml and find the events list definition, it should look like this:
+the form of a timeline of photos, dates and text descriptions.
+Let's see how it works. Timeline is controlled by the following variables:
 
 <pre><code data-trim class="yaml">
 events:
-  - image: "/img/career/spidertocat.png"
+  - image: "/img/timeline/spidertocat.png"
     date: "September 2013 - Today"
     description: "Saving the neighborhood!"
-  - image: "/img/career/baracktocat.jpg"
+  - image: "/img/timeline/baracktocat.jpg"
     date: "September 2007 - August 2013"
     description: "Started coding"
+
+    # First image of the Timeline
+
+    timeline-img: "/img/timeline/default.png"
 </code></pre>
 
-For each event of your life, add a tuple of image, date and description to the events, and the timeline will be automatically generated!
+For each event of your life, add a tuple of image, date and description to the events,
+and the timeline will be automatically generated! The timeline-img path variable is
+the image that you want to show up in the beginning of your Timeline, be creative!
 
-Bellow the events variable there is the career-img.
-Set this path to the image that you want to show in the beginning of the timeline.
-
-Square images are most suited 😉
+<small>Square images are most suited 😉</small>

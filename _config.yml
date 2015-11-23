@@ -113,9 +113,9 @@ events:
 
 timeline-img: "/img/timeline/default.png"
 
-##################
-# Contact layout #
-##################
+###########
+# Contact #
+###########
 
 email: "your@email.here"
 
