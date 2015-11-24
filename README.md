@@ -61,7 +61,7 @@ The theme contains documentation in the form of [blog posts](https://panossakkos
 ### Blog Archive
 ![Archive](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/archive.jpg)
 ### Gesture navigation instructions
-![Instuctions](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/swipe.jpg)
+![Instructions](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/swipe.jpg)
 ### Post page
 ![Post](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/post.jpg)
 ### \#Tags
@@ -92,12 +92,23 @@ Then, you can build and serve your website by simply running:
 
 ## Wiki
 
-Don't forget to list your { Personal } blog in the [Blogs using { Personal }](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/Blogs-using-%7B-Personal-%7D) wiki page in order to drive some traffic to your website 😉
+Don't forget to list your { Personal } blog in the [Blogs using { Personal }](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/Blogs-using-%7B-Personal-%7D) wiki page in order to drive some traffic to your website :wink:
 
 ## Integrating bug fixes and features into your old fork
 
 Have you published your own website by forking { Personal } and now you want to get the latest bug fixes and features from this repo into your website?
-Then check [this](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/How-to-integrate-latest-bug-fixes-and-features-into-your-past-fork) out.
+Then check [this](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/Integrating-latest-bug-fixes-and-features-into-your-past-fork) out.
+
+## OSS used in { Personal }
+
+One of the reasons { Personal } is real is the following OSS projects:
+
+  1. [Grayscale](http://startbootstrap.com/template-overviews/grayscale/)
+  2. [hammer.js](https://hammerjs.github.io/)
+  3. [highlightjs](https://highlightjs.org/)
+  4. [RRSSB](https://github.com/kni-labs/rrssb)
+  5. [Timeline](https://github.com/kirbyt/timeline-jekyll-theme)
+  6. [typed.js](https://github.com/mattboldt/typed.js/)
 
 ## Supporting the repo
 

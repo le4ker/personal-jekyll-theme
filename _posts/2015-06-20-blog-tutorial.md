@@ -38,11 +38,12 @@ Many share buttons are available and can be enabled or disabled by setting the f
 email-share: True
 fb-share: True
 twitter-share: True
+linkedin-share: True
 reddit-share: True
 google-plus-share: True
-linkedin-share: True
 tumblr-share: True
 pinterest-share: True
+pocket-share: True
 vkontakte-share: True
 </code></pre>
 

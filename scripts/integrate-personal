@@ -4,7 +4,7 @@
 
 require 'fileutils'
 
-personal = ARGV[0]
+personal = "../personal-jekyll-theme"
 
 repoDirectories = [ '_includes', '_layouts', '_sass', 'blog', 'css', 'js' ]
 repoFiles = [ 'feed.xml', 'manifest.json', 'sitemap.xml' ]
