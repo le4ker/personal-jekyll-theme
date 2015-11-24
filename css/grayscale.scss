@@ -391,7 +391,8 @@ body {
      right: 0;
      bottom: 0;
      left: 0;
-     > div {
+     z-index: 1;
+      > div {
          background-color: rgba(20, 20, 20, 0.6);
          padding: 10px;
          @media(min-width:768px) {
