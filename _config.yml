@@ -87,11 +87,12 @@ paginate: 5
 email-share: True
 fb-share: True
 twitter-share: True
+linkedin-share: True
 reddit-share: True
 google-plus-share: True
-linkedin-share: True
 tumblr-share: True
 pinterest-share: True
+pocket-share: True
 vkontakte-share: True
 
 disqus-shortname: "panossakkos"
@@ -156,7 +157,7 @@ pages_list:
 
 # Exclusion list from the generated _site
 
-exclude: ["LICENSE", "README", "CONTRIBUTING", "CONTRIBUTORS", "scripts"]
+exclude: ["LICENSE", "README.md", "CONTRIBUTING", "CONTRIBUTORS", "scripts"]
 
 # Pagination path
 
