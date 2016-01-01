@@ -16,7 +16,7 @@ url: "https://portenez.github.io"
 
 # Google tracking id to track your visitors
 
-google-tracking-id: "UA-35880426-4"
+google-tracking-id: "UA-71882862-1"
 
 # Forces https everywhere in your website, except when you serve it locally
 # If you are not hosted on Github Pages, and your host doesn't support https
@@ -29,9 +29,9 @@ force-https: True
 #############
 
 lang: "en"
-author: "John Smith"
-title: "{ John Smith }"
-description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
+author: "Victor Garcia"
+title: "{ Victor Garcia }"
+description: "Blog and website of Victor Garcia"
 keywords: "smith, jones, personal, jekyll, theme"
 favicon: "/img/favicon.ico"
 404-img: "/img/labtocat.png"
