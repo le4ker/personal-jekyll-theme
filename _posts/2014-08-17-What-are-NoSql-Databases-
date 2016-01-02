@@ -2,10 +2,11 @@
 layout: post
 published: true
 "section-type": post
-title: "What are NoSql Databases ?"
+title: "What are no sql databases?"
+category: tech
 tags: 
-  - nosql
-  - db
+  - DB
+  - NoSql
   - youtube
 ---
 
