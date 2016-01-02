@@ -32,7 +32,7 @@ lang: "en"
 author: "Victor Garcia"
 title: "{ Victor Garcia }"
 description: "Blog and website of Victor Garcia"
-keywords: "smith, jones, personal, jekyll, theme"
+keywords: "Victor Garcia"
 favicon: "/img/favicon.ico"
 404-img: "/img/labtocat.png"
 
@@ -102,7 +102,7 @@ syntax-highlight: True
 # Timeline #
 ############
 
-events:
+#events:
 #  - image: "/img/timeline/spidertocat.png"
 #    date: "September 2013 - Today"
 #    description: "Saving the neighborhood!"
@@ -112,7 +112,7 @@ events:
 
 # First image of the Timeline
 
-timeline-img: "/img/timeline/default.png"
+#timeline-img: "/img/timeline/default.png"
 
 ###########
 # Contact #
@@ -125,8 +125,8 @@ email: "coatl@inboxalias.com"
 ##################
 
 social:
-  - title: "facebook"
-    url: "https://facebook.com/"
+#  - title: "facebook"
+#    url: "https://facebook.com/"
   - title: "twitter"
     url: "https://twitter.com/portenez"
   - title: "github"
@@ -153,7 +153,7 @@ social:
 pages_list:
   About: 'about'
   Blog: 'latest-post'
-  Timeline: 'timeline'
+#  Timeline: 'timeline'
   Contact: 'contact'
 
 # Exclusion list from the generated _site
