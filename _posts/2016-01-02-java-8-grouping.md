@@ -2,12 +2,13 @@
 layout: "post"
 title: "Using grouping collectors in java 8"
 section-type: post
-category: study
+category: code
 tags: 
   - java
   - java8
   - lambda
   - functional
+  - code
 ---
 
 Java 8 can group elements in a stream based on a provided lambda using a collector.

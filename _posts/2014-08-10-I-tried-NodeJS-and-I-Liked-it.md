@@ -2,7 +2,7 @@
 layout: "post"
 title: "I tried NodeJs and I liked it"
 section-type: post
-category: interesting
+category: tech
 tags: 
   - nodejs
   - javascript
