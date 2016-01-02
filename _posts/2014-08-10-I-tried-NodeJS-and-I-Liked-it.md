@@ -4,7 +4,7 @@ title: "I tried NodeJs and I liked it"
 section-type: post
 category: interesting
 tags: 
-  - NodeJs
+  - nodejs
   - javascript
   - code
 ---

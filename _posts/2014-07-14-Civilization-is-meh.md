@@ -5,6 +5,7 @@ section-type: post
 category: topics
 tags: 
   - civilization
+  - youtube
 ---
 
 Well, I found this little video on the internet. Is civilization meh?? Maybe...
