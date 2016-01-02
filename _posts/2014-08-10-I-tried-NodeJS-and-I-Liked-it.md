@@ -9,4 +9,4 @@ I'm quite impressed with little thing that NodeJS is. Firstly, the event-based f
 The repository can be found here: [coatl](https://github.com/portenez/coatl).
 
 I like my stacks and queues:
-{% gist portenez/2492f559d7ee177740b0 %}
+<script src="https://gist.github.com/portenez/2492f559d7ee177740b0.js"></script>
