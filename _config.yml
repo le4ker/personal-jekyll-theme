@@ -49,17 +49,16 @@ background-img: "../img/Perseiid.jpg"
 ##############################
 
 dynamic-typing: True
-shuffle: True # Shuffle the lines.
-loop: True
+shuffle: False # Shuffle the lines.
+loop: False
 loop-count: False # Set False for infinite loop, or set any number for finite loop.
 type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "The lower you fall, the higher you'll fly."
-  - text: "Where’s your will to be weird?"
+  - text: "Software Developer | Agilist | Humanist"
 
-me-img: "/img/jetpacktocat.png"
+me-img: "/img/hawaii.jpeg"
 
 ################
 # Web app mode #
@@ -85,15 +84,15 @@ post-preview-words: 96
 paginate: 5
 
 email-share: True
-fb-share: True
+fb-share: False
 twitter-share: True
 linkedin-share: True
 reddit-share: True
-google-plus-share: True
+google-plus-share: False
 tumblr-share: True
 pinterest-share: True
 pocket-share: True
-vkontakte-share: True
+vkontakte-share: False
 
 disqus-shortname: "panossakkos"
 
@@ -104,12 +103,12 @@ syntax-highlight: True
 ############
 
 events:
-  - image: "/img/timeline/spidertocat.png"
-    date: "September 2013 - Today"
-    description: "Saving the neighborhood!"
-  - image: "/img/timeline/baracktocat.jpg"
-    date: "September 2007 - August 2013"
-    description: "Started coding"
+#  - image: "/img/timeline/spidertocat.png"
+#    date: "September 2013 - Today"
+#    description: "Saving the neighborhood!"
+#  - image: "/img/timeline/baracktocat.jpg"
+#    date: "September 2007 - August 2013"
+#    description: "Started coding"
 
 # First image of the Timeline
 
@@ -119,7 +118,7 @@ timeline-img: "/img/timeline/default.png"
 # Contact #
 ###########
 
-email: "your@email.here"
+email: "coatl@inboxalias.com"
 
 ##################
 # Social Buttons #
@@ -129,13 +128,15 @@ social:
   - title: "facebook"
     url: "https://facebook.com/"
   - title: "twitter"
-    url: "https://twitter.com/"
+    url: "https://twitter.com/portenez"
   - title: "github"
-    url: "https://github.com/PanosSakkos/personal-jekyll-theme"
-  - title: "bitcoin"
-    url: "https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi"
+    url: "https://github.com/portenez"
+#  - title: "bitcoin"
+#    url: "https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi"
   - title: "rss"
     url: "/feed.xml"
+  - title: "linkedin"
+    url: "https://www.linkedin.com/in/vhgarciavalencia"
 
 ############
 # 404 page #
