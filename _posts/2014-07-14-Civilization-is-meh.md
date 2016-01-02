@@ -1,5 +1,10 @@
 ---
-layout: "post"
+layout: post
+title: "Is Civilization meh?"
+section-type: post
+category: topics
+tags: 
+  - civilization
 ---
 
 Well, I found this little video on the internet. Is civilization meh?? Maybe...

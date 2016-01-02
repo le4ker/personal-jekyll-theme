@@ -1,5 +1,10 @@
 ---
 layout: "post"
+title: "Radiolab - Galapagos"
+section-type: post
+category: interesting
+tags: 
+  - galapagos
 ---
  While driving back from my weekly trip to Waldorf, I listened to a [very interesting podcast about the current status of the Galapagos Islands](http://www.radiolab.org/story/galapagos/).   
 

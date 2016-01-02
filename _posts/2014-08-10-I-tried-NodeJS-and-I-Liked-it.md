@@ -1,5 +1,12 @@
 ---
 layout: "post"
+title: "I tried NodeJs and I liked it"
+section-type: post
+category: interesting
+tags: 
+  - NodeJs
+  - javascript
+  - code
 ---
 
 I just finished coding a battleship client on NodeJs, and it (NodeJs) worked really well. I mean, NodeJS worked like a charm, and I also think my battleship player/client is not too shaby.
@@ -10,3 +17,4 @@ The repository can be found here: [coatl](https://github.com/portenez/coatl).
 
 I like my stacks and queues:
 <script src="https://gist.github.com/portenez/2492f559d7ee177740b0.js"></script>
+
