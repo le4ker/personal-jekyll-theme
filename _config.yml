@@ -137,6 +137,8 @@ social:
     url: "/feed.xml"
   - title: "linkedin"
     url: "https://www.linkedin.com/in/vhgarciavalencia"
+  - title: "youtube"
+    url: https://www.youtube.com/channel/UCrDGC0ec_9m0yxOBVTu5NdQ
 
 ############
 # 404 page #
