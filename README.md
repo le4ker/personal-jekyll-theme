@@ -81,7 +81,7 @@ The theme contains documentation in the form of [blog posts](https://panossakkos
 First you need to install the dependencies:
 
 ````
-gem install jekyll jekyll-paginate jemoji html-proofer
+./scripts/install
 ````
 
 Then, you can build and serve your website by simply running:
