@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 # Script to help you get the latest bug fixes and features from the development repository
 
