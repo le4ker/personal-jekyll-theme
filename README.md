@@ -97,7 +97,7 @@ Don't forget to list your { Personal } blog in the [Blogs using { Personal }](ht
 ## Integrating bug fixes and features into your old fork
 
 Have you published your own website by forking { Personal } and now you want to get the latest bug fixes and features from this repo into your website?
-Then check [this](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/Integrating-latest-bug-fixes-and-features-into-your-past-fork) out.
+Then check [this](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/Upgrading-your-%7B-Personal-%7D-website-with-our-latest-bug-fixes-and-features) out.
 
 ## OSS used in { Personal }
 
