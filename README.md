@@ -78,7 +78,7 @@ The theme contains documentation in the form of [blog posts](https://panossakkos
 
 ## How to run locally
 
-First you need to install the dependencies:
+First, you need to install jekyll and the dependencies of { Personal } by running:
 
 ````
 ./scripts/install
