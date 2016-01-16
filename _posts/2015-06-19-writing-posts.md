@@ -58,11 +58,14 @@ If you want to see how to render your code with the highlight, simply check the 
 code of this tutorial post :smile:
 
 <pre><code data-trim class="c">
+{% raw %}
 int main()
 {
   printf("Hello, world of syntax highlighting!");
+
   return 0;
 }
+{% endraw %}
 </code></pre>
 
 <small>If you don't need syntax highlight in your website you can disable it by setting the syntax-highlight variable to False</small>
