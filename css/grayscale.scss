@@ -342,6 +342,11 @@ body {
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
+    font-size: 16px;
+    vertical-align: top;
+    @media(min-width:768px) {
+        font-size: 22px;
+    }
 }
 @keyframes blink{
     0% { opacity:1; }
