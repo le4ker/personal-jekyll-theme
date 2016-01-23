@@ -13,9 +13,10 @@ tags:
 This is what I wanted to achieve:
 
 - Build per branch.
+- Only publish artifacts (it's java) when on the master branch
 - JUnit test report and trend per branch. 
 - Slack notifications on build failures, unstable builds, and build success.
-- Slack notifications should be useful and provide information 
+- Slack notifications should be useful and provide information
 
 ### Initial research (base code)
 
@@ -34,10 +35,11 @@ def notifySlack(text, channel) {
                                      icon_emoji: ":jenkins:"])
     sh "curl -X POST --data-urlencode \'payload=${payload}\' ${slackURL}"
 }
-</code>
-</pre>
+</code></pre>
 
 ### Adapted code
+
+NOTE: if you want to copy paste this... get it from my gist
 
 <pre><code data-trim class="groovy">
 #!groovy
@@ -67,10 +69,10 @@ def notifySlack(text, channel, attachments) {
     sh "curl -X POST --data-urlencode \'payload=${payload}\' ${slackURL}"
 }
 
-//getting the git branch this way, only works 
-//on Multibranch workflows
-
+//get me a node
 node {
+
+    //this try if for build failures
     try {
         stage 'COMPILE'
         checkout scm
