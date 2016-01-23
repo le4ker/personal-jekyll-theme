@@ -24,8 +24,9 @@
             {% endfor %}
             </small>
           </h4>
-
-          {{ page.content | markdownify }}
+          <div class="poste">
+            {{ page.content | markdownify }}
+          </div>
 
           {% include share.html %}
 
