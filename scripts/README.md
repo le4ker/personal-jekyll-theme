@@ -1,3 +1,6 @@
+install
+  - Installs jekyll and the dependencies required by personal-jekyll-theme
+  
 serve-production
   - Builds and serves your website in 127.0.0.1:4000
 

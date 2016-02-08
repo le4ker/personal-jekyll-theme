@@ -1,0 +1,3 @@
+#!/bin/bash
+
+gem install jekyll jekyll-paginate jemoji html-proofer
