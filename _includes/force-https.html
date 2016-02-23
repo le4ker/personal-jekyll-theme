@@ -1,5 +1,5 @@
 
-{% if site.force-https %}
+{% if site.force-https and jekyll.environment == "production" %}
 
   <!-- Force HTTPS Start -->
   <script>
