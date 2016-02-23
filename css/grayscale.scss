@@ -256,6 +256,13 @@ a {
       display: inline !important;
       border: 1px solid $dark !important;
     }
+    &#post {
+        div.author img {
+            border: 0px;
+            margin-bottom: 20px;
+            padding: 4px;
+        }
+    }
 }
 
 .btn {
