@@ -58,7 +58,7 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
   {% endif %}
 {% endif %}
 
-{% if site.disqus-shortname %}
+{% if site.disqus-shortname and jekyll.environment == "production" %}
 
   <!-- Disqus -->
 
