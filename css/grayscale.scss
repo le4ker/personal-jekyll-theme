@@ -36,6 +36,17 @@ h6 {
     letter-spacing: 1px;
 }
 
+/* Added in { Personal } */
+h4 {
+    a.category {
+        color: inherit;
+    }
+
+    a.tag {
+        font-size: 12px;
+    }
+}
+
 p {
     margin: 0 0 25px;
     font-size: 18px;
@@ -255,6 +266,15 @@ a {
       margin: 0px !important;
       display: inline !important;
       border: 1px solid $dark !important;
+    }
+
+    /* Added in { Personal } */
+    &#post {
+        div.author img {
+            border: 0px;
+            margin-bottom: 20px;
+            padding: 4px;
+        }
     }
 }
 
