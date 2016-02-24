@@ -61,6 +61,12 @@ lines: # You can add HTML Tags in the Text
 
 me-img: "/img/jetpacktocat.png"
 
+##############################
+# Color the browser elements #
+##############################
+color-browser: "#000000"
+apple-status-bar-style: "black"
+
 ################
 # Web app mode #
 ################
