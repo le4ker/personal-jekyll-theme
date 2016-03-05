@@ -58,7 +58,7 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
   {% endif %}
 {% endif %}
 
-{% if site.disqus-shortname %}
+{% if site.disqus-shortname and jekyll.environment == "production" %}
 
   <!-- Disqus -->
 
@@ -108,7 +108,7 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
 {% endif %}
 
-{% if site.dynamic-typing and page.section-type == "index"%}
+{% if site.dynamic-typing and page.section-type == "index" %}
 
   <!-- Dynamic Typing Start -->
 
@@ -144,14 +144,14 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
   {% endif %}
 
     $(".intro-text").typed({
-                  strings: myQuotes,
-                  typeSpeed: {{ site.type-speed }},
-                  backDelay: {{ site.delete-delay }},
-                  startDelay: {{ site.start-delay }},
-                  loop: {{ site..loop }},
-                  loopCount: {{ site.loop-count }},
-                  cursorChar: "|"
-                });
+      strings: myQuotes,
+      typeSpeed: {{ site.type-speed }},
+      backDelay: {{ site.delete-delay }},
+      startDelay: {{ site.start-delay }},
+      loop: {{ site..loop }},
+      loopCount: {{ site.loop-count }},
+      cursorChar: "|"
+    });
   </script>
 
   <!-- Dynamic Typing End  -->

@@ -1,5 +1,5 @@
 
-<!-- Tag Layout Start -->
+<!-- Category Layout Start -->
 
 <!DOCTYPE html>
 <html lang="{{ site.lang }}">
@@ -14,18 +14,15 @@
       <div class="row">
         <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
 
-          {% assign tag = page.title %}
+          {% assign category = page.title %}
 
-          <h3 id="#{{ tag }}">#{{ tag }}</h3>
+          <h3 id="#{{ category }}">Category: {{ category }}</h3>
 
           <div>
             {% for post in site.posts %}
-              {% for t in post.tags %}
-                {% capture tg %}{{ t | downcase }}{% endcapture %}
-                {% if tg == tag %}
-                  {% include post-list.html%}
-                {% endif %}
-              {% endfor %}
+              {% if post.category == category %}
+                {% include post-list.html%}
+              {% endif %}
             {% endfor %}
           </div>
 
@@ -40,4 +37,4 @@
   </body>
 </html>
 
-<!-- Tag Layout End -->
+<!-- Category Layout End -->

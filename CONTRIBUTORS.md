@@ -10,3 +10,4 @@ In alphabetical order:
   8. Panos Sakkos <panos.sakkos@protonmail.com>
   9. Prashant Solanki <prs.solanki@live.com>
   10. Sergey Lysenko <soulwish.ls@gmail.com>
+  11. Brandon Goldman <brandon.goldman@gmail.com>
