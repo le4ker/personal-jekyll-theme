@@ -12,6 +12,8 @@ Dir.foreach(POSTS_DIR) do |post|
   unless (postYaml['tags'] == nil)
     postYaml['tags'].each{|tag|
 
+      tag.downcase!
+
       unless File.exist?(TAGS_DIR + tag + '.html')
 
         puts('[+] Generating #' + tag + ' page')
