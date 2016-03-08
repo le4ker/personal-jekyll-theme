@@ -44,7 +44,7 @@ black-favicon: "/img/favicon.ico"
 background-img: "../img/intro-bg.jpg"
 
 ##############################
-# Dynamic Text on the Header #
+# Dynamic Text on the Header # 
 ##############################
 
 dynamic-typing: True
