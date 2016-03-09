@@ -31,7 +31,7 @@ force-https: True
 lang: "en"
 author: "John Smith"
 title: "{ John Smith }"
-description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
+description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine. fsda"
 keywords: "smith, jones, personal, jekyll, theme"
 favicon: "/img/favicon.ico"
 
