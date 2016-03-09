@@ -1,9 +1,9 @@
 
 # Site settings
-
+ 
 # NB! Set your site's url, otherwise stuff will break :)
 
-url: "https://panossakkos.github.io"
+url: "https://doublepmanforthewin.github.io"
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (https://yourusername.github.io/repository-name)
@@ -12,7 +12,7 @@ url: "https://panossakkos.github.io"
 #
 # NB! Without this *nothing* will work, because it's used in every path :)
 
-baseurl: /personal-jekyll-theme
+baseurl: /doublepmanforthewin.github.io
 
 # Google tracking id to track your visitors
 
@@ -31,7 +31,7 @@ force-https: True
 lang: "en"
 author: "John Smith"
 title: "{ John Smith }"
-description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
+description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine. fsda"
 keywords: "smith, jones, personal, jekyll, theme"
 favicon: "/img/favicon.ico"
 
@@ -39,12 +39,12 @@ favicon: "/img/favicon.ico"
 # Header layout #
 ################
 
-black-favicon: "/img/black-lab-glass.ico"
+black-favicon: "/img/favicon.ico"
 
 background-img: "../img/intro-bg.jpg"
 
 ##############################
-# Dynamic Text on the Header #
+# Dynamic Text on the Header # 
 ##############################
 
 dynamic-typing: True
@@ -109,7 +109,7 @@ syntax-highlight: True
 ############
 
 events:
-  - image: "/img/timeline/spidertocat.png"
+  - image: "/http://lh3.googleusercontent.com/ZsrtyyjqE1uWVTkHaQcKLRRVG03Doj1zxJw8v4H-oPURPHg94LBlsjgm4aUGkrTJX9cPAvC5w07lwi0ole9xRZSUCtZpFmfvrlYD_eRrJmz4inqld2q3fZLCzHEUVlM4WrHrr9pGpSPGWv3nxuoVLi9iU1_rZpd58_hSrCUs09ckyClzNb58HGvhoi6FDIN2Vtqk52sg8miqMAjQh-2DkNZbciYIsERswRAZ054rHZ-bFRb0llmqZSEmPYKlK5L22nUNJGz9Hw2y4al8VTvk6hARBJVK1ex5NQuEejHl7cXKuEglG4JqNcMSvI0mIJIRfuoe4-KFSjz2yaYjJLPiIBdQxGFMxCy3Nj_8NoVknrkg79ifDgl4U5EG1FnKdxVun4YdmyRpaZyTdMLh8B3bmJ1NESmhhUQHBYPU0q-wOwpxIcuy0hDUIv7ZyCirUKHT7ZVSExgKxnk6vc1KVsvkEcNf4-YE6YnbbTZKFu7BXWPmW2_2Im_-0Ll2zz8wbp1sIKfPgRcHLjElmedVlrTdlFLAunsDBrcSC95D1HtckBRdK5GWMY0lxv7ADElYA3k4g5_m=w462-h350-no"
     date: "September 2013 - Today"
     description: "Saving the neighborhood!"
   - image: "/img/timeline/baracktocat.jpg"
