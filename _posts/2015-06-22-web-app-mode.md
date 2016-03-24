@@ -32,3 +32,17 @@ This is how your website will look when added to the homescreen:
 And when the user opens it (note that it renders in fullscreen):
 
 ![Web App](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/web-app.jpg)
+
+# Browser status bar customization
+
+You can color the browser status bar when in mobile mode, by setting it to a color.
+
+The color is define in the site config with the following variables
+
+<pre><code data-trim class="yaml">
+##############################
+# Color the browser elements #
+##############################
+color-browser: "#000000"
+apple-status-bar-style: "black"
+</code></pre>
