@@ -25,13 +25,15 @@ You can watch it in action [here](https://panossakkos.github.io/personal-jekyll-
   * Syntax highlighting
   * Emojis
   * Gesture navigation in archive and post pages by swiping
-  * #tags
+  * Hashtags
+  * Categories
   * Disqus comments
   * Bootstrap share buttons
   * RSS feed
-* Anti-procrastinating 404 page
+* Author blurb under the posts
+* 404 page
 * iOS and Android Web App mode
-* Forcing of https protocol
+* Enforcing of https protocol
 * Protection from email harvesting
 * Sitemap
 * Travis CI integration with [html-proofer](https://github.com/gjtorikian/html-proofer)
