@@ -29,6 +29,22 @@ baseurl: /personal-jekyll-theme
 
 The url and baseurl variables are essential, because they are used *everywhere* where an anchor is defined!
 
+### Coloring
+
+You can define the colors that you want in your { Personal } website by setting
+the following variable sin the /_sass/_variables.scss file:
+
+<pre><code data-trim class="scss">
+// Main color
+$primary-color: #000;
+
+// Anchor color
+$secondary-color: #00cdff;
+
+// Font color
+$font-color: #fff;
+</code></pre>
+
 ### HTTPS
 
 By default { Personal } will enforce https by javascript redirection.

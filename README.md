@@ -19,6 +19,7 @@ You can watch it in action [here](https://panossakkos.github.io/personal-jekyll-
   * White on black text, making the reading experience tireless
   * Google analytics  
 * Customization and full control of your website and blog through the site config
+* Customization of the website's coloring
 * Blogging functionality
   * Preview of the latest post in the home page
   * Archive page

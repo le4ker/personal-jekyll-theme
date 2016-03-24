@@ -1,16 +1,21 @@
 // Variables
 
-$primary: #00cdff;
-$dark: #000;
-$light: #fff;
+// Main color
+$primary-color: #000;
+
+// Anchor color
+$secondary-color: #00cdff;
+
+// Font color
+$font-color: #fff;
 
 $navbar-text-shadow: true;
 $header-text-shadow: true;
-$header-background-color: $dark;
-$intro-text-color: $light;
-$navbar-color: $light;
+$header-background-color: $primary-color;
+$intro-text-color: $font-color;
+$navbar-color: $font-color;
 $navbar-lg-collapse-background-color: $header-background-color;
 $navbar-lg-background: transparent;
 $navbar-sm-background-color: $navbar-lg-collapse-background-color;
 
-$social-buttons-color: $primary;
+$social-buttons-color: $secondary-color;
