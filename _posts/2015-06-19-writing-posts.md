@@ -51,6 +51,15 @@ The script will parse all your posts, and generate the tag pages for the newly a
 
 <small>If you are not using GitHub Pages, you can automate the execution of this script during build time.</small>
 
+### Categories
+
+You can organize your posts under categories. Categories are behaving like hashtags,
+they have to be generated offline, by running the ./scripts/generate-categories script.
+
+The category of the post is specified in the yaml header, in the Category variable.
+
+NB! Only one category can be defined per post.
+
 ### Syntax highlighting
 
 If you want to demonstrate source code in your posts, syntax highlighting is provided.
