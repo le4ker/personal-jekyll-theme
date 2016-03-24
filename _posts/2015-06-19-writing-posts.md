@@ -82,3 +82,20 @@ int main()
 ### Emoji support
 
 You can add emojis to your posts by simply typing their [emoji code](http://www.emoji-cheat-sheet.com/) :wink:
+
+### Author Blurb
+
+You can add a short description of yourself bellow your posts, by setting the next two variables in the site config
+
+<pre><code data-trim class="yaml">
+################
+# Author Blurb #
+################
+
+# The author blurb goes underneath blog posts.
+# This works best when your author blurb image has a transparent background, or matches your site background color.
+
+# if the author_blurb is not set, then this feature is skipped
+author_blurb: "John Smith is an awesome person. He lives in Flatland, where he works on two-dimensional engineering projects. In his spare time, John likes to eat cotton candy."
+author_blurb_image: "/img/author.png"
+</code></pre>
