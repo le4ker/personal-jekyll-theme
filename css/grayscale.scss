@@ -161,6 +161,7 @@ a {
     height: auto;
     padding: 100px 0;
     text-align: center;
+
     color: $intro-text-color;
     {% if site.background-img %}
     background: url({{ site.background-img }}) no-repeat bottom center scroll;
@@ -196,6 +197,7 @@ a {
         }
     }
 }
+
 
 @-webkit-keyframes pulse {
     from {
