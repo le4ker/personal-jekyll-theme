@@ -3,10 +3,10 @@
 
 # NB! Set your site's url, otherwise stuff will break :)
 
-url: "https://mark-support.github.io/beyond-human-nature"
+url: "https://mark-support.github.io"
 
 # If you're hosting your site at a Project repository on GitHub pages
-# (https://mark-support.github.io/repository-name)
+# (https://mark-support.github.io/beyond-human-nature)
 # and NOT your user repository (https://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
 #
@@ -39,9 +39,9 @@ favicon: "/img/logo-bhn.ico"
 # Header layout #
 ################
 
-black-favicon: "/img/black-lab-glass.ico"
+black-favicon:
 
-background-img: "../img/crew-blur.jpg"
+background-img: "../img/mill-still.png"
 
 ##############################
 # Dynamic Text on the Header #
@@ -51,12 +51,23 @@ dynamic-typing: True
 shuffle: True # Shuffle the lines.
 loop: True
 loop-count: False # Set False for infinite loop, or set any number for finite loop.
-type-speed: 10
+type-speed: 20
 start-delay: 200
-delete-delay: 5000
+delete-delay: 8000
 lines: # You can add HTML Tags in the Text
   - text: "Who killed Tom Monfils?"
-  - text: "The story of the notorious 1992 Tom Monfils murder investigation and the townsfolk defined by it."
+  - text: "You find out a lot of things in an investigation, and not all of them you want to. – <strong>Detective Winkler</strong>"
+  - text: "It’s not a lie just because you can’t remember something. – <strong>Mike Piaskowski</strong>"
+  - text: "It’s like any story. It grows bigger and taller as it’s told. – <strong>Cal Monfils</strong>"
+  - text: "Usually cases provide closure, and in this case, it hasn’t. – <strong>Journalist Brian Kerhin</strong>"
+  - text: "The conspiracy of silence almost worked. – <strong>District Attorney John Zakowski</strong>"
+  - text: "The truth of what happened to Tom. That’s unalterable. Its sacrosanct. – <strong>Innocence Advocate Denis Gullickson</strong>"
+
+
+
+
+
+
 
 
 me-img: "/img/logo-bhn.png"
@@ -101,7 +112,7 @@ pinterest-share: False
 pocket-share: True
 vkontakte-share: False
 
-disqus-shortname: "panossakkos"
+disqus-shortname: ""
 
 syntax-highlight: True
 
@@ -148,10 +159,9 @@ email: "info@beyondhumannature.com"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "The film's director Michael Neelsen is a filmmaker, owner of StoryFirst Media, and host of the ReelFanatics podcast.
+author_blurb:
 
-."
-author_blurb_image: "https://pbs.twimg.com/profile_images/662700907621052416/q9IvCeP6_400x400.jpg"
+author_blurb_image:
 
 ##################
 # Social Buttons #
@@ -169,7 +179,7 @@ social:
 # 404 page #
 ############
 
-404-img: "/img/labtocat.png"
+404-img: "/img/logo-bhn.png"
 
 ################################################################################
 
@@ -180,8 +190,9 @@ social:
 pages_list:
   Trailer: 'trailer'
   About: 'about'
-  Production Diary: 'latest-post'
-  Dates: 'timeline'
+  Press: 'press'
+#  Production Diary: 'latest-post'
+#  Dates: 'timeline'
   Contact: 'contact'
 
 # Exclusion list from the generated _site
