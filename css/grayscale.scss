@@ -13,7 +13,7 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     color: $font-color;
     background-color: $primary-color;
 }
@@ -161,6 +161,7 @@ a {
     height: auto;
     padding: 100px 0;
     text-align: center;
+
     color: $intro-text-color;
     {% if site.background-img %}
     background: url({{ site.background-img }}) no-repeat bottom center scroll;
@@ -177,7 +178,7 @@ a {
             font-size: 40px;
         }
         .intro-text {
-            font-size: 18px;
+            font-size: 12px;
             @if $navbar-text-shadow {
                 text-shadow: 1px 0 1px #000;
             }
@@ -188,14 +189,15 @@ a {
         padding: 0;
         .intro-body {
             .brand-heading {
-                font-size: 100px;
+                font-size: 180px;
             }
             .intro-text {
-                font-size: 26px;
+                font-size: 18px;
             }
         }
     }
 }
+
 
 @-webkit-keyframes pulse {
     from {
@@ -444,4 +446,41 @@ body {
 
 .fourofour {
   border: 1px solid $primary-color !important;
+}
+
+
+/* code for video backdrop */
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 767px) {
+    .fullscreen-bg {
+        background: url('/img/mill-still.png') center center / cover no-repeat;
+    }
+
+    .fullscreen-bg__video {
+        display: none;
+    }
 }
