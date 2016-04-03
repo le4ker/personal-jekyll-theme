@@ -7,10 +7,10 @@ If you want to close the issue:
 3. In case you want to get your Pull Request in the master branch quickly, consider adding a screenshot of before and after your fix.
 4. Consider joining our [Gitter](https://gitter.im/PanosSakkos/personal-jekyll-theme) channel in order to make our communication easier.
 
-A few simple rules that have to be followed:
+A few simple rules that should be followed:
 
 1. No tabs allowed, two spaces should be used instead.
 2. If you are adding a new feature, update the respective documentation post.
 3. Make sure to test your changes on the mobile rendering as well. It's as important as the desktop view.
 4. Make sure that after your changes the website is responsive, with respect to performance. There should be no lagging and make sure that this is the case when using it in a weak mobile client.
-5. Squash your commits into one commit per ressolved issue.
+5. Squash your commits into one commit per resolved issue.
