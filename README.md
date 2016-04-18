@@ -45,8 +45,12 @@ Want to get { Personal } without messing with jekyll installations and terminal 
 
   1. Fork the personal-jekyll-theme repository
   2. Rename the forked repository to yourgithubusername.github.io
-  3. Visit https://yourgithubusername.github.io
-  4. Start modifying the \_config.yml and editing your blog's posts from Github's online editor or a third party online editor (i.e. [Prose](https://prose.io/))
+  3. Clone the renamed repo to your machine
+  4. Revert the name change on GitHub
+  5. Create a new, empty repo (no README, etc) called yourgithubusername.github.io
+  6. Push the repo from your machine to GitHub
+  7. Visit https://yourgithubusername.github.io
+  8. Start modifying the \_config.yml and editing your blog's posts from Github's online editor or a third party online editor (i.e. [Prose](https://prose.io/))
 
 ## Documentation
 
