@@ -18,7 +18,7 @@
           <small> <a href="{{site.baseurl}}{{post.url}}#disqus_thread">Comments</a></small>
         </h4>
 
-        {{ post.content | truncatewords: site.post-preview-words | strip_html | markdownify }}
+        {{ post.content | strip_html | markdownify | truncatewords: site.post-preview-words }}
 
         <h4><a href="{{site.baseurl}}/blog/">View more posts</a></h4>
 
