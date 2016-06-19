@@ -166,106 +166,113 @@ function addTohistory() {
 }
 </script>
 
-{% if page.section-type == "post" %}
+<!-- Gesture Navigation / Swipe Instruction Start -->
+{% if site.enable-gesture-navigation %}
 
-  <!-- Post Gesture Navigation Start -->
+  {% if page.section-type == "post" %}
 
-  <script type="text/javascript" src="{{site.baseurl}}/js/hammer.min.js"></script>
+    <!-- Post Gesture Navigation Start -->
 
-  <script>
-    var post = document.getElementById('post');
+    <script type="text/javascript" src="{{site.baseurl}}/js/hammer.min.js"></script>
 
-    new Hammer(post).on('swipeleft', function(event) {
-      addTohistory();
-      {% if site.baseurl == "" and page.previous == nil %}
-        document.location.replace("/");
-      {% else %}
-        document.location.replace("{{site.baseurl}}{{page.previous.url}}");
-      {% endif %}
-    });
+    <script>
+      var post = document.getElementById('post');
 
-    new Hammer(post).on('swiperight', function(event) {
-      addTohistory();
-      {% if site.baseurl == "" and page.next == nil %}
-        document.location.replace("/");
-      {% else %}
-        document.location.replace("{{site.baseurl}}{{page.next.url}}");
-      {% endif %}
-    });
-  </script>
+      new Hammer(post).on('swipeleft', function(event) {
+        addTohistory();
+        {% if site.baseurl == "" and page.previous == nil %}
+          document.location.replace("/");
+        {% else %}
+          document.location.replace("{{site.baseurl}}{{page.previous.url}}");
+        {% endif %}
+      });
 
-  <!-- Post Gesture Navigation Start -->
+      new Hammer(post).on('swiperight', function(event) {
+        addTohistory();
+        {% if site.baseurl == "" and page.next == nil %}
+          document.location.replace("/");
+        {% else %}
+          document.location.replace("{{site.baseurl}}{{page.next.url}}");
+        {% endif %}
+      });
+    </script>
 
-{% endif %}
+    <!-- Post Gesture Navigation Start -->
 
-{% if page.section-type == "blog" %}
+  {% endif %}
 
-  <!-- Blog Gesture Navigation Start -->
+  {% if page.section-type == "blog" %}
 
-  <script type="text/javascript" src="{{site.baseurl}}/js/hammer.min.js"></script>
+    <!-- Blog Gesture Navigation Start -->
 
-  <script>
-    var page = document.getElementById('page');
+    <script type="text/javascript" src="{{site.baseurl}}/js/hammer.min.js"></script>
 
-    new Hammer(page).on('swipeleft', function(event) {
-      addTohistory();
-      {% if site.baseurl == "" and paginator.next_page_path == nil %}
-        document.location.replace("/");
-      {% else %}
-        document.location.replace("{{site.baseurl}}{{paginator.next_page_path}}");
-      {% endif %}
-    });
-    new Hammer(page).on('swiperight', function(event) {
-      addTohistory();
-      {% if site.baseurl == "" and paginator.previous_page_path == nil %}
-        document.location.replace("/");
-      {% else %}
-        document.location.replace("{{site.baseurl}}{{paginator.previous_page_path}}");
-      {% endif %}
-    });
-  </script>
+    <script>
+      var page = document.getElementById('page');
 
-  <!-- Blog Gesture Navigation Start -->
+      new Hammer(page).on('swipeleft', function(event) {
+        addTohistory();
+        {% if site.baseurl == "" and paginator.next_page_path == nil %}
+          document.location.replace("/");
+        {% else %}
+          document.location.replace("{{site.baseurl}}{{paginator.next_page_path}}");
+        {% endif %}
+      });
+      new Hammer(page).on('swiperight', function(event) {
+        addTohistory();
+        {% if site.baseurl == "" and paginator.previous_page_path == nil %}
+          document.location.replace("/");
+        {% else %}
+          document.location.replace("{{site.baseurl}}{{paginator.previous_page_path}}");
+        {% endif %}
+      });
+    </script>
 
-{% endif %}
+    <!-- Blog Gesture Navigation Start -->
 
-{% if page.section-type == "blog" %}
+  {% endif %}
 
-  <!-- Swipe Instructions for Blog Start -->
+  {% if page.section-type == "blog" %}
 
-  <script>
-    $(document).ready(function(){
-      if(!localStorage.getItem('blog-swipeshowed')){
-        $("#swipe-instruction").fadeIn();
-        $("#swipe-instruction .close-swipe-instruction").click(function(){
-          $("#swipe-instruction").fadeOut();
-        });
-        localStorage.setItem('blog-swipeshowed', true);
-      }
-    });
-  </script>
+    <!-- Swipe Instructions for Blog Start -->
 
-  <!-- Swipe Instructions for Blog End -->
+    <script>
+      $(document).ready(function(){
+        if(!localStorage.getItem('blog-swipeshowed')){
+          $("#swipe-instruction").fadeIn();
+          $("#swipe-instruction .close-swipe-instruction").click(function(){
+            $("#swipe-instruction").fadeOut();
+          });
+          localStorage.setItem('blog-swipeshowed', true);
+        }
+      });
+    </script>
 
-{% endif %}
+    <!-- Swipe Instructions for Blog End -->
 
-{% if page.section-type == "post" %}
+  {% endif %}
 
-  <!-- Swipe Instructions for Post Start -->
+  {% if page.section-type == "post" %}
 
-  <script>
-    $(document).ready(function(){
-      if(!localStorage.getItem('post-swipeshowed')){
-        $("#swipe-instruction").fadeIn();
-        $("#swipe-instruction .close-swipe-instruction").click(function(){
-          $("#swipe-instruction").fadeOut();
-        });
-        localStorage.setItem('post-swipeshowed', true);
-      }
-    });
-  </script>
+    <!-- Swipe Instructions for Post Start -->
 
-  <!-- Swipe Instructions for Post End -->
+    <script>
+      $(document).ready(function(){
+        if(!localStorage.getItem('post-swipeshowed')){
+          $("#swipe-instruction").fadeIn();
+          $("#swipe-instruction .close-swipe-instruction").click(function(){
+            $("#swipe-instruction").fadeOut();
+          });
+          localStorage.setItem('post-swipeshowed', true);
+        }
+      });
+    </script>
+
+    <!-- Swipe Instructions for Post End -->
+
+  {% endif %}
+
+<!-- Gesture Navigation / Swipe Instruction End -->
 
 {% endif %}
 
