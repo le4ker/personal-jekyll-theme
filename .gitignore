@@ -16,3 +16,4 @@ test/
 _deploy/*
 Rakefile
 .jekyll-metadata
+/.idea/

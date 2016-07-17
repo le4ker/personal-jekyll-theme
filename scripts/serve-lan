@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo iptables -I INPUT -p tcp --dport 4000 -j ACCEPT
+jekyll serve --watch --host "0.0.0.0" --baseurl ""
