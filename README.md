@@ -46,19 +46,29 @@ You can watch it in action [here](https://panossakkos.github.io/personal-jekyll-
 
 The theme contains documentation in the form of [blog posts](https://panossakkos.github.io/personal-jekyll-theme/blog/index.html).
 
+![iOS](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/ios.jpg)
+
+![Android](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/pinned.jpg)
+
 ## How to run locally
 
 First, you need to install jekyll and the dependencies of { Personal } by running:
 
-````
+```shell
 ./scripts/install
-````
+```
 
 Then, you can build and serve your website by simply running:
 
-````
+```shell
 ./scripts/serve-production
-````
+```
+
+To serve across lan (requires su to forward the port 4000 over lan):
+
+```shell
+./scripts/serve-lan-production
+```
 
 ## OSS used in { Personal }
 
