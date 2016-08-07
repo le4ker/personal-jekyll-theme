@@ -3,7 +3,6 @@
 ![license](https://img.shields.io/badge/license-MIT-blue.svg?link=https://github.com/dono-app/ios/blob/master/LICENSE)
 [![Join the chat at https://gitter.im/PanosSakkos/personal-jekyll-theme](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/PanosSakkos/personal-jekyll-theme?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-
 { Personal } is a free responsive Jekyll theme, about you :wink:
 
 You can watch it in action [here](https://panossakkos.github.io/personal-jekyll-theme/)!
@@ -46,10 +45,6 @@ You can watch it in action [here](https://panossakkos.github.io/personal-jekyll-
 
 The theme contains documentation in the form of [blog posts](https://panossakkos.github.io/personal-jekyll-theme/blog/index.html).
 
-![iOS](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/ios.jpg)
-
-![Android](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/pinned.jpg)
-
 ## How to run locally
 
 First, you need to install jekyll and the dependencies of { Personal } by running:
@@ -81,26 +76,8 @@ One of the reasons { Personal } is real is the following OSS projects:
   5. [Timeline](https://github.com/kirbyt/timeline-jekyll-theme)
   6. [typed.js](https://github.com/mattboldt/typed.js/)
 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-<script type="text/javascript" src="https://blockchain.info/Resources/wallet-legacy/pay-now-button.js"></script>
-
-<div style="font-size:16px;margin:0 auto;width:300px" class="blockchain-btn"
-     data-address="1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi"
-     data-shared="false">
-    <div class="blockchain stage-begin">
+<div style="font-size:16px;margin:0 auto;width:300px">
+    <a href="https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi">
         <img src="https://blockchain.info/Resources/buttons/donate_64.png"/>
-    </div>
-    <div class="blockchain stage-loading" style="text-align:center">
-        <img src="https://blockchain.info/Resources/loading-large.gif"/>
-    </div>
-    <div class="blockchain stage-ready">
-         <p align="center">Please Donate To Bitcoin Address: <b>[[address]]</b></p>
-         <p align="center" class="qr-code"></p>
-    </div>
-    <div class="blockchain stage-paid">
-         Donation of <b>[[value]] BTC</b> Received. Thank You.
-    </div>
-    <div class="blockchain stage-error">
-        <font color="red">[[error]]</font>
-    </div>
+    </a>
 </div>
