@@ -20,10 +20,16 @@
           <h4>
             <strong>{{ page.date | date_to_string }}</strong>
             <small>
-              . category:
-              <a class="category" href="{{site.baseurl}}/categories/{{page.category | downcase}}.html">
-                {{ page.category }}
-              </a>.
+              . categor{% if page.categories.size > 1 %}ies{% else %}y{% endif %}:
+              {% for category in page.categories %}
+                <a class="category" href="{{site.baseurl}}/categories/{{ category | downcase }}.html">
+                  {{ category }}
+                </a>
+                {% if category != page.categories.last %}
+                 |
+                {% endif %}
+              {% endfor %}
+              .
               <a href="{{site.baseurl}}{{page.url }}#disqus_thread">Comments</a>
               <br />
               {% for tag in page.tags %}
