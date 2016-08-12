@@ -10,9 +10,14 @@
         {% assign post = site.posts.first %}
         <h4> <strong> {{ post.date | date_to_string }} </strong>
           <small>.
-            <a class="category" href="{{site.baseurl}}/categories/{{post.category | downcase}}.html">
-              {{ post.category }}
-            </a>
+             {% for category in post.categories %}
+               <a class="category" href="{{site.baseurl}}/categories/{{ category | downcase }}.html">
+                {{ category }}
+              </a>
+              {% if category != post.categories.last %}
+                |
+              {% endif %}
+            {% endfor %}
           .</small>
           <strong> <a href="{{site.baseurl}}{{ post.url }}">{{post.title}} </a> </strong>
           <small> <a href="{{site.baseurl}}{{post.url}}#disqus_thread">Comments</a></small>
