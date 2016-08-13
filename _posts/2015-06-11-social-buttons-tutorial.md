@@ -10,7 +10,7 @@ Social buttons (rendered above the footer) are great for having a small hub with
 
 You can edit them with the following variables:
 
-<pre><code data-trim class="yaml">
+{% highlight yaml %}
 social:
   - title: "facebook"
     url: "https://facebook.com/"
@@ -22,7 +22,7 @@ social:
     url: "https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi"
   - title: "rss"
     url: "/feed.xml"
-</code></pre>
+{% endhighlight %}
 
 The title selects the desired [Font Awesome](https://fortawesome.github.io/Font-Awesome/icons/)
 icon and it shouldn't include the "fa-" prefix.

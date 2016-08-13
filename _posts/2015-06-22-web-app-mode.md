@@ -8,7 +8,7 @@ tags: [ 'tutorial']
 You can make your website behave like a native web app in iOS and Android devices
 by providing links for the icons for each resolution:
 
-<pre><code data-trim class="yaml">
+{% highlight yaml %}
 web-app-mode: True
 
 # Icons for Web App mode
@@ -19,7 +19,7 @@ icon-72p: "/img/web-app/icon-72p.png"
 icon-96p: "/img/web-app/icon-96p.png"
 icon-144p: "/img/web-app/icon-144p.png"
 icon-192p: "/img/web-app/icon-192p.png"
-</code></pre>
+{% endhighlight %}
 
 <small>If you want to disable this feature, simply set the web-app-mode variable to False</small>
 
@@ -39,10 +39,10 @@ You can color the browser status bar when in mobile mode, by setting it to a col
 
 The color is define in the site config with the following variables
 
-<pre><code data-trim class="yaml">
+{% highlight yaml %}
 ##############################
 # Color the browser elements #
 ##############################
 color-browser: "#000000"
 apple-status-bar-style: "black"
-</code></pre>
+{% endhighlight %}

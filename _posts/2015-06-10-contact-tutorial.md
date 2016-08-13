@@ -15,9 +15,9 @@ The contact part of the index page is consisted of two elements:
 
 You can modify the Contact text from the /contact.html file and set the email in the site config:
 
-<pre><code data-trim class="yaml">
+{% highlight yaml %}
 email: "your@email.here"
-</code></pre>
+{% endhighlight %}
 
 Don't be afraid of email harvesting, write your email properly and the page will perform javascript obfuscation.
 
