@@ -134,7 +134,7 @@ email: "your@email.here"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "Jobayer Ahmed Mickey is an awesome person. He lives in Flatland, where he works on two-dimensional engineering projects. In his spare time, John likes to eat cotton candy."
+author_blurb: "Jobayer Ahmed Mickey is an awesome person. He lives in Bangladesh."
 author_blurb_image: "/img/author.png"
 
 ##################
