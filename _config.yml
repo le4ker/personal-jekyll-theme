@@ -110,11 +110,11 @@ syntax-highlight: True
 
 events:
   - image: "/img/timeline/spidertocat.png"
-    date: "September 2013 - Today"
-    description: "Saving the neighborhood!"
+    date: "11 4ugu57 2016 - 1:26pm"
+    description: "Push 1st test project in github"
   - image: "/img/timeline/baracktocat.jpg"
-    date: "September 2007 - August 2013"
-    description: "Started coding"
+    date: "4ugu57 11 - 9:32pm"
+    description: "Make 1st git hosted site"
 
 # First image of the Timeline
 
@@ -147,7 +147,7 @@ social:
   - title: "twitter"
     url: "https://twitter.com/mickey_jobayer"
   - title: "github"
-    url: "https://github.com/PanosSakkos/JobayerAhmedMickey"
+    url: "https://github.com/JobayerAhmedMickey"
   - title: "rss"
     url: "/feed.xml"
 
