@@ -21,7 +21,7 @@ google-tracking-id: ""
 # If you are not hosted on Github Pages, and your host doesn't support https
 # then you should disable it
 
-force-https: True
+force-https: false
 
 #############
 # HTML Head #
@@ -53,8 +53,17 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
+  - text: "Talk is cheap."
+  - text: "Show me the Code"
+  - text: "If you never failed"
+  - text: "You never tried anything new"
+  - text: "Trust the Computer"
+  - text: "The computer is your friend"
+  - text: "Keep your friend close."
+  - text: "And your charger closer"
   - text: "The lower you fall, the higher you'll fly."
   - text: "Where’s your will to be weird?"
+  - text: "Trust Me, I'm A "Programmer" "
 
 me-img: "/img/jetpacktocat.png"
 
@@ -68,7 +77,7 @@ apple-status-bar-style: "black"
 # Web app mode #
 ################
 
-web-app-mode: True
+web-app-mode: false
 
 # Icons for Web App mode
 
@@ -100,7 +109,7 @@ pinterest-share: True
 pocket-share: True
 vkontakte-share: True
 
-disqus-shortname: "panossakkos"
+disqus-shortname: "Mickey"
 
 syntax-highlight: True
 
