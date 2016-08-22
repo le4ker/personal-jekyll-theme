@@ -12,7 +12,7 @@ serving your { Personal } website for the first time.
 
 ### Essential variables
 
-<pre><code data-trim class="yaml">
+{% highlight yaml %}
 # NB! Set your site's url, otherwise stuff will break :)
 
 url: "https://panossakkos.github.io"
@@ -25,7 +25,7 @@ url: "https://panossakkos.github.io"
 # NB! Without this *nothing* will work, because it's used in every path :)
 
 baseurl: /personal-jekyll-theme
-</code></pre>
+{% endhighlight %}
 
 The url and baseurl variables are essential, because they are used *everywhere* where an anchor is defined!
 
@@ -34,7 +34,7 @@ The url and baseurl variables are essential, because they are used *everywhere* 
 You can define the colors that you want in your { Personal } website by setting
 the following variable sin the /_sass/_variables.scss file:
 
-<pre><code data-trim class="scss">
+{% highlight scss %}
 // Main color
 $primary-color: #000;
 
@@ -43,7 +43,7 @@ $secondary-color: #00cdff;
 
 // Font color
 $font-color: #fff;
-</code></pre>
+{% endhighlight %}
 
 ### HTTPS
 
@@ -55,13 +55,13 @@ If you are hosting your website in a server that doesn't have a certificate and
 you don't want to issue one, then you can disable this feature by setting the following
 variable to False:
 
-<pre><code data-trim class="yaml">
+{% highlight yaml %}
 force-https: True
-</code></pre>
+{% endhighlight %}
 
 ### HTML Head
 
-<pre><code data-trim class="yaml">
+{% highlight yaml %}
 lang: "en"
 author: "John Smith"
 title: "{ John Smith }"
@@ -69,7 +69,7 @@ description: "Blog and website of John Smith, blogging mainly for tech. Opinions
 keywords: "smith, jones, personal, jekyll, theme"
 favicon: "/img/favicon.ico"
 404-img: "/img/labtocat.png"
-</code></pre>
+{% endhighlight %}
 
 The values that you set, will be placed in the head section of every generated HTML page.
 
@@ -78,23 +78,23 @@ The values that you set, will be placed in the head section of every generated H
 The Google tracking code will be placed in every generated page.
 If you don't want Google analytics tracking your website's traffic, set the google-tracking-id to an empty string.
 
-<pre><code data-trim class="yaml">
+{% highlight yaml %}
 google-tracking-id: "UA-35880426-4"
-</code></pre>
+{% endhighlight %}
 
 ### Serving { Personal }
 
 Install the required dependencies:
 
-<pre><code data-trim class="bash">
+{% highlight bash %}
 gem install jekyll jekyll-paginate jemoji html-proofer
-</code></pre>
+{% endhighlight %}
 
 Serve the jekyll website:
 
-<pre><code data-trim class="bash">
+{% highlight bash %}
 ./scripts/serve-production
-</code></pre>
+{% endhighlight %}
 
 That's it!
 

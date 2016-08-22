@@ -10,7 +10,7 @@ the form of a timeline of photos, dates and text descriptions.
 
 The Timeline is controlled by the following variables:
 
-<pre><code data-trim class="yaml">
+{% highlight yaml %}
 events:
   - image: "/img/timeline/spidertocat.png"
     date: "September 2013 - Today"
@@ -22,7 +22,7 @@ events:
 # First image of the Timeline
 
 timeline-img: "/img/timeline/default.png"
-</code></pre>
+{% endhighlight %}
 
 For each event of your life, add a tuple of image, date and description to the events,
 and the timeline will be automatically generated!
