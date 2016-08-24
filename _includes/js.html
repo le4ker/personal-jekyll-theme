@@ -158,6 +158,45 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
 {% endif %}
 
+{% if site.intro-fading and page.section-type == "index" %}
+
+  <!-- Fading start  -->
+
+<script type="text/javascript">
+
+  $('.intro-text').{{ site.intro-position }}("<div id='quotesFade'></div>");
+
+  {% for quote in site.quotes %}
+    $( "#quotesFade" ).append( "<span class='quotes'>{{ quote }}</span>" );
+  {% endfor %}
+
+   (function() {
+
+       var quotes = $(".quotes");
+       var quoteIndex = -1;
+       var introFadein = {{ site.intro-fadein }};       
+       var introDelay = {{ site.intro-delay }};
+       var introFadeout = {{ site.intro-fadeout }};
+
+       function showNextQuote() {
+           ++quoteIndex;
+           quotes.eq(quoteIndex % quotes.length)
+               .fadeIn(introFadein)
+               .delay(introDelay)
+               .fadeOut(introFadeout, showNextQuote);
+       }
+    
+       showNextQuote();
+    
+   })();
+
+  </script>
+
+  <!-- Fading End  -->
+
+{% endif %}
+
+
 <script>
 function addTohistory() {
   if (!window.location.host.startsWith("127.0.0.1")) {

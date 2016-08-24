@@ -36,7 +36,9 @@ background-img: "../img/intro-bg.jpg"
 
 ### Welcome text
 
-The welcome text is controlled by the following (self-explanatory) variables:
+The welcome text includes both of the following cumulative options:
+
+First, a typed text is controlled by the following (self-explanatory) variables:
 
 <pre><code data-trim class="yaml">
 dynamic-typing: True
@@ -52,6 +54,20 @@ lines: # You can add HTML Tags in the Text
 </code></pre>
 
 <small>Many thanks to <a href="https://github.com/prashantsolanki3" target="blank">@prashantsolanki3</a> for the dynamic typing feature!</small>
+
+Second, a fading text:
+
+<pre><code data-trim class="yaml">
+intro-fading: True
+intro-position: before # You can display the fading text "before" or "after" the typed text if you choose to display both.
+intro-fadein: 100
+intro-delay: 5000
+intro-fadeout: 1000
+quotes: # You can also add HTML tags in the text
+  - "Simple text"
+  - "Text with <b>html <u>tags</u></b>"
+</code></pre>
+
 
 ### Your image
 

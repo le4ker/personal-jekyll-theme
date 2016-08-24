@@ -182,6 +182,13 @@ a {
                 text-shadow: 1px 0 1px #000;
             }
         }
+        .quotes {
+            display: none;
+            font-size: 18px;
+            @if $navbar-text-shadow {
+                text-shadow: 1px 0 1px #000;
+            }
+        }
     }
     @media(min-width:768px) {
         height: 100%;
@@ -191,6 +198,9 @@ a {
                 font-size: 100px;
             }
             .intro-text {
+                font-size: 26px;
+            }
+            .quotes {
                 font-size: 26px;
             }
         }
