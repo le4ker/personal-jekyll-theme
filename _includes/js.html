@@ -164,7 +164,7 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
 <script type="text/javascript">
 
-  $('.intro-text').{{ site.intro-position }}("<div id='quotesFade'></div>");
+  $('#intro-typed').{{ site.intro-position }}("<div id='quotesFade'></div>");
 
   {% for quote in site.quotes %}
     $( "#quotesFade" ).append( "<span class='quotes'>{{ quote }}</span>" );

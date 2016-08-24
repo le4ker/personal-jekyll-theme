@@ -59,7 +59,7 @@ lines: # You can add HTML Tags in the Text
   - text: "Where’s your will to be weird?"
 
 intro-fading: True
-intro-position: before # You can display the fading text "before" or "after" the typed text if you choose to display both.
+intro-position: after # You can display the fading text "before" or "after" the typed text if you choose to display both.
 intro-fadein: 100
 intro-delay: 5000
 intro-fadeout: 1000
