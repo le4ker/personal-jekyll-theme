@@ -7,7 +7,28 @@
       <div class="row">
           <div class="col-md-10 col-md-offset-1">
             <h1 class="brand-heading">&nbsp;</h1>
+            {% if site.countdown %}
+            <div id="countdown">
+              <div>
+                <span class="days"></span>
+                <div class="smalltext">Days</div>
+              </div>
+              <div>
+                <span class="hours"></span>
+                <div class="smalltext">Hours</div>
+              </div>
+              <div>
+                <span class="minutes"></span>
+                <div class="smalltext">Minutes</div>
+              </div>
+              <div>
+                <span class="seconds"></span>
+                <div class="smalltext">Seconds</div>
+              </div>
+            </div><br />
+            {% else %}
             <h1 class="brand-heading">&nbsp;</h1>
+            {% endif %}
             <span class="intro-text">{{ content }}</span>
             <h5>&nbsp;</h5>
             <a href="#{{ site.pages_list['About'] }}" class="page-scroll">

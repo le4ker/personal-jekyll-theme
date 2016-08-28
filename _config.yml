@@ -58,6 +58,9 @@ lines: # You can add HTML Tags in the Text
   - text: "The lower you fall, the higher you'll fly."
   - text: "Where’s your will to be weird?"
 
+countdown: True
+deadline: "08/12/2017 16:00" # MM/DD/AAAA HH:MM
+
 me-img: "/img/jetpacktocat.png"
 
 ##############################

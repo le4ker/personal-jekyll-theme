@@ -445,3 +445,53 @@ body {
 .fourofour {
   border: 1px solid $primary-color !important;
 }
+
+{% if site.countdown %}
+
+#countdown{
+    display: block;
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px auto;
+    @media(min-width:767px) {
+        margin: 20px auto;
+        font-size: 30px;
+    }
+}
+
+#countdown > div{
+    padding: 7px;
+    border-radius: 2px;
+    background: rgba(113, 92, 80, .5);
+    display: inline-block;
+    @media(min-width:767px) {
+      padding: 10px;
+      border-radius: 3px;
+    }
+}
+
+#countdown div > span{
+    padding: 10px;
+    border-radius: 2px;
+    background: #00cdff;
+    display: inline-block;
+    @media(min-width:767px) {
+      padding: 15px;
+      border-radius: 3px;
+    }
+}
+
+#countdown .smalltext{
+    padding-top: 3px;
+    font-size: 13px;
+    @media(min-width:767px) {
+      padding-top: 5px;
+      font-size: 16px;
+    }
+}
+
+{% endif %}
