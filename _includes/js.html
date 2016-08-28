@@ -165,6 +165,7 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
   <script type="text/javascript">
 
   var deadline = '{{ site.deadline }}';
+  //var deadline = new Date(Date.parse(new Date()) + 10 * 1000);
 
   function getTimeRemaining(endtime){
   var t = Date.parse(endtime) - Date.parse(new Date());
@@ -198,6 +199,10 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
       if (t.total <= 0) {
         clearInterval(timeinterval);
+        $('#countdown').fadeOut('slow', function() {
+            $('#countdown').html("{{ site.deadline_msg }}");
+            $('#countdown').fadeIn('slow');
+          });
       }
     }
 

@@ -59,7 +59,8 @@ lines: # You can add HTML Tags in the Text
   - text: "Where’s your will to be weird?"
 
 countdown: True
-deadline: "08/12/2017 16:00" # MM/DD/AAAA HH:MM
+deadline: "01/01/2017 00:00" # MM/DD/AAAA HH:MM
+deadline_msg: "Happy New Year 2017!"
 
 me-img: "/img/jetpacktocat.png"
 
