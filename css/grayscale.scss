@@ -477,7 +477,7 @@ body {
 #countdown div > span{
     padding: 10px;
     border-radius: 2px;
-    background: #00cdff;
+    background: $secondary-color;//#00cdff;
     display: inline-block;
     @media(min-width:767px) {
       padding: 15px;
