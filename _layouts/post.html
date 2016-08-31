@@ -43,14 +43,18 @@
 
           <hr />
 
-          {% if site.author_blurb %}
-          <div class="author row">
-            <img class="col-xs-4 col-sm-3 col-md-2" src="{{site.baseurl}}{{site.author_blurb_image}}" alt="Me" />
-            <p class="col-xs-8 col-sm-9 col-md-10">
-              {{ site.author_blurb }}
-            </p>
-          </div>
-          {% endif%}
+          <h4>Author{% if page.authors.size > 1 %}s{% endif %}</h4>
+          {% for author in site.authors %}
+            {% if ((page.author == author.name) or (page.authors contains author.name)) %}
+            <div class="author row">
+              <img class="col-xs-4 col-sm-3 col-md-2" src="{{site.baseurl}}{{author.image}}" alt="{{author.name}}" />
+              <p class="col-xs-8 col-sm-9 col-md-10">
+                {{ author.blurb }}
+              </p>
+            </div>
+            {% endif %}
+          {% endfor %}
+
         </div>
       </div>
     </section>

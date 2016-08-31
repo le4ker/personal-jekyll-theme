@@ -3,6 +3,7 @@ layout: post
 section-type: post
 title: Setting up the Blog
 category: tech
+author: "jane doe"
 tags: [ 'tutorial' ]
 ---
 
@@ -46,6 +47,30 @@ pinterest-share: True
 pocket-share: True
 vkontakte-share: True
 </code></pre>
+
+### Authors
+
+You can list all the potential authors of your posts by setting their names, blurb, and image, like this:
+
+<pre><code data-trim class="yaml">
+################
+# Author Blurb #
+################
+
+# The author blurb goes underneath blog posts.
+# This works best when your author blurb image has a transparent background, or matches your site background color.
+
+# if a post doesn't have any author set, then this feature is skipped
+authors:
+  - name: "john doe"
+    blurb: "John Doe is the name of the brother of Jane Doe. He's got a nice tie and glasses that makes him looks like he's a serious guy."
+    image: "/img/johndoe.png"
+  - name: "jane doe"
+    blurb: "Jane Doe is the name of the sister of John Doe. She's got a nice dress but she smokes too much."
+    image: "/img/janedoe.png"
+</code></pre>
+
+The present post has "jane doe" for author.
 
 ### Comments
 
