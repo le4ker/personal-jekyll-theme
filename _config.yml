@@ -151,7 +151,7 @@ social:
   - title: "github"
     url: "https://doctordeep.github.io"
   - title: "bitcoin"
-   url: "https://blockchain.info/address/1AboFpjsMxDex5Uk3rgpmbVF5QPmbxDcEv"
+    url: "https://blockchain.info/address/1AboFpjsMxDex5Uk3rgpmbVF5QPmbxDcEv"
   #- title: "rss"
   #  url: "/feed.xml"
 
