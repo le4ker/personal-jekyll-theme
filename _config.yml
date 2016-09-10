@@ -28,11 +28,11 @@ force-https: True
 # HTML Head #
 #############
 
-lang: "en"
-author: "John Smith"
-title: "{ John Smith }"
-description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
-keywords: "smith, jones, personal, jekyll, theme"
+lang: "it"
+author: "Doctor Deep"
+title: "DEEPFOLIO"
+description: "Il portfolio di doctordeep.github.io"
+keywords: "doctordeep, deepfolio, portfolio, web marketing, hetical hacking"
 favicon: "/img/favicon.ico"
 
 ################
@@ -55,8 +55,8 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "The lower you fall, the higher you'll fly."
-  - text: "Where’s your will to be weird?"
+  - text: "La vita è ingiusta, abituatici"
+  - text: "Abituarsi non vuol dire rassegnarsi"
 
 me-img: "/img/jetpacktocat.png"
 
