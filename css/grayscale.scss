@@ -445,3 +445,42 @@ body {
 .fourofour {
   border: 1px solid $primary-color !important;
 }
+
+
+ /* MAILCHIMP FORM STYLE START */
+
+#optin {
+	background: #232323 url(images/gloss.png) no-repeat bottom center;
+	border-bottom: 3px solid #232323;
+	color: #fff;
+	padding: 20px 15px;
+	text-shadow: 1px 1px #111;
+}
+	#optin input {
+		border: 1px solid #111;
+		font-size: 15px;
+		margin-bottom: 10px;
+		padding: 8px 10px;
+		border-radius: 3px;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		box-shadow: 0 2px 2px #111;
+		-moz-box-shadow: 0 2px 2px #111;
+		-webkit-box-shadow: 0 2px 2px #111
+	}
+		#optin input.email { background: #fff url(images/email.png) no-repeat 10px center; padding-left: 35px }
+		#optin input.name { background: #fff url(images/name.png) no-repeat 10px center; padding-left: 35px }
+		#optin input[type="submit"] {
+			background: #960e17 url(images/red.png) repeat-x top;
+			border: 1px solid #111;
+			color: #fff;
+			cursor: pointer;
+			font-size: 14px;
+			font-weight: bold;
+			padding: 8px 0;
+			text-shadow: -1px -1px #3a060a;
+			width: 100%
+		}
+			#optin input[type="submit"]:hover { color: #ffa5a5 }
+			
+			 /* MAILCHIMP FORM STYLE END */
