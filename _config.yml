@@ -196,4 +196,4 @@ sass:
 
 gems:
   - jekyll-paginate
-  - jemoji
+  #- jemoji
