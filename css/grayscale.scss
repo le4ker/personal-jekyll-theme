@@ -89,6 +89,11 @@ a {
     max-height: 100%;
     overflow-y: auto;
 
+    #logo_nav {
+        height: 30px;
+        margin-top: -5px;
+    }
+
     .navbar-toggle {
         padding: 4px 6px;
         font-size: 16px;
@@ -140,6 +145,12 @@ a {
         }
     }
     @media(min-width:768px) {
+        #logo_nav {
+           height: 50px;
+           -webkit-transition: height .5s ease-in-out,padding .5s ease-in-out;
+           -moz-transition: height .5s ease-in-out,padding .5s ease-in-out;
+           transition: height .5s ease-in-out,padding .5s ease-in-out;
+        }
         padding: 20px 0;
         border-bottom: none;
         letter-spacing: 1px;
@@ -151,6 +162,11 @@ a {
             padding: 0;
             background: $navbar-lg-collapse-background-color;
             border-bottom: 1px solid rgba($font-color, 0.3);
+
+	    #logo_nav {
+              height: 30px;
+              margin-top: -5px;
+            }
         }
     }
 }
