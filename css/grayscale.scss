@@ -82,7 +82,7 @@ a {
     margin-bottom: 0;
     border-bottom: 1px solid rgba($font-color, 0.3);
     text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Comic Sans MS", cursive, sans-serif, "Montserrat", Helvetica, Arial;
     background-color: $navbar-sm-background-color;
 
     /* Fix height limit and scroll for small screen and many items menu */
@@ -177,6 +177,7 @@ a {
             font-size: 40px;
         }
         .intro-text {
+            font-family: "Comic Sans MS", cursive, sans-serif;
             font-size: 18px;
             @if $navbar-text-shadow {
                 text-shadow: 1px 0 1px #000;
@@ -249,7 +250,6 @@ a {
     /* Added in { Personal } */
     ul,
     ol {
-        text-align: center;
         margin: 0 0 25px;
         font-size: 18px;
         line-height: 1.5;
