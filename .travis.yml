@@ -1,10 +1,12 @@
 language: ruby
 rvm:
-- 2.1
-
+- 2.2.1
 install: gem install bundler
-script: bundle install && rm -f ./_site && bundle exec jekyll build && bundle exec htmlproofer ./_site
-
+script: bundle install && rm -f ./_site && bundle exec jekyll build && bundle exec
+  htmlproofer ./_site
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+notifications:
+  slack:
+    secure: q6ydHj5Z3LI17u4CXtK9WuKMug99kbB8RMHw3d2Mqq4Hce4OznyfBy+j8jhKq6VHYFTXwSKMg4eT1FA6unm2Uwiu5Q5RoIFp10GpQfRrHlFCdnej2wXpREkdInrdhE0VWwADu3o7m3ZuCq6S8kc/G21o26rHODngbhIUUb8r0uYzi9T8Nt16GRQ89ZjVzVaXDKuahWSjciALRU5dpPsr/+xmTT4EOBR4VJggEbxvJ0spbsoZzroZY/U7KhqbHy5DUCty2xK9drh3BDVd83y9kr9XMB+u1lq5ZcirEOy/nUcqZJsC+IA1GsbheWB3gkkFSuudEd0wlryVZeWqoNY8It9oqtpNnO3E2oDIklv0BfnGEtHcLt107zp5YR1N2sZQjCwzPZMYhB72ZSYv7YaQDwKwdW8TfVAbrAjyheMjFqNLxMLqr4GJJwlFQCMTnafg/1+czGNqGcOCm1+yyWwVQ707cg25LFf7sOqZIprGaurUFspkz1vLNlm9M7215paePL4KDEf2X/3ck9pQkjNl6/1xUH2fNmE3TMZs24gDQCj6VBVKKLwkHO8S7yfknkQ9MGAy9zzZI614xQiKpW064HLUb+jOScWaYtO+pO1HP3y+kAAxUnTiKZg+JIPXnbaG3YtrA8AvKwYW30YsBpJ2g9R1xHgbZ2y8XrfwHNJ1FDk=
