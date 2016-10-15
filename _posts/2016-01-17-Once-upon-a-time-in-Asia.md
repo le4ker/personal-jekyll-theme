@@ -3,17 +3,16 @@ layout: post
 section-type: post
 title: "Once upon a time in Asia"
 category: Travel
-tags: 
+tags:
   - youtube
   - asia
 ---
+In the Spring of 2010, my then girlfriend (now great friend) and I traveled through Asia. It was an unforgettable trip that to this day always brings a smile to my face. The experiences I lived then and there,  irreparably changed the way I see and I feel the world.
 
-In the Spring of 2010, my then girlfriend (now great friend) and I travel through Asia. It was an unforgettable trip that always brings a smile to my face, and that irreparably changed the way I see the world. 
+For this trip, I bought a [Kodak Zi8](https://en.wikipedia.org/wiki/Kodak_Zi8) which is a little camcorder. With it, I recorded a lot of what I saw. Looking back, I should have bought a better camera, because the I scenes I recorded have become so precious to me and are in general so memorable, that they definitely deserved better video quality.
 
-For this trip, I bought a [Kodak Zi8](https://en.wikipedia.org/wiki/Kodak_Zi8) which is a little camcorder, and with it, I recorded a lot of what I saw. Looking back, I should have bought a better camera, because the scenes are great and memorable, but the quality is not as good :disappointed:
+Nevertheless, the youtube playlist with all the videos [is this one](https://www.youtube.com/playlist?list=PLi2MiQ1vhw-Iz2X9SZIOGtPNwqWcF1QKn). Below, you can find some of the videos.
 
-
-Nevertheless, the youtube playlist [is this one](https://www.youtube.com/playlist?list=PLi2MiQ1vhw-Iz2X9SZIOGtPNwqWcF1QKn), and below are some of the videos.
 
 ## Angkor wat
 
