@@ -68,7 +68,7 @@ title: "{ John Smith }"
 description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
 keywords: "smith, jones, personal, jekyll, theme"
 favicon: "/img/favicon.ico"
-404-img: "/img/labtocat.png"
+err-404-img: "/img/labtocat.png"
 </code></pre>
 
 The values that you set, will be placed in the head section of every generated HTML page.
