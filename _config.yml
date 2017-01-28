@@ -159,7 +159,7 @@ social:
 # 404 page #
 ############
 
-404-img: "/img/labtocat.png"
+err-404-img: "/img/labtocat.png"
 
 ##################
 # GPG on Keybase #
