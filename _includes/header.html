@@ -11,7 +11,11 @@
             <span class="intro-text">{{ content }}</span>
             <h5>&nbsp;</h5>
             <a href="#{{ site.pages_list['About'] }}" class="page-scroll">
-              <img class="img-me" src="{{site.baseurl}}{{ site.me-img }}" alt="">
+              {% if site.me-img contains "https://" %}
+                <img class="img-me" src="{{ site.me-img }}" alt="">
+              {% else %}
+                <img class="img-me" src="{{site.baseurl}}{{ site.me-img }}" alt="">
+              {% endif %}
             </a>
           </div>
         </div>
