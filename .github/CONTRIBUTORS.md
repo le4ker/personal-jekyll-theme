@@ -7,6 +7,7 @@ In alphabetical order:
   5. Jose Zamudio <jose.zamudiobarrera@postgrad.manchester.ac.uk>
   6. Jørn Ølmheim <jorn@olmheim.com>
   7. Kartik Arora <chipset95@yahoo.co.in>
+  8. Manas Gupta <manas94gupta@gmail.com>
   8. Marcus Eisele <marcus.eisele@gmail.com>
   9. Mike Kasberg <kasberg.mike@gmail.com>
   10. Nathan Jaremkio <njaremko@gmail.com>
