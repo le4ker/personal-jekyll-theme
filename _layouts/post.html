@@ -32,7 +32,9 @@
             </small>
           </h4>
 
-          {{ page.content | markdownify }}
+          <section class="text-justify">
+            {{ page.content | markdownify }}
+          </section>
 
           {% include share.html %}
 
