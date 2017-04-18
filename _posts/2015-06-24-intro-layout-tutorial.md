@@ -61,4 +61,20 @@ You can set your image from the following variable:
 me-img: "/img/jetpacktocat.png"
 </code></pre>
 
+If you want to connect your Facebook profile image then you can use the following.                 
+Replace `user_id` with your facebook user id. Facebook user id can be found by clicking
+on your profile pic and the large number in the end of the url just before '&type' is your user id.           
+Note: fbid is not the same as user id and user id only contains numbers.
+
+<pre><code data-trim class="yaml">
+me-img: "https://graph.facebook.com/user_id/picture?type=large&width=500&height=500"
+</code></pre>
+
+If you want to connect your Github profile image then you can use the following.              
+Replace `user_name` with your Twitter user name.
+
+<pre><code data-trim class="yaml">
+me-img: "https://github.com/user_name.png?size=500"
+</code></pre>
+
 All set!
