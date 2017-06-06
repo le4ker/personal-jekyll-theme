@@ -58,7 +58,7 @@ they have to be generated offline, by running the ./scripts/generate-categories 
 
 The category of the post is specified in the yaml header, in the Category variable.
 
-NB! Only one category can be defined per post.
+NB! You can setup one or several catagories for each post.
 
 ### Syntax highlighting
 

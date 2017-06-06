@@ -4,9 +4,14 @@
 <h4 align="left">
   <strong>{{ post.date | date_to_string }}</strong>
   <small>.
-    <a class="category" href="{{site.baseurl}}/categories/{{ post.category | downcase }}.html">
-      {{ post.category }}
+  {% for category in post.categories %}
+    <a class="category" href="{{site.baseurl}}/categories/{{ category | downcase }}.html">
+      {{ category }}
     </a>
+    {% if category != post.categories.last %}
+      |
+    {% endif %}
+  {% endfor %}
   .</small>
   <br class="visible-xs-block">
   <a href="{{site.baseurl}}{{post.url}}">
