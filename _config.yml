@@ -3,7 +3,7 @@
 
 # NB! Set your site's url, otherwise stuff will break :)
 
-url: "https://panossakkos.github.io"
+url: "https://Xiaoshiz.github.io"
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (https://yourusername.github.io/repository-name)
@@ -29,10 +29,10 @@ force-https: True
 #############
 
 lang: "en"
-author: "John Smith"
-title: "{ John Smith }"
-description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
-keywords: "smith, jones, personal, jekyll, theme"
+author: "Xiaoshi Zhang"
+title: "{ Purpose }"
+description: "Blog and website of Xiaoshi Zhang, blogging mainly for science, photography and my daily life."
+keywords: "Xiaoshi Zhang, personal, Science, Photography, Life"
 favicon: "/img/favicon.ico"
 
 ################
@@ -41,7 +41,7 @@ favicon: "/img/favicon.ico"
 
 black-favicon: "/img/black-lab-glass.ico"
 
-background-img: "../img/intro-bg.jpg"
+background-img: "../img/SanDiegoSunset.jpg"
 
 ##############################
 # Dynamic Text on the Header #
@@ -51,14 +51,14 @@ dynamic-typing: True
 shuffle: True # Shuffle the lines.
 loop: True
 loop-count: False # Set False for infinite loop, or set any number for finite loop.
-type-speed: 10
-start-delay: 200
-delete-delay: 5000
+type-speed: 100
+start-delay: 500
+delete-delay: 1000
 lines: # You can add HTML Tags in the Text
-  - text: "The lower you fall, the higher you'll fly."
-  - text: "Where’s your will to be weird?"
+  - text: "沧海之一粟"
+  - text: "Welcome to Xiaoshi's personal website"
 
-me-img: "/img/jetpacktocat.png"
+me-img: "/img/Profile Image.jpg"
 
 # To use facebook profile pic comment the previous line and uncomment the following
 # line, and replace 'user_id' with your facebook user id.
@@ -115,12 +115,12 @@ email-share: True
 fb-share: True
 twitter-share: True
 linkedin-share: True
-reddit-share: True
+reddit-share: False
 google-plus-share: True
-tumblr-share: True
-pinterest-share: True
-pocket-share: True
-vkontakte-share: True
+tumblr-share: False
+pinterest-share: False
+pocket-share: False
+vkontakte-share: False
 
 disqus-shortname: "panossakkos"
 
@@ -133,10 +133,13 @@ syntax-highlight: True
 events:
   - image: "/img/timeline/spidertocat.png"
     date: "September 2013 - Today"
-    description: "Saving the neighborhood!"
+    description: "Graduate from CUP!"
   - image: "/img/timeline/baracktocat.jpg"
     date: "September 2007 - August 2013"
-    description: "Started coding"
+    description: "Studying in FSU"
+  - image: "/img/timeline/baracktocat.jpg"
+    date: "September 2007 - August 2013"
+    description: "Studying in FSU"
 
 # First image of the Timeline
 
@@ -168,10 +171,10 @@ social:
     url: "https://facebook.com/"
   - title: "twitter"
     url: "https://twitter.com/"
+  - title: "twitter"
+    url: "https://twitter.com/"
   - title: "github"
     url: "https://github.com/PanosSakkos/personal-jekyll-theme"
-  - title: "bitcoin"
-    url: "https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi"
   - title: "rss"
     url: "/feed.xml"
 
@@ -185,7 +188,7 @@ err-404-img: "/img/labtocat.png"
 # GPG on Keybase #
 ##################
 
-keybase-username: johnsmith
+keybase-username: Xiaoshi Zhang
 keybase-in-social: True
 keybase-in-footer: True
 
