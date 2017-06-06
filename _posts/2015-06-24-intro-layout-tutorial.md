@@ -34,6 +34,18 @@ background-img: "../img/intro-bg.jpg"
 
 <small>NB! Keep the .. in the beginning of the background image path</small>
 
+### Countdown clock
+
+You can set a countdown if you want to celebrate a particular event. The countdown clock is controlled by the following variables:
+
+<pre><code data-trim class="yaml">
+countdown: True
+deadline: "01/01/2017 00:00" # MM/DD/AAAA HH:MM
+deadline_msg: "Happy New Year 2017!"
+</code></pre>
+
+<small>Watch out to the order of the elements of the date!</small>
+
 ### Welcome text
 
 The welcome text is controlled by the following (self-explanatory) variables:

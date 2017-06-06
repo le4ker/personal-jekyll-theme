@@ -58,6 +58,10 @@ lines: # You can add HTML Tags in the Text
   - text: "The lower you fall, the higher you'll fly."
   - text: "Where’s your will to be weird?"
 
+countdown: True
+deadline: "01/01/2017 00:00" # MM/DD/AAAA HH:MM
+deadline_msg: "Happy New Year 2017!"
+
 me-img: "/img/jetpacktocat.png"
 
 # To use facebook profile pic comment the previous line and uncomment the following
