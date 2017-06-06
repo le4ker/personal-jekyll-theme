@@ -3,7 +3,7 @@
 
 # NB! Set your site's url, otherwise stuff will break :)
 
-url: "https://panossakkos.github.io"
+url: "http://jam.ugcoder.com/"
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (https://yourusername.github.io/repository-name)
@@ -12,7 +12,6 @@ url: "https://panossakkos.github.io"
 #
 # NB! Without this *nothing* will work, because it's used in every path :)
 
-baseurl: /personal-jekyll-theme
 
 # Google tracking id
 
@@ -22,17 +21,16 @@ google-tracking-id: ""
 # If you are not hosted on Github Pages, and your host doesn't support https
 # then you should disable it
 
-force-https: True
+force-https: false
 
 #############
 # HTML Head #
 #############
 
 lang: "en"
-author: "John Smith"
-title: "{ John Smith }"
-description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
-keywords: "smith, jones, personal, jekyll, theme"
+author: "Jobayer Ahmed Mickey"
+title: "{ Jobayer Ahmed Mickey }"
+description: "Blog and website of Jobayer Ahmed Mickey, blogging mainly for tech. Opinions expressed are mine."
 favicon: "/img/favicon.ico"
 
 ################
@@ -55,8 +53,17 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
+  - text: "Talk is cheap."
+  - text: "Show me the Code"
+  - text: "If you never failed"
+  - text: "You never tried anything new"
+  - text: "Trust the Computer"
+  - text: "The computer is your friend"
+  - text: "Keep your friend close."
+  - text: "And your charger closer"
   - text: "The lower you fall, the higher you'll fly."
   - text: "Where’s your will to be weird?"
+  - text: "Trust Me, I'm A "Programmer" "
 
 me-img: "/img/jetpacktocat.png"
 
@@ -90,7 +97,7 @@ apple-status-bar-style: "black"
 # Web app mode #
 ################
 
-web-app-mode: True
+web-app-mode: false
 
 # Icons for Web App mode
 
@@ -122,7 +129,7 @@ pinterest-share: True
 pocket-share: True
 vkontakte-share: True
 
-disqus-shortname: "panossakkos"
+disqus-shortname: "Mickey"
 
 syntax-highlight: True
 
@@ -132,11 +139,11 @@ syntax-highlight: True
 
 events:
   - image: "/img/timeline/spidertocat.png"
-    date: "September 2013 - Today"
-    description: "Saving the neighborhood!"
+    date: "11 4ugu57 2016 - 1:26pm"
+    description: "Push 1st test project in github"
   - image: "/img/timeline/baracktocat.jpg"
-    date: "September 2007 - August 2013"
-    description: "Started coding"
+    date: "4ugu57 11 - 9:32pm"
+    description: "Make 1st git hosted site"
 
 # First image of the Timeline
 
@@ -156,7 +163,7 @@ email: "your@email.here"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "John Smith is an awesome person. He lives in Flatland, where he works on two-dimensional engineering projects. In his spare time, John likes to eat cotton candy."
+author_blurb: "Jobayer Ahmed Mickey is an awesome person. He lives in Bangladesh."
 author_blurb_image: "/img/author.png"
 
 ##################
@@ -165,13 +172,11 @@ author_blurb_image: "/img/author.png"
 
 social:
   - title: "facebook"
-    url: "https://facebook.com/"
+    url: "https://facebook.com/jobayer.ahmed.7982"
   - title: "twitter"
-    url: "https://twitter.com/"
+    url: "https://twitter.com/mickey_jobayer"
   - title: "github"
-    url: "https://github.com/PanosSakkos/personal-jekyll-theme"
-  - title: "bitcoin"
-    url: "https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi"
+    url: "https://github.com/JobayerAhmedMickey"
   - title: "rss"
     url: "/feed.xml"
 
@@ -185,9 +190,9 @@ err-404-img: "/img/labtocat.png"
 # GPG on Keybase #
 ##################
 
-keybase-username: johnsmith
-keybase-in-social: True
-keybase-in-footer: True
+keybase-username: 
+keybase-in-social: false
+keybase-in-footer: false
 
 ################################################################################
 
