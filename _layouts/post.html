@@ -27,7 +27,7 @@
               <a href="{{site.baseurl}}{{page.url }}#disqus_thread">Comments</a>
               <br />
               {% for tag in page.tags %}
-                <a class="tag" href="{{site.baseurl}}/tags/{{tag}}.html">#{{ tag }}</a>
+                <a class="tag" href="{{site.baseurl}}/tags/{{tag | downcase}}.html">#{{ tag }}</a>
               {% endfor %}
             </small>
           </h4>
