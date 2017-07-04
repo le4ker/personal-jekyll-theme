@@ -14,3 +14,4 @@ In alphabetical order:
   11. Panos Sakkos <panos.sakkos@protonmail.com>
   12. Prashant Solanki <prs.solanki@live.com>
   13. Sergey Lysenko <soulwish.ls@gmail.com>
+  14. Simon Böhm <simonboehm@gmx.de>
