@@ -54,12 +54,11 @@ loop-count: False # Set False for infinite loop, or set any number for finite lo
 type-speed: 10
 start-delay: 200
 delete-delay: 5000
-smart-backspace: true
 lines: # You can add HTML Tags in the Text
-  - text: "I design and build Web Application"
-  - text: "I design and build Mobile Application"
-  - text: "I design and build User Interface"
-  - text: "I design and build User Experience"
+  - text: "Web Application"
+  - text: "Mobile Application"
+  - text: "User Interface"
+  - text: "User Experience"
 
 me-img: "/img/jetpacktocat.png"
 
