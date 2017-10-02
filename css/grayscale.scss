@@ -174,16 +174,20 @@ a {
         display: table-cell;
         vertical-align: middle;
         .brand-heading {
-            font-size: 40px;
+            font-size: 50px;
         }
         .intro-text {
             font-size: 50px;
+            font-weight: 700;
+            text-transform: UPPERCASE;
             @if $navbar-text-shadow {
                 text-shadow: 1px 0 1px #000;
             }
         }
         .intro-title {
-            font-size: 40px;
+            font-size: 50px;
+            font-weight: 700;
+            text-transform: UPPERCASE;
             @if $navbar-text-shadow {
                 text-shadow: 1px 0 1px #000;
             }
