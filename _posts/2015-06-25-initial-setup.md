@@ -15,7 +15,7 @@ serving your { Personal } website for the first time.
 <pre><code data-trim class="yaml">
 # NB! Set your site's url, otherwise stuff will break :)
 
-url: "https://panossakkos.github.io"
+url: "https://le4ker.github.io"
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (https://yourusername.github.io/repository-name)
