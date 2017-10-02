@@ -183,7 +183,10 @@ a {
             }
         }
         .intro-title {
-            font-size: 20px;
+            font-size: 25px;
+            @if $navbar-text-shadow {
+                text-shadow: 1px 0 1px #000;
+            }
         }
     }
     @media(min-width:768px) {
