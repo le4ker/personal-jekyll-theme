@@ -177,10 +177,13 @@ a {
             font-size: 40px;
         }
         .intro-text {
-            font-size: 18px;
+            font-size: 25px;
             @if $navbar-text-shadow {
                 text-shadow: 1px 0 1px #000;
             }
+        }
+        .intro-title {
+            font-size: 20px;
         }
     }
     @media(min-width:768px) {
