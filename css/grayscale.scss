@@ -174,10 +174,10 @@ a {
         display: table-cell;
         vertical-align: middle;
         .brand-heading {
-            font-size: 20px;
+            font-size: 100px;
         }
         .intro-text {
-            font-size: 100px;
+            font-size: 26px;
             @if $navbar-text-shadow {
                 text-shadow: 1px 0 1px #000;
             }
@@ -363,10 +363,10 @@ body {
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
-    font-size: 16px;
+    font-size: 26px;
     vertical-align: top;
     @media(min-width:768px) {
-        font-size: 22px;
+        font-size: 26px;
     }
 }
 @keyframes blink{
