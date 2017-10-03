@@ -29,10 +29,10 @@ force-https: True
 #############
 
 lang: "en"
-author: "John Smith"
+author: "Yves Espinosa"
 title: "{ Yves Espinosa }"
-description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
-keywords: "smith, jones, personal, jekyll, theme"
+description: "Blog and website of Yves Espinosa, blogging mainly for tech. Opinions expressed are mine."
+keywords: "espinosa, yves, personal, jekyll, theme"
 favicon: "/img/favicon.ico"
 
 ################
@@ -57,6 +57,8 @@ delete-delay: 5000
 lines: # You can add HTML Tags in the Text
   - text: "Web Application"
   - text: "Mobile Application"
+  - text: "User Interface"
+  - text: "User Experience"
 
 me-img: "/img/jetpacktocat.png"
 
@@ -132,10 +134,10 @@ syntax-highlight: True
 
 events:
   - image: "/img/timeline/spidertocat.png"
-    date: "September 2013 - Today"
+    date: "Today"
     description: "Saving the neighborhood!"
   - image: "/img/timeline/baracktocat.jpg"
-    date: "September 2007 - August 2013"
+    date: "2011
     description: "Started coding"
 
 # First image of the Timeline
