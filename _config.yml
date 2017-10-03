@@ -3,7 +3,7 @@
 
 # NB! Set your site's url, otherwise stuff will break :)
 
-url: "http://yvesespinosa.com"
+#url: "http://yvesespinosa.com"
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (https://yourusername.github.io/repository-name)
@@ -12,7 +12,7 @@ url: "http://yvesespinosa.com"
 #
 # NB! Without this *nothing* will work, because it's used in every path :)
 
-baseurl: /mysite
+#baseurl: /mysite
 
 # Google tracking id
 
