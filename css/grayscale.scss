@@ -49,7 +49,7 @@ h4 {
 
 p {
     margin: 0 0 25px;
-    font-size: 18px;
+    font-size: 30px;
     line-height: 1.5;
     @media(min-width:768px) {
         margin: 0 0 35px;
@@ -174,7 +174,7 @@ a {
         display: table-cell;
         vertical-align: middle;
         .brand-heading {
-            font-size: 100px;
+            font-size: 40px;
         }
         .intro-text {
             font-size: 26px;
@@ -363,10 +363,10 @@ body {
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
-    font-size: 26px;
+    font-size: 16px;
     vertical-align: top;
     @media(min-width:768px) {
-        font-size: 26px;
+        font-size: 22px;
     }
 }
 @keyframes blink{
