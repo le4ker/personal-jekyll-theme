@@ -177,8 +177,7 @@ a {
             font-size: 100px;
         }
         .intro-text {
-            font-weight: bold;
-            font-size: 40px;
+            font-size: 26px;
             @if $navbar-text-shadow {
                 text-shadow: 1px 0 1px #000;
             }
@@ -364,12 +363,10 @@ body {
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 26px;
     vertical-align: top;
     @media(min-width:768px) {
         font-size: 40px;
-        font-weight: bold;
     }
 }
 @keyframes blink{
