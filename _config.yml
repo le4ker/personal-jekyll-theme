@@ -55,10 +55,10 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "Web Application"
-  - text: "Mobile Application"
-  - text: "User Interface"
-  - text: "User Experience"
+  - text: "Web Applications"
+  - text: "Mobile Applications"
+  - text: "User Interfaces"
+  - text: "User Experiences"
 
 me-img: "/img/jetpacktocat.png"
 
