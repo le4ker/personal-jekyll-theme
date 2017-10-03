@@ -137,7 +137,7 @@ events:
     date: "Today"
     description: "Saving the neighborhood!"
   - image: "/img/timeline/baracktocat.jpg"
-    date: "2011
+    date: "2011"
     description: "Started coding"
 
 # First image of the Timeline
@@ -158,7 +158,7 @@ email: "your@email.here"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "John Smith is an awesome person. He lives in Flatland, where he works on two-dimensional engineering projects. In his spare time, John likes to eat cotton candy."
+author_blurb: "Yves is an awesome person. He lives in Flatland, where he works on two-dimensional engineering projects. In his spare time, John likes to eat cotton candy."
 author_blurb_image: "/img/author.png"
 
 ##################
@@ -187,9 +187,9 @@ err-404-img: "/img/labtocat.png"
 # GPG on Keybase #
 ##################
 
-keybase-username: johnsmith
-keybase-in-social: True
-keybase-in-footer: True
+#keybase-username: johnsmith
+#keybase-in-social: True
+#keybase-in-footer: True
 
 ################################################################################
 
@@ -199,8 +199,9 @@ keybase-in-footer: True
 
 pages_list:
   About: 'about'
-  Blog: 'latest-post'
   Timeline: 'timeline'
+  Project: 'project'
+  #Blog: 'latest-post'
   Contact: 'contact'
 
 # Exclusion list from the generated _site
