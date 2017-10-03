@@ -63,7 +63,7 @@ p #introduction{
     line-height: 1.5;
     @media(min-width:768px) {
         margin: 0 0 35px;
-        font-size: 30px;
+        font-size: 40px;
         line-height: 1.6;
     } 
     
@@ -193,9 +193,6 @@ a {
                 text-shadow: 1px 0 1px #000;
             }
         }     
-        .intro-title {
-                font-size:20px;
-        }
     }
     @media(min-width:768px) {
         height: 100%;
@@ -205,10 +202,7 @@ a {
                 font-size: 100px;
             }
             .intro-text {
-                font-size: 35px;
-            }
-            .intro-title {
-                font-size:30px;
+                font-size: 50px;
             }
         }
     }
@@ -383,7 +377,7 @@ body {
     font-size: 26px;
     vertical-align: top;
     @media(min-width:768px) {
-        font-size: 35px;
+        font-size: 50px;
     }
 }
 @keyframes blink{
