@@ -161,6 +161,7 @@ a {
     height: auto;
     padding: 100px 0;
     text-align: center;
+    font-weight: 700;
     color: $intro-text-color;
     {% if site.background-img %}
     background: url({{ site.background-img }}) no-repeat bottom center scroll;
@@ -175,6 +176,8 @@ a {
         vertical-align: middle;
         .brand-heading {
             font-size: 50px;
+            font-weight: 700;
+
         }
         .intro-text {
             font-size: 50px;
