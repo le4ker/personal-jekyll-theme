@@ -55,7 +55,18 @@ p {
         margin: 0 0 35px;
         font-size: 20px;
         line-height: 1.6;
-    }
+    } 
+}
+p #introduction{
+    margin: 0 0 25px;
+    font-size: 20px;
+    line-height: 1.5;
+    @media(min-width:768px) {
+        margin: 0 0 35px;
+        font-size: 30px;
+        line-height: 1.6;
+    } 
+    
 }
 
 div {
