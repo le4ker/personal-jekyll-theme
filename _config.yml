@@ -148,7 +148,7 @@ timeline-img: "/img/timeline/default.png"
 # Contact #
 ###########
 
-email: "your@email.here"
+email: "xlonewulf1337@gmail.com"
 
 ################
 # Author Blurb #
@@ -158,7 +158,7 @@ email: "your@email.here"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "Yves is an awesome person. He lives in Flatland, where he works on two-dimensional engineering projects. In his spare time, John likes to eat cotton candy."
+author_blurb: "Yves is an awesome person. He lives in Queen city of South, where he works on mobile applications. In his spare time, Yves likes to eat cotton candy."
 author_blurb_image: "/img/author.png"
 
 ##################
@@ -167,15 +167,11 @@ author_blurb_image: "/img/author.png"
 
 social:
   - title: "facebook"
-    url: "https://facebook.com/"
+    url: "https://facebook.com/sevynnez"
   - title: "twitter"
-    url: "https://twitter.com/"
+    url: "https://twitter.com/yvesespinosa"
   - title: "github"
-    url: "https://github.com/PanosSakkos/personal-jekyll-theme"
-  - title: "bitcoin"
-    url: "https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi"
-  - title: "rss"
-    url: "/feed.xml"
+    url: "https://github.com/yvesespinosa"
 
 ############
 # 404 page #
@@ -200,7 +196,7 @@ err-404-img: "/img/labtocat.png"
 pages_list:
   About: 'about'
   Timeline: 'timeline'
-  Project: 'project'
+  #Project: 'project'
   #Blog: 'latest-post'
   Contact: 'contact'
 
