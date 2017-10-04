@@ -13,7 +13,7 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: $font-color;
     background-color: $primary-color;
 }
@@ -55,7 +55,9 @@ p {
         margin: 0 0 35px;
         font-size: 20px;
         line-height: 1.6;
-    }
+    } 
+}
+p #introduction{   
 }
 
 div {
@@ -177,11 +179,11 @@ a {
             font-size: 40px;
         }
         .intro-text {
-            font-size: 18px;
+            font-size: 26px;
             @if $navbar-text-shadow {
                 text-shadow: 1px 0 1px #000;
             }
-        }
+        }     
     }
     @media(min-width:768px) {
         height: 100%;
@@ -191,7 +193,7 @@ a {
                 font-size: 100px;
             }
             .intro-text {
-                font-size: 26px;
+                font-size: 50px;
             }
         }
     }
@@ -363,10 +365,10 @@ body {
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
-    font-size: 16px;
+    font-size: 26px;
     vertical-align: top;
     @media(min-width:768px) {
-        font-size: 22px;
+        font-size: 50px;
     }
 }
 @keyframes blink{
