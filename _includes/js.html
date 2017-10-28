@@ -1,4 +1,43 @@
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108811364-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108811364-1');
+</script>
+
+<script>
+	window.sendInvite = function( ){
+
+		var _textBox = $("#slack-invite-email");
+		var _button = $("#slack-invite-join");
+
+		var _email = _textBox.val();
+		$.ajax( {
+			method: "POST",
+			url: "/api/v1/slack/invite",
+			dataType: "json",
+			data: { email: _email },
+			success: function( ){
+				_textBox.prop("disabled", true );
+				_button.prop("disabled", true );
+				_button.html( "Invite Sent" );
+				_button.addClass("btn-success");
+			},
+			error: function( ){
+				_textBox.prop("disabled", true );
+				_button.prop( "disabled", true );
+				_button.addClass("btn-danger");
+				_button.html( "Error" );
+			}
+		} );
+	};
+</script>
+
+
 <!-- Javascript Start -->
 
 <!-- jQuery -->
