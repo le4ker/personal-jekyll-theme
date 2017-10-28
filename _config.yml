@@ -55,10 +55,12 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "December 2nd 2017 - Location to be confirmed"
-  - text: "What will you create?"
-  - text: "What datasets are available? Come find out!" 
-  - text: "Come work other awesome developers for a few hours!"
+  - text: "More coming soon!"
+  - text: "Check out <a href='http://data.winnipeg.ca/'>data.winnipeg.ca</a> to get started."
+  - text: "Want to get involved? <a href='mailto:hey@odw2017.ca?Subject=I Want To Get Involved'>Click Here</a>"
+#  - text: "What will you create?"
+#  - text: "What datasets are available? Come find out!" 
+#  - text: "Come work other awesome developers for a few hours!"
 
 me-img: "/img/padlock_icon_2.png"
 
@@ -196,10 +198,10 @@ keybase-in-footer: False
 # Sections shown in the index page
 
 pages_list:
-  About: 'about'
-  Blog: 'latest-post'
-  Timeline: 'timeline'
-  Contact: 'contact'
+#  About: 'about'
+#  Blog: 'latest-post'
+#  Timeline: 'timeline'
+#  Contact: 'contact'
 
 # Exclusion list from the generated _site
 
