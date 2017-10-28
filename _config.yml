@@ -1,9 +1,8 @@
-
 # Site settings
 
 # NB! Set your site's url, otherwise stuff will break :)
 
-url: "https://le4ker.github.io"
+url: "https://odw2017.ca"
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (https://yourusername.github.io/repository-name)
@@ -12,7 +11,7 @@ url: "https://le4ker.github.io"
 #
 # NB! Without this *nothing* will work, because it's used in every path :)
 
-baseurl: /personal-jekyll-theme
+baseurl: /
 
 # Google tracking id
 
@@ -29,10 +28,10 @@ force-https: True
 #############
 
 lang: "en"
-author: "John Smith"
-title: "{ John Smith }"
-description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
-keywords: "smith, jones, personal, jekyll, theme"
+author: "Open Data Winnipeg 2017"
+title: "Open Data Winnipeg 2017"
+description: "Open Data Hackathon using City of Winnipeg Datasets."
+keywords: "data, hackathon, winnipeg, cow, city, open, open-data, hack, dataset"
 favicon: "/img/favicon.ico"
 
 ################
@@ -41,7 +40,8 @@ favicon: "/img/favicon.ico"
 
 black-favicon: "/img/black-lab-glass.ico"
 
-background-img: "../img/intro-bg.jpg"
+background-img: "../img/code3.png"
+#background-img: "../img/intro-bg.jpg"
 
 ##############################
 # Dynamic Text on the Header #
@@ -55,10 +55,12 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "The lower you fall, the higher you'll fly."
-  - text: "Where’s your will to be weird?"
+  - text: "December 2nd 2017 - Location to be confirmed"
+  - text: "What will you create?"
+  - text: "What datasets are available? Come find out!" 
+  - text: "Come work other awesome developers for a few hours!"
 
-me-img: "/img/jetpacktocat.png"
+me-img: "/img/padlock_icon_2.png"
 
 # To use facebook profile pic comment the previous line and uncomment the following
 # line, and replace 'user_id' with your facebook user id.
@@ -90,7 +92,7 @@ apple-status-bar-style: "black"
 # Web app mode #
 ################
 
-web-app-mode: True
+web-app-mode: False
 
 # Icons for Web App mode
 
@@ -105,24 +107,22 @@ icon-192p: "/img/web-app/icon-192p.png"
 # Blog #
 ########
 
-enable-gesture-navigation: True
-
+enable-gesture-navigation: False
 post-preview-words: 96
-
 paginate: 5
 
-email-share: True
-fb-share: True
-twitter-share: True
-linkedin-share: True
-reddit-share: True
-google-plus-share: True
-tumblr-share: True
-pinterest-share: True
-pocket-share: True
-vkontakte-share: True
+email-share: False
+fb-share: False
+twitter-share: False
+linkedin-share: False
+reddit-share: False
+google-plus-share: False
+tumblr-share: False
+pinterest-share: False
+pocket-share: False
+vkontakte-share: False
 
-disqus-shortname: "panossakkos"
+disqus-shortname: "odw2017"
 
 syntax-highlight: True
 
@@ -163,17 +163,17 @@ author_blurb_image: "/img/author.png"
 # Social Buttons #
 ##################
 
-social:
-  - title: "facebook"
-    url: "https://facebook.com/"
-  - title: "twitter"
-    url: "https://twitter.com/"
-  - title: "github"
-    url: "https://github.com/PanosSakkos/personal-jekyll-theme"
-  - title: "bitcoin"
-    url: "https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi"
-  - title: "rss"
-    url: "/feed.xml"
+#social:
+#  - title: "facebook"
+#    url: "https://facebook.com/"
+#  - title: "twitter"
+#    url: "https://twitter.com/"
+#  - title: "github"
+#    url: "https://github.com/PanosSakkos/personal-jekyll-theme"
+#  - title: "bitcoin"
+#    url: "https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi"
+#  - title: "rss"
+#    url: "/feed.xml"
 
 ############
 # 404 page #
@@ -185,9 +185,9 @@ err-404-img: "/img/labtocat.png"
 # GPG on Keybase #
 ##################
 
-keybase-username: johnsmith
-keybase-in-social: True
-keybase-in-footer: True
+#keybase-username: johnsmith
+#keybase-in-social: False
+keybase-in-footer: False
 
 ################################################################################
 
