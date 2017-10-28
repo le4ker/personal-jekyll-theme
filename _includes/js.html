@@ -20,6 +20,7 @@
 			method: "POST",
 			url: "/api/v1/slack/invite",
 			dataType: "json",
+			json: true,
 			contentType: "application/json",
 			data: JSON.stringify( { email: _email }),
 			success: function( ){
