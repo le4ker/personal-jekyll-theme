@@ -1,14 +1,3 @@
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108811364-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-108811364-1');
-</script>
-
-
 <!-- Intro Start -->
 
 <header class="intro">
@@ -16,10 +5,25 @@
     <div class="container">
       <div class="row">
           <div class="col-md-10 col-md-offset-1">
-            <h1 class="brand-heading">&nbsp;</h1>
-            <!--<h1 class="brand-heading">&nbsp;</h1>-->
+		
+            <h3 class="brand-heading">Coming Soon</h3>
+
             <span class="intro-text">{{ content }}</span>
+
+		<h4>&nbsp;</h4>
             <h5>&nbsp;</h5>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="input-group input-group-lg">
+					<input type="text" class="form-control" id="slack-invite-email" placeholder="Your Email Address">
+					<span class="input-group-btn">
+						<button class="btn btn-primary" type="button" onclick="sendInvite( )" id="slack-invite-join">Join Slack</button>
+					</span>
+				</div>
+			</div>
+		</div>
+
+            <!--<h1 class="brand-heading">&nbsp;</h1>-->
 		<!--
             <a href="#{{ site.pages_list['About'] }}" class="page-scroll">
               {% if site.me-img contains "https://" %}
