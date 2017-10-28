@@ -21,7 +21,7 @@
 			url: "/api/v1/slack/invite",
 			dataType: "json",
 			contentType: "application/json",
-			data: { email: _email },
+			data: JSON.stringify( { email: _email }),
 			success: function( ){
 				_textBox.prop("disabled", true );
 				_button.prop("disabled", true );
