@@ -53,11 +53,11 @@ dynamic-typing: True
 shuffle: True # Shuffle the lines.
 loop: True
 loop-count: False # Set False for infinite loop, or set any number for finite loop.
-type-speed: 10
+type-speed: 20
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  #- text: "The lower you fall, the higher you'll fly."
+  - text: "Automate all the things."
   #- text: "Where’s your will to be weird?"
 
 me-img: "/img/jetpacktocat.png"
@@ -133,12 +133,16 @@ syntax-highlight: True
 ############
 
 events:
-  - image: "/img/timeline/spidertocat.png"
+  - image: "/img/timeline/desjardins_logo.png"
     date: "August 2017 - Today"
-    description: "Saving the neighborhood!"
-  - image: "/img/timeline/baracktocat.jpg"
-    date: "September 2007 - August 2013"
-    description: "Started coding"
+    description: "Spécialiste Automatisation, expert Infrastructure as Code"
+    description: "Automation Specialist, Infrastructure as Code expert"
+  - image: "/img/timeline/logo_pbsc.png"
+    date: "October 2016 - August 2017"
+    description: "AWS & Virtualisation Specialist"
+  - image: "/img/timeline/logo_floe.png"
+    date: "May - October 2016"
+    description: "Spécialiste AWS & Virtualisation Specialist"
 
 # First image of the Timeline
 
