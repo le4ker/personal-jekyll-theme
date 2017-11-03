@@ -3,7 +3,7 @@ language: ruby
 rvm:
 - 2.2.2
 
-install: gem install jekyll jekyll-paginate jemoji html-proofer minitest i18n
+install: gem install i18n jekyll jekyll-paginate jemoji html-proofer minitest i18n
 script: jekyll serve --baseurl "" --detach && htmlproofer ./_site --disable-external --empty-alt-ignore
 
 env:
