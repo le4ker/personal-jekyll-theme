@@ -141,7 +141,10 @@ events:
     description: "AWS & Virtualisation Specialist"
   - image: "/img/timeline/logo_floe.png"
     date: "May - October 2016"
-    description: "Spécialiste AWS & Virtualisation Specialist"
+    description: "Linux SysAdmin"
+  - image: "/img/timeline/ubisoft_logo.png"
+    date: "September 2012 - May 2016"
+    description: "Linux SysAdmin"
 
 # First image of the Timeline
 
