@@ -135,8 +135,7 @@ syntax-highlight: True
 events:
   - image: "/img/timeline/desjardins_logo.png"
     date: "August 2017 - Today"
-    description: "Spécialiste Automatisation, expert Infrastructure as Code"
-    description: "Automation Specialist, Infrastructure as Code expert"
+    description: "Automation Specialist, expert Infrastructure as Code"
   - image: "/img/timeline/logo_pbsc.png"
     date: "October 2016 - August 2017"
     description: "AWS & Virtualisation Specialist"
