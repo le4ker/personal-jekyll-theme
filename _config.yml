@@ -177,7 +177,7 @@ email: "contact@julienlevasseur.ca"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "Julien Levasseur is an awesome person. He lives in Montréal. In his spare time, Julien likes to ride his motorcycle, shoot and hike."
+author_blurb: "Julien Levasseur is a nice guy. He lives in Montréal. In his spare time, Julien likes to ride his motorcycle, shoot and hike."
 #author_blurb_image: "/img/author.png"
 author_blurb_image: "https://media.licdn.com/mpr/mpr/shrinknp_100_100/AAIA_wDGAAAAAQAAAAAAAAn1AAAAJGQ1MDY5ZDcwLWI1YzctNDVjYy04OThmLTNmMjU3ODk4ZWE3Ng.jpg"
 
