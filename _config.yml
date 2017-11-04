@@ -57,8 +57,8 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "Automate all the things."
-  #- text: "Where’s your will to be weird?"
+  - text: "Automate all the thing !"
+  - text: "Codify everything !"
 
 me-img: "/img/jetpacktocat.png"
 
@@ -177,7 +177,7 @@ email: "contact@julienlevasseur.ca"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "John Smith is an awesome person. He lives in Flatland, where he works on two-dimensional engineering projects. In his spare time, John likes to eat cotton candy."
+author_blurb: "Julien Levasseur is an awesome person. He lives in Montréal. In his spare time, Julien likes to ride his motorcycle, shoot and hike."
 #author_blurb_image: "/img/author.png"
 author_blurb_image: "https://media.licdn.com/mpr/mpr/shrinknp_100_100/AAIA_wDGAAAAAQAAAAAAAAn1AAAAJGQ1MDY5ZDcwLWI1YzctNDVjYy04OThmLTNmMjU3ODk4ZWE3Ng.jpg"
 
