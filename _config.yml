@@ -145,6 +145,18 @@ events:
   - image: "/img/timeline/ubisoft_logo.png"
     date: "September 2012 - May 2016"
     description: "Linux SysAdmin"
+  - image: "/img/timeline/hedera_logo.png"
+    date: "December 2011 - September 2012"
+    description: "Linux System Developper"
+  - image: "/img/timeline/logo_ibm.png"
+    date: "September - November 2011"
+    description: "Unix SysAdmin"
+  - image: "/img/timeline/logo_sagemcom.png"
+    date: "August - September 2011"
+    description: "Unix SysAdmin"
+  - image: "/img/timeline/logo_veolia.png"
+    date: "May - July 2011"
+    description: "Unix SysAdmin"
 
 # First image of the Timeline
 
