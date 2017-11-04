@@ -60,7 +60,7 @@ lines: # You can add HTML Tags in the Text
   - text: "Automate all the things."
   #- text: "Where’s your will to be weird?"
 
-me-img: "/img/author.png"
+me-img: "/img/jetpacktocat.png"
 
 # To use facebook profile pic comment the previous line and uncomment the following
 # line, and replace 'user_id' with your facebook user id.
@@ -149,7 +149,7 @@ events:
 # First image of the Timeline
 
 #timeline-img: "/img/timeline/default.png"
-timeline-img: "/img/jetpacktocat.png"
+timeline-img: "/img/author.png"
 
 ###########
 # Contact #
