@@ -4,7 +4,7 @@
 # NB! Set your site's url, otherwise stuff will break :)
 
 #url: "https://le4ker.github.io"
-url: "http://localhost"
+url: "http://www.julienlevasseur.ca"
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (https://yourusername.github.io/repository-name)
@@ -57,7 +57,7 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "Automate all the thing !"
+  - text: "Automate all the things !"
   - text: "Codify everything !"
 
 me-img: "/img/jetpacktocat.png"
@@ -124,7 +124,7 @@ pinterest-share: False
 pocket-share: False
 vkontakte-share: False
 
-disqus-shortname: "panossakkos"
+#disqus-shortname: "panossakkos"
 
 syntax-highlight: True
 
