@@ -33,7 +33,7 @@ force-https: True
 lang: "en"
 author: "Julien Levasseur"
 title: "Julien Levasseur"
-description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
+description: "Blog and website of Julien Levasseur, blogging mainly for tech. Opinions expressed are mine."
 keywords: "julien, levasseur, personal"
 favicon: "/img/favicon.ico"
 
@@ -217,8 +217,8 @@ keybase-in-footer: False
 
 pages_list:
   About: 'about'
-  Blog: 'latest-post'
   Timeline: 'timeline'
+  Blog: 'latest-post'
   Contact: 'contact'
 
 # Exclusion list from the generated _site
