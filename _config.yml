@@ -157,6 +157,15 @@ events:
   - image: "/img/timeline/logo_veolia.jpg"
     date: "May - July 2011"
     description: "Unix SysAdmin"
+  - image: "/img/timeline/logo_lbpoker.jpg"
+    date: "April 2010 - May 2011"
+    description: "Unix SysAdmin"
+  - image: "/img/timeline/logo_grab.jpg"
+    date: "November 2008 - April 2011"
+    description: "Unix SysAdmin"
+  - image: "/img/timeline/logo_cimr.jpg"
+    date: "September 2007 - November 2008"
+    description: "System & Network Admin"
 
 # First image of the Timeline
 
