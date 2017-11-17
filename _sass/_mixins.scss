@@ -1,1 +1,10 @@
 // Mixins
+
+.btn-xlg {
+    padding: 18px 28px;
+    font-size: 30px; //change this to your desired size
+    line-height: normal;
+    -webkit-border-radius: 10px !important;
+       -moz-border-radius: 10px !important;
+            border-radius: 10px !important;
+}
