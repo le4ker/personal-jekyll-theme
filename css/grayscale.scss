@@ -177,7 +177,8 @@ a {
             font-size: 40px;
         }
         .intro-text {
-            font-size: 18px;
+            font-family: "Montserrat";
+            font-size: 80px;
             @if $navbar-text-shadow {
                 text-shadow: 1px 0 1px #000;
             }
@@ -188,10 +189,11 @@ a {
         padding: 0;
         .intro-body {
             .brand-heading {
-                font-size: 100px;
+                font-size: 50px;
             }
             .intro-text {
-                font-size: 26px;
+                font-family: "Montserrat";
+                font-size: 80px;
             }
         }
     }

@@ -49,16 +49,18 @@ background-img: "../img/code3.png"
 
 dynamic-typing: False
 #dynamic-typing: True
-shuffle: True # Shuffle the lines.
+shuffle: False
 loop: True
 loop-count: False # Set False for infinite loop, or set any number for finite loop.
 type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "More coming soon!"
-  - text: "Check out <a href='http://data.winnipeg.ca/'>data.winnipeg.ca</a> to get started."
-  - text: "Want to get involved? <a href='mailto:hey@odw2017.ca?Subject=I Want To Get Involved'>Click Here</a>"
+  - text: "December 2nd 2017"
+  - text: "5th floor of 321 McDermot"
+#  - text: "Get your tickets now!"
+#  - text: "Check out <a href='http://data.winnipeg.ca/'>data.winnipeg.ca</a> to get started."
+#  - text: "Want to get involved? <a href='mailto:hey@odw2017.ca?Subject=I Want To Get Involved'>Click Here</a>"
 #  - text: "What will you create?"
 #  - text: "What datasets are available? Come find out!" 
 #  - text: "Come work other awesome developers for a few hours!"
@@ -135,11 +137,29 @@ syntax-highlight: True
 
 events:
   - image: "/img/timeline/spidertocat.png"
-    date: "September 2013 - Today"
-    description: "Saving the neighborhood!"
+    date: "12:30"
+    description: "Doors open. Mingle and meet interesting people"
+
+  - image: "/img/timeline/spidertocat.png"
+    date: "1:00 PM"
+    description: "Registration; Opening Remarks"
+
+  - image: "/img/timeline/spidertocat.png"
+    date: "1:15 PM"
+    description: "Brainstorming, pitching, and distillation of ideas."
+
+  - image: "/img/timeline/spidertocat.png"
+    date: "2PM"
+    description: "Start Hacking."
+
   - image: "/img/timeline/baracktocat.jpg"
-    date: "September 2007 - August 2013"
-    description: "Started coding"
+    date: "6PM"
+    description: "Awesome Awesome Dinner. Catered by PEG Beer Co."
+
+  - image: "/img/timeline/baracktocat.jpg"
+    date: "8PM"
+    description: "Show and Tell. Awards. Celebrate!"
+
 
 # First image of the Timeline
 
@@ -199,9 +219,12 @@ keybase-in-footer: False
 # Sections shown in the index page
 
 pages_list:
-#  About: 'about'
+  About: 'about'
+# Faq: 'faq'
 #  Blog: 'latest-post'
-#  Timeline: 'timeline'
+  Timeline: 'timeline'
+  Partners: 'partners'
+  Map: 'map'
 #  Contact: 'contact'
 
 # Exclusion list from the generated _site
