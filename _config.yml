@@ -3,7 +3,8 @@
 
 # NB! Set your site's url, otherwise stuff will break :)
 
-url: "https://le4ker.github.io"
+#url: "https://le4ker.github.io"
+url: "http://www.julienlevasseur.ca"
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (https://yourusername.github.io/repository-name)
@@ -12,7 +13,8 @@ url: "https://le4ker.github.io"
 #
 # NB! Without this *nothing* will work, because it's used in every path :)
 
-baseurl: /personal-jekyll-theme
+#baseurl: /personal-jekyll-theme
+#baseurl: /
 
 # Google tracking id
 
@@ -29,10 +31,10 @@ force-https: True
 #############
 
 lang: "en"
-author: "John Smith"
-title: "{ John Smith }"
-description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
-keywords: "smith, jones, personal, jekyll, theme"
+author: "Julien Levasseur"
+title: "Julien Levasseur"
+description: "Blog and website of Julien Levasseur, blogging mainly for tech. Opinions expressed are mine."
+keywords: "julien, levasseur, personal"
 favicon: "/img/favicon.ico"
 
 ################
@@ -55,8 +57,8 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "The lower you fall, the higher you'll fly."
-  - text: "Where’s your will to be weird?"
+  - text: "Automate all the things !"
+  - text: "Codify everything !"
 
 me-img: "/img/jetpacktocat.png"
 
@@ -115,14 +117,14 @@ email-share: True
 fb-share: True
 twitter-share: True
 linkedin-share: True
-reddit-share: True
+reddit-share: False
 google-plus-share: True
-tumblr-share: True
-pinterest-share: True
-pocket-share: True
-vkontakte-share: True
+tumblr-share: False
+pinterest-share: False
+pocket-share: False
+vkontakte-share: False
 
-disqus-shortname: "panossakkos"
+#disqus-shortname: "panossakkos"
 
 syntax-highlight: True
 
@@ -131,22 +133,50 @@ syntax-highlight: True
 ############
 
 events:
-  - image: "/img/timeline/spidertocat.png"
-    date: "September 2013 - Today"
-    description: "Saving the neighborhood!"
-  - image: "/img/timeline/baracktocat.jpg"
-    date: "September 2007 - August 2013"
-    description: "Started coding"
+  - image: "/img/timeline/desjardins_logo.png"
+    date: "August 2017 - Today"
+    description: "Automation Specialist, expert Infrastructure as Code"
+  - image: "/img/timeline/logo_pbsc.png"
+    date: "October 2016 - August 2017"
+    description: "AWS & Virtualisation Specialist"
+  - image: "/img/timeline/logo_floe.png"
+    date: "May - October 2016"
+    description: "Linux SysAdmin"
+  - image: "/img/timeline/ubisoft_logo.png"
+    date: "September 2012 - May 2016"
+    description: "Linux SysAdmin"
+  - image: "/img/timeline/hedera_logo.jpg"
+    date: "December 2011 - September 2012"
+    description: "Linux System Developper"
+  - image: "/img/timeline/logo_ibm.jpg"
+    date: "September - November 2011"
+    description: "Unix SysAdmin"
+  - image: "/img/timeline/logo_sagemcom.jpg"
+    date: "August - September 2011"
+    description: "Unix SysAdmin"
+  - image: "/img/timeline/logo_veolia.jpg"
+    date: "May - July 2011"
+    description: "Unix SysAdmin"
+  - image: "/img/timeline/logo_lbpoker.jpg"
+    date: "April 2010 - May 2011"
+    description: "Unix SysAdmin"
+  - image: "/img/timeline/logo_grab.jpg"
+    date: "November 2008 - April 2011"
+    description: "Unix SysAdmin"
+  - image: "/img/timeline/logo_cimr.jpg"
+    date: "September 2007 - November 2008"
+    description: "System & Network Admin"
 
 # First image of the Timeline
 
-timeline-img: "/img/timeline/default.png"
+#timeline-img: "/img/timeline/default.png"
+timeline-img: "/img/author.png"
 
 ###########
 # Contact #
 ###########
 
-email: "your@email.here"
+email: "contact@julienlevasseur.ca"
 
 ################
 # Author Blurb #
@@ -156,8 +186,9 @@ email: "your@email.here"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "John Smith is an awesome person. He lives in Flatland, where he works on two-dimensional engineering projects. In his spare time, John likes to eat cotton candy."
-author_blurb_image: "/img/author.png"
+author_blurb: "Julien Levasseur is a nice guy. He lives in Montréal. In his spare time, Julien likes to ride his motorcycle, shoot and hike."
+#author_blurb_image: "/img/author.png"
+author_blurb_image: "https://media.licdn.com/mpr/mpr/shrinknp_100_100/AAIA_wDGAAAAAQAAAAAAAAn1AAAAJGQ1MDY5ZDcwLWI1YzctNDVjYy04OThmLTNmMjU3ODk4ZWE3Ng.jpg"
 
 ##################
 # Social Buttons #
@@ -165,13 +196,11 @@ author_blurb_image: "/img/author.png"
 
 social:
   - title: "facebook"
-    url: "https://facebook.com/"
-  - title: "twitter"
-    url: "https://twitter.com/"
+    url: "https://www.facebook.com/julien.levasseur.71"
+  #- title: "twitter"
+  #  url: "https://twitter.com/"
   - title: "github"
-    url: "https://github.com/PanosSakkos/personal-jekyll-theme"
-  - title: "bitcoin"
-    url: "https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi"
+    url: "https://github.com/julienlevasseur"
   - title: "rss"
     url: "/feed.xml"
 
@@ -185,9 +214,9 @@ err-404-img: "/img/labtocat.png"
 # GPG on Keybase #
 ##################
 
-keybase-username: johnsmith
-keybase-in-social: True
-keybase-in-footer: True
+#keybase-username: johnsmith
+keybase-in-social: False
+keybase-in-footer: False
 
 ################################################################################
 
@@ -197,8 +226,8 @@ keybase-in-footer: True
 
 pages_list:
   About: 'about'
-  Blog: 'latest-post'
   Timeline: 'timeline'
+  Blog: 'latest-post'
   Contact: 'contact'
 
 # Exclusion list from the generated _site

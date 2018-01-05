@@ -17,3 +17,4 @@ _deploy/*
 Rakefile
 .jekyll-metadata
 /.idea/
+Gemfile.lock
