@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  jekyll:
+    image: jekyll/jekyll
+    ports:
+      - "4000:4000"
+    command: /bin/bash -c 'PATH=$$PATH:/srv/jekyll/scripts; serve-lan'
+    volumes:
+      - .:/srv/jekyll
+
