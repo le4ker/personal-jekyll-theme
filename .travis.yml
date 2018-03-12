@@ -1,7 +1,7 @@
 language: ruby
 
 rvm:
-- 2.2.2
+- 2.5
 
 install: gem install jekyll jekyll-paginate jemoji html-proofer
 script: jekyll serve --baseurl "" --detach && htmlproofer ./_site --disable-external --empty-alt-ignore
