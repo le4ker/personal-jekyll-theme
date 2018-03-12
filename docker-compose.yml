@@ -5,7 +5,7 @@ services:
     image: jekyll/jekyll
     ports:
       - "4000:4000"
-    command: /bin/bash -c 'PATH=$$PATH:/srv/jekyll/scripts; serve-lan'
+    command: jekyll serve --watch --host "0.0.0.0" --config _config.yml,_config.dev.yml
     volumes:
       - .:/srv/jekyll
 
