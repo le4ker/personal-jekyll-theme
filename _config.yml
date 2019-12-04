@@ -33,7 +33,7 @@ author: "Alan Bergland"
 title: "::: Bergland Lab :::"
 description: "Lab website of Alan Bergland, University of Virginia"
 keywords: "bergland, alan, drosophila, daphnia, evolution"
-favicon: "/img/favicon.ico"
+##favicon: "/img/favicon.ico"
 
 ################
 # Header layout #
@@ -56,7 +56,7 @@ start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
   - text: "Hello"
-  - text: "Where’s your will to be weird? In my pants"
+  - text: "Where’s your will to be weird? "
 
 me-img: "/img/jetpacktocat.png"
 
