@@ -47,7 +47,7 @@ background-img: "../img/pond_wide.jpg"
 # Dynamic Text on the Header #
 ##############################
 
-dynamic-typing: True
+dynamic-typing: False
 shuffle: True # Shuffle the lines.
 loop: True
 loop-count: False # Set False for infinite loop, or set any number for finite loop.
@@ -55,8 +55,9 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "Hello"
-  - text: "Where’s your will to be weird? "
+  - text: "Bergland Lab / University of Virginia"
+  - text: "Evolutionary Genetics / Evolutionary Ecology"
+  - text: "Drosophila / Daphnia"
 
 me-img: "/img/jetpacktocat.png"
 
