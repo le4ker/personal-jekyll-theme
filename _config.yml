@@ -47,7 +47,7 @@ background-img: "../img/pond_wide.jpg"
 # Dynamic Text on the Header #
 ##############################
 
-dynamic-typing: False
+dynamic-typing: True
 shuffle: True # Shuffle the lines.
 loop: True
 loop-count: False # Set False for infinite loop, or set any number for finite loop.
