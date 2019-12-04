@@ -29,10 +29,10 @@ force-https: True
 #############
 
 lang: "en"
-author: "John Smith"
-title: "{ John Smith }"
-description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
-keywords: "smith, jones, personal, jekyll, theme"
+author: "Alan Bergland"
+title: "::: Bergland Lab :::"
+description: "Lab website of Alan Bergland, University of Virginia"
+keywords: "bergland, alan, drosophila, daphnia, evolution"
 favicon: "/img/favicon.ico"
 
 ################
@@ -41,7 +41,7 @@ favicon: "/img/favicon.ico"
 
 black-favicon: "/img/black-lab-glass.ico"
 
-background-img: "../img/intro-bg.jpg"
+background-img: "../img/pond_wide.jpg"
 
 ##############################
 # Dynamic Text on the Header #
