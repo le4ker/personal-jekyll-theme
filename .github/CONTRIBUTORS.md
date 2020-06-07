@@ -15,3 +15,4 @@ In alphabetical order:
   12. Prashant Solanki <prs.solanki@live.com>
   13. Sergey Lysenko <soulwish.ls@gmail.com>
   14. Simon Böhm <simonboehm@gmx.de>
+  15. Hrishabh Kumar <hrishabh0007@gmail.com>
