@@ -16,7 +16,10 @@
             {% if site.black-favicon %}
               <img src="{{site.baseurl}}{{ site.black-favicon }}" alt="">
             {% endif %}
-            {{ site.title }}
+	    {% if site.logo %}
+	      <img id="logo_nav" src="{{site.baseurl}}/{{site.logo}}" alt="{{ site.title }}" />
+	    {% endif %}
+              {{ site.title }}
           </div>
         </a>
     </div>
