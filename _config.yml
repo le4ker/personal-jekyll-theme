@@ -217,3 +217,5 @@ sass:
 gems:
   - jekyll-paginate
   - jemoji
+
+theme: jekyll-theme-cayman
