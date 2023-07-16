@@ -3,7 +3,7 @@
 
 # NB! Set your site's url, otherwise stuff will break :)
 
-url: "https://le4ker.github.io"
+url: "https://danisfermi.github.io"
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (https://yourusername.github.io/repository-name)
@@ -12,7 +12,7 @@ url: "https://le4ker.github.io"
 #
 # NB! Without this *nothing* will work, because it's used in every path :)
 
-baseurl: /personal-jekyll-theme
+# baseurl: /personal-jekyll-theme
 
 # Google tracking id
 
@@ -29,10 +29,10 @@ force-https: True
 #############
 
 lang: "en"
-author: "John Smith"
-title: "{ John Smith }"
-description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
-keywords: "smith, jones, personal, jekyll, theme"
+author: "Danis Fermi"
+title: "Danis Fermi"
+description: "Blog and website of Danis Fermi. Opinions expressed are mine."
+keywords: "fermi, danis"
 favicon: "/img/favicon.ico"
 
 ################
@@ -42,7 +42,7 @@ favicon: "/img/favicon.ico"
 black-favicon: "/img/black-lab-glass.ico"
 logo: "/img/author.png" # leave blank if you don't want a logo
 
-background-img: "../img/intro-bg.jpg"
+background-img: "../img/intro-bg.gif"
 
 ##############################
 # Dynamic Text on the Header #
@@ -59,7 +59,7 @@ lines: # You can add HTML Tags in the Text
   - text: "The lower you fall, the higher you'll fly."
   - text: "Where’s your will to be weird?"
 
-me-img: "/img/jetpacktocat.png"
+me-img: "../img/me.jpg?size=500"
 
 # To use facebook profile pic comment the previous line and uncomment the following
 # line, and replace 'user_id' with your facebook user id.
@@ -117,13 +117,13 @@ fb-share: True
 twitter-share: True
 linkedin-share: True
 reddit-share: True
-google-plus-share: True
-tumblr-share: True
-pinterest-share: True
+google-plus-share: False
+tumblr-share: False
+pinterest-share: False
 pocket-share: True
-vkontakte-share: True
+vkontakte-share: False
 
-disqus-shortname: "personal-jekyll-theme"
+# disqus-shortname: "personal-jekyll-theme"
 
 syntax-highlight: True
 
@@ -147,7 +147,7 @@ timeline-img: "/img/timeline/default.png"
 # Contact #
 ###########
 
-email: "your@email.here"
+email: "danisfermijohn@gmail.com"
 
 
 # Set a url pointing to your publish PGP Public Key here, and it will appear in the Contact section
@@ -161,7 +161,7 @@ pgp: False
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "John Smith is an awesome person. He lives in Flatland, where he works on two-dimensional engineering projects. In his spare time, John likes to eat cotton candy."
+author_blurb: "Danis Fermi is a proud Mallu, Gunner and BJJ white belt. He lives in Austin, where he works on two-dimensional engineering projects. In his spare time, Danis likes to eat chocolate croissants and ramen."
 author_blurb_image: "/img/author.png"
 
 ##################
@@ -170,13 +170,15 @@ author_blurb_image: "/img/author.png"
 
 social:
   - title: "facebook"
-    url: "https://facebook.com/"
+    url: "https://www.facebook.com/danisfermi"
   - title: "twitter"
-    url: "https://twitter.com/"
+    url: "https://twitter.com/danisfermi"
   - title: "github"
-    url: "https://github.com/PanosSakkos/personal-jekyll-theme"
-  - title: "bitcoin"
-    url: "https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi"
+    url: "https://github.com/danisfermi"
+  - title: "linkedin"
+    url: "https://www.linkedin.com/in/danisfermi/"
+  - title: "whatsapp"
+    url: "https://api.whatsapp.com/send?phone=19196708734"
   - title: "rss"
     url: "/feed.xml"
 
@@ -190,7 +192,7 @@ err-404-img: "/img/labtocat.png"
 # GPG on Keybase #
 ##################
 
-keybase-username: johnsmith
+keybase-username: danisfermi
 keybase-in-social: True
 keybase-in-footer: True
 
