@@ -39,7 +39,7 @@ the following variable sin the /_sass/_variables.scss file:
 $primary-color: #000;
 
 // Anchor color
-$secondary-color: #00cdff;
+$secondary-color: #ff6900;
 
 // Font color
 $font-color: #fff;
