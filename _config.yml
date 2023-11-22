@@ -61,7 +61,7 @@ lines: # You can add HTML Tags in the Text
   - text: "All this is but a dream. Still, examine it with a few experiments."
   - text: "La indecisión es la clave de la flexibilidad."
 
-me-img: "/img/jetpacktocat.png"
+me-img: "/img/avatar.png"
 
 # To use facebook profile pic comment the previous line and uncomment the following
 # line, and replace 'user_id' with your facebook user id.
