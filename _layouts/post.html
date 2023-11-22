@@ -14,7 +14,6 @@
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
 
-          {% include swipe-instructions.html %}
 
           <h1><strong>{{ page.title }}</strong></h1>
           <h4>
@@ -36,11 +35,8 @@
             {{ page.content | markdownify }}
           </section>
 
-          {% include share.html %}
 
-          {% if jekyll.environment == "production" %}
-            {% include comments.html %}
-          {% endif %}
+          
 
 
           <hr />
