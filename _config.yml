@@ -1,9 +1,8 @@
-
 # Site settings
 
 # NB! Set your site's url, otherwise stuff will break :)
 
-url: "https://le4ker.github.io"
+url: "https://jimken123.github.io/pers"
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (https://yourusername.github.io/repository-name)
@@ -29,10 +28,10 @@ force-https: True
 #############
 
 lang: "en"
-author: "John Smith"
-title: "{ John Smith }"
-description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
-keywords: "smith, jones, personal, jekyll, theme"
+author: "Jim"
+title: "{ Jim Kennedy }"
+description: "Blog and website of Jim Kennedy."
+keywords: "shed, personal, jekyll, theme"
 favicon: "/img/favicon.ico"
 
 ################
@@ -56,8 +55,11 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "The lower you fall, the higher you'll fly."
-  - text: "Where’s your will to be weird?"
+  - text: "Indecision is the key to flexibility."
+  - text: "Walk in the light, while there is light."
+  - text: "La indecisió és la clau de la flexibilitat."
+  - text: "All this is but a dream. Still, examine it with a few experiments."
+  - text: "La indecisión es la clave de la flexibilidad."
 
 me-img: "/img/jetpacktocat.png"
 
