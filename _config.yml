@@ -195,7 +195,7 @@ keybase-in-footer: True
 # Sections shown in the index page
 
 pages_list:
-  Blog: 'latest-post'
+  Blddddog: 'latest-post'
   About: 'about'
   Timeline: 'timeline'
   Contact: 'contact'
