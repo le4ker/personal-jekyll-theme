@@ -149,8 +149,6 @@ timeline-img: "/img/timeline/default.png"
 # Contact #
 ###########
 
-email: "your@email.here"
-
 
 # Set a url pointing to your publish PGP Public Key here, and it will appear in the Contact section
 pgp: False
