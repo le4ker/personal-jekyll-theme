@@ -14,21 +14,32 @@
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
 
-
           <h1><strong>{{ page.title }}</strong></h1>
+          
           <h4>
-            <strong>{{ page.date | date_to_string }}</strong>
-            <small>
+
+            <strong style="color:#FF6900">{{ page.date | date_to_string }}</strong>
+
+            <strong> | </strong>
+
+            {% for tag in page.tags %}
+                <a href="{{site.baseurl}}/tags/{{tag | downcase}}.html">#{{ tag }}</a>
+            {% endfor %}
+
+            <strong> | </strong>
+
+            <a href="{{site.baseurl}}{{page.url }}#disqus_thread">Comments</a>
+              <br />
+
+            <!--
+              <small>
               . category:
               <a class="category" href="{{site.baseurl}}/categories/{{page.category | downcase}}.html">
                 {{ page.category }}
               </a>.
-              <a href="{{site.baseurl}}{{page.url }}#disqus_thread">Comments</a>
-              <br />
-              {% for tag in page.tags %}
-                <a class="tag" href="{{site.baseurl}}/tags/{{tag | downcase}}.html">#{{ tag }}</a>
-              {% endfor %}
             </small>
+            -->
+
           </h4>
 
           <section class="text-justify">
