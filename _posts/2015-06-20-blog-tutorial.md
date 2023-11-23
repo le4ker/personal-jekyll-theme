@@ -15,7 +15,7 @@ First of all, you get a preview of the latest post in the index, in order to att
 The size of this preview is defined by:
 
 <pre><code data-trim class="yaml">
-post-preview-words: 96
+post-preview-words: 2000
 </code></pre>
 
 Feel free to experiment with different sizes, and pick the best for you :smile:
@@ -27,7 +27,7 @@ which in a nutshell it's a grouping of your posts in pages, in reverse chronolog
 order. You can define the number of posts that are displayed per page by changing:
 
 <pre><code data-trim class="yaml">
-paginate: 5
+paginate: 6
 </code></pre>
 
 ### Share buttons
