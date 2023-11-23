@@ -28,7 +28,7 @@ black-favicon: "/img/black-lab-glass.ico"
 In order to set the background, set the path to following variable:
 
 <pre><code data-trim class="yaml">
-background-img: "../img/intro-bg5.jpg"
+background-img: "../img/intro-bg6.jpg"
 </code></pre>
 
 <small>NB! Keep the .. in the beginning of the background image path</small>
