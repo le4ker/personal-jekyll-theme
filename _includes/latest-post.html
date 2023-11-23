@@ -8,14 +8,12 @@
         {{ page.content | markdownify }}
 
         {% assign post = site.posts.first %}
-        <h4> <strong> {{ post.date | date_to_string }} </strong>
-          <small>.
-            <a class="category" href="{{site.baseurl}}/categories/{{post.category | downcase}}.html">
-              {{ post.category }}
-            </a>
-          .</small>
+        <h4> 
+          <strong style="color: #ff6900;"> {{ post.date | date_to_string }} </strong>
+          <strong> | </strong>
           <strong> <a href="{{site.baseurl}}{{ post.url }}">{{post.title}} </a> </strong>
-          <small> <a href="{{site.baseurl}}{{post.url}}#disqus_thread">Comments</a></small>
+          <strong> | </strong>
+          <a href="{{site.baseurl}}{{post.url}}#disqus_thread">Comments</a>
         </h4>
 
         <section class="text-justify">
