@@ -41,7 +41,7 @@ favicon: "/img/favicon.ico"
 black-favicon: "/img/black-lab-glass.ico"
 logo: "/img/author.png" # leave blank if you don't want a logo
 
-background-img: "../img/intro-bg2.jpg"
+background-img: "../img/intro-bg3.jpg"
 
 ##############################
 # Dynamic Text on the Header #
