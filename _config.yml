@@ -38,8 +38,8 @@ favicon: "/img/favicon.ico"
 # Header layout #
 ################
 
-black-favicon: "/img/black-lab-glass.ico"
-logo: "/img/author.png" # leave blank if you don't want a logo
+black-favicon: "/img/favicon.ico"
+# logo: "/img/author.png" # leave blank if you don't want a logo
 
 background-img: "../img/intro-bg6.jpg"
 
