@@ -112,7 +112,7 @@ enable-gesture-navigation: True
 
 post-preview-words: 96
 
-paginate: 5
+paginate: 4
 
 email-share: True
 fb-share: True
@@ -149,7 +149,6 @@ timeline-img: "/img/timeline/default.png"
 # Contact #
 ###########
 
-
 # Set a url pointing to your publish PGP Public Key here, and it will appear in the Contact section
 pgp: False
 
@@ -178,7 +177,7 @@ social:
 # 404 page #
 ############
 
-err-404-img: "/img/labtocat.png"
+err-404-img: "/img/intro-bg5.jpg"
 
 ##################
 # GPG on Keybase #
@@ -195,7 +194,7 @@ keybase-in-footer: True
 # Sections shown in the index page
 
 pages_list:
-  Blddddog: 'latest-post'
+  Blog: 'latest-post'
   About: 'about'
   Timeline: 'timeline'
   Contact: 'contact'
