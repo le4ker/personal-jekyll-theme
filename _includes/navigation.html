@@ -20,21 +20,19 @@
 	      <img id="logo_nav" src="{{site.baseurl}}/{{site.logo}}" alt="{{ site.title }}" />
 	    {% endif %}
               {{ site.title }}
-          </div>
+          </div> 
         </a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
       <ul class="nav navbar-nav">
         {% if page.section-type == "index" %}
-
           <!-- Scroll to section for each page in index -->
           {% for p in site.pages_list %}
             <li>
               <a class="page-scroll" href="#{{ p[1] }}"> {{p[0]}} </a>
             </li>
           {% endfor %}
-
         {% else %}
           <!-- Blog, Post, Tag and Error pages -->
           {% for p in site.pages_list %}
@@ -48,12 +46,16 @@
             {% else %}
                 <a href="{{site.baseurl}}/#{{ p[1] }}"> {{p[0]}} </a>
             {% endif %}
+
             </li>
           {% endfor %}
         {% endif %}
       </ul>
+
     </div>
+
   </div>
+
 </nav>
 
 <!-- Navigation End -->

@@ -11,6 +11,7 @@
     {% include navigation.html %}
 
     {% include header.html %}
+
     {% include search.html %}
 
     {% for p in site.pages_list %}
@@ -19,6 +20,7 @@
           {% include {{ page.path }} %}
         {% endif %}
       {% endfor %}
+
     {% endfor %}
 
     {% include footer.html %}

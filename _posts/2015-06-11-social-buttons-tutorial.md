@@ -2,7 +2,6 @@
 layout: post
 section-type: post
 title: Modifying the social buttons
-category: tech
 tags: [ 'tutorial' ]
 ---
 
