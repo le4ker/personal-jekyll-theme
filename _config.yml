@@ -199,7 +199,6 @@ pages_list:
   About: 'about'
   Timeline: 'timeline'
   Contact: 'contact'
-  Search: 'search'
 
 # Exclusion list from the generated _site
 
