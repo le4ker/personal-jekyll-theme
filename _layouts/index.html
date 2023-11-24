@@ -14,6 +14,8 @@
 
     {% include search.html %}
 
+    {% include navigation.html %}
+
     {% for p in site.pages_list %}
       {% for page in site.pages %}
         {% if p[1] == page.section-type %}
