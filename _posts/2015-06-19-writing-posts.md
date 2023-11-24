@@ -96,6 +96,6 @@ You can add a short description of yourself bellow your posts, by setting the ne
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "John Smith is an awesome person. He lives in Flatland, where he works on two-dimensional engineering projects. In his spare time, John likes to eat cotton candy."
+author_blurb: "John Smith is an awesome person. He lives, where he works on two-dimensional engineering projects. In his spare time, John likes to eat cotton candy."
 author_blurb_image: "/img/author.png"
 </code></pre>
