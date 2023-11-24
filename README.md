@@ -45,7 +45,7 @@ You can watch it in action [here](https://le4ker.github.io/personal-jekyll-theme
 
 ## Documentation
 
-The theme contains documentation in the form of [blog posts](https://le4ker.github.io/personal-jekyll-theme/blog/index.html).
+The theme contains documentation in the form of [blogposts](https://le4ker.github.io/personal-jekyll-theme/blog/index.html).
 
 ## How to run locally
 

@@ -92,7 +92,7 @@ You can add a short description of yourself bellow your posts, by setting the ne
 # Author Blurb #
 ################
 
-# The author blurb goes underneath blog posts.
+# The author blurb goes underneath blogposts.
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
