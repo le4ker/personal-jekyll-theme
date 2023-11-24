@@ -4,13 +4,15 @@
 <h4 align="left">
   <strong>{{ post.date | date_to_string }}</strong>
   <br class="visible-xs-block">
-  <a>|</a>
-  <a href="{{site.baseurl}}{{post.url}}">
+  <strong style="color: #ff6900;"> | </strong>
+    <a href="{{site.baseurl}}{{post.url}}">
     <strong>{{ post.title }}</strong>
   </a>
   <br class="visible-xs-block">
-  <a>|</a>
-  <a href="{{site.baseurl}}{{post.url}}#disqus_thread">Comments</a>
+  <strong style="color: #ff6900;"> | </strong>
+  <strong style="color: #ffffff;"> | 
+    <a href="{{site.baseurl}}{{post.url}}#disqus_thread">Comments</a>
+  </strong>
 </h4>
 
 <!-- Post List End -->
