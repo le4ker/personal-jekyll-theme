@@ -196,7 +196,6 @@ keybase-in-footer: True
 pages_list:
   Blog: 'latest-post'
   About: 'about'
-  Timeline: 'timeline'
   Contact: 'contact'
 
 # Exclusion list from the generated _site
