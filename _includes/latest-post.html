@@ -9,11 +9,18 @@
 
         {% assign post = site.posts.first %}
         <h4> 
-          <strong style="color: #ff6900;"> {{ post.date | date_to_string }} </strong>
-          <strong> | </strong>
+
           <strong> <a href="{{site.baseurl}}{{ post.url }}">{{post.title}} </a> </strong>
-          <strong> | </strong>
-          <a href="{{site.baseurl}}{{post.url}}#disqus_thread">Comments</a>
+          <p>
+
+          <small><strong style="color: #ffffff;"> {{ post.date | date_to_string }} </strong></small>
+          
+          <small><strong> | </strong></small>
+
+          <small><a href="{{site.baseurl}}{{post.url}}#disqus_thread">Comments</a></small>
+          
+          <p>
+
         </h4>
 
         <section class="text-left">
