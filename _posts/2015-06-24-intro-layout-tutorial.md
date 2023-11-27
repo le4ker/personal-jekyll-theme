@@ -14,15 +14,6 @@ The intro part of the index page (Header) is consisted of four elements:
   <li>Your image</li>
 </ol>
 
-### Black favicon
-
-The black favicon is an image on the left of the navigation bar.
-Preferably it should be a black and white version of your favicon.
-
-<pre><code data-trim class="yaml">
-black-favicon: "/img/black-lab-glass.ico"
-</code></pre>
-
 ### Background image
 
 In order to set the background, set the path to following variable:
