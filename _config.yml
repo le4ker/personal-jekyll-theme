@@ -161,7 +161,7 @@ pgp: False
 
 # if the author_blurb is not set, then this feature is skipped
 author_blurb: "The author floats in space and drifts in time. All he wants in life is a little bit of love to take the pain away. Getting strong today; a giant step each day."
-author_blurb_image: "/img/avatar.png"
+author_blurb_image: "/img/authorimage.jpg"
 
 ##################
 # Social Buttons #
