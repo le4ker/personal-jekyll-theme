@@ -55,11 +55,11 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "Indecision is the key to flexibility."
-  - text: "Walk in the light, while there is light."
-  - text: "La indecisió és la clau de la flexibilitat."
-  - text: "All this is but a dream. Still, examine it with a few experiments."
-  - text: "La indecisión es la clave de la flexibilidad."
+  - text: "Indecision is the key to flexibility"
+  - text: "Walk in the light, while there is light"
+  - text: "La indecisió és la clau de la flexibilitat"
+  - text: "All this is a dream. Still examine by a few experiments"
+  - text: "La indecisión es la clave de la flexibilidad"
 
 me-img: "/img/avatar.png"
 
