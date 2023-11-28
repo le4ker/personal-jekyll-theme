@@ -108,11 +108,9 @@ icon-192p: "/img/web-app/icon-192p.png"
 # Blog #
 ########
 
-enable-gesture-navigation: True
-
 post-preview-words: 96
 
-paginate: 4
+paginate: 99
 
 email-share: True
 fb-share: True
