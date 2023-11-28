@@ -2,7 +2,7 @@
 layout: post
 section-type: post
 title: Modifying the Header
-tags: [ 'tutorial' ]
+tags: [ 'tsundoku' ]
 ---
 
 The intro part of the index page (Header) is consisted of four elements:
