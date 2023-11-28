@@ -2,7 +2,7 @@
 layout: post
 section-type: post
 title: Writing posts
-tags: [ 'tutorial' ]
+tags: [ 'tsundoku' ]
 ---
 
 ### Creating a new post
