@@ -192,7 +192,8 @@ keybase-in-footer: True
 # Sections shown in the index page
 
 pages_list:
-  Blog: 'latest-post'
+  Latest: 'latest-post'
+  Blogs: 'post-list'
   About: 'about'
   Contact: 'contact'
 
