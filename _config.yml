@@ -108,7 +108,7 @@ icon-192p: "/img/web-app/icon-192p.png"
 # Blog #
 ########
 
-post-preview-words: 96
+post-preview-words: 9999
 
 paginate: 99
 
@@ -158,7 +158,9 @@ pgp: False
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "The author floats in space and drifts in time. All he wants in life is a little bit of love to take the pain away. Getting strong today; a giant step each day."
+author_blurb: "The author floats in space and drifts in time. 
+
+All he wants in life is a little bit of love to take the pain away. Getting strong today; a giant step each day."
 author_blurb_image: "/img/author_blurb.png"
 
 ##################
@@ -193,7 +195,6 @@ keybase-in-footer: True
 
 pages_list:
   Latest: 'latest-post'
-  Blogs: 'post-list'
   About: 'about'
   Contact: 'contact'
 
