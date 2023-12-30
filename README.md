@@ -1,6 +1,5 @@
 # { Personal } Jekyll Theme
 
-![Build Status](https://travis-ci.org/le4ker/personal-jekyll-theme.svg?branch=master)
 ![license](https://img.shields.io/badge/license-MIT-blue.svg?link=https://github.com/dono-app/ios/blob/master/LICENSE)
 [![Join the chat at https://gitter.im/PanosSakkos/personal-jekyll-theme](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/panossakkos/personal-jekyll-theme?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -13,7 +12,7 @@ You can watch it in action
 
 <img src="https://github.com/le4ker/personal-jekyll-theme/raw/master/.github/personal-desktop.mov.gif" height="600" width="960">
 
-## What value does { Personal } add
+## Features
 
 - Fork of [Timeline](https://github.com/kirbyt/timeline-jekyll-theme) (mashup of
   [Grayscale by Start Bootstrap](https://github.com/IronSummitMedia/startbootstrap-grayscale)
@@ -82,13 +81,13 @@ To serve across lan (requires su to forward the port 4000 over lan):
 
 Run using Docker:
 
-```
+```shell
 docker run --rm -it -p 4000:4000 -v "$PWD:/srv/jekyll" jekyll/jekyll jekyll serve --watch --host "0.0.0.0" --config _config.yml,_config.dev.yml
 ```
 
 Run using Docker with Docker Compose:
 
-```
+```shell
 docker-compose up
 ```
 
