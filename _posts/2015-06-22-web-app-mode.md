@@ -3,10 +3,11 @@ layout: post
 section-type: post
 title: Web app mode
 category: tech
-tags: [ 'tutorial']
+tags: ["tutorial"]
 ---
-You can make your website behave like a native web app in iOS and Android devices
-by providing links for the icons for each resolution:
+
+You can make your website behave like a native web app in iOS and Android
+devices by providing links for the icons for each resolution:
 
 <pre><code data-trim class="yaml">
 web-app-mode: True
@@ -21,7 +22,8 @@ icon-144p: "/img/web-app/icon-144p.png"
 icon-192p: "/img/web-app/icon-192p.png"
 </code></pre>
 
-<small>If you want to disable this feature, simply set the web-app-mode variable to False</small>
+<small>If you want to disable this feature, simply set the web-app-mode variable
+to False</small>
 
 This is how your website will look when added to the homescreen:
 
@@ -35,7 +37,8 @@ And when the user opens it (note that it renders in fullscreen):
 
 # Browser status bar customization
 
-You can color the browser status bar when in mobile mode, by setting it to a color.
+You can color the browser status bar when in mobile mode, by setting it to a
+color.
 
 The color is define in the site config with the following variables
 

@@ -3,12 +3,13 @@ layout: post
 section-type: post
 title: Initial setup
 category: tech
-tags: [ 'tutorial' ]
+tags: ["tutorial"]
 ---
 
-All features of { Personal } are controlled by setting values to variables that are defined in the
-\_config.yml file. Let's start with the initial variables that you have to set before
-serving your { Personal } website for the first time.
+All features of { Personal } are controlled by setting values to variables that
+are defined in the \_config.yml file. Let's start with the initial variables
+that you have to set before serving your { Personal } website for the first
+time.
 
 ### Essential variables
 
@@ -27,12 +28,13 @@ url: "https://le4ker.github.io"
 baseurl: /personal-jekyll-theme
 </code></pre>
 
-The url and baseurl variables are essential, because they are used *everywhere* where an anchor is defined!
+The url and baseurl variables are essential, because they are used _everywhere_
+where an anchor is defined!
 
 ### Coloring
 
 You can define the colors that you want in your { Personal } website by setting
-the following variable sin the /_sass/_variables.scss file:
+the following variable sin the /\_sass/\_variables.scss file:
 
 <pre><code data-trim class="scss">
 // Main color
@@ -47,13 +49,12 @@ $font-color: #fff;
 
 ### HTTPS
 
-By default { Personal } will enforce https by javascript redirection.
-HTTPS is important because it encrypts the data sent between the client and the server.
+By default { Personal } will enforce https by javascript redirection. HTTPS is
+important because it encrypts the data sent between the client and the server.
 If you are hosting on GitHub Pages then it will just work, because your website
-will be piggybacking GitHub's certificate.
-If you are hosting your website in a server that doesn't have a certificate and
-you don't want to issue one, then you can disable this feature by setting the following
-variable to False:
+will be piggybacking GitHub's certificate. If you are hosting your website in a
+server that doesn't have a certificate and you don't want to issue one, then you
+can disable this feature by setting the following variable to False:
 
 <pre><code data-trim class="yaml">
 force-https: True
@@ -71,12 +72,14 @@ favicon: "/img/favicon.ico"
 err-404-img: "/img/labtocat.png"
 </code></pre>
 
-The values that you set, will be placed in the head section of every generated HTML page.
+The values that you set, will be placed in the head section of every generated
+HTML page.
 
 ### Google Analytics
 
-The Google tracking code will be placed in every generated page.
-If you don't want Google analytics tracking your website's traffic, set the google-tracking-id to an empty string.
+The Google tracking code will be placed in every generated page. If you don't
+want Google analytics tracking your website's traffic, set the
+google-tracking-id to an empty string.
 
 <pre><code data-trim class="yaml">
 google-tracking-id: "UA-35880426-4"
@@ -98,6 +101,9 @@ Serve the jekyll website:
 
 That's it!
 
-Visit [http://127.0.0.1:4000](http://127.0.0.1:4000) and you are ready to start hacking around your { Personal } website!
+Visit [http://127.0.0.1:4000](http://127.0.0.1:4000) and you are ready to start
+hacking around your { Personal } website!
 
-<small>Many thanks to <a href="https://github.com/joariasl" target="\_blank">@joariasl</a> for the language support! </small>
+<small>Many thanks to
+<a href="https://github.com/joariasl" target="\_blank">@joariasl</a> for the
+language support! </small>

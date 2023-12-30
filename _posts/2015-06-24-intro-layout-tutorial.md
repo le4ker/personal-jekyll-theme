@@ -3,7 +3,7 @@ layout: post
 section-type: post
 title: Modifying the Header
 category: tech
-tags: [ 'tutorial' ]
+tags: ["tutorial"]
 ---
 
 The intro part of the index page (Header) is consisted of four elements:
@@ -17,8 +17,8 @@ The intro part of the index page (Header) is consisted of four elements:
 
 ### Black favicon
 
-The black favicon is an image on the left of the navigation bar.
-Preferably it should be a black and white version of your favicon.
+The black favicon is an image on the left of the navigation bar. Preferably it
+should be a black and white version of your favicon.
 
 <pre><code data-trim class="yaml">
 black-favicon: "/img/black-lab-glass.ico"
@@ -51,7 +51,9 @@ lines: # You can add HTML Tags in the Text
   - text: "Where’s your will to be weird?"
 </code></pre>
 
-<small>Many thanks to <a href="https://github.com/prashantsolanki3" target="blank">@prashantsolanki3</a> for the dynamic typing feature!</small>
+<small>Many thanks to
+<a href="https://github.com/prashantsolanki3" target="blank">@prashantsolanki3</a>
+for the dynamic typing feature!</small>
 
 ### Your image
 
@@ -61,26 +63,31 @@ You can set your image from the following variable:
 me-img: "/img/jetpacktocat.png"
 </code></pre>
 
-If you want to connect your Facebook profile image then you can use the following.                 
-Replace `user_id` with your facebook user id. Facebook user id can be found by clicking
-on your profile pic and the large number in the end of the url just before '&type' is your user id.           
+If you want to connect your Facebook profile image then you can use the
+following.  
+Replace `user_id` with your facebook user id. Facebook user id can be found by
+clicking on your profile pic and the large number in the end of the url just
+before '&type' is your user id.  
 Note: fbid is not the same as user id and user id only contains numbers.
 
 <pre><code data-trim class="yaml">
 me-img: "https://graph.facebook.com/user_id/picture?type=large&width=500&height=500"
 </code></pre>
 
-If you want to connect your Github profile image then you can use the following.              
+If you want to connect your Github profile image then you can use the
+following.  
 Replace `user_name` with your Github user name.
 
 <pre><code data-trim class="yaml">
 me-img: "https://github.com/user_name.png?size=500"
 </code></pre>
 
-If you want to connect your Gravatar profile image then you can use the following.              
-Replace `email_hash` with your Gravatar profile email hash.                      
-You can create the email hash by using an online tool like [md5hashgenerator](http://www.md5hashgenerator.com/),
-just enter your email and it will generate the hash.
+If you want to connect your Gravatar profile image then you can use the
+following.  
+Replace `email_hash` with your Gravatar profile email hash.  
+You can create the email hash by using an online tool like
+[md5hashgenerator](http://www.md5hashgenerator.com/), just enter your email and
+it will generate the hash.
 
 <pre><code data-trim class="yaml">
 me-img: "https://www.gravatar.com/avatar/email_hash?s=500"

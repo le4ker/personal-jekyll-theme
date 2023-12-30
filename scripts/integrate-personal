@@ -4,21 +4,21 @@
 
 require 'fileutils'
 
-personal = "../personal-jekyll-theme"
+personal = '../personal-jekyll-theme'
 
-repoDirectories = [ '_includes', '_layouts', '_sass', 'blog', 'css', 'js' ]
-repoFiles = [ 'feed.xml', 'manifest.json', 'sitemap.xml' ]
+repoDirectories = %w[_includes _layouts _sass blog css js]
+repoFiles = ['feed.xml', 'manifest.json', 'sitemap.xml']
 
 # Delete local resources of { Personal }
-repoDirectories.each{ |directory| FileUtils.rm_rf(directory) }
-repoFiles.each{ |file| FileUtils.rm(file) }
+repoDirectories.each { |directory| FileUtils.rm_rf(directory) }
+repoFiles.each { |file| FileUtils.rm(file) }
 puts '[+] Deleted local { Personal } resources'
 
 # Create the { Personal } directories again
-repoDirectories.each{ |directory| FileUtils.mkdir(directory) }
+repoDirectories.each { |directory| FileUtils.mkdir(directory) }
 puts '[+] Created empty directory resources'
 
 # Copy the latest { Personal } directory contents over this repo
-repoDirectories.each{ |directory| FileUtils.cp_r(personal + '/' + directory + '/.', directory) }
-repoFiles.each{ |file| FileUtils.cp(personal + '/' + file, '.') }
+repoDirectories.each { |directory| FileUtils.cp_r(personal + '/' + directory + '/.', directory) }
+repoFiles.each { |file| FileUtils.cp(personal + '/' + file, '.') }
 puts '[+] Copied resources from ' + personal + ' to directory resources'
