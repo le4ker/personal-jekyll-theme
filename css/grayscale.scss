@@ -18,7 +18,7 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: my-font; 
+    font-family: my-font;
     color: $font-color;
     background-color: $primary-color;
 }
@@ -36,7 +36,7 @@ h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 1px;
 }
 
@@ -52,12 +52,12 @@ h4 {
 }
 
 p {
-    margin: 0 0 25px;
-    font-size: 18px;
+    padding: 0.5rem 0rem;
+    font-size: 2rem;
     line-height: 1.5;
     @media(min-width:768px) {
-        margin: 0 0 35px;
-        font-size: 20px;
+        padding: 0.3rem 0rem;
+        font-size: 2.2rem;
         line-height: 1.6;
     }
 }
@@ -92,11 +92,6 @@ a {
     max-height: 100%;
     overflow-y: auto;
 
-    #logo_nav {
-        height: 30px;
-        margin-top: -5px;
-    }
-
     .navbar-toggle {
         padding: 4px 6px;
         font-size: 16px;
@@ -107,10 +102,11 @@ a {
         }
     }
     .navbar-brand {
-        font-weight: 700;
         &:focus {
             outline: none;
         }
+        font-size: 1.8rem;
+        font-weight: 700;
     }
     a {
         color: $navbar-color;
@@ -148,12 +144,6 @@ a {
         }
     }
     @media(min-width:768px) {
-        #logo_nav {
-           height: 50px;
-           -webkit-transition: height .5s ease-in-out,padding .5s ease-in-out;
-           -moz-transition: height .5s ease-in-out,padding .5s ease-in-out;
-           transition: height .5s ease-in-out,padding .5s ease-in-out;
-        }
         padding: 20px 0;
         border-bottom: none;
         letter-spacing: 1px;
@@ -165,11 +155,6 @@ a {
             padding: 0;
             background: $navbar-lg-collapse-background-color;
             border-bottom: 1px solid rgba($font-color, 0.3);
-
-	    #logo_nav {
-              height: 30px;
-              margin-top: -5px;
-            }
         }
     }
 }
@@ -182,7 +167,7 @@ a {
     text-align: center;
     color: $intro-text-color;
     {% if site.background-img %}
-    background: url({{ site.background-img }}) no-repeat bottom center scroll;
+    background: url({{ site.background-img }}) no-repeat top center scroll;
     {% endif %}
     background-color: $header-background-color;
     -webkit-background-size: cover;
@@ -196,9 +181,10 @@ a {
             font-size: 40px;
         }
         .intro-text {
-            font-size: 18px;
+            font-size: 2.3rem;
+            font-weight: 900;
             @if $navbar-text-shadow {
-                text-shadow: 1px 0 1px #000;
+                text-shadow: 1px 0 1px #222222;
             }
         }
     }
@@ -210,7 +196,7 @@ a {
                 font-size: 100px;
             }
             .intro-text {
-                font-size: 26px;
+                font-size: 2.5rem;
             }
         }
     }
@@ -253,7 +239,7 @@ a {
 .content-section {
     margin-top: 100px;
     padding-top: 100px;
-    @media(min-width:767px) {
+    @media(min-width:768px) {
         margin-top: 125px;
         padding-top: 125px;
     }
@@ -263,14 +249,12 @@ a {
         max-width: 100%;
         height: auto;
         margin: 0 auto;
-        border: 1px solid $font-color;
     }
     /* Added in { Personal } */
     ul,
     ol {
-        text-align: center;
+        text-align: left;
         margin: 0 0 25px;
-        font-size: 18px;
         line-height: 1.5;
         list-style-position: inside;
     }
@@ -284,7 +268,6 @@ a {
       /* Override any img styles to ensure Emojis are displayed inline */
       margin: 0px !important;
       display: inline !important;
-      border: 1px solid $primary-color !important;
     }
 
     /* Added in { Personal } */
@@ -293,6 +276,7 @@ a {
             border: 0px;
             margin-bottom: 20px;
             padding: 4px;
+            border-radius: 50%;
         }
     }
 }
@@ -306,16 +290,14 @@ a {
 }
 
 .btn-default {
-    border: 1px solid $secondary-color;
     color: $secondary-color;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid $secondary-color;
     outline: 0;
-    color: #000;
+    color: #222222;
     background-color: $secondary-color;
 }
 
@@ -325,11 +307,11 @@ ul.social-buttons li a {
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    font-size: 20px;
+    font-size: 3rem;
     line-height: 40px;
     outline: 0;
     color: $social-buttons-color;
-    background-color: #222;
+    //background-color: #222;
 
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
@@ -373,6 +355,11 @@ img::-moz-selection {
 
 body {
     -webkit-tap-highlight-color: rgba($font-color, 0.2);
+    font-size: 1.9rem;
+}
+
+.blurb {
+    font-weight: 500;
 }
 
 /* Added in { Personal } for Typed Cursor in Header */
@@ -381,10 +368,10 @@ body {
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
-    font-size: 16px;
+    font-size: 2.5rem;
     vertical-align: top;
     @media(min-width:768px) {
-        font-size: 22px;
+        font-size: 2.3rem;
     }
 }
 @keyframes blink{
@@ -404,62 +391,3 @@ body {
 }
 /* END Added in { Personal } for Typed Cursor in Header */
 
-/* Animation for hand-swipe */
-@-webkit-keyframes swipe {
-    from {
-        left: 5%;
-    }
-     to {
-         left: -5%;
-     }
- }
-
- @-moz-keyframes swipe {
-     from {
-         left: 5%;
-     }
-     to {
-         left: -5%;
-     }
- }
- /* END Animation for hand-swipe */
-
- /* Style for swipe instruction section */
- #swipe-instruction {
-     display: none;
-     position: absolute;
-     background-color: rgba(0, 0, 0, 0.5);
-     width: 100%;
-     min-height: 100%;
-     top: 0;
-     right: 0;
-     left: 0;
-     z-index: 1;
-      > div {
-         background-color: rgba(20, 20, 20, 0.6);
-         padding: 10px;
-         @media(min-width:768px) {
-           padding: 20px 0;
-         }
-         #hand-swipe {
-            @media(min-width:992px) {
-              font-size: 100px;
-            }
-            font-size: 80px;
-             display: block;
-             position: relative;
-             animation: swipe ease-in-out 1s alternate infinite;
-         }
-     }
- }
-
-.ok-btn {
-  background-color: $primary-color;
-  color: $secondary-color;
-}
-
- /* END Style for swipe instruction section */
-
-.fourofour {
-  border: 1px solid $primary-color !important;
-}
