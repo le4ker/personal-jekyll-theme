@@ -61,7 +61,6 @@ lines: # You can add HTML Tags in the Text
   - text: "All this is a dream. Still examine it by a few experiments"
   - text: "La indecisión es la clave de la flexibilidad"
 
-me-img: "/img/avatar.png"
 
 # To use facebook profile pic comment the previous line and uncomment the following
 # line, and replace 'user_id' with your facebook user id.
@@ -196,6 +195,8 @@ keybase-in-footer: True
 pages_list:
   Latest: 'latest-post'
   About: 'about'
+  Moar: '/blog/"'
+  Mgggoar: 'https://www.irishtimes.com'
 
 # Exclusion list from the generated _site
 
