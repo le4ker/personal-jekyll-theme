@@ -85,7 +85,7 @@ icon-192p: "/img/web-app/icon-192p.png"
 ########
 enable-gesture-navigation: True
 post-preview-words: 96
-paginate: 5
+paginate: 8
 email-share: True
 fb-share: True
 twitter-share: True
