@@ -40,7 +40,6 @@ h6 {
     letter-spacing: 1px;
 }
 
-/* Added in { Personal } */
 h4 {
     a.category {
         color: inherit;
@@ -243,14 +242,12 @@ a {
         margin-top: 125px;
         padding-top: 125px;
     }
-    /* Added in { Personal } for responsive images in posts and section contents */
     img {
         display: block;
         max-width: 100%;
         height: auto;
         margin: 0 auto;
     }
-    /* Added in { Personal } */
     ul,
     ol {
         text-align: left;
@@ -270,7 +267,6 @@ a {
       display: inline !important;
     }
 
-    /* Added in { Personal } */
     &#post {
         div.author img {
             border: 0px;
@@ -301,7 +297,6 @@ a {
     background-color: $secondary-color;
 }
 
-/* Added in { Personal } */
 ul.social-buttons li a {
     display: block;
     width: 40px;
@@ -362,7 +357,6 @@ body {
     font-weight: 500;
 }
 
-/* Added in { Personal } for Typed Cursor in Header */
 .typed-cursor{
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
@@ -389,5 +383,4 @@ body {
     50% { opacity:0; }
     100% { opacity:1; }
 }
-/* END Added in { Personal } for Typed Cursor in Header */
 

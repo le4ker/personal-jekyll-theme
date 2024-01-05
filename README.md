@@ -36,7 +36,6 @@ You can watch it in action
   - Archive page
   - Syntax highlighting
   - Emojis
-  - Gesture navigation in archive and post pages by swiping
   - Hashtags
   - Categories
   - Disqus comments
@@ -96,8 +95,7 @@ docker-compose up
 One of the reasons { Personal } is real is the following OSS projects:
 
 1. [Grayscale](http://startbootstrap.com/template-overviews/grayscale/)
-2. [hammer.js](https://hammerjs.github.io/)
-3. [highlightjs](https://highlightjs.org/)
-4. [RRSSB](https://github.com/kni-labs/rrssb)
-5. [Timeline](https://github.com/kirbyt/timeline-jekyll-theme)
-6. [typed.js](https://github.com/mattboldt/typed.js/)
+2. [highlightjs](https://highlightjs.org/)
+3. [RRSSB](https://github.com/kni-labs/rrssb)
+4. [Timeline](https://github.com/kirbyt/timeline-jekyll-theme)
+5. [typed.js](https://github.com/mattboldt/typed.js/)
