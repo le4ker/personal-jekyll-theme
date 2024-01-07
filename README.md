@@ -6,9 +6,9 @@
 
 You can watch it live [here](https://le4ker.github.io/personal-jekyll-theme/)
 
-![mobile](https://github.com/le4ker/personal-jekyll-theme/raw/master/.github/personal-mobile.mov.gif)
+![mobile](https://github.com/le4ker/personal-jekyll-theme/raw/main/.github/personal-mobile.mov.gif)
 
-![desktop](https://github.com/le4ker/personal-jekyll-theme/raw/master/.github/personal-desktop.mov.gif)
+![desktop](https://github.com/le4ker/personal-jekyll-theme/raw/main/.github/personal-desktop.mov.gif)
 
 ## Features
 
