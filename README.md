@@ -1,16 +1,14 @@
 # { Personal } Jekyll Theme
 
 ![license](https://img.shields.io/badge/license-MIT-blue.svg?link=https://github.com/dono-app/ios/blob/master/LICENSE)
-[![Join the chat at https://gitter.im/PanosSakkos/personal-jekyll-theme](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/panossakkos/personal-jekyll-theme?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-{ Personal } is a free responsive Jekyll theme, about you :wink:
+{ Personal } is a free responsive blog with minimal aesthetic, about you.
 
-You can watch it in action
-[here](https://le4ker.github.io/personal-jekyll-theme/)!
+You can watch it live [here](https://le4ker.github.io/personal-jekyll-theme/)
 
-<img src="https://github.com/le4ker/personal-jekyll-theme/raw/master/.github/personal-mobile.mov.gif" height="480">
+![mobile](https://github.com/le4ker/personal-jekyll-theme/raw/master/.github/personal-mobile.mov.gif)
 
-<img src="https://github.com/le4ker/personal-jekyll-theme/raw/master/.github/personal-desktop.mov.gif" height="600" width="960">
+![desktop](https://github.com/le4ker/personal-jekyll-theme/raw/master/.github/personal-desktop.mov.gif)
 
 ## Features
 
