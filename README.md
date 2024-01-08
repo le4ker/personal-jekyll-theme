@@ -1,6 +1,6 @@
 # { Personal } Jekyll Theme
 
-![license](https://img.shields.io/badge/license-MIT-blue.svg?link=https://github.com/dono-app/ios/blob/master/LICENSE)
+![license](https://img.shields.io/badge/license-MIT-blue.svg?link=https://github.com/le4ker/personal-jekyll-theme/blob/main/LICENSE)
 
 { Personal } is a free responsive blog with minimal aesthetic, about you.
 
