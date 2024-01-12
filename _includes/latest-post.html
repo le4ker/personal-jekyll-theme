@@ -28,8 +28,8 @@
       </h3>
 
       <section class="text-justify">
-        {{ post.content | strip_html | markdownify | truncatewords:
-        site.post-preview-words }}
+        {{ post.content | strip_html | truncatewords: site.post-preview-words |
+        markdownify }}
       </section>
 
       <h3><a href="{{site.baseurl}}/blog/">Archive</a></h3>
