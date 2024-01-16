@@ -83,7 +83,6 @@ icon-192p: "/img/web-app/icon-192p.png"
 ########
 # Blog #
 ########
-enable-gesture-navigation: True
 post-preview-words: 96
 paginate: 8
 email-share: True
