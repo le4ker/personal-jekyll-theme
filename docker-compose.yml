@@ -1,9 +1,7 @@
-version: "3"
+version: "3.8"
 services:
   jekyll:
-    image: jekyll/jekyll
+    build: .
+    platform: linux/amd64
     ports:
       - "4000:4000"
-    command: jekyll serve --watch --host "0.0.0.0" --config _config.yml,_config.dev.yml
-    volumes:
-      - .:/srv/jekyll

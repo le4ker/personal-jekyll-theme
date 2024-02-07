@@ -158,6 +158,6 @@ paginate_path: "blog/page:num/"
 # Enable minification SASS
 sass:
   style: compressed
-gems:
+plugins:
   - jekyll-paginate
   - jemoji

@@ -68,24 +68,13 @@ Then, you can build and serve your website by simply running:
 ./scripts/serve-production
 ```
 
-To serve across lan (requires su to forward the port 4000 over lan):
+### Run using Docker
+
+Alternatively, you can use Docker to run the website to avoid installing any
+dependencies to your local environment. To do so, run:
 
 ```shell
-./scripts/serve-lan-production
-```
-
-### Docker
-
-Run using Docker:
-
-```shell
-docker run --rm -it -p 4000:4000 -v "$PWD:/srv/jekyll" jekyll/jekyll jekyll serve --watch --host "0.0.0.0" --config _config.yml,_config.dev.yml
-```
-
-Run using Docker with Docker Compose:
-
-```shell
-docker-compose up
+docker-compose up --build
 ```
 
 ## OSS used in { Personal }
