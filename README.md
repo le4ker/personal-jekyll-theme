@@ -1,10 +1,7 @@
 # { Personal } Jekyll Theme
 
-![license](https://img.shields.io/badge/license-MIT-blue.svg?link=https://github.com/le4ker/personal-jekyll-theme/blob/main/LICENSE)
-
-{ Personal } is a free responsive blog with minimal aesthetic, about you.
-
-You can watch it live [here](https://le4ker.github.io/personal-jekyll-theme/)
+{ Personal } is a free responsive blog with minimal aesthetic, about you. You
+can watch it live [here](https://le4ker.github.io/personal-jekyll-theme/).
 
 ![mobile](https://github.com/le4ker/personal-jekyll-theme/raw/main/.github/mobile.gif)
 
@@ -55,26 +52,23 @@ The theme contains documentation in the form of
 
 ## How to run locally
 
-First, you need to install jekyll and the dependencies of { Personal } by
-running:
+You can use Docker to run the website to avoid installing any dependencies to
+your local environment. To do so, run:
+
+```shell
+docker-compose up --build
+```
+
+Alternatively, you can run the website locally by installing the dependencies:
 
 ```shell
 ./scripts/install
 ```
 
-Then, you can build and serve your website by simply running:
+And then start serving the website:
 
 ```shell
-./scripts/serve-production
-```
-
-### Run using Docker
-
-Alternatively, you can use Docker to run the website to avoid installing any
-dependencies to your local environment. To do so, run:
-
-```shell
-docker-compose up --build
+./scripts/serve
 ```
 
 ## OSS used in { Personal }
