@@ -11,7 +11,7 @@ all your social footprint.
 
 You can edit them with the following variables:
 
-<pre><code data-trim class="yaml">
+```yaml
 social:
   - title: "facebook"
     url: "https://facebook.com/"
@@ -21,7 +21,7 @@ social:
     url: "https://github.com/PanosSakkos/personal-jekyll-theme"
   - title: "rss"
     url: "/feed.xml"
-</code></pre>
+```
 
 The title selects the desired
 [Font Awesome](https://fortawesome.github.io/Font-Awesome/icons/) icon and it
