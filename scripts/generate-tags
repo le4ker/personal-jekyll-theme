@@ -8,9 +8,9 @@ TAGS_DIR = 'tags/'
 Dir.foreach(POSTS_DIR) do |post|
   next if ['.', '..', '.DS_Store'].include?(post)
 
-  postYaml = YAML.load_file(POSTS_DIR + post)
-  unless postYaml['tags'].nil?
-    postYaml['tags'].each do |tag|
+  post_yaml = YAML.load_file(POSTS_DIR + post)
+  unless post_yaml['tags'].nil?
+    post_yaml['tags'].each do |tag|
       tag.downcase!
 
       next if File.exist?(TAGS_DIR + tag + '.html')
