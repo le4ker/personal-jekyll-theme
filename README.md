@@ -3,9 +3,42 @@
 { Personal } is a free responsive blog with minimal aesthetic, about you. You
 can watch it live [here](https://le4ker.github.io/personal-jekyll-theme/).
 
-![mobile](https://github.com/le4ker/personal-jekyll-theme/raw/main/.github/mobile.gif)
+![mobile](https://github.com/le4ker/personal-jekyll-theme/raw/main/.github/img/mobile.gif)
 
-![desktop](https://github.com/le4ker/personal-jekyll-theme/raw/main/.github/desktop.gif)
+![desktop](https://github.com/le4ker/personal-jekyll-theme/raw/main/.github/img/desktop.gif)
+
+## Deploy on Github Pages
+
+Fork the repository and rename the forked repository to
+`yourusername.github.io`. Then update the `url` and `baseurl` (set it to `""`)
+in `_config.yml`. Commit the changes and after a while you should see your
+website at `https://yourusername.github.io`.
+
+## How to run locally
+
+You can use Docker to run the website to avoid installing any dependencies to
+your local environment. To do so, run:
+
+```shell
+docker-compose up --build
+```
+
+Alternatively, you can run the website locally by installing the dependencies:
+
+```shell
+./scripts/install
+```
+
+And then start serving the website:
+
+```shell
+./scripts/serve
+```
+
+## Documentation
+
+The theme contains documentation in the form of
+[blog posts](https://le4ker.github.io/personal-jekyll-theme/blog/index.html).
 
 ## Features
 
@@ -44,39 +77,6 @@ can watch it live [here](https://le4ker.github.io/personal-jekyll-theme/).
 - Sitemap
 - Travis CI integration with
   [html-proofer](https://github.com/gjtorikian/html-proofer)
-
-## Documentation
-
-The theme contains documentation in the form of
-[blog posts](https://le4ker.github.io/personal-jekyll-theme/blog/index.html).
-
-## Deploy on Github Pages
-
-Fork the repository and rename the forked repository to
-`yourusername.github.io`. Then update the `url` and `baseurl` (set it to `""`)
-in `_config.yml`. Commit the changes and after a while you should see your
-website at `https://yourusername.github.io`.
-
-## How to run locally
-
-You can use Docker to run the website to avoid installing any dependencies to
-your local environment. To do so, run:
-
-```shell
-docker-compose up --build
-```
-
-Alternatively, you can run the website locally by installing the dependencies:
-
-```shell
-./scripts/install
-```
-
-And then start serving the website:
-
-```shell
-./scripts/serve
-```
 
 ## OSS used in { Personal }
 
