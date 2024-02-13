@@ -47,19 +47,6 @@ $secondary-color: #00cdff;
 $font-color: #fff;
 ```
 
-### HTTPS
-
-By default { Personal } will enforce https by javascript redirection. HTTPS is
-important because it encrypts the data sent between the client and the server.
-If you are hosting on GitHub Pages then it will just work, because your website
-will be piggybacking GitHub's certificate. If you are hosting your website in a
-server that doesn't have a certificate and you don't want to issue one, then you
-can disable this feature by setting the following variable to False:
-
-```yaml
-force-https: True
-```
-
 ### HTML Head
 
 ```yaml

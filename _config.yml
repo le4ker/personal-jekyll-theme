@@ -12,10 +12,6 @@ url: "https://le4ker.github.io"
 baseurl: /personal-jekyll-theme
 # Google tracking id
 google-tracking-id: False 
-# Forces https everywhere in your website, except when you serve it locally
-# If you are not hosted on Github Pages, and your host doesn't support https
-# then you should disable it
-force-https: True
 #############
 # HTML Head #
 #############

@@ -72,7 +72,6 @@ The theme contains documentation in the form of
 - Author blurb under the posts
 - 404 page
 - iOS and Android Web App mode
-- Enforcing of https protocol
 - Protection from email harvesting
 - Sitemap
 - Travis CI integration with
