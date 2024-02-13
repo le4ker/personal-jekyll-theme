@@ -40,14 +40,6 @@ lines: # You can add HTML Tags in the Text
   - text: "The lower you fall, the higher you'll fly."
   - text: "Where’s your will to be weird?"
 me-img: "/img/jetpacktocat.png"
-# To use facebook profile pic comment the previous line and uncomment the following
-# line, and replace 'user_id' with your facebook user id.
-# Facebook user id can be found by clicking on your profile pic and the large number
-# in the end of the url just before '&type' is your user id.
-# Note: fbid is not the same as user id and user id only contains numbers
-
-# me-img: "https://graph.facebook.com/user_id/picture?type=large&width=500&height=500"
-
 # To use github profile pic uncomment the following line and replace 'user_name'
 # with your github user name.
 
@@ -130,9 +122,9 @@ social:
   - title: "twitter"
     url: "https://twitter.com/"
   - title: "github"
-    url: "https://github.com/PanosSakkos/personal-jekyll-theme"
+    url: "https://github.com/le4ker/personal-jekyll-theme"
   - title: "rss"
-    url: "/feed.xml"
+    url: "https://le4ker.github.io/personal-jekyll-theme/feed.xml"
 ############
 # 404 page #
 ############
