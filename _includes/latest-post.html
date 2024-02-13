@@ -22,14 +22,16 @@
         <strong>
           <a href="{{site.baseurl}}{{ post.url }}">{{post.title}} </a>
         </strong>
-        <small
-          ><a href="{{site.baseurl}}{{post.url}}#disqus_thread">Comments</a>
-        </small>
+        <small>
+          <a href="{{site.baseurl}}{{post.url}}#disqus_thread"
+            >Comments</a
+          ></small
+        >
       </h3>
 
       <section class="text-justify">
-        {{ post.content | strip_html | truncatewords: site.post-preview-words |
-        markdownify }}
+        {{ post.content | strip_html | markdownify | truncatewords:
+        site.post-preview-words }}
       </section>
 
       <h3><a href="{{site.baseurl}}/blog/">Archive</a></h3>
