@@ -7,7 +7,7 @@ tags: ["tutorial"]
 ---
 
 All features of { Personal } are controlled by setting values to variables that
-are defined in the \_config.yml file. Let's start with the initial variables
+are defined in the `_config.yml` file. Let's start with the initial variables
 that you have to set before serving your { Personal } website for the first
 time.
 
@@ -23,7 +23,7 @@ url: "https://le4ker.github.io"
 # and NOT your user repository (https://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
 #
-# NB! Without this *nothing* will work, because it's used in every path :)
+# NB! Without this *nothing* will work, because it's used in every path
 
 baseurl: /personal-jekyll-theme
 ```
@@ -34,7 +34,7 @@ where an anchor is defined!
 ### Coloring
 
 You can define the colors that you want in your { Personal } website by setting
-the following variable sin the /\_sass/\_variables.scss file:
+the following variable sin the `_sass/variables.scss` file:
 
 ```scss
 // Main color
@@ -89,19 +89,26 @@ google-tracking-id: "UA-35880426-4"
 
 ### Serving { Personal }
 
-Install the required dependencies:
+You can use Docker to run the website to avoid installing any dependencies to
+your local environment. To do so, run:
 
-```bash
-gem install jekyll jekyll-paginate jemoji html-proofer
+```shell
+docker-compose up --build
 ```
 
-Serve the jekyll website:
+Alternatively, you can run the website locally by installing the dependencies:
 
-```bash
-./scripts/serve-production
+```shell
+./scripts/install
+```
+
+And then start serving the website:
+
+```shell
+./scripts/serve
 ```
 
 That's it!
 
-Visit [http://127.0.0.1:4000](http://127.0.0.1:4000) and you are ready to start
+Visit [http://0.0.0.0:4000](http://0.0.0.0:4000) and you are ready to start
 hacking around your { Personal } website!

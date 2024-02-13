@@ -27,15 +27,9 @@ False.
 
 This is how your website will look when added to the homescreen:
 
-![iOS](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/ios.jpg)
+![ios](https://github.com/le4ker/personal-jekyll-theme/raw/main/.github/img/ios.jpg)
 
-![Android](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/pinned.jpg)
-
-And when the user opens it (note that it renders in fullscreen):
-
-![Web App](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/web-app.jpg)
-
-## Browser status bar customization
+![android](https://github.com/le4ker/personal-jekyll-theme/raw/main/.github/img/android.jpg)
 
 You can color the browser status bar when in mobile mode, by setting it to a
 color.
@@ -43,9 +37,6 @@ color.
 The color is define in the site config with the following variables
 
 ```yaml
-##############################
-# Color the browser elements #
-##############################
 color-browser: "#000000"
 apple-status-bar-style: "black"
 ```

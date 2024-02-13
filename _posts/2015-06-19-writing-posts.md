@@ -16,13 +16,13 @@ cd <your { Personal } repo>
 ```
 
 A a new post template with name YYYY-MM-DD-hello-world.md will be created under
-./\_posts, with the current date.
+`_posts`, with the current date.
 
 In the created post, just replace the Title, Category and tags and you can start
 writing your post in markdown right bellow the end of the post header.
 
-Every file with the format <i>YYYY-MM-DD-post-title.md</i> will be processed as
-a post, with publication date <i>YYYY-MM-DD</i>.
+Every file with the format _YYYY-MM-DD-post-title.md_ will be processed as a
+post, with publication date _YYYY-MM-DD_.
 
 The content starts with:
 
@@ -33,7 +33,7 @@ title: Title
 category: Category tags: [ 'tag1', 'tag2' ]
 ```
 
-The _layout_ and _section-type_ variables are used by the theme and you
+The `layout` and `section-type` variables are used by the theme and you
 shouldn't remove them.
 
 ### Hashtags
@@ -53,12 +53,10 @@ added tags.
 
 You can organize your posts under categories. Categories are behaving like
 hashtags, they have to be generated offline, by running the
-./scripts/generate-categories script.
+`./scripts/generate-categories` script.
 
 The category of the post is specified in the yaml header, in the Category
 variable.
-
-NB! Only one category can be defined per post.
 
 ### Syntax highlighting
 
