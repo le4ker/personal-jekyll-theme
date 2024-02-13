@@ -1,7 +1,9 @@
 <!-- HEAD Start -->
 
 <head>
+
   {% include force-https.html %}
+
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -23,7 +25,7 @@
   <!-- Custom CSS -->
   <link href="{{site.baseurl}}/css/grayscale.css" rel="stylesheet" />
   {% if page.section-type == "index" %}
-  <link href="{{site.baseurl}}/css/timeline.css" rel="stylesheet" />
+    <link href="{{site.baseurl}}/css/timeline.css" rel="stylesheet" />
   {% endif %}
 
   <!-- Custom Fonts -->
@@ -49,57 +51,65 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
   {% if site.favicon %}
-  <link
-    rel="shortcut icon"
-    type="image/x-icon"
-    href="{{site.baseurl}}{{site.favicon}}"
-  />
-  {% endif %} {% if page.url == "/404.html" | prepend: {{site.baseurl}} %}
-  <meta http-equiv="refresh" content="20; url={{site.baseurl}}/" />
-  {% endif %} {% include web-app.html %} {% include color-browser.html %} {%
-  include syntax-highlight.html %} {% if jekyll.environment == "production" %}
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="{{site.baseurl}}{{site.favicon}}"
+    />
+  {% endif %} 
+
+  {% if page.url == "/404.html" | prepend: {{site.baseurl}} %}
+    <meta http-equiv="refresh" content="20; url={{site.baseurl}}/" />
+  {% endif %} 
+
+  {% include web-app.html %} 
+
+  {% include color-browser.html %} 
+
+  {% include syntax-highlight.html %} 
+
   {% if site.google-tracking-id %}
 
-  <!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
-  <script
-    type="text/javascript"
-    src="https://www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js"
-    charset="UTF-8"
-  ></script>
-  <script type="text/javascript" charset="UTF-8">
-    document.addEventListener("DOMContentLoaded", function () {
-      cookieconsent.run({
-        notice_banner_type: "simple",
-        consent_type: "express",
-        palette: "light",
-        language: "en",
-        page_load_consent_levels: ["strictly-necessary"],
-        notice_banner_reject_button_hide: false,
-        preferences_center_close_button_hide: false,
-        page_refresh_confirmation_buttons: false,
-        website_name: "{{ site.url }}",
+    <!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+    <script
+      type="text/javascript"
+      src="https://www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js"
+      charset="UTF-8"
+    ></script>
+    <script type="text/javascript" charset="UTF-8">
+      document.addEventListener("DOMContentLoaded", function () {
+        cookieconsent.run({
+          notice_banner_type: "simple",
+          consent_type: "express",
+          palette: "light",
+          language: "en",
+          page_load_consent_levels: ["strictly-necessary"],
+          notice_banner_reject_button_hide: false,
+          preferences_center_close_button_hide: false,
+          page_refresh_confirmation_buttons: false,
+          website_name: "{{ site.url }}",
+        });
       });
-    });
-  </script>
+    </script>
 
-  <!-- Google Analytics -->
+    <!-- Google Analytics -->
 
-  <script
-    type="text/plain"
-    data-cookie-consent="tracking"
-    async
-    src="https://www.googletagmanager.com/gtag/js?id={{site.google-tracking-id}}"
-  ></script>
-  <script type="text/plain" data-cookie-consent="tracking">
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', '{{site.google-tracking-id}}');
-  </script>
+    <script
+      type="text/plain"
+      data-cookie-consent="tracking"
+      async
+      src="https://www.googletagmanager.com/gtag/js?id={{site.google-tracking-id}}"
+    ></script>
+    <script type="text/plain" data-cookie-consent="tracking">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{site.google-tracking-id}}');
+    </script>
 
-  <!-- Google Analytics -->
+    <!-- Google Analytics -->
 
-  {% endif %} {% endif %}
+  {% endif %}
 </head>
 
 <!-- HEAD End -->

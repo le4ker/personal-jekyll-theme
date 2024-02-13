@@ -57,7 +57,9 @@
   });
 </script>
 
-{% endif %} {% if site.syntax-highlight and page.section-type == "post" %}
+{% endif %} 
+
+{% if site.syntax-highlight and page.section-type == "post" %}
 
 <!-- Syntax highlight in post pages-->
 
@@ -66,9 +68,9 @@
   hljs.initHighlightingOnLoad();
 </script>
 
-{% endif %} {% if jekyll.environment == "production" %} {% if
-site.google-tracking-id %} {% endif %} {% endif %} {% if site.disqus-shortname
-and jekyll.environment == "production" %}
+{% endif %} 
+
+{% if site.disqus-shortname %}
 
 <!-- Disqus -->
 
@@ -88,8 +90,9 @@ and jekyll.environment == "production" %}
   })();
 </script>
 
-{% endif %} {% if page.section-type == "post" or page.section-type == "blog" or
-page.section-type == "index" or page.section-type == "tag" %}
+{% endif %} 
+
+{% if page.section-type == "post" or page.section-type == "blog" or page.section-type == "index" or page.section-type == "tag" %}
 
 <!-- Comments Counter Start -->
 
@@ -112,7 +115,11 @@ page.section-type == "index" or page.section-type == "tag" %}
 
 <!-- Comments Counter End -->
 
-{% endif %} {% endif %} {% if page.section-type == "post" %}
+{% endif %}
+
+{% endif %} 
+
+{% if page.section-type == "post" %}
 
 <!-- Share buttons Start -->
 
@@ -120,7 +127,9 @@ page.section-type == "index" or page.section-type == "tag" %}
 
 <!-- Share buttons End -->
 
-{% endif %} {% if site.dynamic-typing and page.section-type == "index" %}
+{% endif %}
+
+{% if site.dynamic-typing and page.section-type == "index" %}
 
 <!-- Dynamic Typing Start -->
 
@@ -155,15 +164,15 @@ page.section-type == "index" or page.section-type == "tag" %}
     shuffle(myQuotes)
   {% endif %}
 
-    $(".intro-text").typed({
-      strings: myQuotes,
-      typeSpeed: {{ site.type-speed }},
-      backDelay: {{ site.delete-delay }},
-      startDelay: {{ site.start-delay }},
-      loop: {{ site..loop }},
-      loopCount: {{ site.loop-count }},
-      cursorChar: "|"
-    });
+  $(".intro-text").typed({
+    strings: myQuotes,
+    typeSpeed: {{ site.type-speed }},
+    backDelay: {{ site.delete-delay }},
+    startDelay: {{ site.start-delay }},
+    loop: {{ site..loop }},
+    loopCount: {{ site.loop-count }},
+    cursorChar: "|"
+  });
 </script>
 
 <!-- Dynamic Typing End  -->
