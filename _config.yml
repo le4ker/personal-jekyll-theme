@@ -11,7 +11,7 @@ url: "https://le4ker.github.io"
 # NB! Without this *nothing* will work, because it's used in every path :)
 baseurl: /personal-jekyll-theme
 # Google tracking id
-google-tracking-id: False
+google-tracking-id: "UA-XXXXXXXX-X"
 #############
 # HTML Head #
 #############
