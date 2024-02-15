@@ -117,12 +117,12 @@ author_blurb_image: "/img/author.png"
 # Social Buttons #
 ##################
 social:
-  - title: "facebook"
-    url: "https://facebook.com/"
-  - title: "twitter"
-    url: "https://twitter.com/"
   - title: "github"
     url: "https://github.com/le4ker/personal-jekyll-theme"
+  - title: "linkedin-in"
+    url: "https://www.linkedin.com"
+  - title: "x-twitter"
+    url: "https://twitter.com/"
   - title: "rss"
     url: "https://le4ker.github.io/personal-jekyll-theme/feed.xml"
 ############
