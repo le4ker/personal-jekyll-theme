@@ -74,8 +74,6 @@ The theme contains documentation in the form of
 - iOS and Android Web App mode
 - Protection from email harvesting
 - Sitemap
-- Travis CI integration with
-  [html-proofer](https://github.com/gjtorikian/html-proofer)
 
 ## OSS used in { Personal }
 
