@@ -26,13 +26,13 @@ docker-compose up --build
 Alternatively, you can run the website locally by installing the dependencies:
 
 ```shell
-./scripts/install
+bundle install
 ```
 
 And then start serving the website:
 
 ```shell
-./scripts/serve
+jekyll serve --watch --host 0.0.0.0 --config _config.yml,_config.dev.yml
 ```
 
 ## Documentation
@@ -63,7 +63,6 @@ The theme contains documentation in the form of
   - Preview of the latest post in the home page
   - Archive page
   - Syntax highlighting
-  - Emojis
   - Hashtags
   - Categories
   - Disqus comments
