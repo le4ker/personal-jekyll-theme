@@ -1,7 +1,7 @@
 <!-- Javascript Start -->
 
 <!-- jQuery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -57,9 +57,7 @@
   });
 </script>
 
-{% endif %} 
-
-{% if site.syntax-highlight and page.section-type == "post" %}
+{% endif %} {% if site.syntax-highlight and page.section-type == "post" %}
 
 <!-- Syntax highlight in post pages-->
 
@@ -68,9 +66,7 @@
   hljs.initHighlightingOnLoad();
 </script>
 
-{% endif %} 
-
-{% if site.disqus-shortname %}
+{% endif %} {% if site.disqus-shortname %}
 
 <!-- Disqus -->
 
@@ -90,9 +86,8 @@
   })();
 </script>
 
-{% endif %} 
-
-{% if page.section-type == "post" or page.section-type == "blog" or page.section-type == "index" or page.section-type == "tag" %}
+{% endif %} {% if page.section-type == "post" or page.section-type == "blog" or
+page.section-type == "index" or page.section-type == "tag" %}
 
 <!-- Comments Counter Start -->
 
@@ -115,11 +110,7 @@
 
 <!-- Comments Counter End -->
 
-{% endif %}
-
-{% endif %} 
-
-{% if page.section-type == "post" %}
+{% endif %} {% endif %} {% if page.section-type == "post" %}
 
 <!-- Share buttons Start -->
 
@@ -127,9 +118,7 @@
 
 <!-- Share buttons End -->
 
-{% endif %}
-
-{% if site.dynamic-typing and page.section-type == "index" %}
+{% endif %} {% if site.dynamic-typing and page.section-type == "index" %}
 
 <!-- Dynamic Typing Start -->
 
