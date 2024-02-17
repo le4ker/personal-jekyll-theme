@@ -52,7 +52,6 @@ The theme contains documentation in the form of
     - Tell your story so far with a sleek timeline of dates, pictures and
       descriptions
       - White on black text, making the reading experience tireless
-- Google analytics
 - Customization and full control of your website and blog through the site
   config
 - Blogging functionality
@@ -64,7 +63,8 @@ The theme contains documentation in the form of
   - Disqus comments
   - Share buttons
   - RSS feed
-- Author blurb under the posts
+- Google analytics
+- Cookies consent 
 - Protection from email harvesting
 - Sitemap
 
