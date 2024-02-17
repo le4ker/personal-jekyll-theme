@@ -48,17 +48,13 @@ The theme contains documentation in the form of
   - Modern and minimal design
     - Responsive templates for home page, blog archive and posts. Looks great on
       mobile, tablet, and desktop devices
-    - Sweet animations
-    - Gracefully degrades in older browsers. Compatible with Internet Explorer
-      8+ and all modern browsers
   - Timeline
     - Tell your story so far with a sleek timeline of dates, pictures and
       descriptions
-  - White on black text, making the reading experience tireless
-  - Google analytics
+      - White on black text, making the reading experience tireless
+- Google analytics
 - Customization and full control of your website and blog through the site
   config
-- Customization of the website's coloring
 - Blogging functionality
   - Preview of the latest post in the home page
   - Archive page
@@ -66,17 +62,13 @@ The theme contains documentation in the form of
   - Hashtags
   - Categories
   - Disqus comments
-  - Bootstrap share buttons
+  - Share buttons
   - RSS feed
 - Author blurb under the posts
-- 404 page
-- iOS and Android Web App mode
 - Protection from email harvesting
 - Sitemap
 
 ## OSS used in { Personal }
-
-One of the reasons { Personal } is real is the following OSS projects:
 
 1. [Grayscale](http://startbootstrap.com/template-overviews/grayscale/)
 2. [highlightjs](https://highlightjs.org/)
