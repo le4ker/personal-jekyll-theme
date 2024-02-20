@@ -4,7 +4,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
-<!-- Custom Theme JavaScript -->
 <!--
   * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
   * Code licensed under the Apache License v2.0.
@@ -54,31 +53,60 @@
   });
 </script>
 
+  {% if site.dynamic-typing %}
+
+    <!-- Dynamic Typing Start -->
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js"></script>
+
+    <script type="text/javascript">
+
+      var myQuotes =  new Array();
+      {% for line in site.lines %}
+        myQuotes.push("{{ line.text }}");
+      {% endfor %}
+
+      function shuffle(array) {
+        var currentIndex = array.length, temporaryValue, randomIndex ;
+
+        // While there remain elements to shuffle...
+        while (0 !== currentIndex) {
+
+          // Pick a remaining element...
+          randomIndex = Math.floor(Math.random() * currentIndex);
+          currentIndex -= 1;
+
+          // And swap it with the current element.
+          temporaryValue = array[currentIndex];
+          array[currentIndex] = array[randomIndex];
+          array[randomIndex] = temporaryValue;
+        }
+
+        return array;
+      }
+
+      {% if site.shuffle %}
+        shuffle(myQuotes)
+      {% endif %}
+
+      $(".intro-text").typed({
+        strings: myQuotes,
+        typeSpeed: {{ site.type-speed }},
+        backDelay: {{ site.delete-delay }},
+        startDelay: {{ site.start-delay }},
+        loop: {{ site..loop }},
+        loopCount: {{ site.loop-count }},
+        cursorChar: "|"
+      });
+    </script>
+
+  <!-- Dynamic Typing End  -->
+
+  {% endif %}
+
 {% endif %} 
 
-{% if site.disqus-shortname %}
-
-<!-- Disqus -->
-
-{% if page.section-type == "post" %}
-
-<script type="text/javascript">
-  var disqus_shortname = "{{ site.disqus-shortname }}";
-  (function () {
-    var dsq = document.createElement("script");
-    dsq.type = "text/javascript";
-    dsq.async = true;
-    dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
-    (
-      document.getElementsByTagName("head")[0] ||
-      document.getElementsByTagName("body")[0]
-    ).appendChild(dsq);
-  })();
-</script>
-
-{% endif %} 
-
-{% if page.has-comments %}
+{% if site.disqus-shortname and page.has-comments %}
 
 <!-- Comments Counter Start -->
 
@@ -101,64 +129,31 @@
 
 {% endif %} 
 
-{% endif %} 
-
 {% if page.section-type == "post" %}
+
+  {% if site.disqus-shortname %}
+
+  <!-- Disqus Comments -->
+
+  <script type="text/javascript">
+    var disqus_shortname = "{{ site.disqus-shortname }}";
+    (function () {
+      var dsq = document.createElement("script");
+      dsq.type = "text/javascript";
+      dsq.async = true;
+      dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+      (
+        document.getElementsByTagName("head")[0] ||
+        document.getElementsByTagName("body")[0]
+      ).appendChild(dsq);
+    })();
+  </script>
+
+  {% endif %} 
 
 <!-- Share buttons Start -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/rrssb/1.14.0/js/rrssb.min.js"></script>
 
 {% endif %} 
-
-{% if site.dynamic-typing and page.section-type == "index" %}
-
-  <!-- Dynamic Typing Start -->
-
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js"></script>
-
-  <script type="text/javascript">
-
-    var myQuotes =  new Array();
-    {% for line in site.lines %}
-      myQuotes.push("{{ line.text }}");
-    {% endfor %}
-
-    function shuffle(array) {
-      var currentIndex = array.length, temporaryValue, randomIndex ;
-
-      // While there remain elements to shuffle...
-      while (0 !== currentIndex) {
-
-        // Pick a remaining element...
-        randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex -= 1;
-
-        // And swap it with the current element.
-        temporaryValue = array[currentIndex];
-        array[currentIndex] = array[randomIndex];
-        array[randomIndex] = temporaryValue;
-      }
-
-      return array;
-    }
-
-    {% if site.shuffle %}
-      shuffle(myQuotes)
-    {% endif %}
-
-    $(".intro-text").typed({
-      strings: myQuotes,
-      typeSpeed: {{ site.type-speed }},
-      backDelay: {{ site.delete-delay }},
-      startDelay: {{ site.start-delay }},
-      loop: {{ site..loop }},
-      loopCount: {{ site.loop-count }},
-      cursorChar: "|"
-    });
-  </script>
-
-<!-- Dynamic Typing End  -->
-
-{% endif %}
 
 <!-- Javascript End -->
