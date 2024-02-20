@@ -140,7 +140,14 @@ pages_list:
   Timeline: "timeline"
   Contact: "contact"
 # Exclusion list from the generated _site
-exclude: ["LICENSE", "README.md", "CONTRIBUTING", "CONTRIBUTORS", "scripts", "Dockerfile", "docker-compose.yml"]
+exclude:
+  - LICENSE
+  - README.md
+  - CONTRIBUTING
+  - CONTRIBUTORS
+  - scripts
+  - Dockerfile
+  - docker-compose.yml
 # Pagination path
 paginate_path: "blog/page:num/"
 # Enable minification SASS
