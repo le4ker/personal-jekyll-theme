@@ -64,14 +64,13 @@ The theme contains documentation in the form of
   - Share buttons
   - RSS feed
 - Google analytics
-- Cookies consent 
+- Cookies consent
 - Protection from email harvesting
 - Sitemap
 
 ## OSS used in { Personal }
 
 1. [Grayscale](http://startbootstrap.com/template-overviews/grayscale/)
-2. [highlightjs](https://highlightjs.org/)
+2. [Timeline](https://github.com/kirbyt/timeline-jekyll-theme)
 3. [RRSSB](https://github.com/kni-labs/rrssb)
-4. [Timeline](https://github.com/kirbyt/timeline-jekyll-theme)
-5. [typed.js](https://github.com/mattboldt/typed.js/)
+4. [typed.js](https://github.com/mattboldt/typed.js/)
