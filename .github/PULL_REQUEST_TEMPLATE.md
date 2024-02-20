@@ -1,7 +1,0 @@
-Issue Fixed #
-
-## Proposed Changes
-
-  -
-  -
-  -
