@@ -113,16 +113,14 @@ page.section-type == "index" or page.section-type == "tag" %}
 {% endif %} {% endif %} {% if page.section-type == "post" %}
 
 <!-- Share buttons Start -->
-
-<script src="{{site.baseurl}}/js/rrssb.min.js"></script>
-
-<!-- Share buttons End -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rrssb/1.14.0/js/rrssb.min.js"></script>
 
 {% endif %} {% if site.dynamic-typing and page.section-type == "index" %}
 
 <!-- Dynamic Typing Start -->
 
-<script type="text/javascript" src="{{site.baseurl}}/js/typed.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js"></script>
+
 <script type="text/javascript">
 
   var myQuotes =  new Array();
