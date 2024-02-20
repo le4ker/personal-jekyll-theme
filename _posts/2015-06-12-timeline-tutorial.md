@@ -1,6 +1,7 @@
 ---
 layout: post
 section-type: post
+has-comments: true
 title: Adding a life event in the Timeline
 category: tech
 tags: ["tutorial"]

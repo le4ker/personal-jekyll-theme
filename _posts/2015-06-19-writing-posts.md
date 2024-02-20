@@ -1,6 +1,7 @@
 ---
 layout: post
 section-type: post
+has-comments: true
 title: Writing posts
 category: tech
 tags: ["tutorial"]

@@ -2,6 +2,7 @@
 
 <!doctype html>
 <html lang="{{ site.lang }}">
+
   {% include head.html %}
 
   <body>
@@ -15,14 +16,22 @@
           <h3 id="#{{ tag }}">#{{ tag }}</h3>
 
           <div>
-            {% for post in site.posts %} {% for t in post.tags %} {% if t == tag
-            %} {% include post-list.html%} {% endif %} {% endfor %} {% endfor %}
+            {% for post in site.posts %} 
+              {% for t in post.tags %} 
+                {% if t == tag %} 
+                  {% include post-list.html%} 
+                {% endif %} 
+              {% endfor %} 
+            {% endfor %}
           </div>
         </div>
       </div>
     </section>
 
-    {% include footer.html %} {% include js.html %}
+    {% include footer.html %} 
+
+    {% include js.html %}
+
   </body>
 </html>
 

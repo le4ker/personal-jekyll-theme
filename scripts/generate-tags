@@ -19,7 +19,7 @@ Dir.foreach(POSTS_DIR) do |post|
 
       File.open(TAGS_DIR + tag + '.html', 'w') do |f|
         f.write(
-          "---\nlayout: tag\nsection-type: tag\ntitle: " + tag + "\n---\n## Tag"
+          "---\nlayout: tag\nsection-type: tag\nhas-comments: true\ntitle: " + tag + "\n---\n## Tag"
         )
       end
     end
