@@ -13,14 +13,14 @@ You can edit them with the following variables:
 
 ```yaml
 social:
-  - title: "facebook"
-    url: "https://facebook.com/"
-  - title: "twitter"
-    url: "https://twitter.com/"
   - title: "github"
-    url: "https://github.com/PanosSakkos/personal-jekyll-theme"
+    url: "https://github.com/le4ker/personal-jekyll-theme"
+  - title: "linkedin-in"
+    url: "https://www.linkedin.com"
+  - title: "x-twitter"
+    url: "https://twitter.com/"
   - title: "rss"
-    url: "/feed.xml"
+    url: "https://le4ker.github.io/personal-jekyll-theme/feed.xml"
 ```
 
 The title selects the desired

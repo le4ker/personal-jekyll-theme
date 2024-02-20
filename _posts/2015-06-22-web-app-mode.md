@@ -34,7 +34,7 @@ This is how your website will look when added to the homescreen:
 You can color the browser status bar when in mobile mode, by setting it to a
 color.
 
-The color is define in the site config with the following variables
+The color is define in the site config with the following variables:
 
 ```yaml
 color-browser: "#000000"

@@ -21,7 +21,6 @@ events:
     description: "Started coding"
 
 # First image of the Timeline
-
 timeline-img: "/img/timeline/default.png"
 ```
 

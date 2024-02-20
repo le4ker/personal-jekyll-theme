@@ -29,22 +29,22 @@ baseurl: /personal-jekyll-theme
 ```
 
 The url and baseurl variables are essential, because they are used _everywhere_
-where an anchor is defined!
+where an anchor is defined.
 
-### Coloring
+### Theme
 
 You can define the colors that you want in your { Personal } website by setting
 the following variable sin the `_sass/variables.scss` file:
 
 ```scss
-// Main color
-$primary-color: #000;
+// Background color
+$primary-color: #232a2e;
 
-// Anchor color
-$secondary-color: #00cdff;
+// Accent color
+$secondary-color: #3a94c5;
 
 // Font color
-$font-color: #fff;
+$font-color: #efebd4;
 ```
 
 ### HTML Head
@@ -68,10 +68,10 @@ HTML page.
 
 The Google tracking code will be placed in every generated page. If you don't
 want Google analytics tracking your website's traffic, set the
-google-tracking-id to an empty string.
+google-tracking-id to false.
 
 ```yaml
-google-tracking-id: "UA-35880426-4"
+google-tracking-id: "UA-XXXXXXXX-X"
 ```
 
 ### Serving { Personal }
@@ -98,4 +98,4 @@ jekyll serve --watch --host 0.0.0.0 --config _config.yml,_config.dev.yml
 That's it!
 
 Visit [http://0.0.0.0:4000](http://0.0.0.0:4000) and you are ready to start
-hacking around your { Personal } website!
+hacking around your { Personal } website.

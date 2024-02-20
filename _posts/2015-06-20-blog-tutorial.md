@@ -60,8 +60,8 @@ disqus-shortname: "Your Disqus username"
 
 ### RSS feed
 
-The RSS feed is automatically generated and placed in /feed.xml.
+The RSS feed is automatically generated and placed in `/feed.xml`.
 
 ### Sitemap
 
-The Sitemap is automatically generated and placed in /sitemap.xml
+The Sitemap is automatically generated and placed in `/sitemap.xml`.
