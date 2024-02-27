@@ -120,13 +120,13 @@ author_blurb_image: "/img/author.png"
 # Social Buttons #
 ##################
 social:
-  - title: "github"
+  - icon: "github"
     url: "https://github.com/le4ker/personal-jekyll-theme"
-  - title: "linkedin-in"
+  - icon: "linkedin-in"
     url: "https://www.linkedin.com"
-  - title: "x-twitter"
+  - icon: "x-twitter"
     url: "https://twitter.com/"
-  - title: "rss"
+  - icon: "rss"
     url: "https://le4ker.github.io/personal-jekyll-theme/feed.xml"
 ############
 # 404 page #

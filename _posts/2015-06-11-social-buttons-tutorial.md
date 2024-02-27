@@ -14,16 +14,15 @@ You can edit them with the following variables:
 
 ```yaml
 social:
-  - title: "github"
+  - icon: "github"
     url: "https://github.com/le4ker/personal-jekyll-theme"
-  - title: "linkedin-in"
+  - icon: "linkedin-in"
     url: "https://www.linkedin.com"
-  - title: "x-twitter"
+  - icon: "x-twitter"
     url: "https://twitter.com/"
-  - title: "rss"
+  - icon: "rss"
     url: "https://le4ker.github.io/personal-jekyll-theme/feed.xml"
 ```
 
-The title selects the desired
-[Font Awesome](https://fortawesome.github.io/Font-Awesome/icons/) icon and it
-shouldn't include the "fa-" prefix.
+The `icon` selects the desired [Font Awesome](https://fontawesome.com/icons) icon from the loaded version
+and it shouldn't include the `fa-` prefix, since it's prepended automatically.
