@@ -1,13 +1,13 @@
 # utility scripts
 
-new-post {{TITLE}}
+new_post {{TITLE}}
 
 - Creates a new post under `_posts`
 
-generate-category
+generate_categories.rb
 
 - Generate all the categories that are used in the `_posts`
 
-generate-tag
+generate_tags.rb
 
 - Generate all the tags that are used in the `_posts`
