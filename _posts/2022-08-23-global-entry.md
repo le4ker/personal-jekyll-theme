@@ -1,7 +1,7 @@
 ---
 layout: post
 section-type: post
-title: Applying for Global Entry on US Visa
+title: Applying for Global Entry on Non Immigrant US Visa
 category: tech
 tags: [ 'tech' ]
 ---
