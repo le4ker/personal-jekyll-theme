@@ -13,7 +13,7 @@
         modulo: 2 %} {% capture class %} {% if loopindex == 0 %}
         timeline-inverted {% endif %} {% endcapture %}
 
-        <li class="{{ class }}">
+        <li {% if event.dialog %}class="link" onclick="dialogTimeline('{{ event.dialog }}')" {% endif %}>
           <div class="timeline-image">
             <img
               class="img-circle img-responsive"
@@ -46,4 +46,92 @@
   </div>
 </section>
 
+{% for event in site.events %}
+  {% if event.dialog %}
+    <dialog id="dialog_{{ event.dialog }}">
+      <div class="content">
+        {% include timeline/{{ event.dialog }}.html %}
+      </div>
+      <footer>
+        <button onclick="closeDialogTimeline('{{ event.dialog }}')">Close</button>
+      </footer>
+    </dialog>
+  {% endif %}
+{% endfor %}
+
+<script>
+  const dialogTimeline = (type) => {
+    document.getElementById(`dialog_${type}`).showModal()
+  }
+  const closeDialogTimeline = (type) => {
+    document.getElementById(`dialog_${type}`).close()
+  }
+</script>
+
+<style>
+dialog {
+  animation: fade-out 0.3s ease-out;
+}
+
+dialog[open] .content {
+  flex-grow: 1;
+  overflow: auto;
+}
+
+dialog[open] footer {
+  padding: 20px;
+}
+
+dialog[open] {
+  animation: fade-in 0.3s ease-out;
+  height: 80vh;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+dialog[open]::backdrop {
+  animation: backdrop-fade-in 0.3s ease-out forwards;
+}
+
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+    display: none;
+  }
+
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+    display: block;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+    transform: scaleY(1);
+    display: block;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scaleY(0);
+    display: none;
+  }
+}
+
+@keyframes backdrop-fade-in {
+  0% {
+    background-color: rgb(0 0 0 / 0%);
+  }
+
+  100% {
+    background-color: rgb(0 0 0 / 25%);
+  }
+}  
+</style>
 <!-- Timeline End -->
