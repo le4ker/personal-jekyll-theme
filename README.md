@@ -26,7 +26,7 @@ docker-compose up --build
 Alternatively, you can run the website locally by installing the dependencies:
 
 ```shell
-bundle install
+make install
 ```
 
 And then start serving the website:
