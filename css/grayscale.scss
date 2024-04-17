@@ -7,6 +7,41 @@
 @font-face {
   font-family: my-font;
   src: url("{{site.baseurl}}/fonts/MavenPro-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: my-font;
+  src: url("{{site.baseurl}}/fonts/MavenPro-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: my-font;
+  src: url("{{site.baseurl}}/fonts/MavenPro-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: my-font;
+  src: url("{{site.baseurl}}/fonts/MavenPro-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: my-font;
+  src: url("{{site.baseurl}}/fonts/MavenPro-ExtraBold.ttf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: my-font;
+  src: url("{{site.baseurl}}/fonts/MavenPro-Black.ttf");
+  font-weight: 900;
+}
+
+strong {
+  font-weight: 500;
 }
 
 /*!
@@ -39,7 +74,7 @@ h5,
 h6 {
   margin: 0 0 35px;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 1px;
 }
 
@@ -108,7 +143,7 @@ a {
       outline: none;
     }
     font-size: 2.2rem;
-    font-weight: 700;
+    font-weight: 500;
   }
   a {
     color: $navbar-color;
@@ -187,7 +222,7 @@ a {
     }
     .intro-text {
       font-size: 2.3rem;
-      font-weight: 900;
+      font-weight: 500;
       @if $navbar-text-shadow {
         text-shadow: 1px 0 1px #222222;
       }
@@ -285,7 +320,6 @@ a {
 
 .btn {
   border-radius: 0;
-  font-weight: 400;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -357,10 +391,6 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: rgba($font-color, 0.2);
   font-size: 2rem;
-}
-
-.blurb {
-  font-weight: 500;
 }
 
 .typed-cursor {
