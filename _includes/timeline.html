@@ -23,7 +23,7 @@
           </div>
           <div class="timeline-panel">
             <div class="timeline-heading">
-              <h4>{{ event.date }}</h4>
+              <strong>{{ event.date | upcase }}</strong>
             </div>
             <div class="timeline-body">
               {{ event.description | markdownify }}
