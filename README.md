@@ -23,7 +23,8 @@ your local environment. To do so, run:
 docker-compose up --build
 ```
 
-Alternatively, you can run the website locally by installing the dependencies:
+Alternatively, you can run the website locally by installing ruby and then
+installing the project dependencies by running:
 
 ```shell
 make install
