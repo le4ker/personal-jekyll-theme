@@ -13,17 +13,17 @@
           .
           <a
             class="category"
-            href="{{site.baseurl}}/categories/{{post.category | downcase}}.html"
+            href="{{site.repository_name}}/categories/{{post.category | downcase}}.html"
           >
             {{ post.category }}
           </a>
           .
         </small>
         <strong>
-          <a href="{{site.baseurl}}{{ post.url }}">{{post.title}} </a>
+          <a href="{{site.repository_name}}{{ post.url }}">{{post.title}} </a>
         </strong>
         <small>
-          <a href="{{site.baseurl}}{{post.url}}#disqus_thread"
+          <a href="{{site.repository_name}}{{post.url}}#disqus_thread"
             >Comments</a
           ></small
         >
@@ -34,7 +34,7 @@
         site.post-preview-words }}
       </section>
 
-      <h3><a href="{{site.baseurl}}/blog/">Archive</a></h3>
+      <h3><a href="{{site.repository_name}}/blog/">Archive</a></h3>
     </div>
   </div>
 </section>

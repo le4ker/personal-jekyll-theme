@@ -6,19 +6,21 @@
     >.
     <a
       class="category"
-      href="{{site.baseurl}}/categories/{{ post.category | downcase }}.html"
+      href="{{site.repository_name}}/categories/{{ post.category | downcase }}.html"
     >
       {{ post.category }}
     </a>
     .</small
   >
   <br class="visible-xs-block" />
-  <a href="{{site.baseurl}}{{post.url}}">
+  <a href="{{site.repository_name}}{{post.url}}">
     <strong>{{ post.title }}</strong>
   </a>
   <br class="visible-xs-block" />
   <small
-    ><a href="{{site.baseurl}}{{post.url}}#disqus_thread">Comments</a></small
+    ><a href="{{site.repository_name}}{{post.url}}#disqus_thread"
+      >Comments</a
+    ></small
   >
 </h4>
 

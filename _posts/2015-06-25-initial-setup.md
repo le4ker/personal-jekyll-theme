@@ -22,15 +22,15 @@ url: "https://le4ker.github.io"
 # If you're hosting your site at a Project repository on GitHub pages
 # (https://yourusername.github.io/repository-name)
 # and NOT your user repository (https://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
+# then add in the repository_name here, like this: "/repository-name"
 #
 # NB! Without this *nothing* will work, because it's used in every path
 
-baseurl: /personal-jekyll-theme
+repository_name: /personal-jekyll-theme
 ```
 
-The url and baseurl variables are essential, because they are used _everywhere_
-where an anchor is defined.
+The url and repository*name variables are essential, because they are used
+\_everywhere* where an anchor is defined.
 
 ### Theme
 

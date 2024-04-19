@@ -9,10 +9,13 @@ can watch it live [here](https://le4ker.github.io/personal-jekyll-theme/).
 
 ## Deploy on Github Pages
 
-Fork the repository and rename the forked repository to
-`yourusername.github.io`. Then update the `url` and `baseurl` (set it to `""`)
-in `_config.yml`. Commit the changes and after a while you should see your
-website at `https://yourusername.github.io`.
+Fork the repository and:
+
+1. Rename the forked repository to `yourusername.github.io`
+2. Update the `url` in `_config.yml` to be `yourusername.github.io`
+3. Set the `repository_name` in `_config` equal to `""`
+4. Commit the changes and after a while you should see your website at
+   `https://yourusername.github.io`
 
 ## How to run locally
 

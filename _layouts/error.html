@@ -2,11 +2,9 @@
 
 <!doctype html>
 <html lang="{{ site.lang }}">
-
   {% include head.html %}
 
   <body>
-
     {% include navigation.html %}
 
     <section class="container content-section text-center">
@@ -16,17 +14,15 @@
           <h2>UH OH! You're lost.</h2>
           <p>
             The page you are looking for does not exist. How you got here is a
-            mystery. But you can click <a href="{{site.baseurl}}/">here</a>
+            mystery. But you can click
+            <a href="{{site.repository_name}}/">here</a>
             to go back to the homepage.
           </p>
         </div>
       </div>
     </section>
 
-    {% include footer.html %} 
-
-    {% include js.html %}
-  
+    {% include footer.html %} {% include js.html %}
   </body>
 </html>
 
