@@ -19,29 +19,42 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css"
   />
 
-  <!-- Custom CSS -->
+  <!-- CSS links -->
   <link href="{{site.repository_name}}/css/grayscale.css" rel="stylesheet" />
+  
   {% if page.section-type == "index" %}
-  <link href="{{site.repository_name}}/css/timeline.css" rel="stylesheet" />
+    <link href="{{site.repository_name}}/css/timeline.css" rel="stylesheet" />
   {% endif %}
 
-  <!-- Custom Fonts -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  />
-  <link rel="stylesheet" href="{{site.repository_name}}/css/rrssb.css" />
+  {% if page.layout == "post" %}
+    {% include syntax-highlight.html %} 
+    <link rel="stylesheet" href="/css/rrssb.css" />
+  {% endif %}
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
   {% if site.favicon %}
-  <link
-    rel="shortcut icon"
-    type="image/x-icon"
-    href="{{site.repository_name}}{{site.favicon}}"
-  />
-  {% endif %} {% if page.url == "/404.html" | prepend: {{site.repository_name}}
-  %}
-  <meta http-equiv="refresh" content="20; url={{site.repository_name}}/" />
-  {% endif %} {% include web-app.html %} {% include color-browser.html %} {%
-  include syntax-highlight.html %} {% if site.google-tracking-id %}
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="{{site.repository_name}}{{site.favicon}}"
+    />
+  {% endif %} 
+
+  {% if page.url == "/404.html" | prepend: {{site.repository_name}} %}
+    <meta http-equiv="refresh" content="20; url={{site.repository_name}}/" />
+  {% endif %} 
+
+  {% include web-app.html %} 
+
+  {% include color-browser.html %} 
+
+  {% if site.google-tracking-id %}
 
   <!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
   <script
@@ -49,6 +62,7 @@
     src="https://www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js"
     charset="UTF-8"
   ></script>
+
   <script type="text/javascript" charset="UTF-8">
     document.addEventListener("DOMContentLoaded", function () {
       cookieconsent.run({

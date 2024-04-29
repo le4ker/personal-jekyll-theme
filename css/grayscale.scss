@@ -4,42 +4,6 @@
 @import "variables";
 @import "mixins";
 
-@font-face {
-  font-family: my-font;
-  src: url("{{site.repository_name}}/fonts/MavenPro-Regular.ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: my-font;
-  src: url("{{site.repository_name}}/fonts/MavenPro-Medium.ttf");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: my-font;
-  src: url("{{site.repository_name}}/fonts/MavenPro-SemiBold.ttf");
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: my-font;
-  src: url("{{site.repository_name}}/fonts/MavenPro-Bold.ttf");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: my-font;
-  src: url("{{site.repository_name}}/fonts/MavenPro-ExtraBold.ttf");
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: my-font;
-  src: url("{{site.repository_name}}/fonts/MavenPro-Black.ttf");
-  font-weight: 900;
-}
-
 strong {
   font-weight: 500;
 }
@@ -53,7 +17,7 @@ strong {
 body {
   width: 100%;
   height: 100%;
-  font-family: my-font;
+  font-family: "Maven Pro", sans-serif;
   color: $font-color;
   background-color: $primary-color;
   p {
