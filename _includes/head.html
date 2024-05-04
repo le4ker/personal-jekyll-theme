@@ -6,20 +6,11 @@
   <meta name="description" content="{{site.description}}" />
   <meta name="author" content="{{site.author}}" />
   <meta name="keywords" content="{{site.keywords}}" />
-  <link
-    rel="canonical"
-    href="{{page.url | replace:'index.html','' | prepend: site.repository_name}}"
-  />
+  <link rel="canonical" href="{{page.url | replace:'index.html','' | prepend: site.repository_name}}" />
   <title>{{site.title}}{% if page.title %} | {{page.title}}{% endif %}</title>
 
-  <!-- Bootstrap Core CSS -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css"
-    defer
-  />
-
   <!-- CSS links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" defer />
   <link href="{{site.repository_name}}/css/grayscale.css" rel="stylesheet" />
   
   {% if page.section-type == "index" %}
