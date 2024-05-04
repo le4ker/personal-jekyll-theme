@@ -17,18 +17,18 @@
               .
               <a
                 class="category"
-                href="{{site.repository_name}}/categories/{{page.category | downcase}}.html"
+                href="{{site.url}}/categories/{{page.category | downcase}}.html"
               >
                 {{ page.category }} </a
               >.
-              <a href="{{site.repository_name}}{{page.url}}#disqus_thread"
+              <a href="{{site.url}}{{page.url}}#disqus_thread"
                 >Comments</a
               >
               <br />
               {% for tag in page.tags %}
               <a
                 class="tag"
-                href="{{site.repository_name}}/tags/{{tag | downcase}}.html"
+                href="{{site.url}}/tags/{{tag | downcase}}.html"
                 >#{{ tag }}</a
               >
               {% endfor %}
@@ -47,7 +47,7 @@
           <div class="author row">
             <img
               class="col-xs-4 col-sm-3 col-md-2"
-              src="{{site.repository_name}}{{site.author_blurb_image}}"
+              src="{{site.url}}{{site.author_blurb_image}}"
               alt="Me"
             />
             <p class="col-xs-8 col-sm-9 col-md-10">{{ site.author_blurb }}</p>

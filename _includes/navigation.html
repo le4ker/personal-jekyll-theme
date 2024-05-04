@@ -10,11 +10,11 @@
       {% if page.section-type == "index" %}
         <a class="navbar-brand page-scroll" href="#page-top">
       {% else %}
-        <a class="navbar-brand" href="{{site.repository_name}}/">
+        <a class="navbar-brand" href="{{site.url}}/">
       {% endif %}
           <div>
             {% if site.black-favicon %}
-              <img src="{{site.repository_name}}{{ site.black-favicon }}" alt="">
+              <img src="{{site.url}}{{ site.black-favicon }}" alt="">
             {% endif %}
             {{ site.title }}
           </div>
@@ -37,13 +37,13 @@
           {% for p in site.pages_list %}
             <li>
             {% if p[1] == "latest-post" %}
-              {% if page.url == "/blog/index.html" | prepend: {{site.repository_name}} %}
+              {% if page.url == "/blog/index.html" | prepend: {{site.url}} %}
                 <a class="page-scroll" href="#page"> {{p[0]}} </a>
               {% else %}
-                <a href="{{site.repository_name}}/blog/"> {{p[0]}} </a>
+                <a href="{{site.url}}/blog/"> {{p[0]}} </a>
               {% endif %}
             {% else %}
-                <a href="{{site.repository_name}}/#{{ p[1] }}"> {{p[0]}} </a>
+                <a href="{{site.url}}/#{{ p[1] }}"> {{p[0]}} </a>
             {% endif %}
             </li>
           {% endfor %}

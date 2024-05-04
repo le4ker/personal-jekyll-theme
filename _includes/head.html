@@ -11,15 +11,15 @@
 
   <!-- CSS links -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" defer />
-  <link href="{{site.repository_name}}/css/grayscale.css" rel="stylesheet" />
-  
+  <link href="{{site.url}}/css/grayscale.css" rel="stylesheet" />
+
   {% if page.section-type == "index" %}
-    <link href="{{site.repository_name}}/css/timeline.css" rel="stylesheet" />
+    <link href="{{site.url}}/css/timeline.css" rel="stylesheet" />
   {% endif %}
 
   {% if page.layout == "post" %}
-    {% include syntax-highlight.html %} 
-  <link rel="stylesheet" href="{{site.repository_name}}/css/rrssb.css" />
+    {% include syntax-highlight.html %}
+  <link rel="stylesheet" href="{{site.url}}/css/rrssb.css" />
   {% endif %}
 
   <!-- Fonts -->
@@ -32,17 +32,17 @@
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="{{site.repository_name}}{{site.favicon}}"
+      href="{{site.url}}{{site.favicon}}"
     />
-  {% endif %} 
+  {% endif %}
 
-  {% if page.url == "/404.html" | prepend: {{site.repository_name}} %}
-    <meta http-equiv="refresh" content="20; url={{site.repository_name}}/" />
-  {% endif %} 
+  {% if page.url == "/404.html" | prepend: {{site.url}} %}
+    <meta http-equiv="refresh" content="20; url={{site.url}}/" />
+  {% endif %}
 
-  {% include web-app.html %} 
+  {% include web-app.html %}
 
-  {% include color-browser.html %} 
+  {% include color-browser.html %}
 
   {% if site.google-tracking-id %}
 
