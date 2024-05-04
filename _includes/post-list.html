@@ -2,26 +2,21 @@
 
 <h4 align="left">
   <strong>{{ post.date | date_to_string }}</strong>
-  <small
-    >.
-    <a
-      class="category"
-      href="{{site.url}}/categories/{{ post.category | downcase }}.html"
-    >
+  <small>
+    .
+    <a class="category" href="{{site.url}}/categories/{{ post.category | downcase }}.html">
       {{ post.category }}
     </a>
-    .</small
-  >
+    .
+  </small>
   <br class="visible-xs-block" />
   <a href="{{site.url}}{{post.url}}">
     <strong>{{ post.title }}</strong>
   </a>
-  <br class="visible-xs-block" />
-  <small
-    ><a href="{{site.url}}{{post.url}}#disqus_thread"
-      >Comments</a
-    ></small
-  >
+  <br class="visible-xs-block"/>
+  <small>
+    <a href="{{site.url}}{{post.url}}#disqus_thread">Comments</a>
+  </small>
 </h4>
 
 <!-- Post List End -->
