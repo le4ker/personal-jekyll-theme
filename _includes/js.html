@@ -106,53 +106,53 @@
 
 {% endif %} 
 
-{% if site.disqus-shortname and page.has-comments %}
+{% if site.disqus-shortname %}
 
-<!-- Comments Counter Start -->
+  {% if page.has-comments %}
 
-<script type="text/javascript">
-  var disqus_shortname = "{{ site.disqus-shortname }}";
+    <!-- Comments Counter Start -->
 
-  (function () {
-    var s = document.createElement("script");
-    s.async = true;
-    s.type = "text/javascript";
-    s.src = "//" + disqus_shortname + ".disqus.com/count.js";
-    (
-      document.getElementsByTagName("HEAD")[0] ||
-      document.getElementsByTagName("BODY")[0]
-    ).appendChild(s);
-  })();
-</script>
+    <script type="text/javascript">
+      var disqus_shortname = "{{ site.disqus-shortname }}";
 
-<!-- Comments Counter End -->
+      (function () {
+        var s = document.createElement("script");
+        s.async = true;
+        s.type = "text/javascript";
+        s.src = "//" + disqus_shortname + ".disqus.com/count.js";
+        (
+          document.getElementsByTagName("HEAD")[0] ||
+          document.getElementsByTagName("BODY")[0]
+        ).appendChild(s);
+      })();
+    </script>
 
-{% endif %} 
-
-{% if page.section-type == "post" %}
-
-  {% if site.disqus-shortname %}
-
-  <!-- Disqus Comments -->
-
-  <script type="text/javascript">
-    var disqus_shortname = "{{ site.disqus-shortname }}";
-    (function () {
-      var dsq = document.createElement("script");
-      dsq.type = "text/javascript";
-      dsq.async = true;
-      dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
-      (
-        document.getElementsByTagName("head")[0] ||
-        document.getElementsByTagName("body")[0]
-      ).appendChild(dsq);
-    })();
-  </script>
+    <!-- Comments Counter End -->
 
   {% endif %} 
 
-<!-- Share buttons Start -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/rrssb/1.14.0/js/rrssb.min.js"></script>
+  {% if page.section-type == "post" %}
+
+    <!-- Disqus Comments -->
+
+    <script type="text/javascript">
+      var disqus_shortname = "{{ site.disqus-shortname }}";
+      (function () {
+        var dsq = document.createElement("script");
+        dsq.type = "text/javascript";
+        dsq.async = true;
+        dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+        (
+          document.getElementsByTagName("head")[0] ||
+          document.getElementsByTagName("body")[0]
+        ).appendChild(dsq);
+      })();
+    </script>
+
+  <!-- Share buttons Start -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rrssb/1.14.0/js/rrssb.min.js"></script>
+
+  {% endif %}
 
 {% endif %} 
 
