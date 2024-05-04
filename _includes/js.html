@@ -1,8 +1,20 @@
 <!-- Javascript Start -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+  integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ=="
+  crossorigin="anonymous">
+</script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"
+  integrity="sha512-oBTprMeNEKCnqfuqKd6sbvFzmFQtlXS3e0C/RGFV0hD6QzhHV+ODfaQbAlmY6/q0ubbwlAM/nCJjkrgA3waLzg=="
+  crossorigin="anonymous">
+</script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"
+  integrity="sha512-ahmSZKApTDNd3gVuqL5TQ3MBTj8tL5p2tYV05Xxzcfu6/ecvt1A0j6tfudSGBVuteSoTRMqMljbfdU0g2eDNUA=="
+  crossorigin="anonymous">
+</script>
 
 <!--
   * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
@@ -53,107 +65,101 @@
   });
 </script>
 
-  {% if site.dynamic-typing %}
+{% if site.dynamic-typing %}
 
-    <!-- Dynamic Typing Start -->
+<!-- Dynamic Typing Start -->
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js"></script>
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js"
+></script>
 
-    <script type="text/javascript">
+<script type="text/javascript">
 
-      var myQuotes =  new Array();
-      {% for line in site.lines %}
-        myQuotes.push("{{ line.text }}");
-      {% endfor %}
+  var myQuotes =  new Array();
+  {% for line in site.lines %}
+    myQuotes.push("{{ line.text }}");
+  {% endfor %}
 
-      function shuffle(array) {
-        var currentIndex = array.length, temporaryValue, randomIndex ;
+  function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex ;
 
-        // While there remain elements to shuffle...
-        while (0 !== currentIndex) {
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
 
-          // Pick a remaining element...
-          randomIndex = Math.floor(Math.random() * currentIndex);
-          currentIndex -= 1;
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
 
-          // And swap it with the current element.
-          temporaryValue = array[currentIndex];
-          array[currentIndex] = array[randomIndex];
-          array[randomIndex] = temporaryValue;
-        }
+      // And swap it with the current element.
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
 
-        return array;
-      }
+    return array;
+  }
 
-      {% if site.shuffle %}
-        shuffle(myQuotes)
-      {% endif %}
-
-      $(".intro-text").typed({
-        strings: myQuotes,
-        typeSpeed: {{ site.type-speed }},
-        backDelay: {{ site.delete-delay }},
-        startDelay: {{ site.start-delay }},
-        loop: {{ site..loop }},
-        loopCount: {{ site.loop-count }},
-        cursorChar: "|"
-      });
-    </script>
-
-  <!-- Dynamic Typing End  -->
-
+  {% if site.shuffle %}
+    shuffle(myQuotes)
   {% endif %}
 
-{% endif %} 
+  $(".intro-text").typed({
+    strings: myQuotes,
+    typeSpeed: {{ site.type-speed }},
+    backDelay: {{ site.delete-delay }},
+    startDelay: {{ site.start-delay }},
+    loop: {{ site..loop }},
+    loopCount: {{ site.loop-count }},
+    cursorChar: "|"
+  });
+</script>
 
-{% if site.disqus-shortname %}
+<!-- Dynamic Typing End  -->
 
-  {% if page.has-comments %}
+{% endif %} {% endif %} {% if site.disqus-shortname %} {% if page.has-comments
+%}
 
-    <!-- Comments Counter Start -->
+<!-- Comments Counter Start -->
 
-    <script type="text/javascript">
-      var disqus_shortname = "{{ site.disqus-shortname }}";
+<script type="text/javascript">
+  var disqus_shortname = "{{ site.disqus-shortname }}";
 
-      (function () {
-        var s = document.createElement("script");
-        s.async = true;
-        s.type = "text/javascript";
-        s.src = "//" + disqus_shortname + ".disqus.com/count.js";
-        (
-          document.getElementsByTagName("HEAD")[0] ||
-          document.getElementsByTagName("BODY")[0]
-        ).appendChild(s);
-      })();
-    </script>
+  (function () {
+    var s = document.createElement("script");
+    s.async = true;
+    s.type = "text/javascript";
+    s.src = "//" + disqus_shortname + ".disqus.com/count.js";
+    (
+      document.getElementsByTagName("HEAD")[0] ||
+      document.getElementsByTagName("BODY")[0]
+    ).appendChild(s);
+  })();
+</script>
 
-    <!-- Comments Counter End -->
+<!-- Comments Counter End -->
 
-  {% endif %} 
+{% endif %} {% if page.section-type == "post" %}
 
-  {% if page.section-type == "post" %}
+<!-- Disqus Comments -->
 
-    <!-- Disqus Comments -->
+<script type="text/javascript">
+  var disqus_shortname = "{{ site.disqus-shortname }}";
+  (function () {
+    var dsq = document.createElement("script");
+    dsq.type = "text/javascript";
+    dsq.async = true;
+    dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+    (
+      document.getElementsByTagName("head")[0] ||
+      document.getElementsByTagName("body")[0]
+    ).appendChild(dsq);
+  })();
+</script>
 
-    <script type="text/javascript">
-      var disqus_shortname = "{{ site.disqus-shortname }}";
-      (function () {
-        var dsq = document.createElement("script");
-        dsq.type = "text/javascript";
-        dsq.async = true;
-        dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
-        (
-          document.getElementsByTagName("head")[0] ||
-          document.getElementsByTagName("body")[0]
-        ).appendChild(dsq);
-      })();
-    </script>
+<!-- Share buttons Start -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rrssb/1.14.0/js/rrssb.min.js"></script>
 
-  <!-- Share buttons Start -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/rrssb/1.14.0/js/rrssb.min.js"></script>
-
-  {% endif %}
-
-{% endif %} 
+{% endif %} {% endif %}
 
 <!-- Javascript End -->

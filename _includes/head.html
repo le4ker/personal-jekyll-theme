@@ -10,7 +10,12 @@
   <title>{{site.title}}{% if page.title %} | {{page.title}}{% endif %}</title>
 
   <!-- CSS links -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" defer />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" 
+    rel="stylesheet"
+    integrity="sha512-pli9aKq758PMdsqjNA+Au4CJ7ZatLCCXinnlSfv023z4xmzl8s+Jbj2qNR7RI8DsxFp5e8OvbYGDACzKntZE9w==" 
+    crossorigin="anonymous"
+    defer
+  />
   <link href="{{site.url}}/css/grayscale.css" rel="stylesheet" />
 
   {% if page.section-type == "index" %}
@@ -19,14 +24,19 @@
 
   {% if page.layout == "post" %}
     {% include syntax-highlight.html %}
-  <link rel="stylesheet" href="{{site.url}}/css/rrssb.css" />
+    <link rel="stylesheet" href="{{site.url}}/css/rrssb.css" />
   {% endif %}
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet" defer>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" defer/>
+  <link  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    rel="stylesheet"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    defer
+  />
 
   {% if site.favicon %}
     <link
