@@ -52,114 +52,123 @@
 
 {% if page.section-type == "index" %}
 
-<!-- Collapse navbar when navbar-brand is clicked -->
+  <!-- Collapse navbar when navbar-brand is clicked -->
 
-<script>
-  $(function () {
-    $(".navbar-brand").click(function () {
-      $(".collapse.in") &&
-        $(".collapse.in").animate({ height: "1px" }, 500, function () {
-          $(".collapse.in").removeClass("in");
-        });
+  <script>
+    $(function () {
+      $(".navbar-brand").click(function () {
+        $(".collapse.in") &&
+          $(".collapse.in").animate({ height: "1px" }, 500, function () {
+            $(".collapse.in").removeClass("in");
+          });
+      });
     });
-  });
-</script>
+  </script>
 
-{% if site.dynamic-typing %}
+  {% if site.dynamic-typing %}
 
-<!-- Dynamic Typing Start -->
+  <!-- Dynamic Typing Start -->
 
-<script
-  type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js"
-></script>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js"
+  ></script>
 
-<script type="text/javascript">
+  <script type="text/javascript">
 
-  var myQuotes =  new Array();
-  {% for line in site.lines %}
-    myQuotes.push("{{ line.text }}");
-  {% endfor %}
+    var myQuotes =  new Array();
+    {% for line in site.lines %}
+      myQuotes.push("{{ line.text }}");
+    {% endfor %}
 
-  function shuffle(array) {
-    var currentIndex = array.length, temporaryValue, randomIndex ;
+    function shuffle(array) {
+      var currentIndex = array.length, temporaryValue, randomIndex ;
 
-    // While there remain elements to shuffle...
-    while (0 !== currentIndex) {
+      // While there remain elements to shuffle...
+      while (0 !== currentIndex) {
 
-      // Pick a remaining element...
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex -= 1;
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
 
-      // And swap it with the current element.
-      temporaryValue = array[currentIndex];
-      array[currentIndex] = array[randomIndex];
-      array[randomIndex] = temporaryValue;
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+      }
+
+      return array;
     }
 
-    return array;
-  }
+    {% if site.shuffle %}
+      shuffle(myQuotes)
+    {% endif %}
 
-  {% if site.shuffle %}
-    shuffle(myQuotes)
+    $(".intro-text").typed({
+      strings: myQuotes,
+      typeSpeed: {{ site.type-speed }},
+      backDelay: {{ site.delete-delay }},
+      startDelay: {{ site.start-delay }},
+      loop: {{ site..loop }},
+      loopCount: {{ site.loop-count }},
+      cursorChar: "|"
+    });
+  </script>
+
+  <!-- Dynamic Typing End  -->
+
   {% endif %}
 
-  $(".intro-text").typed({
-    strings: myQuotes,
-    typeSpeed: {{ site.type-speed }},
-    backDelay: {{ site.delete-delay }},
-    startDelay: {{ site.start-delay }},
-    loop: {{ site..loop }},
-    loopCount: {{ site.loop-count }},
-    cursorChar: "|"
-  });
-</script>
+{% endif %}
 
-<!-- Dynamic Typing End  -->
+{% if site.disqus-shortname %} 
 
-{% endif %} {% endif %} {% if site.disqus-shortname %} {% if page.has-comments
-%}
+  {% if page.has-comments %}
 
-<!-- Comments Counter Start -->
+  <!-- Comments Counter Start -->
 
-<script type="text/javascript">
-  var disqus_shortname = "{{ site.disqus-shortname }}";
+  <script type="text/javascript">
+    var disqus_shortname = "{{ site.disqus-shortname }}";
 
-  (function () {
-    var s = document.createElement("script");
-    s.async = true;
-    s.type = "text/javascript";
-    s.src = "//" + disqus_shortname + ".disqus.com/count.js";
-    (
-      document.getElementsByTagName("HEAD")[0] ||
-      document.getElementsByTagName("BODY")[0]
-    ).appendChild(s);
-  })();
-</script>
+    (function () {
+      var s = document.createElement("script");
+      s.async = true;
+      s.type = "text/javascript";
+      s.src = "//" + disqus_shortname + ".disqus.com/count.js";
+      (
+        document.getElementsByTagName("HEAD")[0] ||
+        document.getElementsByTagName("BODY")[0]
+      ).appendChild(s);
+    })();
+  </script>
 
-<!-- Comments Counter End -->
+  <!-- Comments Counter End -->
 
-{% endif %} {% if page.section-type == "post" %}
+  {% endif %} 
 
-<!-- Disqus Comments -->
+  {% if page.section-type == "post" %}
 
-<script type="text/javascript">
-  var disqus_shortname = "{{ site.disqus-shortname }}";
-  (function () {
-    var dsq = document.createElement("script");
-    dsq.type = "text/javascript";
-    dsq.async = true;
-    dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
-    (
-      document.getElementsByTagName("head")[0] ||
-      document.getElementsByTagName("body")[0]
-    ).appendChild(dsq);
-  })();
-</script>
+  <!-- Disqus Comments -->
 
-<!-- Share buttons Start -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/rrssb/1.14.0/js/rrssb.min.js"></script>
+  <script type="text/javascript">
+    var disqus_shortname = "{{ site.disqus-shortname }}";
+    (function () {
+      var dsq = document.createElement("script");
+      dsq.type = "text/javascript";
+      dsq.async = true;
+      dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+      (
+        document.getElementsByTagName("head")[0] ||
+        document.getElementsByTagName("body")[0]
+      ).appendChild(dsq);
+    })();
+  </script>
 
-{% endif %} {% endif %}
+  <!-- Share buttons Start -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rrssb/1.14.0/js/rrssb.min.js"></script>
+
+  {% endif %}
+
+{% endif %}
 
 <!-- Javascript End -->
