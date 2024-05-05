@@ -23,7 +23,9 @@
   {% endif %}
 
   {% if page.layout == "post" %}
-    {% include syntax-highlight.html %}
+    {% if site.syntax-highlight %}
+      <link rel="stylesheet" type="text/css" href=" {{site.url}}/css/everforest.css" />
+    {% endif %}
     <link rel="stylesheet" href="{{site.url}}/css/rrssb.css" />
   {% endif %}
 
