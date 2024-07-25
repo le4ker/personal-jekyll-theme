@@ -36,7 +36,7 @@ make install
 And then start serving the website:
 
 ```shell
-jekyll serve --watch --host 0.0.0.0 --config _config.yml,_config.dev.yml
+jekyll serve --watch --livereload
 ```
 
 ## Documentation
