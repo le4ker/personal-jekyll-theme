@@ -3,9 +3,13 @@
 { Personal } is a free responsive blog with minimal aesthetic, about you. You
 can watch it live [here](https://le4ker.github.io/personal-jekyll-theme/).
 
-![desktop](https://github.com/le4ker/personal-jekyll-theme/raw/main/.github/img/desktop.gif)
+<p align="center">
+    <img src="https://github.com/le4ker/personal-jekyll-theme/raw/main/.github/img/mobile.gif" alt="mobile" />
+</p>
 
-![mobile](https://github.com/le4ker/personal-jekyll-theme/raw/main/.github/img/mobile.gif)
+<p align="center">
+    <img src="https://github.com/le4ker/personal-jekyll-theme/raw/main/.github/img/desktop.gif" alt="desktop" />
+</p>
 
 ## Deploy on Github Pages for free
 
@@ -30,7 +34,7 @@ Alternatively, you can run the website locally by installing ruby (3.2.2) and
 then installing the project dependencies by running:
 
 ```shell
-make install
+bundle install
 ```
 
 And then start serving the website:
