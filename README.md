@@ -19,14 +19,15 @@ Fork the repository and:
 ## How to run locally
 
 You can use Docker to run the website to avoid installing any dependencies to
-your local environment. To do so, run:
+your local environment, at the cost of not being able to hotreload your changes.
+To do so, run:
 
 ```shell
 docker-compose up --build
 ```
 
-Alternatively, you can run the website locally by installing ruby and then
-installing the project dependencies by running:
+Alternatively, you can run the website locally by installing ruby (3.2.2) and
+then installing the project dependencies by running:
 
 ```shell
 make install
