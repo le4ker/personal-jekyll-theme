@@ -34,11 +34,11 @@ lines: # You can add HTML Tags in the Text
   - text: "Technology is best when it brings people together."
   - text: "Learn as if you were to live forever."
   - text: "Geospatial sciences can help make the world a better place!"
-me-img: "https://media.licdn.com/dms/image/v2/D4E03AQH_NqERi8KxBw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1726195707526?e=1732147200&v=beta&t=inGu4dq3esYcBrVTR3vOFhIpfwpt2w18-MG0wyUnJfY"
+
 # To use github profile pic uncomment the following line and replace 'user_name'
 # with your github user name.
 
-# me-img: "https://github.com/user_name.png?size=500"
+me-img: "https://github.com/josephdoun.png?size=500"
 
 # To use gravatar profile pic uncomment the following line and replace 'email_hash'
 # with your gravatar profile email hash.
