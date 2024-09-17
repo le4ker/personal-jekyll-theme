@@ -1,19 +1,19 @@
 # Site settings
 
 # NB! Set your site's url, otherwise nothing will work
-url: "https://le4ker.github.io/personal-jekyll-theme"
+url: "https://josephdoun.github.io/"
 
 # Google tracking id
-google-tracking-id: "UA-XXXXXXXX-X"
+google-tracking-id: "ES-XXXXXXXX-X"
 
 #############
 # HTML Head #
 #############
 lang: "en"
-author: "John Smith"
-title: "{ John Smith }"
-description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
-keywords: "smith, jones, personal, jekyll, theme"
+author: "Joseph Doundoulakis"
+title: "{ Joseph Doundoulakis }"
+description: "Blog and website of Iosif Doundoulakis, blogging mainly for tech. Opinions expressed are mine."
+keywords: "iosif, doundoulakis, deep, machine, learning, earth, observation, gis"
 favicon: "/img/favicon.ico"
 ################
 # Header layout #
@@ -31,8 +31,9 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "The lower you fall, the higher you'll fly."
-  - text: "Where’s your will to be weird?"
+  - text: "Technology is best when it brings people together."
+  - text: "Learn as if you were to live forever."
+  - text: "Geospatial sciences can help make the world a better place!"
 me-img: "/img/jetpacktocat.png"
 # To use github profile pic uncomment the following line and replace 'user_name'
 # with your github user name.
@@ -106,8 +107,8 @@ pgp: False
 
 # if the author_blurb is not set, then this feature is skipped
 author_blurb:
-  "John Smith is an awesome person. He lives in Flatland, where he works on two-dimensional
-  engineering projects. In his spare time, John likes to eat cotton candy."
+  "Joseph is an awesome person. He lives in Barcelona, where he works on open-source
+  engineering projects. In his spare time, Joseph likes learn how to play the flamenco guitar."
 author_blurb_image: "/img/author.png"
 ##################
 # Social Buttons #
