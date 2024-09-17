@@ -12,7 +12,7 @@ google-tracking-id: "ES-XXXXXXXX-X"
 lang: "en"
 author: "Joseph Doundoulakis"
 title: "Joseph Doundoulakis"
-description: "Blog and website of Iosif Doundoulakis, blogging mainly for tech. Opinions expressed are mine."
+description: "Website of Iosif Doundoulakis, blogging mainly for tech. Opinions expressed are mine."
 keywords: "iosif, doundoulakis, deep, machine, learning, earth, observation, gis"
 favicon: "/img/favicon.ico"
 ################
@@ -31,9 +31,9 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "Technology is best when it brings people together."
+  - text: "Technology is best when it brings people together!"
   - text: "Learn as if you were to live forever."
-  - text: "Geospatial sciences can help make the world a better place!"
+  - text: "Geospatial sciences can help make the world a better place."
 
 # To use github profile pic uncomment the following line and replace 'user_name'
 # with your github user name.
@@ -108,16 +108,17 @@ pgp: False
 # if the author_blurb is not set, then this feature is skipped
 author_blurb:
   "Joseph is an awesome person. He lives in Barcelona, where he works on open-source
-  engineering projects. In his spare time, Joseph likes learn how to play the flamenco guitar."
+  engineering projects. In his spare time, Joseph likes to practise playing the flamenco guitar
+  and to build knowledge on various technologies outside his field."
 author_blurb_image: "/img/author.png"
 ##################
 # Social Buttons #
 ##################
 social:
   - icon: "github"
-    url: "https://github.com/le4ker/personal-jekyll-theme"
+    url: "https://github.com/josephdoun"
   - icon: "linkedin-in"
-    url: "https://www.linkedin.com"
+    url: "https://www.linkedin.com/in/jdoun"
   - icon: "x-twitter"
     url: "https://twitter.com/"
   - icon: "rss"
