@@ -12,7 +12,8 @@ google-tracking-id: "ES-XXXXXXXX-X"
 lang: "en"
 author: "Joseph Doundoulakis"
 title: "Joseph Doundoulakis"
-description: "Website of Iosif Doundoulakis, blogging mainly for tech. Opinions expressed are mine."
+description: "Website of Iosif Doundoulakis, blogging mainly for tech.
+  Opinions expressed are mine."
 keywords: "iosif, doundoulakis, deep, machine, learning, earth, observation, gis"
 favicon: "/img/favicon.ico"
 ################
@@ -31,9 +32,9 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "Technology is best when it brings people together!"
-  - text: "Learn as if you were to live forever."
-  - text: "Geospatial sciences can help make the world a better place."
+  - text: "Technology is best when it improves our lives."
+  - text: "Geoinformatics can help make the world a better place!"
+  - text: "Contribute to move society forward."
 
 # To use github profile pic uncomment the following line and replace 'user_name'
 # with your github user name.
@@ -77,25 +78,44 @@ google-plus-share: True
 tumblr-share: True
 pinterest-share: True
 pocket-share: True
-vkontakte-share: True
-disqus-shortname: "personal-jekyll-theme"
+vkontakte-share: False
+disqus-shortname: "JDB"
 syntax-highlight: True
 ############
 # Timeline #
 ############
 events:
   - image: "/img/timeline/spidertocat.png"
-    date: "September 2013 - Today"
-    description: "Saving the neighborhood!"
+    date: "August 2023 - Present"
+    description: Working on developing
+      [msi2slstr](http://github.com/josephdoun/msi2slstr). 
+        A data-fusion project for Sentinel-2 and Sentinel-3 satellite data.
+  - image: ""
+    date: August 2022 - July 2023
+    description: Worked on Machine Learning 
+      Forest and Water Quality monitoring issues 
+      at [EarthPulse](https://earthpulse.ai/) as a 
+      Data Scientist and Python Developer.
+  - image: ""
+    date: January 2022 - July 2022
+    description: Worked on Computer-Vision-based Building Height modeling
+      problems at [RSLab](https://rslab.gr/) as a Research Assistant 
+      and AI Expert.
+  - image: ""
+    date: January 2021 - March 2021
+    description: Worked as a volunteer Market Analyst at
+      [MiCreate](https://micreate.org/), using geoinformatics
+      and web scraping tools to plan expansion areas for campaigns.
   - image: "/img/timeline/baracktocat.jpg"
-    date: "September 2007 - August 2013"
-    description: "Started coding"
+    date: "September 2020"
+    description: Received M.Eng. from  [School of Spatial Planning and
+      Development](https://www.plandevel.auth.gr/en) & Started coding.
 # First image of the Timeline
-timeline-img: "/img/timeline/default.png"
+timeline-img: https://github.com/josephdoun.png?size=500
 ###########
 # Contact #
 ###########
-email: "your@email.here"
+email: "joseph.doundoulakis@outlook.com"
 # Set a url pointing to your publish PGP Public Key here, and it will appear in the Contact section
 pgp: False
 ################
@@ -107,9 +127,10 @@ pgp: False
 
 # if the author_blurb is not set, then this feature is skipped
 author_blurb:
-  "Joseph is an awesome person. He lives in Barcelona, where he works on open-source
-  engineering projects. In his spare time, Joseph likes to practise playing the flamenco guitar
-  and to build knowledge on various technologies outside his field."
+  Joseph is an awesome person. He lives in Barcelona, where he works on
+  open-source engineering projects. In his spare time, Joseph likes to practise
+  playing the flamenco guitar and to build knowledge on various technologies 
+  outside his field.
 author_blurb_image: "/img/author.png"
 ##################
 # Social Buttons #
@@ -122,7 +143,7 @@ social:
   - icon: "x-twitter"
     url: "https://twitter.com/"
   - icon: "rss"
-    url: "https://le4ker.github.io/personal-jekyll-theme/feed.xml"
+    url: "https://josephdoun.github.io/feed.xml"
 ############
 # 404 page #
 ############
@@ -134,8 +155,8 @@ err-404-img: "/img/labtocat.png"
 # Sections shown in the index page
 pages_list:
   About: "about"
-  Blog: "latest-post"
   Timeline: "timeline"
+  Projects: "latest-post"
   Contact: "contact"
 # Exclusion list from the generated _site
 exclude:
@@ -147,7 +168,7 @@ exclude:
   - Dockerfile
   - docker-compose.yml
 # Pagination path
-paginate_path: "blog/page:num/"
+paginate_path: "projects/page:num/"
 # Enable minification SASS
 sass:
   style: compressed

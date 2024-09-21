@@ -37,10 +37,10 @@
           {% for p in site.pages_list %}
             <li>
             {% if p[1] == "latest-post" %}
-              {% if page.url == "/blog/index.html" | prepend: {{site.url}} %}
+              {% if page.url == "/projects/index.html" | prepend: {{site.url}} %}
                 <a class="page-scroll" href="#page"> {{p[0]}} </a>
               {% else %}
-                <a href="{{site.url}}/blog/"> {{p[0]}} </a>
+                <a href="{{site.url}}/projects/"> {{p[0]}} </a>
               {% endif %}
             {% else %}
                 <a href="{{site.url}}/#{{ p[1] }}"> {{p[0]}} </a>

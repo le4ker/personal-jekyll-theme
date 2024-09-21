@@ -1,5 +1,7 @@
 ---
 ---
+@import "variables";
+@import "mixins";
 
 .timeline {
   position: relative;
@@ -15,7 +17,8 @@
   left: 40px;
   width: 2px;
   margin-left: -1.5px;
-  background-color: #f1f1f1;
+  background-color: $font-color;
+  // background-color: #f1f1f1;
 }
 
 .timeline > li {
@@ -63,7 +66,7 @@
   width: 80px;
   height: 80px;
   margin-left: 0;
-  border: 7px solid #f1f1f1;
+  border: 7px solid darken($font-color, 10%);
   border-radius: 100%;
   text-align: center;
   color: #fff;
