@@ -27,3 +27,10 @@ Dir.foreach(POSTS_DIR) do |post|
     end
   end
 end
+
+# Generate the tags.html page
+puts("[+] Generating tags page")
+
+File.open("#{TAGS_DIR}/index.html", 'w') do |f|
+  f.write("---\nlayout: tags\nsection-type: tags\nhas-comments: true\ntitle: Tags\nsitemap:\n  priority: 1.0\n---\n## Tags")
+end
