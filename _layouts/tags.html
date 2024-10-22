@@ -18,7 +18,7 @@
             {% assign sorted_tags = site.tags | sort %}
             {% for tag in sorted_tags %}
               <li>
-                <a href="{{ site.baseurl }}/tags/{{ tag[0] }}.html">{{ tag[0] }}</a> ({{ tag[1].size }})
+                <h4><a href="{{ site.baseurl }}/tags/{{ tag[0] }}.html">{{ tag[0] }}</a> ({{ tag[1].size }} posts)</h4>
               </li>
             {% endfor %}
           </ul>
