@@ -1,28 +1,34 @@
 <!-- Intro Start -->
 
 <header class="intro">
-  <div class="intro-body">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-          <h1 class="brand-heading">&nbsp;</h1>
-          <span class="intro-text">{{ content }}</span>
-          <h5>&nbsp;</h5>
-          <a href="#{{ site.pages_list['About'] }}" class="page-scroll">
-            {% if site.me-img contains "https://" %}
-              <img class="img-me" src="{{ site.me-img }}" alt="" />
-            {% else %}
-              <img
-                class="img-me"
-                src="{{site.url}}{{ site.me-img }}"
-                alt=""
-              />
-            {% endif %}
-          </a>
-        </div>
-      </div>
-    </div>
+  <div class="wrapper">
+    <span class="intro-text">{{ content }}</span>
   </div>
+  <a href="#{{ site.pages_list['About'] }}" class="page-scroll">
+    {% if site.me-img contains "https://" %}
+    <img class="img-me" src="{{ site.me-img }}" alt="" />
+    {% else %}
+    <img
+      class="img-me"
+      src="{{site.baseurl}}{{ site.me-img }}"
+      alt=""
+    />
+    {% endif %}
+  </a>
 </header>
 
+<style>
+  header {
+    text-align: center;
+    color: #fff;
+    background-attachment: scroll;
+    background-image: url('{{ site.baseurl }}/img/intro-bg.jpg');
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+</style>
 <!-- Intro End -->
