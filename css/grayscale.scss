@@ -166,9 +166,11 @@ a {
 }
 
 .intro {
-  display: table;
+  display: flex;
+  position: relative;
+  flex-direction: column;
   width: 100%;
-  height: auto;
+  height: 100svh;
   padding: 100px 0;
   text-align: center;
   color: $intro-text-color;
@@ -177,31 +179,47 @@ a {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  .intro-body {
-    display: table-cell;
-    vertical-align: middle;
-    .brand-heading {
-      font-size: 40px;
-    }
-    .intro-text {
-      font-size: 2.3rem;
-      @if $navbar-text-shadow {
-        text-shadow: 1px 0 1px #222222;
-      }
+  background-attachment: scroll;
+  background-image: url('{{ site.baseurl }}/img/intro-bg.jpg');
+  background-position: center center;
+  background-repeat: none;
+
+  .intro-text {
+    font-size: 2.3rem;
+    font-weight: 900;
+    @if $navbar-text-shadow {
+      text-shadow: 1px 0 1px #222222;
     }
   }
   @media (min-width: 768px) {
-    height: 100%;
     padding: 0;
-    .intro-body {
-      .brand-heading {
-        font-size: 100px;
-      }
       .intro-text {
         font-size: 2.5rem;
       }
-    }
   }
+}
+
+.intro:after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  height: 50%;
+  bottom: 0px;
+  background: linear-gradient(180deg, rgba(139,167,32,0) 0%, $header-background-color 100%);
+  pointer-events: none;
+  @media (min-width: 768px) {
+    height: 20%;
+  }
+}
+
+.intro .wrapper {
+  align-content: end;
+  height: 40%;
+}
+
+.intro a {
+  padding-top: 5%;
 }
 
 @-webkit-keyframes pulse {
