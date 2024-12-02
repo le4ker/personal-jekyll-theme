@@ -2,7 +2,6 @@
 ---
 
 @import "variables";
-@import "mixins";
 
 strong {
   font-weight: 500;
@@ -180,7 +179,7 @@ a {
   background-size: cover;
   -o-background-size: cover;
   background-attachment: scroll;
-  background-image: url('{{ site.baseurl }}/img/intro-bg.jpg');
+  background-image: url("{{ site.baseurl }}/img/intro-bg.jpg");
   background-position: center center;
   background-repeat: none;
 
@@ -193,20 +192,24 @@ a {
   }
   @media (min-width: 768px) {
     padding: 0;
-      .intro-text {
-        font-size: 2.5rem;
-      }
+    .intro-text {
+      font-size: 2.5rem;
+    }
   }
 }
 
 .intro:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0px;
   right: 0px;
   height: 50%;
   bottom: 0px;
-  background: linear-gradient(180deg, rgba(139,167,32,0) 0%, $header-background-color 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(139, 167, 32, 0) 0%,
+    $header-background-color 100%
+  );
   pointer-events: none;
   @media (min-width: 768px) {
     height: 20%;
