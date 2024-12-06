@@ -17,10 +17,10 @@ description: "Blog and website of John Smith, blogging mainly for tech. Opinions
 keywords: "smith, jones, personal, jekyll, theme"
 favicon: "/img/favicon.ico"
 ################
-# Header layout #
+# Header layout#
 ################
 black-favicon: "/img/black-lab-glass.ico"
-background-img: "../img/intro-bg.jpg"
+background-img: "intro-bg.jpg"
 
 ##############################
 # Dynamic Text on the Header #
