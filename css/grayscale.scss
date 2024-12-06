@@ -91,7 +91,6 @@ a {
   -moz-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
   &:hover {
-    /* color: rgba($font-color, 0.8); */
     outline: none;
     background-color: rgba($font-color, 0.3);
   }
@@ -165,14 +164,17 @@ a {
   text-align: center;
   padding-top: 20rem;
   color: $font-color;
-  background-color: $primary-color;
+  background: url("{{ site.baseurl }}/img/intro-bg.jpg") no-repeat center center;
+  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  background-size: cover;
   -o-background-size: cover;
+
   .intro-body {
     display: table-cell;
     vertical-align: middle;
+    position: relative;
+    z-index: 2;
     .brand-heading {
       font-size: 40px;
     }
@@ -180,6 +182,7 @@ a {
       font-size: 1.3rem;
     }
   }
+
   @media (min-width: 768px) {
     height: 100%;
     .intro-body {
@@ -193,6 +196,25 @@ a {
   }
   @media (min-width: 1200px) {
     padding-top: 30rem;
+  }
+}
+
+.intro:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 23rem;
+  height: 20%;
+  background: linear-gradient(180deg, rgba(35, 42, 46, 0) 0%, #232a2e 100%);
+  pointer-events: none;
+  @media (max-width: 1200px) {
+    bottom: 35rem;
+    height: 50%;
+  }
+  @media (max-width: 768px) {
+    bottom: 18rem;
+    height: 50%;
   }
 }
 
