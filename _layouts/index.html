@@ -1,7 +1,7 @@
 <!-- Index Layout Start -->
 
 <!doctype html>
-<html lang="{{ site.lang }}">
+<html lang="{{site.lang}}">
 
   {% include head.html %}
 
@@ -14,7 +14,6 @@
     {% include navigation.html %} 
 
     {% include header.html %} 
-
     {% for p in site.pages_list %} 
       {% for page in site.pages %} 
         {% if p[1] == page.section-type %} 

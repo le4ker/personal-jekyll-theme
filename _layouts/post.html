@@ -1,41 +1,36 @@
 <!-- Post Layout Start -->
 
 <!doctype html>
-<html lang="{{ site.lang }}">
+<html lang="{{site.lang}}">
   {% include head.html %}
 
   <body>
     {% include navigation.html %}
 
-    <section id="post" class="container content-section text-center">
+    <section id="post" class="container content-section">
       <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-          <h1>{{ page.title }}</h1>
-          <h4>
+        <div class="col-md-10 offset-md-1">
+          <h2 class="text-center">{{ page.title }}</h2>
+          <h6 class="text-center">
             {{ page.date | date_to_string }}
             <small>
               .
               <a
                 class="category"
-                href="{{site.url}}/categories/{{page.category | downcase}}.html"
+                href="/categories/{{ page.category | downcase }}.html"
               >
-                {{ page.category }} </a
-              >.
-              <a href="{{site.url}}{{page.url}}#disqus_thread"
-                >Comments</a
-              >
-              <br/>
+                {{ page.category }}
+              </a>
+              .
+              <a href="{{ page.url }}#disqus_thread">Comments</a>
+              <br />
               {% for tag in page.tags %}
-              <a
-                class="tag"
-                href="{{site.url}}/tags/{{tag | downcase}}.html"
-                >#{{ tag }}</a
-              >
+              <a class="tag" href="/tags/{{ tag }}.html">#{{ tag }}</a>
               {% endfor %}
             </small>
-          </h4>
+          </h6>
 
-          <section class="text-justify">
+          <section class="text-justify pt-5">
             {{ page.content | markdownify }}
           </section>
 
@@ -45,19 +40,24 @@
 
           {% if site.author_blurb %}
           <div class="author row">
-            <img
-              class="col-xs-4 col-sm-3 col-md-2"
-              src="{{site.url}}{{site.author_blurb_image}}"
-              alt="Me"
-            />
-            <p class="col-xs-8 col-sm-9 col-md-10">{{ site.author_blurb }}</p>
+            <div class="col-4 col-sm-3 col-md-2">
+              <img
+                class="img-fluid"
+                src="{{site.url}}{{ site.author_blurb_image }}"
+                alt="Me"
+              />
+            </div>
+            <div class="col-8 col-sm-9 col-md-10 blurb">
+              <p>{{ site.author_blurb }}</p>
+            </div>
           </div>
-          {% endif%}
+          {% endif %}
         </div>
       </div>
     </section>
 
-    {% include footer.html %} {% include js.html %}
+    {% include footer.html %} 
+    {% include js.html %}
   </body>
 </html>
 

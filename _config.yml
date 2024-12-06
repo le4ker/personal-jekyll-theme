@@ -46,23 +46,7 @@ me-img: "/img/jetpacktocat.png"
 
 # me-img: "https://www.gravatar.com/avatar/email_hash?s=500"
 
-##############################
-# Color the browser elements #
-##############################
-color-browser: "#000000"
-apple-status-bar-style: "black"
-################
-# Web app mode #
-################
-web-app-mode: True
-# Icons for Web App mode
-icon-36p: "/img/web-app/icon-36p.png"
-icon-48p: "/img/web-app/icon-48p.png"
-icon-72p: "/img/web-app/icon-72p.png"
-icon-96p: "/img/web-app/icon-96p.png"
-icon-144p: "/img/web-app/icon-144p.png"
-icon-192p: "/img/web-app/icon-192p.png"
-########
+#######
 # Blog #
 ########
 post-preview-words: 96

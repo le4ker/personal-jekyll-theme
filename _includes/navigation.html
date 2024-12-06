@@ -1,52 +1,46 @@
-
 <!-- Navigation Start -->
 
-<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-expand-lg navbar-custom fixed-top" role="navigation">
   <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-        <i class="fa fa-bars"></i>
-      </button>
-      {% if page.section-type == "index" %}
-        <a class="navbar-brand page-scroll" href="#page-top">
-      {% else %}
-        <a class="navbar-brand" href="{{site.url}}/">
-      {% endif %}
-          <div>
-            {% if site.black-favicon %}
-              <img src="{{site.url}}{{ site.black-favicon }}" alt="">
-            {% endif %}
-            {{ site.title }}
-          </div>
-        </a>
-    </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-      <ul class="nav navbar-nav">
-        {% if page.section-type == "index" %}
-
-          <!-- Scroll to section for each page in index -->
+    <a
+      class="navbar-brand page-scroll"
+      href="{% if page.section-type == 'index' %}#page-top{% else %}{{site.url}}{% endif %}"
+      aria-controls="navbarNav"
+      aria-label="Collapse navigation"
+    >
+      <div>{{ site.title }}</div>
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        {% if page.section-type == "index" %} 
           {% for p in site.pages_list %}
-            <li>
-              <a class="page-scroll" href="#{{ p[1] }}"> {{p[0]}} </a>
+            <li class="nav-item pe-2 ps-2">
+              <a class="nav-link page-scroll" href="#{{ p[1] }}">{{ p[0] }}</a>
             </li>
-          {% endfor %}
-
-        {% else %}
-          <!-- Blog, Post, Tag and Error pages -->
-          {% for p in site.pages_list %}
-            <li>
-            {% if p[1] == "latest-post" %}
-              {% if page.url == "/blog/index.html" | prepend: {{site.url}} %}
-                <a class="page-scroll" href="#page"> {{p[0]}} </a>
-              {% else %}
-                <a href="{{site.url}}/blog/"> {{p[0]}} </a>
-              {% endif %}
+          {% endfor %} 
+        {% else %} 
+        {% for p in site.pages_list %}
+          <li class="nav-item pe-2 ps-2">
+            {% if p[1] == "latest-post" %} {% if page.url == "/blog/index.html" %}
+            <a class="nav-link page-scroll" href="#page">{{ p[0] }}</a>
             {% else %}
-                <a href="{{site.url}}/#{{ p[1] }}"> {{p[0]}} </a>
+          <a class="nav-link pe-2 ps-2" href="{{site.url}}/blog/">{{ p[0] }}</a>
+            {% endif %} {% else %}
+          <a class="nav-link pe-2 ps-2" href="{{site.url}}/#{{ p[1] }}">{{ p[0] }}</a>
             {% endif %}
-            </li>
-          {% endfor %}
+          </li>
+          {% endfor %} 
         {% endif %}
       </ul>
     </div>

@@ -1,17 +1,25 @@
 <!-- Pagination Links Start -->
 
-<div class="pagination">
-  <h4>
+<nav class="pt-5">
+  <ul class="pagination justify-content-center">
     {% if paginator.previous_page %}
-      <a href="{{site.url}}{{paginator.previous_page_path}}" class="previous">Newer Posts</a>
-    {% endif %} 
-
-    {% if paginator.previous_page and paginator.next_page %} | {%endif %} 
-
-    {% if paginator.next_page %}
-      <a href="{{site.url}}{{paginator.next_page_path}}" class="next">Older Posts</a>
+    <li class="page-item">
+      <a href="{{site.url}}/{{ paginator.previous_page_path }}" aria-label="Previous">
+        <span aria-hidden="true">&laquo; Newer Posts</span>
+      </a>
+    </li>
+    {% endif %} {% if paginator.previous_page and paginator.next_page %}
+    <li class="page-item disabled">
+      <span>|</span>
+    </li>
+    {% endif %} {% if paginator.next_page %}
+    <li class="page-item">
+      <a href="{{site.url}}/{{ paginator.next_page_path }}" aria-label="Next">
+        <span aria-hidden="true">Older Posts &raquo;</span>
+      </a>
+    </li>
     {% endif %}
-  </h4>
-</div>
+  </ul>
+</nav>
 
 <!-- Pagination Links End -->
