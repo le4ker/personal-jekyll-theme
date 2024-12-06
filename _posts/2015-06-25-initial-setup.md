@@ -12,41 +12,32 @@ are defined in the `_config.yml` file. Let's start with the initial variables
 that you have to set before serving your { Personal } website for the first
 time.
 
-### Essential variables
+### Setting up the url
 
 ```yaml
-# NB! Set your site's url, otherwise stuff will break :)
-
-url: "https://le4ker.github.io"
-
-# If you're hosting your site at a Project repository on GitHub pages
-# (https://yourusername.github.io/repository-name)
-# and NOT your user repository (https://yourusername.github.io)
-# then add in the repository_name here, like this: "/repository-name"
-#
-# NB! Without this *nothing* will work, because it's used in every path
-
-repository_name: /personal-jekyll-theme
+# NB! Set your site's url, otherwise nothing will work
+url: "https://le4ker.github.io/personal-jekyll-theme"
 ```
 
-The url and repository*name variables are essential, because they are used
-\_everywhere* where an anchor is defined.
+The `url` variable is essential, because it's used \_everywhere\* where an
+anchor is defined. It's needed only for repositories that are published on
+Github Pages, since the root url becomes `github.com/username/repo-name`. If you
+are not hosting your {Personal Jekyll Theme }, you can remove the variable and
+all its references (`{{site.url}}`).
 
-### Theme
+````yaml
+
+### Theme Customization
 
 You can define the colors that you want in your { Personal } website by setting
 the following variable sin the `_sass/variables.scss` file:
 
 ```scss
-// Background color
 $primary-color: #232a2e;
-
-// Accent color
 $secondary-color: #3a94c5;
-
-// Font color
 $font-color: #efebd4;
-```
+$background-color: $font-color;
+````
 
 ### HTML Head
 
@@ -59,7 +50,6 @@ description:
   are mine."
 keywords: "smith, jones, personal, jekyll, theme"
 favicon: "/img/favicon.ico"
-err-404-img: "/img/labtocat.png"
 ```
 
 The values that you set, will be placed in the head section of every generated
@@ -75,7 +65,7 @@ google-tracking-id to false.
 google-tracking-id: "UA-XXXXXXXX-X"
 ```
 
-### Serving { Personal }
+### Serving { Personal } locally
 
 You can use Docker to run the website to avoid installing any dependencies to
 your local environment. To do so, run:
@@ -93,7 +83,7 @@ bundle install
 And then start serving the website:
 
 ```shell
-jekyll serve --watch --host 0.0.0.0 --config _config.yml,_config.dev.yml
+bundle exec jekyll serve --watch --livereload
 ```
 
 That's it!

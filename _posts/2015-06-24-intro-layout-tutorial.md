@@ -34,19 +34,10 @@ background-img: "../img/intro-bg.jpg"
 
 ### Welcome text
 
-The welcome text is controlled by the following (self-explanatory) variables:
+The welcome text can be set by setting the `quote` variable:
 
 ```yaml
-dynamic-typing: True
-shuffle: True # Shuffle the lines.
-loop: True
-loop-count: False # Set False for infinite loop, or set any number for finite loop.
-type-speed: 10 # Default 10
-start-delay: 200 # Default 200
-delete-delay: 5000 # Default 5000
-lines: # You can add HTML Tags in the Text
-  - text: "The lower you fall, the higher you'll fly."
-  - text: "Where’s your will to be weird?"
+quote: "Where’s your will to be weird?"
 ```
 
 ### Your image

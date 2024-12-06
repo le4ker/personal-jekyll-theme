@@ -28,5 +28,5 @@ timeline-img: "/img/timeline/default.png"
 For each event of your life, add a tuple of image, date and description to the
 events, and the timeline will be automatically generated!
 
-The timeline-img path variable is the image that you want to show up in the
-beginning of your Timeline, be creative!
+The `timeline-img` path variable is the image that you want to show up in the
+beginning of your Timeline, so be creative with it!

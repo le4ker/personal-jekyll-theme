@@ -8,7 +8,8 @@ tags: ["tutorial"]
 ---
 
 A website is truly personal if it hosts your blog as well, this place of the
-internet where you can place your thoughts about anything!
+internet where you can place your thoughts about anything. Let's see how you can
+set up your Blog.
 
 ### Latest post preview in Index page
 
@@ -19,7 +20,7 @@ attract the visitor to visit your blog. The size of this preview is defined by:
 post-preview-words: 96
 ```
 
-Feel free to experiment with different sizes, and pick the best for you :smile:
+Feel free to experiment with different sizes, and pick the best for you.
 
 ### Archive
 
@@ -43,7 +44,6 @@ fb-share: True
 twitter-share: True
 linkedin-share: True
 reddit-share: True
-google-plus-share: True
 tumblr-share: True
 pinterest-share: True
 pocket-share: True
