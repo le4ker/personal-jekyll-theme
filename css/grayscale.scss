@@ -216,6 +216,14 @@ a {
     bottom: 18rem;
     height: 50%;
   }
+  @media (max-width: 414px) {
+    bottom: 7rem;
+    height: 50%;
+  }
+  @media (max-width: 375px) {
+    bottom: 2rem;
+    height: 50%;
+  }
 }
 
 @-webkit-keyframes pulse {
