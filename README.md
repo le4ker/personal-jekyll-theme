@@ -4,11 +4,11 @@
 can watch it live [here](https://le4ker.github.io/personal-jekyll-theme/).
 
 <p align="center">
-    <img src="https://github.com/le4ker/personal-jekyll-theme/raw/main/.github/img/mobile.gif" alt="mobile" />
+    <img src="https://github.com/le4ker/personal-jekyll-theme/raw/main/.github/images/mobile.gif" alt="mobile" />
 </p>
 
 <p align="center">
-    <img src="https://github.com/le4ker/personal-jekyll-theme/raw/main/.github/img/desktop.gif" alt="desktop" />
+    <img src="https://github.com/le4ker/personal-jekyll-theme/raw/main/.github/images/desktop.gif" alt="desktop" />
 </p>
 
 ## Deploy on Github Pages for free
