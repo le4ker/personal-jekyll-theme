@@ -17,7 +17,7 @@
               .
               <a
                 class="category"
-                href="/categories/{{ page.category | downcase }}.html"
+                href="{{site.url}}/categories/{{ page.category | downcase }}.html"
               >
                 {{ page.category }}
               </a>
@@ -25,7 +25,7 @@
               <a href="{{ page.url }}#disqus_thread">Comments</a>
               <br />
               {% for tag in page.tags %}
-              <a class="tag" href="/tags/{{ tag }}.html">#{{ tag }}</a>
+              <a class="tag" href="{{site.url}}/tags/{{ tag }}.html">#{{ tag }}</a>
               {% endfor %}
             </small>
           </h6>
@@ -34,7 +34,8 @@
             {{ page.content | markdownify }}
           </section>
 
-          {% include share.html %} {% include comments.html %}
+          {% include share.html %}
+          {% include comments.html %}
 
           <hr />
 
@@ -56,7 +57,7 @@
       </div>
     </section>
 
-    {% include footer.html %} 
+    {% include footer.html %}
     {% include js.html %}
   </body>
 </html>
