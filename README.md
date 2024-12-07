@@ -3,6 +3,8 @@
 { Personal } is a free responsive blog with minimal aesthetic, about you. You
 can watch it live [here](https://le4ker.github.io/personal-jekyll-theme/).
 
+## Mobile and Desktop preview
+
 <p align="center">
     <img src=".github/images/mobile.gif" alt="mobile" />
     <img src=".github/images/desktop.gif" alt="desktop" />
