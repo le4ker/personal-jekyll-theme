@@ -8,7 +8,6 @@
     <div class="col-md-10 col-12">
       {{ page.content | markdownify }} {% if site.email %} {% if site.email
       contains '@' %} {% assign newemail = site.email | split: '@' %}
-      <p class="pt-3">Laconism will be appreciated 📬</p>
       <p>
         <script>
           function join_at_email(user, domain) {
