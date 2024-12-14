@@ -389,11 +389,7 @@ body {
   -webkit-animation: blink 0.7s infinite;
   -moz-animation: blink 0.7s infinite;
   animation: blink 0.7s infinite;
-  font-size: 1.7rem;
-  vertical-align: top;
-  @media (min-width: 768px) {
-    font-size: 1.6rem;
-  }
+  font-size: 110%;
 }
 @keyframes blink {
   0% {
