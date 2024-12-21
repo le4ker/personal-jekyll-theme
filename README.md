@@ -38,7 +38,7 @@ bundle install
 And then start serving the website:
 
 ```shell
-jekyll serve --watch --livereload
+bundle exec jekyll serve --watch --livereload
 ```
 
 ## Documentation
