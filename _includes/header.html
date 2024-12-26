@@ -1,19 +1,20 @@
 <!-- Intro Start -->
 
 <header class="intro">
-  <div class="intro-body">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-md-offset-2">
-          <span class="intro-text">{{ content }}</span>
-          <h5>&nbsp;</h5>
-          <a href="#{{ site.pages_list['About'] }}" class="page-scroll">
-            <img class="img-me" src="{{site.url}}{{ site.me-img }}" alt="" />
-          </a>
-        </div>
-      </div>
-    </div>
+  <div class="wrapper">
+    <span class="intro-text">{{ content }}</span>
   </div>
+  <a href="#{{ site.pages_list['About'] }}" class="page-scroll">
+    {% if site.me-img contains "https://" %}
+    <img class="img-me" src="{{ site.me-img }}" alt="" />
+    {% else %}
+    <img
+      class="img-me"
+      src="{{site.baseurl}}{{ site.me-img }}"
+      alt=""
+    />
+    {% endif %}
+  </a>
 </header>
 
 <!-- Intro End -->
