@@ -68,6 +68,7 @@ The theme contains documentation in the form of
   - Categories
   - Disqus comments
   - Share buttons
+  - Mermaid Diagrams
   - RSS feed
 - Google analytics
 - Cookies consent
