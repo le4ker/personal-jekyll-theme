@@ -333,6 +333,60 @@ ul.social-buttons li a {
 
 .post-list {
   text-align: left;
+  padding-left: 0; /* Remove default UL padding */
+  list-style: none; /* Or remove if you want bullets */
+
+  li {
+    list-style-position: outside; /* Ensure consistent marker positioning */
+    /* Add some bottom margin for spacing */
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Styles for the restructured post list items */
+.post-list-item {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on small screens if needed */
+  align-items: baseline; /* Align text baselines */
+  margin-bottom: 1rem; /* Space between items */
+  border-bottom: 1px dashed rgba($font-color, 0.2); /* Optional separator */
+  padding-bottom: 1rem; /* Space above separator */
+}
+
+.post-date {
+  flex: 0 0 7rem; /* Increased fixed width */
+  margin-right: 0.5rem;
+  color: lighten($font-color, 20%);
+  font-size: 0.9em;
+}
+
+.post-category {
+  /* Removed fixed width, let it size naturally */
+  margin-right: 0.5rem;
+  font-size: 0.9em;
+  text-align: center; /* Center category text */
+}
+
+.post-title {
+  flex-grow: 1; /* Allow title to take remaining space */
+  font-weight: bold;
+  text-align: left; /* Ensure title text aligns left */
+  a {
+    color: $font-color; /* Match default font color for title link */
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+.post-comments {
+  margin-left: 0.5rem; /* Reduced margin */
+  font-size: 0.8em;
+}
+
+/* Container for the blog post list */
+.post-list-container {
+  margin-top: 3.11rem; /* Add space above the list (lineHeight * Φ) */
 }
 
 footer {
