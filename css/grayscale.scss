@@ -547,6 +547,7 @@ body {
   }
 
   .timeline > li .timeline-image {
+    position: absolute;
     left: 50%;
     width: 6.25rem;
     height: 6.25rem;
@@ -554,9 +555,11 @@ body {
   }
 
   .img-me {
+    position: absolute;
     left: 50%;
     width: 9.375rem;
     height: 9.375rem;
+    margin-left: -4.6875rem;
   }
 
   .timeline > li .timeline-image h4 {
@@ -599,6 +602,7 @@ body {
   .img-me {
     width: 12.5rem;
     height: 12.5rem;
+    margin-left: -6.25rem;
   }
 
   .timeline > li .timeline-image h4 {
