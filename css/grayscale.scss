@@ -26,32 +26,30 @@ h3,
 h4,
 h5,
 h6 {
-  text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 0.07rem;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 5.08rem;
+  margin-top: 5.02rem;
+  margin-bottom: 1.92rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3.14rem;
+  margin-top: 3.11rem;
+  margin-bottom: 1.92rem;
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: 1.94rem;
+  margin-top: 3.11rem;
+  margin-bottom: 1.92rem;
 }
 
 h4 {
   font-size: 1.5rem;
-}
-
-h5 {
-  font-size: 1.3rem;
-}
-
-h4 {
   a.category {
     color: inherit;
   }
@@ -61,6 +59,10 @@ h4 {
   }
 }
 
+h5 {
+  font-size: 1.3rem;
+}
+
 small {
   font-size: 70%;
 }
@@ -68,6 +70,10 @@ small {
 p {
   padding: 0.5rem 0rem;
   line-height: 1.5;
+  /* Apply Golden Ratio related measure */
+  max-width: 66ch;
+  margin-left: auto;
+  margin-right: auto;
   @media (min-width: 768px) {
     padding: 0.3rem 0rem;
     line-height: 1.6;
