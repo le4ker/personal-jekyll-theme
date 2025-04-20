@@ -404,7 +404,7 @@ body {
   top: 3rem;
   bottom: 1rem;
   width: 0.4rem;
-  left: 1.85rem;
+  left: 2.3rem;
   background-color: $background-color;
 }
 
@@ -457,6 +457,9 @@ body {
   text-align: center;
   color: #f2f2f2;
   background-color: $background-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .img-me {
@@ -470,6 +473,9 @@ body {
   text-align: center;
   color: #f2f2f2;
   background-color: $background-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .timeline > li .timeline-image h4 {
@@ -525,6 +531,7 @@ body {
 @media (min-width: 768px) {
   .timeline:before {
     left: 50%;
+    width: 0.5rem;
   }
 
   .timeline > li {
@@ -572,6 +579,9 @@ body {
 }
 
 @media (min-width: 992px) {
+  .timeline:before {
+    width: 0.75rem;
+  }
   .timeline > li {
     min-height: 9.375rem;
   }
