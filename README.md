@@ -44,7 +44,7 @@ bundle exec jekyll serve --watch --livereload
 ## Documentation
 
 The theme contains documentation in the form of
-[blog posts](https://le4ker.github.io/personal-jekyll-theme/blog).
+[blog posts](https://le4ker.github.io/personal-jekyll-theme/blog/).
 
 ## Features
 
