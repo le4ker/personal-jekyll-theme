@@ -312,6 +312,19 @@ ul.social-buttons li a {
   }
 }
 
+.img-me {
+  width: 6.25rem; /* Base size (100px) */
+  height: 6.25rem; /* Base size (100px) */
+  border: 0.4375rem solid $background-color; /* 7px border */
+  border-radius: 100%; /* Make it circular */
+  background-color: $background-color; /* Fallback background */
+  color: #f2f2f2; /* Fallback text color */
+  /* Ensure it behaves like an image block */
+  display: block;
+  margin: 0 auto; /* Center it horizontally */
+  cursor: pointer; /* Add pointer cursor since it's a link */
+}
+
 .post-list {
   text-align: left;
 }
@@ -395,6 +408,8 @@ body {
 .timeline {
   position: relative;
   padding: 0;
+  margin-left: 0;
+  padding-left: 0;
   list-style: none;
 }
 
@@ -460,31 +475,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.img-me {
-  z-index: 100;
-  left: 0;
-  width: 6.25rem;
-  height: 6.25rem;
-  margin-left: 0;
-  border: 0.4375rem solid $background-color;
-  border-radius: 100%;
-  text-align: center;
-  color: #f2f2f2;
-  background-color: $background-color;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .timeline > li .timeline-image h4 {
-  margin-top: 0.75rem;
-  font-size: 0.625rem;
-  line-height: 0.875rem;
-}
-
-.img-me h4 {
   margin-top: 0.75rem;
   font-size: 0.625rem;
   line-height: 0.875rem;
@@ -530,7 +527,8 @@ body {
 
 @media (min-width: 768px) {
   .timeline:before {
-    left: 50%;
+    left: 50%; /* Center line on large screens */
+    transform: translateX(-50%); /* Center line on large screens */
     width: 0.5rem;
   }
 
@@ -547,19 +545,11 @@ body {
   }
 
   .timeline > li .timeline-image {
-    position: absolute;
-    left: 50%;
+    left: 50%; /* Center image on large screens */
+    transform: translateX(-50%); /* Center image on large screens */
     width: 6.25rem;
     height: 6.25rem;
-    margin-left: -3.125rem;
-  }
-
-  .img-me {
-    position: absolute;
-    left: 50%;
-    width: 9.375rem;
-    height: 9.375rem;
-    margin-left: -4.6875rem;
+    /* Remove margin-left: 0; as it's not needed now */
   }
 
   .timeline > li .timeline-image h4 {
@@ -568,16 +558,10 @@ body {
     line-height: 1.125rem;
   }
 
-  .img-me h4 {
-    margin-top: 1rem;
-    font-size: 0.8125rem;
-    line-height: 1.125rem;
-  }
-
-  .timeline > li.timeline-inverted > .timeline-panel {
-    float: right;
-    padding: 0 1.875rem 1.25rem 1.25rem;
-    text-align: left;
+  /* Increase header image size on larger screens */
+  header.intro .img-me {
+    width: 12.5rem; /* 200px */
+    height: 12.5rem; /* 200px */
   }
 }
 
@@ -596,29 +580,14 @@ body {
   .timeline > li .timeline-image {
     width: 9.375rem;
     height: 9.375rem;
-    margin-left: -4.6875rem;
-  }
-
-  .img-me {
-    width: 12.5rem;
-    height: 12.5rem;
-    margin-left: -6.25rem;
+    /* Remove margin-left: 0; as it's not needed now */
+    /* Inherits left: 50% and transform */
   }
 
   .timeline > li .timeline-image h4 {
     margin-top: 1.875rem;
     font-size: 1.9rem;
     line-height: 1.625rem;
-  }
-
-  .img-me h4 {
-    margin-top: 1.875rem;
-    font-size: 1.9rem;
-    line-height: 1.625rem;
-  }
-
-  .timeline > li.timeline-inverted > .timeline-panel {
-    padding: 0 1.25rem 1.25rem;
   }
 }
 
@@ -634,23 +603,12 @@ body {
   .timeline > li .timeline-image {
     width: 9.75rem;
     height: 9.75rem;
-  }
-
-  .timeline > li .img-me {
-    width: 12.5rem;
-    height: 12.5rem;
+    /* Remove margin-left: 0; as it's not needed now */
+    /* Inherits left: 50% and transform */
   }
 
   .timeline > li .timeline-image h4 {
     margin-top: 2.5rem;
-  }
-
-  .timeline > li .img-me h4 {
-    margin-top: 2.5rem;
-  }
-
-  .timeline > li.timeline-inverted > .timeline-panel {
-    padding: 0 6.25rem 1.25rem 1.25rem;
   }
 }
 
