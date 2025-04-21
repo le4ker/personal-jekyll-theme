@@ -79,8 +79,6 @@ timeline-img: "/img/timeline/default.png"
 ###########
 
 email: "your@email.here"
-# Set a url pointing to your publish PGP Public Key here, and it will appear in the Contact section
-pgp: False
 
 ################
 # Author Blurb #
@@ -89,11 +87,14 @@ pgp: False
 # The author blurb goes underneath blog posts.
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
-# if the author_blurb is not set, then this feature is skipped
-author_blurb:
-  "John Smith is an awesome person. He lives in Flatland, where he works on two-dimensional
-  engineering projects. In his spare time, John likes to eat cotton candy."
 author_blurb_image: "/img/author.png"
+author_blurb:
+  "'Github''s Octocat was designed by Simon Oxley, alongside the white bird Twitter
+  used (before they received a proper logo) as part of a usual routine of cranking
+  out images for iStock. GitHub saw it, and wanted it, presumably under the notion
+  that it can represent how complex code combines to create peculiar things, much
+  like the octopuss... except the CEO of GitHub called it an octocat, and it has
+  been the octocat since then."
 
 ##################
 # Social Buttons #

@@ -3,6 +3,11 @@
 
 @import "variables";
 
+/* Conditionally import syntax highlighting theme */
+{% if site.syntax_theme %}
+  @import "syntax_{{ site.syntax_theme }}";
+{% endif %}
+
 /*!
  * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
@@ -78,6 +83,16 @@ p {
     padding: 0.3rem 0rem;
     line-height: 1.6;
   }
+}
+
+// Justify the author blurb text
+.blurb {
+  text-align: justify;
+}
+
+// Utility class for text justification
+.text-justify {
+    text-align: justify;
 }
 
 a {
@@ -236,10 +251,11 @@ a {
 }
 
 .content-section {
-  margin-top: 6.25rem;
-  padding-top: 6.25rem;
+  margin-top: 5.02rem; /* Golden Ratio Spacing */
+  padding-top: 5.02rem; /* Golden Ratio Spacing */
   @media (min-width: 768px) {
-    margin-top: 7.8125rem;
+    /* Keep larger screen overrides for now, or recalculate with Φ? Let's keep */
+    margin-top: 7.8125rem; 
     padding-top: 7.8125rem;
   }
   img {
@@ -299,10 +315,10 @@ a {
 
 ul.social-buttons li a {
   display: block;
-  width: 3.125rem;
-  height: 3.125rem;
+  width: 3.11rem; /* Golden Ratio Size (lineHeight * Φ) */
+  height: 3.11rem; /* Golden Ratio Size (lineHeight * Φ) */
   border-radius: 100%;
-  line-height: 3.125rem;
+  line-height: 3.11rem; /* Match height */
   font-size: 1.5rem;
   outline: 0;
   color: $secondary-color;
@@ -319,9 +335,9 @@ ul.social-buttons li a {
 }
 
 .img-me {
-  width: 6.25rem; /* Base size (100px) */
-  height: 6.25rem; /* Base size (100px) */
-  border: 0.4375rem solid $background-color; /* 7px border */
+  width: 8.12rem; /* Golden Ratio Size (lineHeight * Φ^3) */
+  height: 8.12rem; /* Golden Ratio Size (lineHeight * Φ^3) */
+  border: 0.4375rem solid $background-color; 
   border-radius: 100%; /* Make it circular */
   background-color: $background-color; /* Fallback background */
   color: #f2f2f2; /* Fallback text color */
@@ -339,30 +355,29 @@ ul.social-buttons li a {
   li {
     list-style-position: outside; /* Ensure consistent marker positioning */
     /* Add some bottom margin for spacing */
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem; 
   }
 }
 
 /* Styles for the restructured post list items */
 .post-list-item {
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping on small screens if needed */
-  align-items: baseline; /* Align text baselines */
-  margin-bottom: 1rem; /* Space between items */
-  border-bottom: 1px dashed rgba($font-color, 0.2); /* Optional separator */
-  padding-bottom: 1rem; /* Space above separator */
+  flex-wrap: wrap; 
+  align-items: baseline; 
+  margin-bottom: 1.92rem; /* Golden Ratio Spacing (lineHeight) */
+  border-bottom: 1px dashed rgba($font-color, 0.2); 
+  padding-bottom: 1.92rem; /* Golden Ratio Spacing (lineHeight) */
 }
 
 .post-date {
-  flex: 0 0 7rem; /* Increased fixed width */
-  margin-right: 0.5rem;
+  flex: 0 0 7rem; 
+  margin-right: 0.73rem; /* Golden Ratio Spacing (lineHeight / Φ^2) */
   color: lighten($font-color, 20%);
   font-size: 0.9em;
 }
 
 .post-category {
-  /* Removed fixed width, let it size naturally */
-  margin-right: 0.5rem;
+  margin-right: 0.73rem; /* Golden Ratio Spacing (lineHeight / Φ^2) */
   font-size: 0.9em;
   text-align: center; /* Center category text */
 }
@@ -380,7 +395,7 @@ ul.social-buttons li a {
 }
 
 .post-comments {
-  margin-left: 0.5rem; /* Reduced margin */
+  margin-left: 0.73rem; /* Golden Ratio Spacing (lineHeight / Φ^2) */
   font-size: 0.8em;
 }
 
@@ -390,7 +405,7 @@ ul.social-buttons li a {
 }
 
 footer {
-  padding: 3rem 0;
+  padding: 3.11rem 0; /* Golden Ratio Spacing */
   text-align: center;
 }
 
@@ -479,7 +494,7 @@ body {
   top: 3rem;
   bottom: 1rem;
   width: 0.4rem;
-  left: 2.3rem;
+  left: 2.31rem; /* Adjusted for new image size */
   background-color: $background-color;
 }
 
@@ -524,9 +539,9 @@ body {
 .timeline > li .timeline-image {
   z-index: 100;
   position: absolute;
-  left: 0;
-  width: 5rem;
-  height: 5rem;
+  left: 0; 
+  width: 5.02rem;  /* Golden Ratio Size (lineHeight * Φ^2) */
+  height: 5.02rem; /* Golden Ratio Size (lineHeight * Φ^2) */
   border: 0.4375rem solid $background-color;
   border-radius: 100%;
   text-align: center;
@@ -589,7 +604,7 @@ body {
   .timeline:before {
     left: 50%; /* Center line on large screens */
     transform: translateX(-50%); /* Center line on large screens */
-    width: 0.5rem;
+    width: 0.5rem; 
   }
 
   .timeline > li {
@@ -620,8 +635,8 @@ body {
 
   /* Increase header image size on larger screens */
   header.intro .img-me {
-    width: 12.5rem; /* 200px */
-    height: 12.5rem; /* 200px */
+    width: 13.13rem; /* Golden Ratio Size (lineHeight * Φ^4) */
+    height: 13.13rem; /* Golden Ratio Size (lineHeight * Φ^4) */
   }
 }
 
@@ -676,3 +691,4 @@ body {
   border-radius: 0.3125rem;
   overflow: hidden;
 }
+
