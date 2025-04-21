@@ -490,7 +490,7 @@ body {
   position: absolute;
   top: 3rem;
   bottom: 1rem;
-  width: 0.4rem;
+  width: 0.4375rem; /* Match image border width */
   left: 2.31rem; /* Adjusted for new image size */
   background-color: $background-color;
 }
@@ -543,13 +543,14 @@ body {
   border-radius: 100%;
   text-align: center;
   color: #f2f2f2;
-  background-color: $background-color;
   display: flex;
   align-items: center;
   justify-content: center;
   img {
-    max-width: 100%;
-    height: auto;
+    width: 100%; /* Force image to fill container width */
+    height: 100%; /* Force image to fill container height */
+    object-fit: cover; /* Scale image to cover, cropping if needed */
+    border-radius: 50%; /* Ensure the image itself is rounded */
   }
 }
 
@@ -601,7 +602,7 @@ body {
   .timeline:before {
     left: 50%; /* Center line on large screens */
     transform: translateX(-50%); /* Center line on large screens */
-    width: 0.5rem;
+    width: 0.4375rem; /* Match image border width */
   }
 
   .timeline > li {
@@ -639,7 +640,7 @@ body {
 
 @media (min-width: 992px) {
   .timeline:before {
-    width: 0.75rem;
+    width: 0.4375rem; /* Match image border width */
   }
   .timeline > li {
     min-height: 9.375rem;
