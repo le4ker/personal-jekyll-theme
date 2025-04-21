@@ -3,10 +3,7 @@
 
 @import "variables";
 
-/* Conditionally import syntax highlighting theme */
-{% if site.syntax_theme %}
-  @import "syntax_{{ site.syntax_theme }}";
-{% endif %}
+@import "syntax_{{ site.syntax_theme }}";
 
 /*!
  * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
@@ -92,7 +89,7 @@ p {
 
 // Utility class for text justification
 .text-justify {
-    text-align: justify;
+  text-align: justify;
 }
 
 a {
@@ -255,7 +252,7 @@ a {
   padding-top: 5.02rem; /* Golden Ratio Spacing */
   @media (min-width: 768px) {
     /* Keep larger screen overrides for now, or recalculate with Φ? Let's keep */
-    margin-top: 7.8125rem; 
+    margin-top: 7.8125rem;
     padding-top: 7.8125rem;
   }
   img {
@@ -337,7 +334,7 @@ ul.social-buttons li a {
 .img-me {
   width: 8.12rem; /* Golden Ratio Size (lineHeight * Φ^3) */
   height: 8.12rem; /* Golden Ratio Size (lineHeight * Φ^3) */
-  border: 0.4375rem solid $background-color; 
+  border: 0.4375rem solid $background-color;
   border-radius: 100%; /* Make it circular */
   background-color: $background-color; /* Fallback background */
   color: #f2f2f2; /* Fallback text color */
@@ -355,22 +352,22 @@ ul.social-buttons li a {
   li {
     list-style-position: outside; /* Ensure consistent marker positioning */
     /* Add some bottom margin for spacing */
-    margin-bottom: 1.5rem; 
+    margin-bottom: 1.5rem;
   }
 }
 
 /* Styles for the restructured post list items */
 .post-list-item {
   display: flex;
-  flex-wrap: wrap; 
-  align-items: baseline; 
+  flex-wrap: wrap;
+  align-items: baseline;
   margin-bottom: 1.92rem; /* Golden Ratio Spacing (lineHeight) */
-  border-bottom: 1px dashed rgba($font-color, 0.2); 
+  border-bottom: 1px dashed rgba($font-color, 0.2);
   padding-bottom: 1.92rem; /* Golden Ratio Spacing (lineHeight) */
 }
 
 .post-date {
-  flex: 0 0 7rem; 
+  flex: 0 0 7rem;
   margin-right: 0.73rem; /* Golden Ratio Spacing (lineHeight / Φ^2) */
   color: lighten($font-color, 20%);
   font-size: 0.9em;
@@ -539,8 +536,8 @@ body {
 .timeline > li .timeline-image {
   z-index: 100;
   position: absolute;
-  left: 0; 
-  width: 5.02rem;  /* Golden Ratio Size (lineHeight * Φ^2) */
+  left: 0;
+  width: 5.02rem; /* Golden Ratio Size (lineHeight * Φ^2) */
   height: 5.02rem; /* Golden Ratio Size (lineHeight * Φ^2) */
   border: 0.4375rem solid $background-color;
   border-radius: 100%;
@@ -604,7 +601,7 @@ body {
   .timeline:before {
     left: 50%; /* Center line on large screens */
     transform: translateX(-50%); /* Center line on large screens */
-    width: 0.5rem; 
+    width: 0.5rem;
   }
 
   .timeline > li {
@@ -689,6 +686,8 @@ body {
 
 .highlight {
   border-radius: 0.3125rem;
-  overflow: hidden;
+  overflow-x: auto; /* Add horizontal scroll for wide code */
+  max-width: 66ch; /* Match paragraph width */
+  margin-left: auto; /* Center the block */
+  margin-right: auto; /* Center the block */
 }
-
