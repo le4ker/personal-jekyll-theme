@@ -1,6 +1,6 @@
-# frozen_string_literal: true
+#!/usr/bin/env ruby
 
-# !/usr/bin/env ruby
+# frozen_string_literal: true
 
 require 'yaml'
 
@@ -27,4 +27,3 @@ Dir.foreach(POSTS_DIR) do |post|
     end
   end
 end
-
