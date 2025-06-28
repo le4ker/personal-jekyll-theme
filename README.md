@@ -7,6 +7,7 @@ can watch it live [here](https://le4ker.github.io/personal-jekyll-theme/).
 
 <p align="center">
     <img src=".github/images/mobile.gif" alt="mobile" />
+    </br></br></br>
     <img src=".github/images/desktop.gif" alt="desktop" />
 </p>
 
