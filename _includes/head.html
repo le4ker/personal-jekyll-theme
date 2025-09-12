@@ -10,7 +10,7 @@
   {% endif %}
   <title>{{site.title}}{% if page.title %} | {{page.title}}{% endif %}</title>
 
-  <link rel="canonical" href="{{page.url | replace:'index.html' }}" />
+  <link rel="canonical" href="{{ page.url | absolute_url | replace:'index.html' }}" />
 
   <link
     rel="stylesheet"

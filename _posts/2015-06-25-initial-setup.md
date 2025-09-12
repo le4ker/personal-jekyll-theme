@@ -23,7 +23,7 @@ The `url` variable is essential, because it's used \_everywhere\* where an
 anchor is defined. It's needed only for repositories that are published on
 Github Pages, since the root url becomes `github.com/username/repo-name`. If you
 are not hosting your {Personal Jekyll Theme }, you can remove the variable and
-all its references (`{{site.url}}`).
+all its references (`{{ site.url | absolute_url }}`).
 
 ````yaml
 

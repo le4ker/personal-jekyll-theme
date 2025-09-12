@@ -5,7 +5,7 @@
     {% if site.email-share %}
       <li class="rrssb-email">
         <a
-          href="mailto:?subject={{page.title}}&body={{site.url}}{{site.url}}{{page.url}}"
+          href="mailto:?subject={{page.title}}&body={{ page.url | absolute_url }}"
           data-proofer-ignore
         >
           <span class="rrssb-icon">
@@ -28,7 +28,7 @@
     {% if site.fb-share %}
       <li class="rrssb-facebook">
         <a
-          href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{site.url}}{{page.url}}&title={{page.title}}"
+          href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}&title={{page.title}}"
           class="popup"
         >
           <span class="rrssb-icon">
@@ -54,7 +54,7 @@
     {% if site.twitter-share %}
       <li class="rrssb-twitter">
         <a
-          href="https://twitter.com/share?url={{site.url}}{{site.url}}{{page.url}}&text={{page.title}}"
+          href="https://twitter.com/share?url={{ page.url | absolute_url }}&text={{page.title}}"
           class="popup"
         >
           <span class="rrssb-icon"
@@ -76,7 +76,7 @@
     {% if site.linkedin-share %}
       <li class="rrssb-linkedin">
         <a
-          href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{site.url}}{{site.url}}{{page.url}}"
+          href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ page.url | absolute_url }}"
           class="popup"
         >
           <span class="rrssb-icon">
@@ -99,7 +99,7 @@
     {% if site.reddit-share %}
       <li class="rrssb-reddit">
         <a
-          href="https://www.reddit.com/submit?url={{site.url}}{{site.url}}{{page.url}}&title={{page.title}}"
+          href="https://www.reddit.com/submit?url={{ page.url | absolute_url }}&title={{page.title}}"
           target="_blank"
         >
           <span class="rrssb-icon">
@@ -125,7 +125,7 @@
     {% if site.tumblr-share %}
       <li class="rrssb-tumblr">
         <a
-          href="https://tumblr.com/share/link?url={{site.url}}{{site.url}}{{page.url}}"
+          href="https://tumblr.com/share/link?url={{ page.url | absolute_url }}"
           target="_blank"
         >
           <span class="rrssb-icon">
@@ -148,7 +148,7 @@
     {% if site.pinterest-share %}
       <li class="rrssb-pinterest">
         <a
-          href="https://pinterest.com/pin/create/button/?url={{site.url}}{{site.url}}{{page.url}}"
+          href="https://pinterest.com/pin/create/button/?url={{ page.url | absolute_url }}"
           target="_blank"
         >
           <span class="rrssb-icon">
@@ -171,7 +171,7 @@
     {% if site.pocket-share%}
       <li class="rrssb-pocket">
         <a
-          href="https://getpocket.com/save?url={{site.url}}{{site.url}}{{page.url}}"
+          href="https://getpocket.com/save?url={{ page.url | absolute_url }}"
         >
           <span class="rrssb-icon">
             <svg
@@ -193,7 +193,7 @@
     {% if site.vkontakte-share %}
       <li class="rrssb-vk">
         <a
-          href="https://vk.com/share.php?url={{site.url}}{{site.url}}{{page.url}}"
+          href="https://vk.com/share.php?url={{ page.url | absolute_url }}"
           class="popup"
         >
           <span class="rrssb-icon">
