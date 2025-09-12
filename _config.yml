@@ -1,7 +1,8 @@
 # Site settings
 
 # NB! Set your site's url, otherwise nothing will work
-url: "https://le4ker.github.io/personal-jekyll-theme"
+url: "https://le4ker.github.io"
+baseurl: "/personal-jekyll-theme"
 
 # Google tracking id
 google-tracking-id: "UA-XXXXXXXX-X"
