@@ -10,9 +10,9 @@
     .
   </small>
   <br class="d-block d-sm-none" />
-  <a href="{{site.url}}/{{ post.url }}"> {{ post.title }} </a>
+  <a href="{{ post.url | absolute_url }}"> {{ post.title }} </a>
   <br class="d-block d-sm-none" />
-  <small><a href="{{site.url}}/{{ post.url }}#disqus_thread">Comments</a></small>
+  <small><a href="{{ post.url | absolute_url }}#disqus_thread">Comments</a></small>
 </h5>
 
 <!-- Post List End -->

@@ -6,7 +6,7 @@ layout: null
   {% for page in site.pages %}
     {% if page.sitemap != null and page.sitemap != empty %}
       <url>
-        <loc>{{ site.url }}{{ page.url }}</loc>
+        <loc>{{ page.url | absolute_url }}</loc>
         {% if page.sitemap %}
           {% if page.sitemap.lastmod %}
           <lastmod>{{ page.sitemap.lastmod | date_to_xmlschema }}</lastmod>
@@ -23,7 +23,7 @@ layout: null
   {% endfor %}
   {% for post in site.posts %}
     <url>
-      <loc>{{ site.url }}{{ site.repository_name }}{{ post.url }}</loc>
+      <loc>{{ post.url | absolute_url }}</loc>
       {% if post.lastmod == null %}
         <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
       {% else %}

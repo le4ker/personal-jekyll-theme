@@ -35,6 +35,6 @@
       "type": "image/png"
     }
   ],
-  "start_url": "{{site.url}}{{site.url}}",
+  "start_url": "{{site.url}}",
   "display": "standalone"
 }

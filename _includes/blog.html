@@ -19,8 +19,8 @@
           </a>
           .
         </small>
-        <a href="{{site.url}}/{{ post.url }}">{{ post.title }}</a>
-        <small> <a href="{{site.url}}/{{ post.url }}#disqus_thread">Comments</a></small>
+        <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+        <small> <a href="{{ post.url | absolute_url }}#disqus_thread">Comments</a></small>
       </h4>
 
       <section class="text-justify">
