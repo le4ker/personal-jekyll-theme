@@ -35,7 +35,7 @@ layout: null
   {% endfor %}
   {% for tag in site.tags %}
     <url>
-      <loc>{{ site.url }}{{ site.baseurl }}/tags/{{ tag[0] }}.html</loc>
+      <loc>{{ "/tags/" | absolute_url }}{{ tag[0] }}.html</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
     </url>

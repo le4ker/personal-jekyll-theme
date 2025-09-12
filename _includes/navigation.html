@@ -4,7 +4,7 @@
   <div class="container">
     <a
       class="navbar-brand page-scroll"
-      href="{% if page.section-type == 'index' %}#page-top{% else %}{{site.url}}{% endif %}"
+      href="{% if page.section-type == 'index' %}#page-top{% else %}{{ '/' | absolute_url }}{% endif %}"
       aria-controls="navbarNav"
       aria-label="Collapse navigation"
     >
