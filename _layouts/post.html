@@ -17,7 +17,7 @@
               .
               <a
                 class="category"
-                href="{{site.url}}/categories/{{ page.category | downcase }}.html"
+                href="{{ '/categories/' | absolute_url }}{{ page.category | downcase }}.html"
               >
                 {{ page.category }}
               </a>
@@ -25,7 +25,7 @@
               <a href="{{ page.url }}#disqus_thread">Comments</a>
               <br />
               {% for tag in page.tags %}
-              <a class="tag" href="{{site.url}}/tags/{{ tag }}.html">#{{ tag }}</a>
+              <a class="tag" href="{{ '/tags/' | absolute_url }}{{ tag }}.html">#{{ tag }}</a>
               {% endfor %}
             </small>
           </h6>

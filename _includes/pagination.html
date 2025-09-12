@@ -4,7 +4,7 @@
   <ul class="pagination justify-content-center">
     {% if paginator.previous_page %}
     <li class="page-item">
-      <a href="{{site.url}}/{{ paginator.previous_page_path }}" aria-label="Previous">
+      <a href="{{ paginator.previous_page_path | relative_url }}" aria-label="Previous">
         <span aria-hidden="true">&laquo; Newer Posts</span>
       </a>
     </li>
@@ -14,7 +14,7 @@
     </li>
     {% endif %} {% if paginator.next_page %}
     <li class="page-item">
-      <a href="{{site.url}}/{{ paginator.next_page_path }}" aria-label="Next">
+      <a href="{{ paginator.next_page_path | relative_url }}" aria-label="Next">
         <span aria-hidden="true">Older Posts &raquo;</span>
       </a>
     </li>

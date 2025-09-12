@@ -13,7 +13,7 @@
           .
           <a
             class="category"
-            href="{{site.url}}/categories/{{ post.category | downcase }}.html"
+            href="{{ '/categories/' | absolute_url }}{{ post.category | downcase }}.html"
           >
             {{ post.category }}
           </a>
