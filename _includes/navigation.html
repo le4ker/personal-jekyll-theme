@@ -4,7 +4,7 @@
   <div class="container">
     <a
       class="navbar-brand page-scroll"
-      href="{% if page.section-type == 'index' %}#page-top{% else %}{{ '/' | absolute_url }}{% endif %}"
+      href="{% if page.section-type == 'index' %}#page-top{% else %}{{ '/' | relative_url }}{% endif %}"
       aria-controls="navbarNav"
       aria-label="Collapse navigation"
     >
@@ -35,9 +35,9 @@
             {% if p[1] == "latest-post" %} {% if page.url == "/blog/index.html" %}
             <a class="nav-link page-scroll" href="#page">{{ p[0] }}</a>
             {% else %}
-          <a class="nav-link pe-2 ps-2" href="{{ '/blog/' | absolute_url }}">{{ p[0] }}</a>
+          <a class="nav-link pe-2 ps-2" href="{{ '/blog/' | relative_url }}">{{ p[0] }}</a>
             {% endif %} {% else %}
-          <a class="nav-link pe-2 ps-2" href="{{ '/#' | absolute_url }}{{ p[1] }}">{{ p[0] }}</a>
+          <a class="nav-link pe-2 ps-2" href="{{ '/' | relative_url }}#{{ p[1] }}">{{ p[0] }}</a>
             {% endif %}
           </li>
           {% endfor %} 
