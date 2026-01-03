@@ -2,15 +2,17 @@
 layout: post
 section-type: post
 has-comments: true
-title: Adding a life event in the Timeline
+title: Adding Life Events to the Timeline
 category: tech
 tags: ["tutorial"]
 ---
 
-One of the distinctive features of { Personal } is that enables you to tell your
-life's story in the form of a timeline of photos, dates and text descriptions.
+The Timeline is one of { Personal }'s most distinctive features—a visual journey
+through your life's milestones using photos, dates, and descriptions.
 
-The Timeline is controlled by the following variables:
+### Configuring Timeline Events
+
+Add events to your timeline in `_config.yml`:
 
 ```yaml
 events:
@@ -20,13 +22,62 @@ events:
   - image: "/img/timeline/baracktocat.jpg"
     date: "September 2007 - August 2013"
     description: "Started coding"
+```
 
-# First image of the Timeline
+Each event requires three fields:
+
+| Field         | Description                    |
+| ------------- | ------------------------------ |
+| `image`       | Path to the event image        |
+| `date`        | Time period or specific date   |
+| `description` | Brief description of the event |
+
+### Timeline Header Image
+
+Set the image that appears at the top of your timeline:
+
+```yaml
 timeline-img: "/img/timeline/default.png"
 ```
 
-For each event of your life, add a tuple of image, date and description to the
-events, and the timeline will be automatically generated!
+This is typically a logo, avatar, or symbolic image representing you.
 
-The `timeline-img` path variable is the image that you want to show up in the
-beginning of your Timeline, so be creative with it!
+### Best Practices
+
+**Images:**
+
+- Store timeline images in `/img/timeline/`
+- Use consistent image dimensions for a polished look
+- Optimize images for web (compress without losing quality)
+
+**Dates:**
+
+- Use consistent formatting (e.g., "Month Year" or "Month Year - Month Year")
+- Events display in the order listed in `_config.yml`
+- Arrange chronologically (newest first or oldest first, your choice)
+
+**Descriptions:**
+
+- Keep descriptions concise (1-2 sentences)
+- Focus on achievements and milestones
+- Use action words to make events engaging
+
+### Example Timeline
+
+```yaml
+events:
+  - image: "/img/timeline/current-job.png"
+    date: "2022 - Present"
+    description: "Senior Developer at Tech Corp"
+  - image: "/img/timeline/graduation.jpg"
+    date: "May 2018"
+    description: "Graduated with CS degree from State University"
+  - image: "/img/timeline/first-code.png"
+    date: "2010"
+    description: "Wrote my first line of code"
+
+timeline-img: "/img/timeline/avatar.png"
+```
+
+The timeline automatically renders with alternating left/right positioning for
+visual appeal.

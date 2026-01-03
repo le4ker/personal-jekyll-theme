@@ -47,7 +47,7 @@ me-img: "/img/jetpacktocat.png"
 ########
 
 post-preview-words: 96
-paginate: 5
+paginate: 12
 email-share: True
 fb-share: True
 twitter-share: True

@@ -2,91 +2,119 @@
 layout: post
 section-type: post
 has-comments: true
-title: Initial setup
+title: Initial Setup
 category: tech
 tags: ["tutorial"]
 ---
 
-All features of { Personal } are controlled by setting values to variables that
-are defined in the `_config.yml` file. Let's start with the initial variables
-that you have to set before serving your { Personal } website for the first
-time.
+All features of { Personal } are controlled through variables defined in
+`_config.yml`. This guide covers the essential settings you need to configure
+before launching your website.
 
-### Setting up the url
+### Site URL Configuration
+
+The most critical setting is your site URL:
 
 ```yaml
-# NB! Set your site's url, otherwise nothing will work
-url: "https://le4ker.github.io/personal-jekyll-theme"
+url: "https://yourusername.github.io"
+baseurl: "/personal-jekyll-theme"
 ```
 
-The `url` variable is essential, because it's used \_everywhere\* where an
-anchor is defined. It's needed only for repositories that are published on
-Github Pages, since the root url becomes `github.com/username/repo-name`. If you
-are not hosting your {Personal Jekyll Theme }, you can remove the variable and
-all its references (`{{ site.url | absolute_url }}`).
+**Important:** The `url` variable is used throughout the theme for generating
+links. For GitHub Pages:
 
-````yaml
+- Set `url` to `https://yourusername.github.io`
+- Set `baseurl` to your repository name (e.g., `/personal-jekyll-theme`)
+
+If hosting on a custom domain, set `url` to your domain and `baseurl` to `""`.
 
 ### Theme Customization
 
-You can define the colors that you want in your { Personal } website by setting
-the following variable sin the `_sass/variables.scss` file:
+Customize your color scheme by editing `_sass/_variables.scss`:
 
 ```scss
-$primary-color: #232a2e;
-$secondary-color: #3a94c5;
-$font-color: #efebd4;
+$primary-color: #232a2e; // Main background color
+$secondary-color: #3a94c5; // Accent/link color
+$font-color: #efebd4; // Text color
 $background-color: $font-color;
-````
+```
 
-### HTML Head
+### HTML Head Settings
+
+Configure metadata that appears in every page's `<head>` section:
 
 ```yaml
 lang: "en"
 author: "John Smith"
 title: "{ John Smith }"
-description:
-  "Blog and website of John Smith, blogging mainly for tech. Opinions expressed
-  are mine."
-keywords: "smith, jones, personal, jekyll, theme"
+description: "Blog and website of John Smith, blogging mainly for tech."
+keywords: "smith, personal, jekyll, theme"
 favicon: "/img/favicon.ico"
 ```
 
-The values that you set, will be placed in the head section of every generated
-HTML page.
+These values affect SEO and how your site appears in search results and social
+media previews.
 
-### Google Analytics
+### Navigation Configuration
 
-The Google tracking code will be placed in every generated page. If you don't
-want Google analytics tracking your website's traffic, set the
-google-tracking-id to false.
+Control which sections appear in your navigation menu and their order:
+
+```yaml
+pages_list:
+  About: "about"
+  Blog: "latest-post"
+  Timeline: "timeline"
+  Contact: "contact"
+```
+
+Each entry maps a display name to a section ID. To remove a section from
+navigation, simply delete its line. To reorder, rearrange the entries.
+
+### Google Analytics & Cookie Consent
+
+To track your website traffic, add your Google Analytics tracking ID:
 
 ```yaml
 google-tracking-id: "UA-XXXXXXXX-X"
 ```
 
-### Serving { Personal } locally
+Set to `false` to disable tracking entirely.
 
-You can use Docker to run the website to avoid installing any dependencies to
-your local environment. To do so, run:
+**Cookie Consent:** When Google Analytics is enabled, the theme automatically
+includes a cookie consent banner (powered by TermsFeed). This ensures GDPR
+compliance by:
+
+- Showing a consent banner on first visit
+- Only loading tracking scripts after user consent
+- Providing options to accept or reject tracking cookies
+
+No additional configuration is needed—cookie consent is handled automatically
+when `google-tracking-id` is set.
+
+### Running Locally
+
+#### Option 1: Docker (Recommended)
+
+No local dependencies required:
 
 ```shell
 docker-compose up --build
 ```
 
-Alternatively, you can run the website locally by installing the dependencies:
+#### Option 2: Native Ruby
+
+Requires Ruby 3.1.1 or compatible version:
 
 ```shell
 bundle install
-```
-
-And then start serving the website:
-
-```shell
 bundle exec jekyll serve --watch --livereload
 ```
 
-That's it!
+Once running, visit [http://localhost:4000](http://localhost:4000) to preview
+your site.
 
-Visit [http://0.0.0.0:4000](http://0.0.0.0:4000) and you are ready to start
-hacking around your { Personal } website.
+### Next Steps
+
+With the initial setup complete, proceed to customize your
+[Header]({{ site.baseurl }}{% post_url 2015-06-24-intro-layout-tutorial %}) and
+[Blog]({{ site.baseurl }}{% post_url 2015-06-20-blog-tutorial %}) settings.

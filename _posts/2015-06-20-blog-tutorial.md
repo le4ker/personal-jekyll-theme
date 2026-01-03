@@ -7,36 +7,34 @@ category: tech
 tags: ["tutorial"]
 ---
 
-A website is truly personal if it hosts your blog as well, this place of the
-internet where you can place your thoughts about anything. Let's see how you can
-set up your Blog.
+Your blog is the heart of your { Personal } website. This guide covers all the
+settings to customize your blogging experience.
 
-### Latest post preview in Index page
+### Latest Post Preview
 
-First of all, you get a preview of the latest post in the index, in order to
-attract the visitor to visit your blog. The size of this preview is defined by:
+The homepage displays a preview of your most recent post. Control the preview
+length:
 
 ```yaml
 post-preview-words: 96
 ```
 
-Feel free to experiment with different sizes, and pick the best for you.
+Adjust this value based on your content style—shorter for punchy intros, longer
+for detailed previews.
 
-### Archive
+### Archive Pagination
 
-A blog is expected to host many posts, so you will need an archive with
-pagination, which in a nutshell it's a grouping of your posts in pages, in
-reverse chronological order. You can define the number of posts that are
-displayed per page by changing:
+The blog archive groups posts with pagination for easy navigation:
 
 ```yaml
 paginate: 5
 ```
 
-### Share buttons
+This sets the number of posts displayed per archive page.
 
-Many share buttons are available and can be enabled or disabled by setting the
-following:
+### Share Buttons
+
+Enable or disable individual share buttons for each post:
 
 ```yaml
 email-share: True
@@ -50,19 +48,43 @@ pocket-share: True
 vkontakte-share: True
 ```
 
-### Comments
+Set any option to `False` to hide that share button.
 
-You can enable [Disqus](https://www.disqus.com) comments by just setting your
-Disqus username here:
+### Comments with Disqus
+
+Enable reader engagement with Disqus comments:
 
 ```yaml
-disqus-shortname: "Your Disqus username"
+disqus-shortname: "your-disqus-shortname"
 ```
 
-### RSS feed
+To get your shortname:
 
-The RSS feed is automatically generated and placed in `/feed.xml`.
+1. Create an account at [disqus.com](https://disqus.com)
+2. Register your site
+3. Copy your shortname from the site settings
+
+Leave empty or remove to disable comments.
+
+### RSS Feed
+
+An RSS feed is automatically generated at `/feed.xml`. Share this URL with
+readers who use RSS readers to follow your blog.
 
 ### Sitemap
 
-The Sitemap is automatically generated and placed in `/sitemap.xml`.
+A sitemap is automatically generated at `/sitemap.xml`. This helps search
+engines discover and index your content. Submit it to
+[Google Search Console](https://search.google.com/search-console) for better
+SEO.
+
+### Author Blurb
+
+Add a personal touch below each post with an author blurb:
+
+```yaml
+author_blurb: "John Smith is a software engineer who loves open source."
+author_blurb_image: "/img/author.png"
+```
+
+This appears at the bottom of every blog post, helping readers connect with you.

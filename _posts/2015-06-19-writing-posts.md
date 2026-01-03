@@ -2,92 +2,179 @@
 layout: post
 section-type: post
 has-comments: true
-title: Writing posts
+title: Writing Posts
 category: tech
 tags: ["tutorial"]
 ---
 
-### Creating a new post
+### Creating a New Post
 
-Run the `./bin/new_post.rb` script with the file name of the post as an
-argument:
+Use the provided script to generate a new post template:
 
 ```bash
-ruby ./bin/new_post.rb hello-world
+ruby ./bin/new_post.rb my-first-post
 ```
 
-A a new post template with name `YYYY-MM-DD-hello-world.md` will be created under
-`_posts`, with the current date.
+This creates `_posts/YYYY-MM-DD-my-first-post.md` with today's date and a
+ready-to-edit template.
 
-In the created post, just replace the Title, Category and tags and you can start
-writing your post in markdown right bellow the end of the post header.
+### Post Front Matter
 
-Every file with the format `YYYY-MM-DD-post-title.md` will be processed as a
-post, with publication date `YYYY-MM-DD`.
-
-The content starts with:
+Every post begins with YAML front matter:
 
 ```yaml
+---
 layout: post
 section-type: post
 has-comments: true
-title: Title
-category: Category
-tags: [ "tag1", "tag2" ]
+title: Your Post Title
+category: tech
+tags: ["jekyll", "tutorial"]
+---
 ```
 
-The `layout` and `section-type` variables are used by the theme and you
-shouldn't remove them.
+| Field          | Description                      |
+| -------------- | -------------------------------- |
+| `layout`       | Always use `post` (required)     |
+| `section-type` | Always use `post` (required)     |
+| `has-comments` | Enable/disable Disqus comments   |
+| `title`        | Your post's display title        |
+| `category`     | Single category for organization |
+| `tags`         | Array of hashtags for discovery  |
 
-### Hashtags
+### Generating Tag Pages
 
-Jekyll generates a static pages. As a result we have to create the tag pages
-before building and publishing the site. In order to generate the tag pages,
-simply run the `generate-tags` script from the repo's root directory:
+After adding new tags, generate their pages:
 
 ```bash
 ruby ./bin/generate_tags.rb
 ```
 
-The script will parse all your posts, and generate the tag pages for the newly
-added tags.
+This scans all posts and creates pages for any new tags in the `tags/`
+directory.
 
-### Categories
+### Generating Category Pages
 
-You can organize your posts under categories. Categories are behaving like
-hashtags, they have to be generated offline, by running the
-`./bin/generate_categories.rb` script.
+Similarly, generate category pages:
 
-The category of the post is specified in the yaml header, in the Category
-variable.
-
-### Syntax highlighting
-
-If you want to demonstrate source code in your posts, syntax highlighting is
-provided, using the Everforest Dark theme. If you want to see how to render your code with the highlight, simply
-check the source code of this tutorial post.
-
-```c
-int main()
-{
-  printf("Hello, world of syntax highlighting!");
-
-  return 0;
-}
+```bash
+ruby ./bin/generate_categories.rb
 ```
 
-If you don't need syntax highlight in your website you can disable it by setting
-the syntax-highlight variable to False.
+Category pages are created in the `categories/` directory.
 
-### Author Blurb
+### Syntax Highlighting
 
-You can add a short description of yourself bellow your posts, by setting the
-next two variables in the site config
+The theme includes the Everforest Dark syntax theme. Use fenced code blocks with
+language identifiers:
 
-```yaml
-author_blurb:
-  "John Smith is an awesome person. He lives in Flatland, where he works on
-  two-dimensional engineering projects. In his spare time, John likes to eat
-  cotton candy."
-author_blurb_image: "/img/author.png"
+````markdown
+```python
+def hello_world():
+    print("Hello, World!")
 ```
+````
+
+Renders as:
+
+```python
+def hello_world():
+    print("Hello, World!")
+```
+
+Supported languages include: `python`, `javascript`, `ruby`, `c`, `cpp`, `java`,
+`bash`, `yaml`, `json`, `html`, `css`, `scss`, and many more.
+
+### Markdown Features
+
+Your posts support full GitHub-flavored Markdown:
+
+- **Bold** and _italic_ text
+- [Links](https://example.com)
+- Images: `![Alt text](/path/to/image.jpg)`
+- Lists (ordered and unordered)
+- Blockquotes
+- Tables
+- Task lists
+
+### Mermaid Diagrams
+
+Create diagrams directly in your posts using Mermaid syntax. The theme includes
+the `jekyll-spaceship` plugin which renders Mermaid diagrams automatically.
+
+#### Flowcharts
+
+````markdown
+```mermaid
+graph LR
+    A[Start] --> B[Process]
+    B --> C{Decision}
+    C -->|Yes| D[Action 1]
+    C -->|No| E[Action 2]
+    D --> F[End]
+    E --> F
+```
+````
+
+#### Sequence Diagrams
+
+````markdown
+```mermaid
+sequenceDiagram
+    participant User
+    participant Server
+    participant Database
+    User->>Server: Request
+    Server->>Database: Query
+    Database-->>Server: Results
+    Server-->>User: Response
+```
+````
+
+#### Gantt Charts
+
+````markdown
+```mermaid
+gantt
+    title Project Timeline
+    dateFormat  YYYY-MM-DD
+    section Phase 1
+    Research    :a1, 2024-01-01, 30d
+    Design      :a2, after a1, 20d
+    section Phase 2
+    Development :a3, after a2, 40d
+    Testing     :a4, after a3, 15d
+```
+````
+
+#### Class Diagrams
+
+````markdown
+```mermaid
+classDiagram
+    class User {
+        +String name
+        +String email
+        +login()
+        +logout()
+    }
+    class Post {
+        +String title
+        +String content
+        +publish()
+    }
+    User "1" --> "*" Post : writes
+```
+````
+
+Mermaid supports many more diagram types including pie charts, state diagrams,
+and entity-relationship diagrams. See the
+[Mermaid documentation](https://mermaid.js.org/) for the full syntax reference.
+
+### Tips for Great Posts
+
+- Use descriptive, SEO-friendly titles
+- Add relevant tags for discoverability
+- Include images to break up text
+- Keep paragraphs short for readability
+- Preview locally before publishing
