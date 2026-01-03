@@ -119,6 +119,9 @@ pages_list:
   Blog: "latest-post"
   Timeline: "timeline"
   Contact: "contact"
+
+syntax_theme: everforest
+
 # Exclusion list from the generated _site
 exclude:
   - LICENSE
