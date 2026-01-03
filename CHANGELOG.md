@@ -1,3 +1,29 @@
+## [10.3.0](https://github.com/le4ker/personal-jekyll-theme/compare/v10.2.0...v10.3.0) (2026-01-03)
+
+### ✨ Features
+
+* update theme colors ([80b26c2](https://github.com/le4ker/personal-jekyll-theme/commit/80b26c2a64feffa6ffa6aa3cee0b497fea66f0fc))
+
+### 🐛 Bug Fixes
+
+* create formatted post and category files ([e1278ee](https://github.com/le4ker/personal-jekyll-theme/commit/e1278eeb99306ab81658b508459e2b0b935dcc9e))
+* fix italics ([565634b](https://github.com/le4ker/personal-jekyll-theme/commit/565634bc11be25b79abcbdc66ef93fade381dcc2))
+* fix timeline image path ([8874492](https://github.com/le4ker/personal-jekyll-theme/commit/88744925bb96f5ae64fd2b96e8bad2133039be7f))
+* improve readability of inline code block ([720a67d](https://github.com/le4ker/personal-jekyll-theme/commit/720a67dcf8a879c49249dbec50e9bf78a61696db))
+* increase code block padding ([030d8a4](https://github.com/le4ker/personal-jekyll-theme/commit/030d8a4805184aba6168cb6a08140e31c5ba17c0))
+* move Contact content in the layout page ([e78e6af](https://github.com/le4ker/personal-jekyll-theme/commit/e78e6af7259f8f2398aca4d0e29014133e81dc85))
+
+### 📚 Documentation
+
+* update demo GIF ([4ef5ad4](https://github.com/le4ker/personal-jekyll-theme/commit/4ef5ad4171ccf3b5f5657c79a223a3c72a5d0f0a))
+* update docs blog posts ([1bebdac](https://github.com/le4ker/personal-jekyll-theme/commit/1bebdacb717058762e02b9702068d36649d21240))
+
+### 🏠 Chores
+
+* format categories and tags ([2952821](https://github.com/le4ker/personal-jekyll-theme/commit/29528212b060306d510caefdeda23ac6ba013a75))
+* format files ([13fcf77](https://github.com/le4ker/personal-jekyll-theme/commit/13fcf77a5192aa1fb9f6fc4f7a6e8471e2491fc0))
+* remove comments from CSS ([b18fc64](https://github.com/le4ker/personal-jekyll-theme/commit/b18fc6495a8b306ad97aa10a32364e22e7c0fda6))
+
 ## [10.2.0](https://github.com/le4ker/personal-jekyll-theme/compare/v10.1.1...v10.2.0) (2026-01-03)
 
 ### ✨ Features
