@@ -20,7 +20,11 @@
           .
         </small>
         <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
-        <small> <a href="{{ post.url | absolute_url }}#disqus_thread">Comments</a></small>
+        <small>
+          <a href="{{ post.url | absolute_url }}#disqus_thread"
+            >Comments</a
+          ></small
+        >
       </h4>
 
       <section class="text-justify">
@@ -28,7 +32,7 @@
         markdownify }}
       </section>
 
-      <h4 class="pt-5"><a href="{{ '/blog/' | absolute_url }}">Archive</a></h4>
+      <h3 class="pt-5"><a href="{{ '/blog/' | absolute_url }}">Archive</a></h3>
     </div>
   </div>
 </section>
