@@ -1,5 +1,8 @@
-<!-- Contact Start -->
-
+<!--
+Copyright © 2024 Panos Sakkos <panos.sakkos@gmail.com>. All rights reserved.
+This code is part of my personal blog and is not licensed for redistribution or modification.
+To use this Jekyll theme, visit: https://github.com/le4ker/personal-jekyll-theme
+-->
 <section
   id="{{ page.section-type }}"
   class="container content-section text-center"
@@ -8,6 +11,7 @@
     <div class="col-md-10 col-12">
       {{ page.content | markdownify }} {% if site.email %} {% if site.email
       contains '@' %} {% assign newemail = site.email | split: '@' %}
+      <p class="pt-3">Drop me an email if you are interested in me coding for you or saving your neighborhood!</p>
       <p>
         <script>
           function join_at_email(user, domain) {
@@ -29,4 +33,3 @@
   </div>
 </section>
 
-<!-- Contact End -->
