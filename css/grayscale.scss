@@ -26,6 +26,17 @@ h6 {
   letter-spacing: 0.07rem;
 }
 
+@media (max-width: 767px) {
+  #post h1,
+  #post h2,
+  #post h3,
+  #post h4,
+  #post h5,
+  #post h6 {
+    text-align: left;
+  }
+}
+
 h1 {
   font-size: 5.08rem;
   margin-top: 5.02rem;
