@@ -7,62 +7,72 @@ category: tech
 tags: ["tutorial"]
 ---
 
-The intro part of the index page (Header) consists of four elements:
+The header (intro section) is the first thing visitors see on your homepage. It
+consists of four customizable elements that create your site's first impression.
 
-- A black favicon
-- Background image
-- Welcome text
-- Your image
+### Navigation Favicon
 
-### Black favicon
-
-The black favicon is an image on the left of the navigation bar. Preferably it
-should be a black and white version of your favicon.
+The black favicon appears on the left side of the navigation bar. For best
+results, use a monochrome version of your main favicon:
 
 ```yaml
 black-favicon: "/img/black-lab-glass.ico"
 ```
 
-### Background image
+### Background Image
 
-In order to set the background, set the path to following variable:
-
-```yaml
-# NB! Keep the .. in the beginning of the background image path
-background-img: "../img/intro-bg.jpg"
-```
-
-### Welcome text
-
-The welcome text can be set by setting the `quote` variable:
+Set a captivating background image for your header:
 
 ```yaml
-quote: "Where’s your will to be weird?"
+background-img: "intro-bg.jpg"
 ```
 
-### Your image
+Place your image in the `img/` directory. The theme handles responsive sizing
+automatically.
 
-You can set your image from the following variable:
+### Welcome Text
+
+The quote displayed prominently in your header:
+
+```yaml
+quote: "Where's your will to be weird?"
+```
+
+Keep it short and memorable—this is your personal tagline.
+
+### Profile Image
+
+Your profile image appears centered in the header. You have three options:
+
+#### Local Image
 
 ```yaml
 me-img: "/img/jetpacktocat.png"
 ```
 
-If you want to connect your Github profile image then you can use the following.
-Replace `user_name` with your Github user name.
+#### GitHub Profile Picture
+
+Automatically sync with your GitHub avatar:
 
 ```yaml
-me-img: "https://github.com/user_name.png?size=500"
+me-img: "https://github.com/USERNAME.png?size=500"
 ```
 
-If you want to connect your Gravatar profile image then you can use the
-following. Replace `email_hash` with your Gravatar profile email hash. You can
-create the email hash by using an online tool like
-[md5hashgenerator](http://www.md5hashgenerator.com/), just enter your email and
-it will generate the hash.
+Replace `USERNAME` with your GitHub username.
+
+#### Gravatar
+
+Use your Gravatar profile image:
 
 ```yaml
-me-img: "https://www.gravatar.com/avatar/email_hash?s=500"
+me-img: "https://www.gravatar.com/avatar/EMAIL_HASH?s=500"
 ```
 
-All set!
+Generate your email hash using an
+[MD5 hash generator](http://www.md5hashgenerator.com/).
+
+### Tips
+
+- Use high-quality images (the theme will optimize display)
+- Test your header on both desktop and mobile devices
+- Choose a background that provides good contrast with the white text
