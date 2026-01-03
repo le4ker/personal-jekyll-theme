@@ -81,9 +81,17 @@ p {
   margin-right: auto;
 }
 
-// Utility class for text justification
+// Utility class for text justification (overrides text-center)
 .text-justify {
   text-align: justify;
+  width: 100%;
+}
+
+.text-justify p,
+.content-section.text-center .text-justify p {
+  text-align: justify;
+  width: 100%;
+  max-width: 100%;
 }
 
 a {
@@ -375,31 +383,30 @@ ul.social-buttons li a {
 }
 
 .post-list-item {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
+  display: block;
+  text-align: justify;
   margin-bottom: 1.92rem;
   border-bottom: 1px dashed rgba($font-color, 0.2);
   padding-bottom: 1.92rem;
+  max-width: 65ch;
 }
 
 .post-date {
-  flex: 0 0 7rem;
+  display: inline;
   margin-right: 0.73rem;
   color: lighten($font-color, 20%);
   font-size: 0.9em;
 }
 
 .post-category {
+  display: inline;
   margin-right: 0.73rem;
   font-size: 0.9em;
-  text-align: center;
 }
 
 .post-title {
-  flex-grow: 1;
+  display: inline;
   font-weight: bold;
-  text-align: left;
   a {
     color: $font-color;
     &:hover {
@@ -409,8 +416,9 @@ ul.social-buttons li a {
 }
 
 .post-comments {
+  display: inline;
   margin-left: 0.73rem;
-  font-size: 0.8em;
+  font-size: 0.85em;
 }
 
 .post-list-container {
