@@ -4,7 +4,10 @@
   {{ post.date | date_to_string }}
   <small>
     .
-    <a class="category" href="{{ '/categories/' | absolute_url }}{{ post.category | downcase }}.html">
+    <a
+      class="category"
+      href="{{ '/categories/' | absolute_url }}{{ post.category | downcase }}.html"
+    >
       {{ post.category }}
     </a>
     .
@@ -12,7 +15,9 @@
   <br class="d-block d-sm-none" />
   <a href="{{ post.url | absolute_url }}"> {{ post.title }} </a>
   <br class="d-block d-sm-none" />
-  <small><a href="{{ post.url | absolute_url }}#disqus_thread">Comments</a></small>
+  <small
+    ><a href="{{ post.url | absolute_url }}#disqus_thread">Comments</a></small
+  >
 </h5>
 
 <!-- Post List End -->
