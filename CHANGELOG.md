@@ -1,3 +1,10 @@
+## [10.3.1](https://github.com/le4ker/personal-jekyll-theme/compare/v10.3.0...v10.3.1) (2026-01-03)
+
+### 🐛 Bug Fixes
+
+* improve readability of about section ([1101bf2](https://github.com/le4ker/personal-jekyll-theme/commit/1101bf2fd1551c54e6cdc1debab0ef496697fb80))
+* improve readability of blog section ([e33f4a2](https://github.com/le4ker/personal-jekyll-theme/commit/e33f4a2be5ae9363e22f9d93daeb689e919cf0f6))
+
 ## [10.3.0](https://github.com/le4ker/personal-jekyll-theme/compare/v10.2.0...v10.3.0) (2026-01-03)
 
 ### ✨ Features
