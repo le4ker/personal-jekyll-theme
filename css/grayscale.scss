@@ -60,7 +60,7 @@ h5 {
 }
 
 small {
-  font-size: 70%;
+  font-size: 80%;
 }
 
 p {
@@ -74,9 +74,11 @@ p {
   }
 }
 
-// Justify the author blurb text
+// Justify the author blurb text and ensure proper centering within parent
 .blurb {
   text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 // Utility class for text justification
