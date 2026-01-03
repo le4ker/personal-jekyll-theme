@@ -3,6 +3,8 @@
 
 @import "variables";
 
+@import "syntax_{{ site.syntax_theme }}";
+
 /*!
  * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
@@ -71,9 +73,7 @@ p {
   padding: 0.5rem 0rem;
   line-height: 1.5;
   /* Apply Golden Ratio related measure */
-  max-width: 66ch;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 80ch; /* Wider than paragraphs for code readability */
   @media (min-width: 768px) {
     padding: 0.3rem 0rem;
     line-height: 1.6;
@@ -279,6 +279,24 @@ a {
     display: inline !important;
   }
 
+  blockquote {
+    border-left: 0.25rem solid $secondary-color;
+    margin: 1.5rem 0;
+    padding: 1rem 1.5rem;
+    background-color: rgba($secondary-color, 0.05);
+    border-radius: 0.25rem;
+    font-style: italic;
+    color: darken($font-color, 10%);
+
+    p {
+      margin-bottom: 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
   &#post {
     div.author img {
       border: 0;
@@ -286,6 +304,13 @@ a {
       padding: 0.25rem;
       border-radius: 50%;
     }
+  }
+
+  // Center paragraphs when section has text-center class
+  &.text-center p {
+    margin: 1.5rem auto; /* Vertical spacing + horizontal centering */
+    padding: 1rem 1.25rem; /* Better padding for readability */
+    text-align: center;
   }
 }
 
@@ -402,6 +427,15 @@ ul.social-buttons li a {
 footer {
   padding: 3.11rem 0; /* Golden Ratio Spacing */
   text-align: center;
+  .container {
+    margin: 1.5rem auto; /* Vertical spacing + horizontal centering */
+    padding: 1rem 1.25rem; /* Better padding for readability */
+  }
+  p {
+    margin: 1.5rem auto; /* Vertical spacing + horizontal centering */
+    padding: 1rem 1.25rem; /* Better padding for readability */
+    text-align: center;
+  }
 }
 
 ::-moz-selection {
@@ -686,7 +720,7 @@ body {
 .highlight {
   border-radius: 0.3125rem;
   overflow-x: auto; /* Add horizontal scroll for wide code */
-  max-width: 66ch; /* Match paragraph width */
-  margin-left: auto; /* Center the block */
-  margin-right: auto; /* Center the block */
+  max-width: 80ch; /* Wider than paragraphs for code readability */
+  margin: 1.5rem auto; /* Vertical spacing + horizontal centering */
+  padding: 1rem 1.25rem; /* Better padding for readability */
 }
