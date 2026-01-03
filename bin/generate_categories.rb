@@ -20,7 +20,7 @@ Dir.foreach(POSTS_DIR) do |post|
 
       File.open("#{CATEGORIES_DIR}/#{category.downcase}.html", 'w') do |f|
         f.write(
-          "---\nlayout: category\nsection-type: category\nhas-comments: true\ntitle: #{category}\n---\n\n## Category"
+          "---\nlayout: category\nsection-type: category\nhas-comments: true\ntitle: #{category}\n---\n\n## Category\n"
         )
       end
     end
