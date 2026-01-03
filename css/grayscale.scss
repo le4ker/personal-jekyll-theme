@@ -5,12 +5,6 @@
 
 @import "syntax_{{ site.syntax_theme }}";
 
-/*!
- * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
 html,
 body {
   font-family: "Maven Pro", sans-serif;
@@ -72,8 +66,8 @@ small {
 p {
   padding: 0.5rem 0rem;
   line-height: 1.5;
-  /* Apply Golden Ratio related measure */
-  max-width: 80ch; /* Wider than paragraphs for code readability */
+
+  max-width: 80ch;
   @media (min-width: 768px) {
     padding: 0.3rem 0rem;
     line-height: 1.6;
@@ -246,10 +240,9 @@ a {
 }
 
 .content-section {
-  margin-top: 5.02rem; /* Golden Ratio Spacing */
-  padding-top: 5.02rem; /* Golden Ratio Spacing */
+  margin-top: 5.02rem;
+  padding-top: 5.02rem;
   @media (min-width: 768px) {
-    /* Keep larger screen overrides for now, or recalculate with Φ? Let's keep */
     margin-top: 7.8125rem;
     padding-top: 7.8125rem;
   }
@@ -308,8 +301,8 @@ a {
 
   // Center paragraphs when section has text-center class
   &.text-center p {
-    margin: 1.5rem auto; /* Vertical spacing + horizontal centering */
-    padding: 1rem 1.25rem; /* Better padding for readability */
+    margin: 1.5rem auto;
+    padding: 1rem 1.25rem;
     text-align: center;
   }
 }
@@ -335,10 +328,10 @@ a {
 
 ul.social-buttons li a {
   display: block;
-  width: 3.11rem; /* Golden Ratio Size (lineHeight * Φ) */
-  height: 3.11rem; /* Golden Ratio Size (lineHeight * Φ) */
+  width: 3.11rem;
+  height: 3.11rem;
   border-radius: 100%;
-  line-height: 3.11rem; /* Match height */
+  line-height: 3.11rem;
   font-size: 1.5rem;
   outline: 0;
   color: $secondary-color;
@@ -355,59 +348,58 @@ ul.social-buttons li a {
 }
 
 .img-me {
-  width: 8.12rem; /* Golden Ratio Size (lineHeight * Φ^3) */
-  height: 8.12rem; /* Golden Ratio Size (lineHeight * Φ^3) */
+  width: 8.12rem;
+  height: 8.12rem;
   border: 0.4375rem solid $background-color;
-  border-radius: 100%; /* Make it circular */
-  background-color: $background-color; /* Fallback background */
-  color: #f2f2f2; /* Fallback text color */
-  /* Ensure it behaves like an image block */
+  border-radius: 100%;
+  background-color: $background-color;
+  color: #f2f2f2;
+
   display: block;
-  margin: 0 auto; /* Center it horizontally */
-  cursor: pointer; /* Add pointer cursor since it's a link */
+  margin: 0 auto;
+  cursor: pointer;
 }
 
 .post-list {
   text-align: left;
-  padding-left: 0; /* Remove default UL padding */
-  list-style: none; /* Or remove if you want bullets */
+  padding-left: 0;
+  list-style: none;
 
   li {
-    list-style-position: outside; /* Ensure consistent marker positioning */
-    /* Add some bottom margin for spacing */
+    list-style-position: outside;
+
     margin-bottom: 1.5rem;
   }
 }
 
-/* Styles for the restructured post list items */
 .post-list-item {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  margin-bottom: 1.92rem; /* Golden Ratio Spacing (lineHeight) */
+  margin-bottom: 1.92rem;
   border-bottom: 1px dashed rgba($font-color, 0.2);
-  padding-bottom: 1.92rem; /* Golden Ratio Spacing (lineHeight) */
+  padding-bottom: 1.92rem;
 }
 
 .post-date {
   flex: 0 0 7rem;
-  margin-right: 0.73rem; /* Golden Ratio Spacing (lineHeight / Φ^2) */
+  margin-right: 0.73rem;
   color: lighten($font-color, 20%);
   font-size: 0.9em;
 }
 
 .post-category {
-  margin-right: 0.73rem; /* Golden Ratio Spacing (lineHeight / Φ^2) */
+  margin-right: 0.73rem;
   font-size: 0.9em;
-  text-align: center; /* Center category text */
+  text-align: center;
 }
 
 .post-title {
-  flex-grow: 1; /* Allow title to take remaining space */
+  flex-grow: 1;
   font-weight: bold;
-  text-align: left; /* Ensure title text aligns left */
+  text-align: left;
   a {
-    color: $font-color; /* Match default font color for title link */
+    color: $font-color;
     &:hover {
       color: $secondary-color;
     }
@@ -415,25 +407,24 @@ ul.social-buttons li a {
 }
 
 .post-comments {
-  margin-left: 0.73rem; /* Golden Ratio Spacing (lineHeight / Φ^2) */
+  margin-left: 0.73rem;
   font-size: 0.8em;
 }
 
-/* Container for the blog post list */
 .post-list-container {
-  margin-top: 3.11rem; /* Add space above the list (lineHeight * Φ) */
+  margin-top: 3.11rem;
 }
 
 footer {
-  padding: 3.11rem 0; /* Golden Ratio Spacing */
+  padding: 3.11rem 0;
   text-align: center;
   .container {
-    margin: 1.5rem auto; /* Vertical spacing + horizontal centering */
-    padding: 1rem 1.25rem; /* Better padding for readability */
+    margin: 1.5rem auto;
+    padding: 1rem 1.25rem;
   }
   p {
-    margin: 1.5rem auto; /* Vertical spacing + horizontal centering */
-    padding: 1rem 1.25rem; /* Better padding for readability */
+    margin: 1.5rem auto;
+    padding: 1rem 1.25rem;
     text-align: center;
   }
 }
@@ -522,8 +513,8 @@ body {
   position: absolute;
   top: 3rem;
   bottom: 1rem;
-  width: 0.4375rem; /* Match image border width */
-  left: 2.31rem; /* Adjusted for new image size */
+  width: 0.4375rem;
+  left: 2.31rem;
   background-color: $background-color;
 }
 
@@ -569,8 +560,8 @@ body {
   z-index: 100;
   position: absolute;
   left: 0;
-  width: 5.02rem; /* Golden Ratio Size (lineHeight * Φ^2) */
-  height: 5.02rem; /* Golden Ratio Size (lineHeight * Φ^2) */
+  width: 5.02rem;
+  height: 5.02rem;
   border: 0.4375rem solid $background-color;
   border-radius: 100%;
   text-align: center;
@@ -579,10 +570,10 @@ body {
   align-items: center;
   justify-content: center;
   img {
-    width: 100%; /* Force image to fill container width */
-    height: 100%; /* Force image to fill container height */
-    object-fit: cover; /* Scale image to cover, cropping if needed */
-    border-radius: 50%; /* Ensure the image itself is rounded */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
   }
 }
 
@@ -632,9 +623,9 @@ body {
 
 @media (min-width: 768px) {
   .timeline:before {
-    left: 50%; /* Center line on large screens */
-    transform: translateX(-50%); /* Center line on large screens */
-    width: 0.4375rem; /* Match image border width */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0.4375rem;
   }
 
   .timeline > li {
@@ -650,11 +641,10 @@ body {
   }
 
   .timeline > li .timeline-image {
-    left: 50%; /* Center image on large screens */
-    transform: translateX(-50%); /* Center image on large screens */
+    left: 50%;
+    transform: translateX(-50%);
     width: 6.25rem;
     height: 6.25rem;
-    /* Remove margin-left: 0; as it's not needed now */
   }
 
   .timeline > li .timeline-image h4 {
@@ -663,16 +653,15 @@ body {
     line-height: 1.125rem;
   }
 
-  /* Increase header image size on larger screens */
   header.intro .img-me {
-    width: 13.13rem; /* Golden Ratio Size (lineHeight * Φ^4) */
-    height: 13.13rem; /* Golden Ratio Size (lineHeight * Φ^4) */
+    width: 13.13rem;
+    height: 13.13rem;
   }
 }
 
 @media (min-width: 992px) {
   .timeline:before {
-    width: 0.4375rem; /* Match image border width */
+    width: 0.4375rem;
   }
   .timeline > li {
     min-height: 9.375rem;
@@ -685,8 +674,6 @@ body {
   .timeline > li .timeline-image {
     width: 9.375rem;
     height: 9.375rem;
-    /* Remove margin-left: 0; as it's not needed now */
-    /* Inherits left: 50% and transform */
   }
 
   .timeline > li .timeline-image h4 {
@@ -708,8 +695,6 @@ body {
   .timeline > li .timeline-image {
     width: 9.75rem;
     height: 9.75rem;
-    /* Remove margin-left: 0; as it's not needed now */
-    /* Inherits left: 50% and transform */
   }
 
   .timeline > li .timeline-image h4 {
@@ -719,8 +704,8 @@ body {
 
 .highlight {
   border-radius: 0.3125rem;
-  overflow-x: auto; /* Add horizontal scroll for wide code */
-  max-width: 80ch; /* Wider than paragraphs for code readability */
-  margin: 1.5rem auto; /* Vertical spacing + horizontal centering */
-  padding: 1rem 1.25rem; /* Better padding for readability */
+  overflow-x: auto;
+  max-width: 80ch;
+  margin: 1.5rem auto;
+  padding: 1rem 1.25rem;
 }
