@@ -1,3 +1,17 @@
+## [10.3.2](https://github.com/le4ker/personal-jekyll-theme/compare/v10.3.1...v10.3.2) (2026-01-04)
+
+### 🐛 Bug Fixes
+
+* left align headings in posts ([1c7183e](https://github.com/le4ker/personal-jekyll-theme/commit/1c7183e3ef4ad229b75a032b855d769f66231094))
+
+### 📚 Documentation
+
+* update README.md ([e2a3339](https://github.com/le4ker/personal-jekyll-theme/commit/e2a33393008784cbefbdc5ca1ca8efa323846bba))
+
+### 🏠 Chores
+
+* change License to Apache 2.0 ([77d8ef2](https://github.com/le4ker/personal-jekyll-theme/commit/77d8ef2600a8d26272cd0031810ec7630dd894d0))
+
 ## [10.3.1](https://github.com/le4ker/personal-jekyll-theme/compare/v10.3.0...v10.3.1) (2026-01-03)
 
 ### 🐛 Bug Fixes
