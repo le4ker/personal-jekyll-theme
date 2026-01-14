@@ -39,9 +39,10 @@ Enable or disable individual share buttons for each post:
 ```yaml
 email-share: True
 fb-share: True
-twitter-share: True
 linkedin-share: True
 reddit-share: True
+x-share: True
+hackernews-share: True
 tumblr-share: True
 pinterest-share: True
 pocket-share: True

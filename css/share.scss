@@ -1,0 +1,100 @@
+---
+---
+
+// Share buttons - lightweight social sharing styles
+
+$share-colors: (
+  email: #0a88ff,
+  facebook: #3b5998,
+  linkedin: #007bb6,
+  reddit: #ff4500,
+  x: #000000,
+  hackernews: #ff6600,
+  tumblr: #35465c,
+  pinterest: #bd081c,
+  pocket: #ef4056,
+  vk: #4d71a9,
+);
+
+.share-buttons {
+  margin: 1rem 0;
+}
+
+.share-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.share-list li {
+  margin: 0;
+}
+
+.share-list li a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+  background-color: #6c757d;
+  color: #fff;
+
+  &:hover {
+    transform: translateY(-1px);
+    color: #fff;
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.share-icon {
+  display: flex;
+  align-items: center;
+
+  svg {
+    width: 16px;
+    height: 16px;
+
+    path {
+      fill: #fff;
+    }
+  }
+}
+
+.share-text {
+  line-height: 1;
+}
+
+// Platform-specific colors
+@each $platform, $color in $share-colors {
+  .share-#{$platform} a {
+    background-color: $color;
+
+    &:hover {
+      background-color: darken($color, 10%);
+    }
+  }
+}
+
+// Responsive: hide text on small screens
+@media (max-width: 480px) {
+  .share-list li a {
+    padding: 0.5rem;
+  }
+
+  .share-text {
+    display: none;
+  }
+}

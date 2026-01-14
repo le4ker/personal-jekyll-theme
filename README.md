@@ -5,7 +5,9 @@
 [![Ruby](https://img.shields.io/badge/ruby-3.1.1-red.svg)](https://www.ruby-lang.org/)
 [![Jekyll](https://img.shields.io/badge/jekyll-theme-green.svg)](https://jekyllrb.com/)
 
-**{ Personal }** is a free, responsive Jekyll theme with a minimal aesthetic — perfect for your personal blog and portfolio. Tell your story with a beautiful timeline and share your thoughts through an elegant blog.
+**{ Personal }** is a free, responsive Jekyll theme with a minimal aesthetic —
+perfect for your personal blog and portfolio. Tell your story with a beautiful
+timeline and share your thoughts through an elegant blog.
 
 🔗 **[Live Demo](https://le4ker.github.io/personal-jekyll-theme/)**
 
@@ -26,7 +28,8 @@
    url: "https://yourusername.github.io"
    baseurl: ""
    ```
-4. **Commit** your changes — once the GitHub Action succeeds, your site will be live at `https://yourusername.github.io`
+4. **Commit** your changes — once the GitHub Action succeeds, your site will be
+   live at `https://yourusername.github.io`
 
 ---
 
@@ -45,7 +48,9 @@ The site will be available at `http://localhost:4000`.
 ### Option 2: Native Ruby
 
 **Prerequisites:**
-- Ruby 3.1.1 (use [rbenv](https://github.com/rbenv/rbenv) or [rvm](https://rvm.io/) for version management)
+
+- Ruby 3.1.1 (use [rbenv](https://github.com/rbenv/rbenv) or
+  [rvm](https://rvm.io/) for version management)
 - Bundler
 
 **Installation:**
@@ -66,45 +71,50 @@ The site will be available at `http://localhost:4000`.
 
 All site configuration is managed through `_config.yml`. Key settings include:
 
-| Setting | Description |
-|---------|-------------|
-| `url` | Your site's URL |
-| `title` | Site title displayed in the header |
-| `author` | Your name |
-| `description` | Site description for SEO |
-| `me-img` | Your profile image |
-| `background-img` | Header background image |
-| `events` | Timeline entries |
-| `social` | Social media links |
+| Setting          | Description                        |
+| ---------------- | ---------------------------------- |
+| `url`            | Your site's URL                    |
+| `title`          | Site title displayed in the header |
+| `author`         | Your name                          |
+| `description`    | Site description for SEO           |
+| `me-img`         | Your profile image                 |
+| `background-img` | Header background image            |
+| `events`         | Timeline entries                   |
+| `social`         | Social media links                 |
 
 ---
 
 ## ✨ Features
 
 ### Design
+
 - 🎨 Modern, minimal aesthetic with white-on-black text
 - 📱 Fully responsive — looks great on mobile, tablet, and desktop
 - 🖼️ Customizable header with dynamic text and profile image
 
 ### Timeline
+
 - 📅 Tell your story with a sleek timeline
 - 🖼️ Add images, dates, and descriptions for each milestone
 
 ### Blogging
+
 - ✍️ Full-featured blog with archive page
 - 🏷️ Hashtags and categories support
 - 💬 Disqus comments integration
-- 🔗 Social share buttons (Twitter, Facebook, LinkedIn, Reddit, and more)
+- 🔗 Social share buttons (X, Facebook, LinkedIn, Reddit, Hacker News, and more)
 - 🎨 Syntax highlighting for code blocks
 - 📊 Mermaid diagram support
 - 📡 RSS feed
 
 ### SEO & Analytics
+
 - 📈 Google Analytics integration
 - 🗺️ Automatic sitemap generation
 - 🔍 SEO-friendly meta tags
 
 ### Privacy & Security
+
 - 🍪 Cookie consent banner
 - 🛡️ Email harvesting protection
 
@@ -112,13 +122,17 @@ All site configuration is managed through `_config.yml`. Key settings include:
 
 ## 📚 Documentation
 
-Detailed documentation is available as blog posts on the [demo site](https://le4ker.github.io/personal-jekyll-theme/blog/).
+Detailed documentation is available as blog posts on the
+[demo site](https://le4ker.github.io/personal-jekyll-theme/blog/).
 
 ---
 
 ## 🙏 Credits
 
-This theme is a fork of [Timeline](https://github.com/kirbyt/timeline-jekyll-theme), which is a mashup of:
+This theme is a fork of
+[Timeline](https://github.com/kirbyt/timeline-jekyll-theme), which is a mashup
+of:
+
 - [Grayscale by Start Bootstrap](https://github.com/IronSummitMedia/startbootstrap-grayscale)
 - [Agency Jekyll Theme](https://github.com/y7kim/agency-jekyll-theme)
 
@@ -126,4 +140,5 @@ This theme is a fork of [Timeline](https://github.com/kirbyt/timeline-jekyll-the
 
 ## 📄 License
 
-This project is licensed under the **Apache License 2.0** — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **Apache License 2.0** — see the
+[LICENSE](LICENSE) file for details.
