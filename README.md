@@ -127,6 +127,40 @@ Detailed documentation is available as blog posts on the
 
 ---
 
+## 🤝 Contributing
+
+This project uses [Conventional Commits](https://www.conventionalcommits.org/)
+to generate release notes automatically.
+
+### Setup Git Hooks
+
+To enforce conventional commits locally, run:
+
+```shell
+sh .githooks/setup.sh
+```
+
+This will configure git to validate your commit messages before each commit.
+
+### Commit Message Format
+
+```
+<type>[optional scope]: <description>
+```
+
+**Allowed types:** `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`,
+`build`, `ci`, `chore`, `revert`
+
+**Examples:**
+
+```
+feat: add dark mode support
+fix(comments): resolve Cusdis loading issue
+docs: update installation instructions
+```
+
+---
+
 ## 🙏 Credits
 
 This theme is a fork of
