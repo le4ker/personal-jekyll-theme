@@ -1,3 +1,27 @@
+## [10.4.0](https://github.com/le4ker/personal-jekyll-theme/compare/v10.3.2...v10.4.0) (2026-01-17)
+
+### ✨ Features
+
+* add conventional commits enforcement with git hooks ([bfaf878](https://github.com/le4ker/personal-jekyll-theme/commit/bfaf878126a0edf557fdce3f4f983739d1aba132))
+* add schema.org structured data (JSON-LD) for SEO ([a5814be](https://github.com/le4ker/personal-jekyll-theme/commit/a5814be9e27e9279d7d1a228ee5cfc8a10778559)), closes [#280](https://github.com/le4ker/personal-jekyll-theme/issues/280)
+* migrate from Discus to Cusdis comments ([97e470c](https://github.com/le4ker/personal-jekyll-theme/commit/97e470c5c4335a0c9eecc91a11359ba02dd140b0))
+* migrate from rrssb to custom share buttons ([e6c808b](https://github.com/le4ker/personal-jekyll-theme/commit/e6c808b32c2a00f3d091be3046f4c46db73845aa))
+
+### 🐛 Bug Fixes
+
+* add everforest syntax highlighting stylesheet ([70f7dbf](https://github.com/le4ker/personal-jekyll-theme/commit/70f7dbfc718cbe450df7400c9a7f837d7f355fc1))
+* **ci:** update RubyGems to fix nokogiri compatibility ([02ef554](https://github.com/le4ker/personal-jekyll-theme/commit/02ef5542620477b96a52fda643c0a4508c9d5062))
+* remove redundant baseurl from post_url links in initial-setup ([4cb7077](https://github.com/le4ker/personal-jekyll-theme/commit/4cb707766f5e1b64cd2aa863b3d506b22f799a00))
+
+### 🔧 Refactoring
+
+* standardize URL handling with relative_url filter ([ba6aab6](https://github.com/le4ker/personal-jekyll-theme/commit/ba6aab6e79fcf33e1f559c32e8bbad37da4e2d63))
+
+### 📚 Documentation
+
+* add issue and pull request templates ([67738b9](https://github.com/le4ker/personal-jekyll-theme/commit/67738b97e2544a85c9caa66f6a4b38347bcaccef))
+* add release flair ([9396610](https://github.com/le4ker/personal-jekyll-theme/commit/9396610d83576df24306cf4943ed54cea9a5b3aa))
+
 ## [10.3.2](https://github.com/le4ker/personal-jekyll-theme/compare/v10.3.1...v10.3.2) (2026-01-04)
 
 ### 🐛 Bug Fixes
