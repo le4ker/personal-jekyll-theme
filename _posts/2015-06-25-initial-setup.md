@@ -116,5 +116,5 @@ your site.
 ### Next Steps
 
 With the initial setup complete, proceed to customize your
-[Header]({{ site.baseurl }}{% post_url 2015-06-24-intro-layout-tutorial %}) and
-[Blog]({{ site.baseurl }}{% post_url 2015-06-20-blog-tutorial %}) settings.
+[Header]({% post_url 2015-06-24-intro-layout-tutorial %}) and
+[Blog]({% post_url 2015-06-20-blog-tutorial %}) settings.
