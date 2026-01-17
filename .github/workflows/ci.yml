@@ -16,7 +16,12 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.1.1"
-          bundler-cache: true
+
+      - name: Update RubyGems
+        run: gem update --system
+
+      - name: Install dependencies
+        run: bundle install
 
       - name: Build site
         run: bundle exec jekyll build
