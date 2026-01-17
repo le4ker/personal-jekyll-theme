@@ -35,4 +35,5 @@ jobs:
             --ignore-status-codes "403,429,999"
             --no-enforce-https
             --allow-missing-href
-            --swap-urls "^https://le4ker.github.io/personal-jekyll-theme:"
+            --disable-external
+            --swap-urls "^/personal-jekyll-theme:"
