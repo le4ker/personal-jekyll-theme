@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - main
+      - develop
+
+jobs:
+  build-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.1.1"
+          bundler-cache: true
+
+      - name: Build site
+        run: bundle exec jekyll build
+
+      - name: Validate HTML and check links
+        uses: chabad360/htmlproofer@master
+        with:
+          directory: ./_site
+          arguments: |
+            --ignore-urls "/^http://localhost/,/^https://fonts.googleapis.com/,/^https://fonts.gstatic.com/,/^https://cdnjs.cloudflare.com/"
+            --ignore-status-codes "403,429,999"
+            --no-enforce-https
+            --allow-missing-href
+            --swap-urls "^https://le4ker.github.io/personal-jekyll-theme:"
