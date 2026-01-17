@@ -1,0 +1,70 @@
+<!-- Schema.org JSON-LD Structured Data -->
+
+{% if page.layout == "post" %}
+<!-- BlogPosting Schema for blog posts -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  },
+  "headline": "{{ page.title | escape }}",
+  "description": "{{ page.excerpt | default: site.description | strip_html | truncate: 160 | escape }}",
+  "image": "{{ site.me-img | absolute_url }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.author | escape }}",
+    "url": "{{ '/' | absolute_url }}"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "{{ site.author | escape }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.me-img | absolute_url }}"
+    }
+  },
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+  "keywords": "{% for tag in page.tags %}{{ tag }}{% unless forloop.last %}, {% endunless %}{% endfor %}"
+}
+</script>
+{% else %}
+<!-- WebSite and Person Schema for non-post pages -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ site.title | escape }}",
+  "description": "{{ site.description | escape }}",
+  "url": "{{ '/' | absolute_url }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.author | escape }}"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ '/' | absolute_url }}?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ site.author | escape }}",
+  "url": "{{ '/' | absolute_url }}",
+  "image": "{{ site.me-img | absolute_url }}",
+  "description": "{{ site.description | escape }}",
+  "sameAs": [
+    {% for social in site.social %}
+    "{{ social.url }}"{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}
