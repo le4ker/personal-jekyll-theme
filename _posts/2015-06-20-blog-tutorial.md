@@ -51,19 +51,21 @@ vkontakte-share: True
 
 Set any option to `False` to hide that share button.
 
-### Comments with Disqus
+### Comments with Cusdis
 
-Enable reader engagement with Disqus comments:
+Enable reader engagement with Cusdis comments:
 
 ```yaml
-disqus-shortname: "your-disqus-shortname"
+cusdis-app-id: "your-cusdis-app-id"
 ```
 
-To get your shortname:
+To get your App ID:
 
-1. Create an account at [disqus.com](https://disqus.com)
-2. Register your site
-3. Copy your shortname from the site settings
+1. Create an account at [cusdis.com](https://cusdis.com)
+2. Add a new website
+3. Copy your App ID from the dashboard
+4. Update the `cusdis-app-id` value in your `_config.yml` file with your new App
+   ID
 
 Leave empty or remove to disable comments.
 

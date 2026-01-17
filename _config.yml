@@ -59,7 +59,8 @@ pinterest-share: True
 pocket-share: True
 vkontakte-share: True
 
-disqus-shortname: "personal-jekyll-theme"
+# NB! Create an account in Cusdis and update the app id, otherwise the comments won't work
+cusdis-app-id: "d34a3968-9be5-46d7-98f1-c4263cd1a220"
 
 ############
 # Timeline #

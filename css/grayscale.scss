@@ -728,3 +728,12 @@ body {
   margin: 1.5rem auto;
   padding: 1rem 1.25rem;
 }
+
+// Cusdis comments
+#cusdis_thread {
+  iframe {
+    width: 100% !important;
+    border: none !important;
+    min-height: 20rem;
+  }
+}
