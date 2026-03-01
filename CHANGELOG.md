@@ -1,3 +1,14 @@
+## [10.5.0](https://github.com/le4ker/personal-jekyll-theme/compare/v10.4.1...v10.5.0) (2026-03-01)
+
+### ✨ Features
+
+* add dark theme and theme switcher ([b6aed4f](https://github.com/le4ker/personal-jekyll-theme/commit/b6aed4fba159f7cd8efe83a0dd729fa0041153a7))
+
+### 🏠 Chores
+
+* ignore claude local settings ([36b9cda](https://github.com/le4ker/personal-jekyll-theme/commit/36b9cda06f5febffdad8f102cd6c1c3d6b04c105))
+* merge branch 'develop' ([f7eed7c](https://github.com/le4ker/personal-jekyll-theme/commit/f7eed7c67cf698d15ab3b08302e33de2c861cab1))
+
 ## [10.4.1](https://github.com/le4ker/personal-jekyll-theme/compare/v10.4.0...v10.4.1) (2026-03-01)
 
 ### 🐛 Bug Fixes
