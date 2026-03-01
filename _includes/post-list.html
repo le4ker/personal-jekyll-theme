@@ -1,23 +1,23 @@
 <!-- Post List Start -->
 
-<h5 class="post-list pt-3">
-  {{ post.date | date_to_string }}
-  <small>
-    .
+<div class="post-list-item">
+  <span class="post-date">{{ post.date | date_to_string }}</span>
+  <span class="post-category">
     <a
       class="category"
       href="{{ '/categories/' | absolute_url }}{{ post.category | downcase }}.html"
     >
       {{ post.category }}
     </a>
-    .
-  </small>
-  <br class="d-block d-sm-none" />
-  <a href="{{ post.url | absolute_url }}"> {{ post.title }} </a>
-  <br class="d-block d-sm-none" />
-  <small>
-    <a href="{{ post.url | absolute_url }}#cusdis_thread">Comments</a>
-  </small>
-</h5>
+  </span>
+  <span class="post-title">
+    <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+  </span>
+  <span class="post-comments">
+    <small
+      ><a href="{{ post.url | absolute_url }}#cusdis_thread">Comments</a></small
+    >
+  </span>
+</div>
 
 <!-- Post List End -->
