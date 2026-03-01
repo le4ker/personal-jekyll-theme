@@ -14,6 +14,8 @@ body {
   line-height: 1.6;
   text-align: justify;
   scroll-behavior: smooth;
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
 
 h1,
@@ -51,8 +53,8 @@ h2 {
 
 h3 {
   font-size: 1.94rem;
-  margin-top: 3.11rem;
-  margin-bottom: 1.92rem;
+  margin-top: 2.25rem;
+  margin-bottom: 1.25rem;
 }
 
 h4 {
@@ -77,8 +79,9 @@ small {
 p {
   padding: 0.5rem 0rem;
   line-height: 1.5;
-
   max-width: 80ch;
+  margin-left: auto;
+  margin-right: auto;
   @media (min-width: 768px) {
     padding: 0.3rem 0rem;
     line-height: 1.6;
@@ -101,8 +104,6 @@ p {
 .text-justify p,
 .content-section.text-center .text-justify p {
   text-align: justify;
-  width: 100%;
-  max-width: 100%;
 }
 
 a {
@@ -278,14 +279,19 @@ a {
   ol {
     text-align: left;
     margin: 0 0 1.5625rem;
-    line-height: 1.5;
-    list-style-position: inside;
+    line-height: 1.6;
+    list-style-position: outside;
+    padding-left: 1.5rem;
   }
   pre {
     padding: 0;
     border-radius: 0.3125rem;
+    hyphens: none;
+    -webkit-hyphens: none;
     > code {
       text-align: left;
+      hyphens: none;
+      -webkit-hyphens: none;
     }
   }
   img.emoji {
@@ -727,6 +733,22 @@ body {
   max-width: 80ch;
   margin: 1.5rem auto;
   padding: 1rem 1.25rem;
+  hyphens: none;
+  -webkit-hyphens: none;
+}
+
+// Underline links in post body prose; exclude code spans and navigation
+#post .text-justify a {
+  text-decoration: underline;
+  text-decoration-color: rgba($secondary-color, 0.5);
+  text-underline-offset: 0.2em;
+  &:hover,
+  &:focus {
+    text-decoration-color: darken($secondary-color, 20%);
+  }
+  code {
+    text-decoration: none;
+  }
 }
 
 // Cusdis comments
