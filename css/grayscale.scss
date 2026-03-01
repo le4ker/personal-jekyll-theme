@@ -1,15 +1,15 @@
 ---
 ---
 
-@import "variables";
+@import "themes";
 
 @import "syntax_{{ site.syntax_theme }}";
 
 html,
 body {
   font-family: "Maven Pro", sans-serif;
-  color: $font-color;
-  background-color: $primary-color;
+  color: var(--font-color);
+  background-color: var(--primary-color);
   font-size: 1.2rem;
   line-height: 1.6;
   text-align: justify;
@@ -107,14 +107,14 @@ p {
 }
 
 a {
-  color: $secondary-color;
+  color: var(--secondary-color);
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
   &:hover,
   &:focus {
-    color: darken($secondary-color, 20%);
+    color: var(--secondary-dark);
   }
 }
 
@@ -125,19 +125,19 @@ a {
   transition: background 0.3s ease-in-out;
   &:hover {
     outline: none;
-    background-color: rgba($font-color, 0.3);
+    background-color: var(--font-color-faint-3);
   }
   &:focus,
   &:active {
     outline: none;
-    background-color: rgba($font-color, 0.3);
+    background-color: var(--font-color-faint-3);
   }
   &.active {
     outline: none;
     a {
-      background-color: rgba($font-color, 0.3);
+      background-color: var(--font-color-faint-3);
       &:hover {
-        color: $font-color;
+        color: var(--font-color);
       }
     }
   }
@@ -145,9 +145,9 @@ a {
 
 .navbar-custom {
   margin-bottom: 0;
-  border-bottom: 0.0625rem solid rgba($font-color, 0.3);
+  border-bottom: 0.0625rem solid var(--font-color-faint-3);
   text-transform: uppercase;
-  background-color: $primary-color;
+  background-color: var(--primary-color);
   overflow-y: auto;
   @media (min-width: 768px) {
     padding: 1.25rem 0;
@@ -165,20 +165,20 @@ a {
       padding 0.5s ease-in-out;
     &.top-nav-collapse {
       padding: 0;
-      background: $primary-color;
-      border-bottom: 0.0625rem solid rgba($font-color, 0.3);
+      background: var(--primary-color);
+      border-bottom: 0.0625rem solid var(--font-color-faint-3);
     }
   }
   .navbar-toggler {
     padding: 0.25rem 0.375rem;
-    color: $font-color;
+    color: var(--font-color);
     &:focus,
     &:active {
       outline: none;
     }
   }
   a {
-    color: $font-color;
+    color: var(--font-color);
   }
   .nav {
     text-align: left;
@@ -195,8 +195,8 @@ a {
   height: auto;
   text-align: center;
   padding-top: 20rem;
-  color: $font-color;
-  background-color: $primary-color;
+  color: var(--font-color);
+  background-color: var(--primary-color);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -283,6 +283,10 @@ a {
     list-style-position: outside;
     padding-left: 1.5rem;
   }
+
+  ul.timeline {
+    padding-left: 0;
+  }
   pre {
     padding: 0;
     border-radius: 0.3125rem;
@@ -300,13 +304,13 @@ a {
   }
 
   blockquote {
-    border-left: 0.25rem solid $secondary-color;
+    border-left: 0.25rem solid var(--secondary-color);
     margin: 1.5rem 0;
     padding: 1rem 1.5rem;
-    background-color: rgba($secondary-color, 0.05);
+    background-color: var(--secondary-subtle);
     border-radius: 0.25rem;
     font-style: italic;
-    color: darken($font-color, 10%);
+    color: var(--font-color-dark);
 
     p {
       margin-bottom: 0;
@@ -342,15 +346,15 @@ a {
 }
 
 .btn-default {
-  color: $secondary-color;
+  color: var(--secondary-color);
   background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
   outline: 0;
-  color: #222222;
-  background-color: $secondary-color;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 
 ul.social-buttons li a {
@@ -361,7 +365,7 @@ ul.social-buttons li a {
   line-height: 3.11rem;
   font-size: 1.5rem;
   outline: 0;
-  color: $secondary-color;
+  color: var(--secondary-color);
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
@@ -369,17 +373,17 @@ ul.social-buttons li a {
   &:hover,
   &:focus,
   &:active {
-    color: #222;
-    background-color: darken($secondary-color, 10%);
+    color: var(--primary-color);
+    background-color: var(--secondary-mid);
   }
 }
 
 .img-me {
   width: 8.12rem;
   height: 8.12rem;
-  border: 0.4375rem solid $background-color;
+  border: 0.4375rem solid var(--background-color);
   border-radius: 100%;
-  background-color: $background-color;
+  background-color: var(--background-color);
   color: #f2f2f2;
 
   display: block;
@@ -403,7 +407,7 @@ ul.social-buttons li a {
   display: block;
   text-align: justify;
   margin-bottom: 1.92rem;
-  border-bottom: 1px dashed rgba($font-color, 0.2);
+  border-bottom: 1px dashed var(--font-color-faint-2);
   padding-bottom: 1.92rem;
   max-width: 65ch;
 }
@@ -411,7 +415,7 @@ ul.social-buttons li a {
 .post-date {
   display: inline;
   margin-right: 0.73rem;
-  color: lighten($font-color, 8%);
+  color: var(--font-color-light);
   font-size: 0.9em;
 }
 
@@ -425,9 +429,9 @@ ul.social-buttons li a {
   display: inline;
   font-weight: bold;
   a {
-    color: $font-color;
+    color: var(--font-color);
     &:hover {
-      color: $secondary-color;
+      color: var(--secondary-color);
     }
   }
 }
@@ -459,13 +463,13 @@ footer {
 ::-moz-selection {
   text-shadow: none;
   background: #fcfcfc;
-  background: rgba($font-color, 0.2);
+  background: var(--font-color-faint-2);
 }
 
 ::selection {
   text-shadow: none;
   background: #fcfcfc;
-  background: rgba($font-color, 0.2);
+  background: var(--font-color-faint-2);
 }
 
 img::selection {
@@ -481,7 +485,7 @@ em {
 }
 
 body {
-  -webkit-tap-highlight-color: rgba($font-color, 0.2);
+  -webkit-tap-highlight-color: var(--font-color-faint-2);
 }
 
 .typed-cursor {
@@ -540,7 +544,7 @@ body {
   bottom: 1rem;
   width: 0.4375rem;
   left: 2.31rem;
-  background-color: $background-color;
+  background-color: var(--background-color);
 }
 
 .timeline > li {
@@ -587,7 +591,7 @@ body {
   left: 0;
   width: 5.02rem;
   height: 5.02rem;
-  border: 0.4375rem solid $background-color;
+  border: 0.4375rem solid var(--background-color);
   border-radius: 100%;
   text-align: center;
   color: #f2f2f2;
@@ -740,15 +744,48 @@ body {
 // Underline links in post body prose; exclude code spans and navigation
 #post .text-justify a {
   text-decoration: underline;
-  text-decoration-color: rgba($secondary-color, 0.5);
+  text-decoration-color: var(--secondary-half);
   text-underline-offset: 0.2em;
   &:hover,
   &:focus {
-    text-decoration-color: darken($secondary-color, 20%);
+    text-decoration-color: var(--secondary-dark);
   }
   code {
     text-decoration: none;
   }
+}
+
+// Mermaid diagrams are pre-rendered by mermaid.ink as SVGs with transparent
+// backgrounds and dark lines. In dark mode, give them a light island so the
+// diagram remains legible without changing the upstream SVG.
+[data-theme="dark"] img.mermaid {
+  background-color: #fdf6e3;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.3125rem;
+}
+
+// Theme toggle button
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--font-color);
+  font-size: 1.1rem;
+  padding: 0.25rem 0.5rem;
+  line-height: 1;
+  transition: color 0.2s;
+  &:hover {
+    color: var(--secondary-color);
+  }
+}
+.theme-toggle .theme-icon-dark {
+  display: none;
+}
+[data-theme="dark"] .theme-toggle .theme-icon-light {
+  display: none;
+}
+[data-theme="dark"] .theme-toggle .theme-icon-dark {
+  display: inline-block;
 }
 
 // Cusdis comments
