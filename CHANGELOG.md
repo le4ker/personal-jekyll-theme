@@ -1,3 +1,13 @@
+## [10.5.0](https://github.com/le4ker/personal-jekyll-theme/compare/v10.4.1...v10.5.0) (2026-03-01)
+
+### ✨ Features
+
+* add dark theme support ([d6155e7](https://github.com/le4ker/personal-jekyll-theme/commit/d6155e7263cb48ac6e91cae69b3e38dc080664cf))
+
+### 🏠 Chores
+
+* merge branch 'develop' ([4de00df](https://github.com/le4ker/personal-jekyll-theme/commit/4de00df79ef9b79d7852eecb0b021fd280ba195f))
+
 ## [10.4.1](https://github.com/le4ker/personal-jekyll-theme/compare/v10.4.0...v10.4.1) (2026-03-01)
 
 ### 🐛 Bug Fixes
