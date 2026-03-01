@@ -89,6 +89,7 @@ All site configuration is managed through `_config.yml`. Key settings include:
 ### Design
 
 - 🎨 Modern, minimal aesthetic with white-on-black text
+- 🌗 Dark mode with a theme toggle button — preference saved in localStorage
 - 📱 Fully responsive — looks great on mobile, tablet, and desktop
 - 🖼️ Customizable header with dynamic text and profile image
 
@@ -101,7 +102,7 @@ All site configuration is managed through `_config.yml`. Key settings include:
 
 - ✍️ Full-featured blog with archive page
 - 🏷️ Hashtags and categories support
-- 💬 Disqus comments integration
+- 💬 Comments integration (Cusdis) with dark/light theme sync
 - 🔗 Social share buttons (X, Facebook, LinkedIn, Reddit, Hacker News, and more)
 - 🎨 Syntax highlighting for code blocks
 - 📊 Mermaid diagram support

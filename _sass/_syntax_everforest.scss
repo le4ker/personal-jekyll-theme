@@ -10,8 +10,8 @@
 */
 
 .language-plaintext {
-  background-color: rgba(45, 53, 59, 0.1);
-  color: #4a565d;
+  background-color: var(--font-color-faint-2);
+  color: var(--font-color-dark);
   font-size: 90%;
   padding: 0.15rem 0.35rem;
   border-radius: 0.25rem;
