@@ -1,0 +1,37 @@
+// Light theme (Solarized light)
+:root {
+  --primary-color: #fdf6e3;
+  --background-color: #efebd4;
+  --font-color: #4a565d;
+  --font-color-light: #6d7a83;
+  --font-color-dark: #3d4a51;
+  --font-color-faint-2: rgba(74, 86, 93, 0.2);
+  --font-color-faint-3: rgba(74, 86, 93, 0.3);
+  --secondary-color: #1567a0;
+  --secondary-dark: #0a3d6f;
+  --secondary-mid: #107799;
+  --secondary-half: rgba(21, 103, 160, 0.5);
+  --secondary-subtle: rgba(21, 103, 160, 0.05);
+}
+
+// Dark theme (Everforest dark)
+[data-theme="dark"] {
+  --primary-color: #272e33;
+  --background-color: #2e383c;
+  --font-color: #d3c6aa;
+  --font-color-light: #c5b48f;
+  --font-color-dark: #e1d8c5;
+  --font-color-faint-2: rgba(211, 198, 170, 0.2);
+  --font-color-faint-3: rgba(211, 198, 170, 0.3);
+  --secondary-color: #6aafd4;
+  --secondary-dark: #307ea8;
+  --secondary-mid: #429ac9;
+  --secondary-half: rgba(106, 175, 212, 0.5);
+  --secondary-subtle: rgba(106, 175, 212, 0.08);
+}
+
+html {
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}

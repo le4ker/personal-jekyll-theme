@@ -9,6 +9,15 @@
   <meta http-equiv="refresh" content="20; url=/" />
   {% endif %}
   <title>{{site.title}}{% if page.title %} | {{page.title}}{% endif %}</title>
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme") ||
+          (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
 
   <link rel="canonical" href="{{ page.url | absolute_url | replace:'index.html' }}" />
 
@@ -23,7 +32,7 @@
 
   {% if page.layout == "post" %}
   <link href="{{ '/css/everforest.css' | relative_url }}" rel="stylesheet" />
-<link href="{{ '/css/share.css' | relative_url }}" rel="stylesheet" />
+  <link href="{{ '/css/share.css' | relative_url }}" rel="stylesheet" />
   {% endif %}
 
   <!-- Fonts -->

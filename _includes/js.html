@@ -1,11 +1,8 @@
-<!-- Javascript Start -->
-
-<script
-  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
-  integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ=="
-  crossorigin="anonymous"
-></script>
-
+<!--
+Copyright © 2024 Panos Sakkos <panos.sakkos@gmail.com>. All rights reserved.
+This code is part of my personal blog and is not licensed for redistribution or modification.
+To use this Jekyll theme, visit: https://github.com/le4ker/personal-jekyll-theme
+-->
 <script
   src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
   integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
@@ -13,43 +10,82 @@
   referrerpolicy="no-referrer"
 ></script>
 
-<script
-  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"
-  integrity="sha512-ahmSZKApTDNd3gVuqL5TQ3MBTj8tL5p2tYV05Xxzcfu6/ecvt1A0j6tfudSGBVuteSoTRMqMljbfdU0g2eDNUA=="
-  crossorigin="anonymous"
-></script>
-
 <!--
   * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
   * Code licensed under the Apache License v2.0.
   * For details, see http://www.apache.org/licenses/LICENSE-2.0.
 -->
+
 <script>
+  // Toggle navbar background on scroll
   function toggleNavCollapse() {
-    50 < $(".navbar").offset().top
-      ? $(".fixed-top").addClass("top-nav-collapse")
-      : $(".fixed-top").removeClass("top-nav-collapse");
+    const navbar = document.querySelector(".navbar");
+    const fixedTop = document.querySelector(".fixed-top");
+    if (navbar && fixedTop) {
+      if (navbar.getBoundingClientRect().top + window.scrollY > 50) {
+        fixedTop.classList.add("top-nav-collapse");
+      } else {
+        fixedTop.classList.remove("top-nav-collapse");
+      }
+    }
   }
-  $(document).ready(toggleNavCollapse);
-  $(window).scroll(toggleNavCollapse);
-  $(function () {
-    $("a.page-scroll").bind("click", function (b) {
-      var a = $(this);
-      $("html, body")
-        .stop()
-        .animate(
-          { scrollTop: $(a.attr("href")).offset().top - 50 },
-          100,
-          "easeInOutExpo",
-          function () {
-            a.blur();
-          },
-        );
-      b.preventDefault();
+
+  document.addEventListener("DOMContentLoaded", toggleNavCollapse);
+  window.addEventListener("scroll", toggleNavCollapse);
+
+  // Smooth scrolling for page-scroll links
+  document.addEventListener("DOMContentLoaded", function () {
+    // Custom smooth scroll with easing
+    function smoothScrollTo(targetPosition, duration) {
+      const startPosition = window.scrollY;
+      const distance = targetPosition - startPosition;
+      let startTime = null;
+
+      function easeOutCubic(t) {
+        return 1 - Math.pow(1 - t, 3);
+      }
+
+      function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const easeProgress = easeOutCubic(progress);
+
+        window.scrollTo(0, startPosition + distance * easeProgress);
+
+        if (elapsed < duration) {
+          requestAnimationFrame(animation);
+        }
+      }
+
+      requestAnimationFrame(animation);
+    }
+
+    document.querySelectorAll("a.page-scroll").forEach(function (link) {
+      link.addEventListener("click", function (e) {
+        const href = this.getAttribute("href");
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          const targetPosition =
+            target.getBoundingClientRect().top + window.scrollY - 50;
+          smoothScrollTo(targetPosition, 800);
+          this.blur();
+        }
+      });
     });
-  });
-  $(".navbar-collapse ul li a").click(function () {
-    $(".navbar-toggler:visible").click();
+
+    // Close navbar when a nav link is clicked (mobile)
+    document
+      .querySelectorAll(".navbar-collapse ul li a")
+      .forEach(function (link) {
+        link.addEventListener("click", function () {
+          const toggler = document.querySelector(".navbar-toggler");
+          if (toggler && window.getComputedStyle(toggler).display !== "none") {
+            toggler.click();
+          }
+        });
+      });
   });
 </script>
 
@@ -87,22 +123,48 @@
   });
 </script>
 
+<!-- Theme toggle -->
+
+<script>
+  (function () {
+    var btn = document.getElementById("theme-toggle");
+    if (!btn) return;
+    btn.addEventListener("click", function () {
+      var next =
+        document.documentElement.getAttribute("data-theme") === "dark"
+          ? "light"
+          : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+      try {
+        localStorage.setItem("theme", next);
+      } catch (e) {}
+      if (window.cusdisApplyTheme) {
+        window.cusdisApplyTheme(next === "dark");
+      }
+    });
+  })();
+</script>
+
 {% if page.section-type == "index" %}
 
 <!-- Dynamic Typing Start -->
 
 <script
   type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js"
+  src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"
+  integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
 ></script>
 <script type="text/javascript">
-  $(".intro-text").typed({
-    strings: ["{{ site.quote }}"],
-    typeSpeed: 3,
-    startDelay: 1000,
-    loop: false,
-    loopCount: 1,
-    cursorChar: "|",
+  document.addEventListener("DOMContentLoaded", function () {
+    new Typed(".intro-text", {
+      strings: ["{{ site.quote }}"],
+      typeSpeed: 50,
+      startDelay: 1000,
+      loop: false,
+      cursorChar: "|",
+    });
   });
 </script>
 
@@ -126,5 +188,3 @@
 <!-- Share buttons End -->
 
 {% endif %}
-
-<!-- Javascript End -->

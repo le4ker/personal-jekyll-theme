@@ -1,5 +1,5 @@
 <!--
-Copyright © 2024 Panos Sakkos <panos.sakkos@gmail.com>. All rights reserved.
+caopyright © 2024 Panos Sakkos <panos.sakkos@gmail.com>. All rights reserved.
 This code is part of my personal blog and is not licensed for redistribution or modification.
 To use this Jekyll theme, visit: https://github.com/le4ker/personal-jekyll-theme
 -->
@@ -10,218 +10,250 @@ To use this Jekyll theme, visit: https://github.com/le4ker/personal-jekyll-theme
     data-page-id="{{ page.url }}"
     data-page-url="{{ page.url | absolute_url }}"
     data-page-title="{{ page.title }}"
-    data-theme="light"
   ></div>
   <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
   <script>
-    // Inject custom styles into Cusdis iframe to match blog theme
     (function() {
-      const customStyles = `
-        :root {
-          --cusdis-bg: #fdf6e3;
-          --cusdis-text: #4a565d;
-          --cusdis-text-light: #6b7a82;
-          --cusdis-accent: #3a94c5;
-          --cusdis-input-bg: #efebd4;
-          --cusdis-border: #d5cdb6;
-          --cusdis-radius: 0.3125rem;
-        }
+      var cusdisDiv = document.getElementById('cusdis_thread');
+      var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
 
-        /* Base styles */
-        body {
-          background-color: var(--cusdis-bg) !important;
-          font-family: "Maven Pro", sans-serif !important;
-          font-size: 1.1rem !important;
-          line-height: 1.6 !important;
-          color: var(--cusdis-text) !important;
-        }
+      // Set initial Cusdis theme to match page theme
+      cusdisDiv.setAttribute('data-theme', isDark ? 'dark' : 'light');
 
-        /* All text colors */
-        .text-gray-900, .text-gray-800, .text-gray-700, .text-gray-600,
-        .dark\\:text-gray-100, .dark\\:text-gray-200 {
-          color: var(--cusdis-text) !important;
+      function getThemeVars(dark) {
+        if (dark) {
+          return (
+            ':root {' +
+            '  --cusdis-bg: #272e33;' +
+            '  --cusdis-text: #d3c6aa;' +
+            '  --cusdis-text-light: #9baab0;' +
+            '  --cusdis-accent: #6aafd4;' +
+            '  --cusdis-accent-hover: #4d9abf;' +
+            '  --cusdis-input-bg: #2e383c;' +
+            '  --cusdis-border: rgba(211, 198, 170, 0.2);' +
+            '  --cusdis-radius: 0.3125rem;' +
+            '}'
+          );
         }
-        .text-gray-500, .text-gray-400 {
-          color: var(--cusdis-text-light) !important;
-        }
-
-        /* Input fields */
-        input, textarea {
-          background-color: var(--cusdis-input-bg) !important;
-          border: 1px solid var(--cusdis-border) !important;
-          border-radius: var(--cusdis-radius) !important;
-          color: var(--cusdis-text) !important;
-          padding: 0.75rem 1rem !important;
-          font-family: "Maven Pro", sans-serif !important;
-          font-size: 1rem !important;
-          transition: all 0.2s ease-in-out !important;
-        }
-        input:focus, textarea:focus {
-          border-color: var(--cusdis-accent) !important;
-          outline: none !important;
-          box-shadow: 0 0 0 2px rgba(58, 148, 197, 0.2) !important;
-        }
-        input::placeholder, textarea::placeholder {
-          color: var(--cusdis-text-light) !important;
-          opacity: 0.7 !important;
-        }
-
-        /* Submit button - styled like share buttons */
-        button.bg-gray-200, button.font-bold {
-          display: inline-flex !important;
-          align-items: center !important;
-          gap: 0.4rem !important;
-          padding: 0.5rem 0.75rem !important;
-          background-color: var(--cusdis-accent) !important;
-          color: #fff !important;
-          border: none !important;
-          border-radius: 4px !important;
-          font-family: "Maven Pro", sans-serif !important;
-          font-size: 0.8rem !important;
-          font-weight: 600 !important;
-          text-transform: uppercase !important;
-          letter-spacing: 0.03rem !important;
-          cursor: pointer !important;
-          transition: background-color 0.2s ease, transform 0.1s ease !important;
-        }
-        button.bg-gray-200:hover, button.font-bold:hover {
-          background-color: #2d7aa8 !important;
-          transform: translateY(-1px) !important;
-          color: #fff !important;
-        }
-        button.bg-gray-200:active, button.font-bold:active {
-          transform: translateY(0) !important;
-        }
-
-        /* Reply text buttons (not the main submit) */
-        button.text-gray-500 {
-          color: var(--cusdis-accent) !important;
-          background: transparent !important;
-          font-weight: 500 !important;
-          font-size: 0.9rem !important;
-          padding: 0.25rem 0.5rem !important;
-          border: none !important;
-        }
-        button.text-gray-500:hover {
-          color: #2d7aa8 !important;
-          text-decoration: underline !important;
-        }
-
-        /* Links */
-        a {
-          color: var(--cusdis-accent) !important;
-          transition: all 0.2s ease-in-out !important;
-          text-decoration: none !important;
-        }
-        a:hover {
-          color: #2d7aa8 !important;
-        }
-
-        /* Comment cards */
-        .bg-gray-100, .dark\\:bg-gray-900 {
-          background-color: var(--cusdis-input-bg) !important;
-          border-radius: var(--cusdis-radius) !important;
-        }
-
-        /* Comment container styling */
-        [class*="border"] {
-          border-color: var(--cusdis-border) !important;
-        }
-
-        /* Blockquotes in comments */
-        blockquote {
-          border-left: 0.25rem solid var(--cusdis-accent) !important;
-          background-color: rgba(58, 148, 197, 0.05) !important;
-          border-radius: var(--cusdis-radius) !important;
-          padding: 1rem 1.5rem !important;
-          margin: 1rem 0 !important;
-          font-style: italic !important;
-        }
-
-        /* Powered by link */
-        .text-center.text-gray-500.text-xs {
-          color: var(--cusdis-text-light) !important;
-          font-size: 0.85rem !important;
-          margin-top: 2rem !important;
-          padding-top: 1rem !important;
-          border-top: 1px dashed rgba(74, 86, 93, 0.2) !important;
-        }
-        .text-center.text-gray-500.text-xs a {
-          color: var(--cusdis-text-light) !important;
-        }
-        .text-center.text-gray-500.text-xs a:hover {
-          color: var(--cusdis-accent) !important;
-        }
-
-        /* Comment metadata (date, author) */
-        .text-xs, .text-sm {
-          font-size: 0.9em !important;
-        }
-
-        /* Spacing adjustments */
-        .my-8 {
-          margin-top: 2rem !important;
-          margin-bottom: 2rem !important;
-        }
-        .mb-4 {
-          margin-bottom: 1.5rem !important;
-        }
-        .mt-4 {
-          margin-top: 1.5rem !important;
-        }
-
-        /* Message/notification bar */
-        .p-2.mb-4.bg-blue-500 {
-          background-color: var(--cusdis-accent) !important;
-          border-radius: var(--cusdis-radius) !important;
-          padding: 0.75rem 1rem !important;
-        }
-
-        /* Pagination buttons */
-        button.px-2.py-1 {
-          color: var(--cusdis-text) !important;
-          padding: 0.25rem 0.75rem !important;
-        }
-        button.px-2.py-1.underline {
-          color: var(--cusdis-accent) !important;
-          font-weight: 500 !important;
-        }
-
-        /* Smooth scrolling */
-        html {
-          scroll-behavior: smooth !important;
-        }
-      `;
-
-      function injectStyles() {
-        const iframe = document.querySelector('#cusdis_thread iframe');
-        if (iframe && iframe.contentDocument) {
-          try {
-            const style = iframe.contentDocument.createElement('style');
-            style.textContent = customStyles;
-            iframe.contentDocument.head.appendChild(style);
-          } catch (e) {
-            // Cross-origin restriction, retry with srcdoc modification
-          }
-        }
+        return (
+          ':root {' +
+          '  --cusdis-bg: #fdf6e3;' +
+          '  --cusdis-text: #4a565d;' +
+          '  --cusdis-text-light: #6b7a82;' +
+          '  --cusdis-accent: #3a94c5;' +
+          '  --cusdis-accent-hover: #2d7aa8;' +
+          '  --cusdis-input-bg: #efebd4;' +
+          '  --cusdis-border: #d5cdb6;' +
+          '  --cusdis-radius: 0.3125rem;' +
+          '}'
+        );
       }
 
-      // Try multiple times as iframe loads asynchronously
-      const observer = new MutationObserver(function(mutations) {
-        const iframe = document.querySelector('#cusdis_thread iframe');
+      var baseStyles = (
+        /* Base styles */
+        'body {' +
+        '  background-color: var(--cusdis-bg) !important;' +
+        '  font-family: "Maven Pro", sans-serif !important;' +
+        '  font-size: 1.1rem !important;' +
+        '  line-height: 1.6 !important;' +
+        '  color: var(--cusdis-text) !important;' +
+        '}' +
+
+        /* All text colors */
+        '.text-gray-900, .text-gray-800, .text-gray-700, .text-gray-600,' +
+        '.dark\\:text-gray-100, .dark\\:text-gray-200 {' +
+        '  color: var(--cusdis-text) !important;' +
+        '}' +
+        '.text-gray-500, .text-gray-400 {' +
+        '  color: var(--cusdis-text-light) !important;' +
+        '}' +
+
+        /* Input fields */
+        'input, textarea {' +
+        '  background-color: var(--cusdis-input-bg) !important;' +
+        '  border: 1px solid var(--cusdis-border) !important;' +
+        '  border-radius: var(--cusdis-radius) !important;' +
+        '  color: var(--cusdis-text) !important;' +
+        '  padding: 0.75rem 1rem !important;' +
+        '  font-family: "Maven Pro", sans-serif !important;' +
+        '  font-size: 1rem !important;' +
+        '  transition: all 0.2s ease-in-out !important;' +
+        '}' +
+        'input:focus, textarea:focus {' +
+        '  border-color: var(--cusdis-accent) !important;' +
+        '  outline: none !important;' +
+        '  box-shadow: 0 0 0 2px rgba(58, 148, 197, 0.2) !important;' +
+        '}' +
+        'input::placeholder, textarea::placeholder {' +
+        '  color: var(--cusdis-text-light) !important;' +
+        '  opacity: 0.7 !important;' +
+        '}' +
+
+        /* Submit button */
+        'button.bg-gray-200, button.font-bold {' +
+        '  display: inline-flex !important;' +
+        '  align-items: center !important;' +
+        '  gap: 0.4rem !important;' +
+        '  padding: 0.5rem 0.75rem !important;' +
+        '  background-color: var(--cusdis-accent) !important;' +
+        '  color: #fff !important;' +
+        '  border: none !important;' +
+        '  border-radius: 4px !important;' +
+        '  font-family: "Maven Pro", sans-serif !important;' +
+        '  font-size: 0.8rem !important;' +
+        '  font-weight: 600 !important;' +
+        '  text-transform: uppercase !important;' +
+        '  letter-spacing: 0.03rem !important;' +
+        '  cursor: pointer !important;' +
+        '  transition: background-color 0.2s ease, transform 0.1s ease !important;' +
+        '}' +
+        'button.bg-gray-200:hover, button.font-bold:hover {' +
+        '  background-color: var(--cusdis-accent-hover) !important;' +
+        '  transform: translateY(-1px) !important;' +
+        '  color: #fff !important;' +
+        '}' +
+        'button.bg-gray-200:active, button.font-bold:active {' +
+        '  transform: translateY(0) !important;' +
+        '}' +
+
+        /* Reply text buttons */
+        'button.text-gray-500 {' +
+        '  color: var(--cusdis-accent) !important;' +
+        '  background: transparent !important;' +
+        '  font-weight: 500 !important;' +
+        '  font-size: 0.9rem !important;' +
+        '  padding: 0.25rem 0.5rem !important;' +
+        '  border: none !important;' +
+        '}' +
+        'button.text-gray-500:hover {' +
+        '  color: var(--cusdis-accent-hover) !important;' +
+        '  text-decoration: underline !important;' +
+        '}' +
+
+        /* Links */
+        'a {' +
+        '  color: var(--cusdis-accent) !important;' +
+        '  transition: all 0.2s ease-in-out !important;' +
+        '  text-decoration: none !important;' +
+        '}' +
+        'a:hover {' +
+        '  color: var(--cusdis-accent-hover) !important;' +
+        '}' +
+
+        /* Comment cards */
+        '.bg-gray-100, .dark\\:bg-gray-900 {' +
+        '  background-color: var(--cusdis-input-bg) !important;' +
+        '  border-radius: var(--cusdis-radius) !important;' +
+        '}' +
+
+        /* Borders */
+        '[class*="border"] {' +
+        '  border-color: var(--cusdis-border) !important;' +
+        '}' +
+
+        /* Blockquotes */
+        'blockquote {' +
+        '  border-left: 0.25rem solid var(--cusdis-accent) !important;' +
+        '  background-color: rgba(58, 148, 197, 0.05) !important;' +
+        '  border-radius: var(--cusdis-radius) !important;' +
+        '  padding: 1rem 1.5rem !important;' +
+        '  margin: 1rem 0 !important;' +
+        '  font-style: italic !important;' +
+        '}' +
+
+        /* Powered by */
+        '.text-center.text-gray-500.text-xs {' +
+        '  color: var(--cusdis-text-light) !important;' +
+        '  font-size: 0.85rem !important;' +
+        '  margin-top: 2rem !important;' +
+        '  padding-top: 1rem !important;' +
+        '  border-top: 1px dashed var(--cusdis-border) !important;' +
+        '}' +
+        '.text-center.text-gray-500.text-xs a {' +
+        '  color: var(--cusdis-text-light) !important;' +
+        '}' +
+        '.text-center.text-gray-500.text-xs a:hover {' +
+        '  color: var(--cusdis-accent) !important;' +
+        '}' +
+
+        /* Metadata */
+        '.text-xs, .text-sm {' +
+        '  font-size: 0.9em !important;' +
+        '}' +
+
+        /* Spacing */
+        '.my-8 { margin-top: 2rem !important; margin-bottom: 2rem !important; }' +
+        '.mb-4 { margin-bottom: 1.5rem !important; }' +
+        '.mt-4 { margin-top: 1.5rem !important; }' +
+
+        /* Notification bar */
+        '.p-2.mb-4.bg-blue-500 {' +
+        '  background-color: var(--cusdis-accent) !important;' +
+        '  border-radius: var(--cusdis-radius) !important;' +
+        '  padding: 0.75rem 1rem !important;' +
+        '}' +
+
+        /* Pagination */
+        'button.px-2.py-1 { color: var(--cusdis-text) !important; padding: 0.25rem 0.75rem !important; }' +
+        'button.px-2.py-1.underline { color: var(--cusdis-accent) !important; font-weight: 500 !important; }' +
+
+        /* Smooth scrolling */
+        'html { scroll-behavior: smooth !important; }'
+      );
+
+      function injectIntoIframe(dark) {
+        var iframe = document.querySelector('#cusdis_thread iframe');
+        if (!iframe || !iframe.contentDocument) return;
+        try {
+          var doc = iframe.contentDocument;
+
+          // Theme variables (updated on each theme change)
+          var themeStyle = doc.getElementById('blog-cusdis-theme');
+          if (!themeStyle) {
+            themeStyle = doc.createElement('style');
+            themeStyle.id = 'blog-cusdis-theme';
+            doc.head.appendChild(themeStyle);
+          }
+          themeStyle.textContent = getThemeVars(dark);
+
+          // Base styles (injected once)
+          if (!doc.getElementById('blog-cusdis-base')) {
+            var baseStyle = doc.createElement('style');
+            baseStyle.id = 'blog-cusdis-base';
+            baseStyle.textContent = baseStyles;
+            doc.head.appendChild(baseStyle);
+          }
+        } catch (e) {}
+      }
+
+      // Exposed for the theme toggle in js.html
+      window.cusdisApplyTheme = function(dark) {
+        var div = document.getElementById('cusdis_thread');
+        if (!div) return;
+        div.setAttribute('data-theme', dark ? 'dark' : 'light');
+        if (window.CUSDIS && window.CUSDIS.setTheme) {
+          window.CUSDIS.setTheme(dark ? 'dark' : 'light');
+        }
+        injectIntoIframe(dark);
+        // Retry in case the iframe re-renders after setTheme
+        setTimeout(function() { injectIntoIframe(dark); }, 300);
+      };
+
+      // Inject styles when the iframe first appears/loads
+      var observer = new MutationObserver(function() {
+        var iframe = document.querySelector('#cusdis_thread iframe');
         if (iframe) {
-          iframe.addEventListener('load', injectStyles);
-          // Also try immediately in case it's already loaded
-          setTimeout(injectStyles, 100);
-          setTimeout(injectStyles, 500);
-          setTimeout(injectStyles, 1000);
+          iframe.addEventListener('load', function() {
+            injectIntoIframe(document.documentElement.getAttribute('data-theme') === 'dark');
+          });
+          setTimeout(function() { injectIntoIframe(document.documentElement.getAttribute('data-theme') === 'dark'); }, 100);
+          setTimeout(function() { injectIntoIframe(document.documentElement.getAttribute('data-theme') === 'dark'); }, 500);
+          setTimeout(function() { injectIntoIframe(document.documentElement.getAttribute('data-theme') === 'dark'); }, 1000);
         }
       });
 
-      observer.observe(document.getElementById('cusdis_thread'), {
-        childList: true,
-        subtree: true
-      });
+      observer.observe(cusdisDiv, { childList: true, subtree: true });
     })();
   </script>
 {% endif %}
+
