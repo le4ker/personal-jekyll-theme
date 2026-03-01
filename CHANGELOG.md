@@ -1,3 +1,15 @@
+## [10.4.1](https://github.com/le4ker/personal-jekyll-theme/compare/v10.4.0...v10.4.1) (2026-03-01)
+
+### 🐛 Bug Fixes
+
+* insufficient color contrast for links and post metadata ([1ff9e35](https://github.com/le4ker/personal-jekyll-theme/commit/1ff9e3582eccd17314ef23141fec31ea921cc58e))
+* optimize blog styling for readability ([f94114c](https://github.com/le4ker/personal-jekyll-theme/commit/f94114c5dbfd4f42b9e04ff7db1d7536e5ede66d))
+* syntax token contrast in Everforest dark theme ([9235ff4](https://github.com/le4ker/personal-jekyll-theme/commit/9235ff4398184e2dcd0792b281cacb1570be48c8))
+
+### 🏠 Chores
+
+* merge branch 'develop' ([8c5a559](https://github.com/le4ker/personal-jekyll-theme/commit/8c5a559896c2034b992217aeb9786b0df0f3092e))
+
 ## [10.4.0](https://github.com/le4ker/personal-jekyll-theme/compare/v10.3.2...v10.4.0) (2026-01-17)
 
 ### ✨ Features
