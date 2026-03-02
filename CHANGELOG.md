@@ -1,3 +1,23 @@
+## [10.5.0](https://github.com/le4ker/personal-jekyll-theme/compare/v10.4.1...v10.5.0) (2026-03-02)
+
+### ✨ Features
+
+* add dark theme support ([d6155e7](https://github.com/le4ker/personal-jekyll-theme/commit/d6155e7263cb48ac6e91cae69b3e38dc080664cf))
+
+### 🐛 Bug Fixes
+
+* default theme to light instead of following system preference ([74d4372](https://github.com/le4ker/personal-jekyll-theme/commit/74d437248a0e8769b6b888c1d0d3ca06c731e3e8))
+* render blog archive list with divider lines between posts ([029ad38](https://github.com/le4ker/personal-jekyll-theme/commit/029ad38a57d36181071e7e5b23a8e854241e4eb5))
+* render blog archive list with divider lines between posts ([a1bf5d4](https://github.com/le4ker/personal-jekyll-theme/commit/a1bf5d4bf701af9a25d46db5b11328ad35a0db4b))
+
+### 🏠 Chores
+
+* merge branch 'develop' ([936695e](https://github.com/le4ker/personal-jekyll-theme/commit/936695eca4fcf8268e32cb59b12207cf9f8cdab3))
+* merge branch 'develop' ([658624d](https://github.com/le4ker/personal-jekyll-theme/commit/658624d02dc804bcb68ba539f9b2d430e7f5ad06))
+* merge branch 'develop' ([4de00df](https://github.com/le4ker/personal-jekyll-theme/commit/4de00df79ef9b79d7852eecb0b021fd280ba195f))
+* **release:** 10.5.0 ([16f2c56](https://github.com/le4ker/personal-jekyll-theme/commit/16f2c56d51a8f4664dfb541f529cccb07a956c33))
+* **release:** 10.5.0 ([64e09ce](https://github.com/le4ker/personal-jekyll-theme/commit/64e09ce2c79d6ea9338bb2e26866f7113faf0ba6))
+
 ## [10.5.0](https://github.com/le4ker/personal-jekyll-theme/compare/v10.4.1...v10.5.0) (2026-03-01)
 
 ### ✨ Features
