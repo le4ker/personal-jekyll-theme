@@ -17,9 +17,6 @@ jobs:
         with:
           ruby-version: "3.1.1"
 
-      - name: Update RubyGems
-        run: gem update --system
-
       - name: Install dependencies
         run: bundle install
 
