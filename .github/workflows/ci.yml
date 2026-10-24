@@ -10,15 +10,12 @@ jobs:
   build-and-validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.1.1"
-
-      - name: Update RubyGems
-        run: gem update --system
 
       - name: Install dependencies
         run: bundle install
