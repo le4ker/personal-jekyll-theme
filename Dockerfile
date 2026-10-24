@@ -1,4 +1,4 @@
-FROM jekyll/jekyll:4.2.2
+FROM jekyll/jekyll:4.4.1
 
 # install dependencies
 WORKDIR /srv/jekyll
