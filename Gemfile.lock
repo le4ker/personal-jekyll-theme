@@ -60,11 +60,11 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.10)
     logger (1.7.0)
     mercenary (0.4.0)
-    nokogiri (1.18.9-arm64-darwin)
+    nokogiri (1.19.3-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.18.9-x86_64-linux-gnu)
+    nokogiri (1.19.3-x86_64-linux-gnu)
       racc (~> 1.4)
-    nokogiri (1.18.9-x86_64-linux-musl)
+    nokogiri (1.19.3-x86_64-linux-musl)
       racc (~> 1.4)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
@@ -87,6 +87,7 @@ GEM
 PLATFORMS
   arm64-darwin-22
   arm64-darwin-23
+  arm64-darwin-25
   x86_64-linux
   x86_64-linux-musl
 
@@ -95,6 +96,7 @@ DEPENDENCIES
   jekyll-paginate (= 1.1.0)
   jekyll-sass-converter (= 2.2.0)
   jekyll-spaceship (= 0.10.2)
+  nokogiri (>= 1.19.3)
   webrick (= 1.9.2)
 
 BUNDLED WITH
