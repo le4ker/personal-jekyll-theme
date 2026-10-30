@@ -1,4 +1,4 @@
-FROM ruby:3.2.8
+FROM ruby:4.0.0
 
 # install dependencies
 WORKDIR /srv/jekyll
