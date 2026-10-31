@@ -5,6 +5,10 @@ on:
     branches:
       - main
       - develop
+  push:
+    branches:
+      - main
+      - develop
 
 permissions:
   contents: read
@@ -19,12 +23,16 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.2.8"
+          bundler-cache: true
 
-      - name: Install dependencies
-        run: bundle install
+      - name: Generate category pages
+        run: ruby bin/generate_categories.rb
+
+      - name: Generate tag pages
+        run: ruby bin/generate_tags.rb
 
       - name: Build site
-        run: bundle exec jekyll build
+        run: JEKYLL_ENV=production bundle exec jekyll build
 
       - name: Validate HTML and check links
         uses: chabad360/htmlproofer@master
@@ -34,6 +42,5 @@ jobs:
             --ignore-urls "/^http://localhost/,/^https://fonts.googleapis.com/,/^https://fonts.gstatic.com/,/^https://cdnjs.cloudflare.com/"
             --ignore-status-codes "403,429,999"
             --no-enforce-https
-            --allow-missing-href
             --disable-external
             --swap-urls "^/personal-jekyll-theme:"

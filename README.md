@@ -1,6 +1,6 @@
 # { Personal } Jekyll Theme
 
-[![Build Status](https://github.com/le4ker/personal-jekyll-theme/actions/workflows/release.yml/badge.svg)](https://github.com/le4ker/personal-jekyll-theme/actions/workflows/release.yml)
+[![Build Status](https://github.com/le4ker/personal-jekyll-theme/actions/workflows/ci.yml/badge.svg)](https://github.com/le4ker/personal-jekyll-theme/actions/workflows/ci.yml)
 [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 [![Ruby](https://img.shields.io/badge/ruby-3.2.8-red.svg)](https://www.ruby-lang.org/)
 [![Jekyll](https://img.shields.io/badge/jekyll-theme-green.svg)](https://jekyllrb.com/)
