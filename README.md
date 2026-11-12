@@ -2,7 +2,7 @@
 
 [![Build Status](https://github.com/le4ker/personal-jekyll-theme/actions/workflows/ci.yml/badge.svg)](https://github.com/le4ker/personal-jekyll-theme/actions/workflows/ci.yml)
 [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
-[![Ruby](https://img.shields.io/badge/ruby-4.0.0-red.svg)](https://www.ruby-lang.org/)
+[![Ruby](https://img.shields.io/badge/ruby-4.0-red.svg)](https://www.ruby-lang.org/)
 [![Jekyll](https://img.shields.io/badge/jekyll-theme-green.svg)](https://jekyllrb.com/)
 
 **{ Personal }** is a free, responsive Jekyll theme with a minimal aesthetic —
@@ -49,7 +49,7 @@ The site will be available at `http://localhost:4000`.
 
 **Prerequisites:**
 
-- Ruby 4.0.0 (use [rbenv](https://github.com/rbenv/rbenv) or
+- Ruby 4.0 (use [rbenv](https://github.com/rbenv/rbenv) or
   [rvm](https://rvm.io/) for version management)
 - Bundler
 
