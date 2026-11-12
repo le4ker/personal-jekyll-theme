@@ -70,12 +70,13 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.10)
     logger (1.7.0)
     mercenary (0.4.0)
-    nokogiri (1.19.5-arm64-darwin)
+    nokogiri (1.19.7-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.19.5-x86_64-linux-gnu)
+    nokogiri (1.19.7-x86_64-linux-gnu)
       racc (~> 1.4)
-    nokogiri (1.19.5-x86_64-linux-musl)
+    nokogiri (1.19.7-x86_64-linux-musl)
       racc (~> 1.4)
+    ostruct (0.6.1)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (6.0.2)
@@ -113,6 +114,7 @@ DEPENDENCIES
   jekyll-sass-converter (= 3.1.0)
   jekyll-spaceship (= 0.10.2)
   nokogiri (>= 1.19.3)
+  ostruct
   webrick (= 1.9.2)
 
 BUNDLED WITH
